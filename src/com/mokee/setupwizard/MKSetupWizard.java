@@ -22,7 +22,7 @@ import android.content.Context;
 
 public class MKSetupWizard extends Application {
 
-    public static final String TAG = "CMAccount";
+    public static final String TAG = "MKSetupWizard";
     // Leave this off for release
     public static final boolean DEBUG = false;
 

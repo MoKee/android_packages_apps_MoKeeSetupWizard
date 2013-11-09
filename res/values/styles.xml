@@ -14,8 +14,7 @@
      See the License for the specific language governing permissions and
      limitations under the License.
 -->
-<resources xmlns:android="http://schemas.android.com/apk/res/android">
-
+<resources>
     <style name="Theme.MoKeeSetupWizard" parent="@android:style/Theme.Holo.Light">
         <item name="android:actionBarStyle">@style/Widget.ActionBar</item>
         <item name="android:actionMenuTextColor">@android:color/holo_blue_light</item>

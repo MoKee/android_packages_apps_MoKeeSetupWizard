@@ -22,6 +22,7 @@ import com.mokee.setupwizard.ui.SetupPageFragment;
 import android.app.Fragment;
 import android.content.Context;
 import android.os.Bundle;
+import android.view.View;
 
 public class FinishPage extends Page {
 
@@ -44,17 +45,21 @@ public class FinishPage extends Page {
         return R.string.finish;
     }
 
+
     public static class FinishFragment extends SetupPageFragment {
 
         @Override
-        protected void setUpPage() {
-        }
+        protected void setUpPage() {}
 
         @Override
         protected int getLayoutResource() {
             return R.layout.setup_finished_page;
         }
 
+        @Override
+        protected int getTitleResource() {
+            return R.string.setup_complete;
+        }
     }
 
 }

@@ -147,6 +147,11 @@ public class InputMethodPage extends Page {
         protected int getLayoutResource() {
             return R.layout.setup_inputmethod_page;
         }
+		
+        @Override
+        protected int getTitleResource() {
+            return R.string.setup_inputmethod;
+        }
     }
 
 }

@@ -71,16 +71,12 @@ public class SetupWizardActivity extends Activity implements SetupDataCallbacks 
 
     private SharedPreferences mSharedPreferences;
 
-    @Override
-    protected void onCreate(Bundle savedInstanceState) {
+    public void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.setup_main);
-
         ((MKSetupWizard) AppGlobals.getInitialApplication()).disableStatusBar();
-
-        mSharedPreferences = getSharedPreferences(MKSetupWizard.SETTINGS_PREFERENCES,
-                Context.MODE_PRIVATE);
-        mSetupData = (AbstractSetupData) getLastNonConfigurationInstance();
+        mSharedPreferences = getSharedPreferences(MKSetupWizard.SETTINGS_PREFERENCES, Context.MODE_PRIVATE);
+        mSetupData = (AbstractSetupData)getLastNonConfigurationInstance();
         if (mSetupData == null) {
             mSetupData = new MKSetupWizardData(this);
         }
@@ -180,9 +176,7 @@ public class SetupWizardActivity extends Activity implements SetupDataCallbacks 
     }
 
     private void removeSetupPage(final Page page, boolean animate) {
-        if (page == null || getPage(page.getKey()) == null
-                || page.getId() == R.string.setup_complete)
-            return;
+        if (page == null || getPage(page.getKey()) == null || page.getId() == R.string.setup_complete) return;
         final int position = mViewPager.getCurrentItem();
         if (animate) {
             mViewPager.setCurrentItem(0);
@@ -281,37 +275,30 @@ public class SetupWizardActivity extends Activity implements SetupDataCallbacks 
 
     private void disableSetupWizards(Intent intent) {
         final PackageManager pm = getPackageManager();
-        final List<ResolveInfo> resolveInfos = pm.queryIntentActivities(intent,
-                PackageManager.MATCH_DEFAULT_ONLY);
+        final List<ResolveInfo> resolveInfos = pm.queryIntentActivities(intent, PackageManager.MATCH_DEFAULT_ONLY);
         for (ResolveInfo info : resolveInfos) {
             if (GOOGLE_SETUPWIZARD_PACKAGE.equals(info.activityInfo.packageName)) {
-                final ComponentName componentName = new ComponentName(
-                        info.activityInfo.packageName, info.activityInfo.name);
-                pm.setComponentEnabledSetting(componentName,
-                        PackageManager.COMPONENT_ENABLED_STATE_DISABLED,
-                        PackageManager.DONT_KILL_APP);
+                final ComponentName componentName = new ComponentName(info.activityInfo.packageName, info.activityInfo.name);
+                pm.setComponentEnabledSetting(componentName, PackageManager.COMPONENT_ENABLED_STATE_DISABLED, PackageManager.DONT_KILL_APP);
             }
         }
-        pm.setComponentEnabledSetting(getComponentName(),
-                PackageManager.COMPONENT_ENABLED_STATE_DISABLED, PackageManager.DONT_KILL_APP);
+        pm.setComponentEnabledSetting(getComponentName(), PackageManager.COMPONENT_ENABLED_STATE_DISABLED, PackageManager.DONT_KILL_APP);
     }
 
     public void launchGoogleAccountSetup() {
         Bundle bundle = new Bundle();
         bundle.putBoolean(MKSetupWizard.EXTRA_FIRST_RUN, true);
         bundle.putBoolean(MKSetupWizard.EXTRA_ALLOW_SKIP, true);
-        AccountManager.get(this).addAccount(MKSetupWizard.ACCOUNT_TYPE_GOOGLE, null, null, bundle,
-                this, new AccountManagerCallback<Bundle>() {
-                    @Override
-                    public void run(AccountManagerFuture<Bundle> bundleAccountManagerFuture) {
-                        if (isDestroyed())
-                            return; // There is a change this activity has been torn down.
-                        Page page = mPageList.findPage(R.string.setup_google_account);
-                        if (page != null) {
-                            onPageFinished(page);
-                        }
-                    }
-                }, null);
+        AccountManager.get(this).addAccount(MKSetupWizard.ACCOUNT_TYPE_GOOGLE, null, null, bundle, this, new AccountManagerCallback<Bundle>() {
+            @Override
+            public void run(AccountManagerFuture<Bundle> bundleAccountManagerFuture) {
+                if (isDestroyed()) return; //There is a change this activity has been torn down.
+                Page page = mPageList.findPage(R.string.setup_google_account);
+                if (page != null) {
+                    onPageFinished(page);
+                }
+            }
+        }, null);
     }
 
     private void finishSetup() {

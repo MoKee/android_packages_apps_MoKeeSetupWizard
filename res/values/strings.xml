@@ -13,12 +13,10 @@
      WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
      See the License for the specific language governing permissions and
      limitations under the License.
-
 -->
 <resources>
-
     <string name="app_name">MoKee SetupWizard</string>
-    <string name="product_name">Mokee OpenSource</string>
+    <string name="product_name" translatable="false">Mokee OpenSource</string>
 
     <string name="next">Next</string>
     <string name="continue_label">Continue</string>
@@ -29,15 +27,17 @@
     <string name="create">Create</string>
     <string name="login">Login</string>
     <string name="ok">OK</string>
-    <string name="existing">Login to existing account</string>
+    <string name="existing">Log in to existing account</string>
     <string name="new_account">Create a new account</string>
     <string name="skip_anyway">Skip anyway</string>
     <string name="dont_skip">Don\'t skip</string>
 
     <string name="setup_complete">Setup is complete</string>
-    <string name="setup_complete_summary">Congratulations! Your device is ready to rumble.</string>
+    <string name="setup_complete_summary" product="tablet">Congratulations! Your tablet is ready to rumble.</string>
+    <string name="setup_complete_summary" product="default">Congratulations! Your phone is ready to rumble.</string>
     <string name="setup_welcome">Welcome to MoKee OpenSource</string>
-    <string name="setup_welcome_summary">To get started setting up your device, select your language and continue.</string>
+    <string name="setup_welcome_summary" product="tablet">To get started setting up your tablet, select your language and continue.</string>
+    <string name="setup_welcome_summary" product="default">To get started setting up your phone, select your language and continue.</string>
     <string name="setup_sim_missing">Insert SIM card</string>
     <string name="setup_google_account">Google account</string>
     <string name="setup_location">Location settings</string>
@@ -48,8 +48,11 @@
     <string name="setup_inputmethod_summary">Select the input method that you prefer</string>
     <string name="setup_inputmethod_none">No IME installed!</string>
     <string name="setup_msg_no_network">WARNING: You won\'t be able to set up your accounts</string>
+    <string name="setup_warning_skip_wifi" product="tablet">WARNING: You may incur extra carrier data charges.\n\nTablet setup can require significant network activity.</string>
+    <string name="setup_warning_skip_wifi" product="default">WARNING: You may incur extra carrier data charges.\n\nPhone setup can require significant network activity.</string>
 
-    <string name="sim_missing_summary">You need to refer to the SIM card instructions that came with your device.</string>
+    <string name="sim_missing_summary" product="tablet">You need to refer to the SIM card instructions that came with your tablet.</string>
+    <string name="sim_missing_summary" product="default">You need to refer to the SIM card instructions that came with your phone.</string>
     <string name="google_account_summary">Do you want to set up a Google account?</string>
     <string name="btn_google_account">Set up Google account</string>
 
@@ -61,5 +64,4 @@
     <string name="location_street_level" product="default">Allow apps to use GPS on your phone to pinpoint your location</string>
     <string name="location_network_based">Wi-Fi &amp; mobile network location</string>
     <string name="location_neighborhood_level">Allow apps to use Google\'s location service to estimate your location faster. Anonymous location data will be collected and sent to Google.</string>
-    
 </resources>

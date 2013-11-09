@@ -15,10 +15,10 @@
      limitations under the License.
 -->
 <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
-    style="@style/RootLayout"
-    android:layout_width="match_parent"
-    android:layout_height="match_parent"
-    android:orientation="vertical" >
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        style="@style/RootLayout" >
 
     <android.support.v4.view.ViewPager
         android:id="@+id/pager"
@@ -29,27 +29,28 @@
     <View style="@style/SetupWizardDivider" />
 
     <LinearLayout
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:orientation="horizontal" >
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal" >
 
         <Button
-            android:id="@+id/prev_button"
-            style="@style/ButtonBar"
-            android:layout_width="0dp"
-            android:layout_height="wrap_content"
-            android:layout_weight="1"
-            android:gravity="left"
-            android:text="@string/prev" />
+                style="@style/ButtonBar"
+                android:id="@+id/prev_button"
+                android:layout_width="0dp"
+                android:layout_weight="1"
+                android:layout_height="wrap_content"
+                android:gravity="left"
+                android:text="@string/prev" />
 
         <Button
-            android:id="@+id/next_button"
-            style="@style/ButtonBar"
-            android:layout_width="0dp"
-            android:layout_height="wrap_content"
-            android:layout_weight="1"
-            android:gravity="right"
-            android:text="@string/next" />
+                style="@style/ButtonBar"
+                android:id="@+id/next_button"
+                android:layout_width="0dp"
+                android:layout_weight="1"
+                android:layout_height="wrap_content"
+                android:gravity="right"
+                android:text="@string/next" />
+
     </LinearLayout>
 
 </LinearLayout>
