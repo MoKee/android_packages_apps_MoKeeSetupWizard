@@ -231,10 +231,14 @@ public class SetupWizardActivity extends Activity implements SetupDataCallbacks 
         mHandler.post(new Runnable() {
             @Override
             public void run() {
-                switch (page.getId()) {
-                    case R.string.setup_google_account:
-                        removeSetupPage(page, false);
-                        break;
+                if (page == null) {
+                    doNext();
+                } else {
+                    switch (page.getId()) {
+                        case R.string.setup_google_account:
+                            removeSetupPage(page, false);
+                            break;
+                    }
                 }
                 onPageTreeChanged();
             }
@@ -261,16 +265,15 @@ public class SetupWizardActivity extends Activity implements SetupDataCallbacks 
     }
 
     private void removeUnNeededPages() {
-        mHandler.post(new Runnable() {
-            @Override
-            public void run() {
-                Page page = mPageList.findPage(R.string.setup_google_account);
-                if (page != null && (!GCMUtil.googleServicesExist(SetupWizardActivity.this) || accountExists(MKSetupWizard.ACCOUNT_TYPE_GOOGLE))) {
-                    removeSetupPage(page, false);
-                }
-                onPageTreeChanged();
-            }
-        });
+        boolean pagesRemoved = false;
+        page = mPageList.findPage(R.string.setup_google_account);
+        if (page != null && (!GCMUtil.googleServicesExist(SetupWizardActivity.this) || accountExists(MKSetupWizard.ACCOUNT_TYPE_GOOGLE))) {
+            removeSetupPage(page, false);
+            pagesRemoved = true;
+        }
+        if (pagesRemoved) {
+            onPageTreeChanged();
+        }
     }
 
     private void disableSetupWizards(Intent intent) {
