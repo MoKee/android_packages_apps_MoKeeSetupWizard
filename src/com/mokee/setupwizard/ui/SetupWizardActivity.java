@@ -266,7 +266,7 @@ public class SetupWizardActivity extends Activity implements SetupDataCallbacks 
 
     private void removeUnNeededPages() {
         boolean pagesRemoved = false;
-        page = mPageList.findPage(R.string.setup_google_account);
+        Page page = mPageList.findPage(R.string.setup_google_account);
         if (page != null && (!GCMUtil.googleServicesExist(SetupWizardActivity.this) || accountExists(MKSetupWizard.ACCOUNT_TYPE_GOOGLE))) {
             removeSetupPage(page, false);
             pagesRemoved = true;
