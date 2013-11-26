@@ -25,6 +25,7 @@ import com.mokee.setupwizard.setup.Page;
 import com.mokee.setupwizard.setup.PageList;
 import com.mokee.setupwizard.setup.SetupDataCallbacks;
 import com.mokee.setupwizard.util.MKAccountUtils;
+import com.mokee.setupwizard.util.EnableAccessibilityController;
 
 import android.accounts.AccountManager;
 import android.accounts.AccountManagerCallback;
@@ -44,6 +45,7 @@ import android.os.Handler;
 import android.provider.Settings;
 import android.support.v13.app.FragmentStatePagerAdapter;
 import android.support.v4.view.ViewPager;
+import android.view.MotionEvent;
 import android.view.View;
 import android.widget.Button;
 
@@ -111,6 +113,13 @@ public class SetupWizardActivity extends Activity implements SetupDataCallbacks 
             @Override
             public void onClick(View view) {
                 doPrevious();
+            }
+        });
+        final EnableAccessibilityController acc = new EnableAccessibilityController(this);
+        mViewPager.setOnTouchListener(new View.OnTouchListener() {
+            @Override
+            public boolean onTouch(View v, MotionEvent event) {
+                return acc.onInterceptTouchEvent(event);
             }
         });
         onPageTreeChanged();
