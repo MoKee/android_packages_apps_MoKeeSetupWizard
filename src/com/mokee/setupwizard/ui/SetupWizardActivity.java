@@ -248,6 +248,10 @@ public class SetupWizardActivity extends Activity implements SetupDataCallbacks 
                     switch (page.getId()) {
                         case R.string.setup_google_account:
                             removeSetupPage(page, false);
+                            if (accountExists(MKSetupWizard.ACCOUNT_TYPE_GOOGLE)) {
+                                Page locationPage = getPage(getString(R.string.setup_location));
+                                removeSetupPage(locationPage, false);
+                            }
                             break;
                     }
                 }
