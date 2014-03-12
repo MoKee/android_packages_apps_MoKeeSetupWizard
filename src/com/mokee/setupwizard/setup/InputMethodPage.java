@@ -111,8 +111,15 @@ public class InputMethodPage extends Page {
             }
             for (int i = 0; i < count; i++) {
                 RadioButton button = new RadioButton(mContext);
-                button.setText(mImList.get(i).getImLabel());
-                button.setTag(mImList.get(i).getImPackage());
+                String packageName = mImList.get(i).getImPackage();
+                button.setTag(packageName);
+                String inputMethodName = mImList.get(i).getImLabel();
+                if (packageName.contains("com.google.android.inputmethod.latin")){
+                    inputMethodName = inputMethodName + " " + getString(R.string.setup_inputmethod_multilingual);
+                } else if (packageName.contains("com.iflytek.inputmethod")) {
+                    inputMethodName = inputMethodName + " " + getString(R.string.setup_inputmethod_chinese);
+                }
+                button.setText(inputMethodName);
                 mImGroup.addView(button);
                 if (mImList.get(i).getImPackage().equals(mDefaultIM)) {
                     mImGroup.check(mImGroup.getChildAt(i).getId());
