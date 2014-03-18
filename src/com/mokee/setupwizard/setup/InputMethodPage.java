@@ -25,7 +25,6 @@ import android.content.ContentResolver;
 import android.content.Context;
 import android.os.Bundle;
 import android.provider.Settings;
-import android.util.Log;
 import android.view.View;
 import android.view.ViewGroup.LayoutParams;
 import android.view.inputmethod.InputMethodInfo;
@@ -94,9 +93,9 @@ public class InputMethodPage extends Page {
             mImList = new ArrayList<InputMethodItem>();
 
             int total = (infoList == null ? 0 : infoList.size());
-            int length = total - 1;
+            int defindex = 0;
             if (total != 0) {
-                for (int i = length; i >= 0; i--) {
+                for (int i = 0; i < total; i++) {
                     InputMethodItem inputMethodItem = new InputMethodItem(mContext, infoList.get(i));
                     mImList.add(inputMethodItem);
                     RadioButton button = new RadioButton(mContext);
@@ -107,14 +106,14 @@ public class InputMethodPage extends Page {
                         inputMethodName = inputMethodName + " " + getString(R.string.setup_inputmethod_multilingual);
                     } else if (packageName.contains("com.iflytek.inputmethod")) {
                         inputMethodName = inputMethodName + " " + getString(R.string.setup_inputmethod_chinese);
+                        mDefaultIM = "com.iflytek.inputmethod";
+                        defindex = i;
                     }
                     button.setText(inputMethodName);
                     mImGroup.addView(button);
-                    if (i == length) {
-                        mImGroup.check(button.getId());
-                    }
                 }
                 mImGroup.setOnCheckedChangeListener(mInputMethodChangedListener);
+                mImGroup.check(mImGroup.getChildAt(defindex).getId());
             } else {
                 TextView tvInfo = (TextView) mRootView.findViewById(R.id.input_method_summary);
                 tvInfo.setText(getResources().getString(R.string.setup_inputmethod_none));
@@ -153,5 +152,4 @@ public class InputMethodPage extends Page {
             return R.string.setup_inputmethod;
         }
     }
-
 }
