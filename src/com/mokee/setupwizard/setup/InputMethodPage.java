@@ -25,6 +25,7 @@ import android.content.ContentResolver;
 import android.content.Context;
 import android.os.Bundle;
 import android.provider.Settings;
+import android.util.Log;
 import android.view.View;
 import android.view.ViewGroup.LayoutParams;
 import android.view.inputmethod.InputMethodInfo;
@@ -69,7 +70,6 @@ public class InputMethodPage extends Page {
         private List<InputMethodItem> mImList;
         private List<InputMethodInfo> infoList;
 
-        private ListView mListView;
         private RadioGroup mImGroup;
 
         private String mEnabledIM;
@@ -93,40 +93,33 @@ public class InputMethodPage extends Page {
                     Settings.Secure.DEFAULT_INPUT_METHOD);
             mImList = new ArrayList<InputMethodItem>();
 
-            int count = (infoList == null ? 0 : infoList.size());
-
-            if (count == 0) {
-                mListView.setVisibility(View.GONE);
-                TextView tvInfo = new TextView(mContext);
-                LayoutParams params = new
-                        LayoutParams(LayoutParams.WRAP_CONTENT, LayoutParams.WRAP_CONTENT);
-                tvInfo.setText(getResources().getString(R.string.setup_inputmethod_none));
-                tvInfo.setLayoutParams(params);
-                tvInfo.setTextAppearance(mContext,
-                        R.style.InputMethodSummary);
+            int total = (infoList == null ? 0 : infoList.size());
+            int length = total - 1;
+            if (total != 0) {
+                for (int i = length; i >= 0; i--) {
+                    InputMethodItem inputMethodItem = new InputMethodItem(mContext, infoList.get(i));
+                    mImList.add(inputMethodItem);
+                    RadioButton button = new RadioButton(mContext);
+                    String packageName = inputMethodItem.getImPackage();
+                    button.setTag(packageName);
+                    String inputMethodName = inputMethodItem.getImLabel();
+                    if (packageName.contains("com.google.android.inputmethod.latin")){
+                        inputMethodName = inputMethodName + " " + getString(R.string.setup_inputmethod_multilingual);
+                    } else if (packageName.contains("com.iflytek.inputmethod")) {
+                        inputMethodName = inputMethodName + " " + getString(R.string.setup_inputmethod_chinese);
+                    }
+                    button.setText(inputMethodName);
+                    mImGroup.addView(button);
+                    if (i == length) {
+                        mImGroup.check(button.getId());
+                    }
+                }
+                mImGroup.setOnCheckedChangeListener(mInputMethodChangedListener);
             } else {
-                for (int i = 0; i < count; ++i) {
-                    mImList.add(new InputMethodItem(mContext, infoList.get(i)));
-                }
+                TextView tvInfo = (TextView) mRootView.findViewById(R.id.input_method_summary);
+                tvInfo.setText(getResources().getString(R.string.setup_inputmethod_none));
+                tvInfo.setTextAppearance(mContext, R.style.InputMethodSummary);
             }
-            for (int i = 0; i < count; i++) {
-                RadioButton button = new RadioButton(mContext);
-                String packageName = mImList.get(i).getImPackage();
-                button.setTag(packageName);
-                String inputMethodName = mImList.get(i).getImLabel();
-                if (packageName.contains("com.google.android.inputmethod.latin")){
-                    inputMethodName = inputMethodName + " " + getString(R.string.setup_inputmethod_multilingual);
-                } else if (packageName.contains("com.iflytek.inputmethod")) {
-                    inputMethodName = inputMethodName + " " + getString(R.string.setup_inputmethod_chinese);
-                }
-                button.setText(inputMethodName);
-                mImGroup.addView(button);
-                if (mImList.get(i).getImPackage().equals(mDefaultIM)) {
-                    mImGroup.check(mImGroup.getChildAt(i).getId());
-                }
-            }
-
-            mImGroup.setOnCheckedChangeListener(mInputMethodChangedListener);
         }
 
         @Override
@@ -154,7 +147,7 @@ public class InputMethodPage extends Page {
         protected int getLayoutResource() {
             return R.layout.setup_inputmethod_page;
         }
-		
+
         @Override
         protected int getTitleResource() {
             return R.string.setup_inputmethod;
