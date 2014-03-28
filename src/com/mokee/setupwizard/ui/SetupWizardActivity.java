@@ -214,14 +214,6 @@ public class SetupWizardActivity extends Activity implements SetupDataCallbacks 
                 mPagerAdapter.notifyDataSetChanged();
             }
         }
-        if (page.getId() == R.string.setup_google_account) {
-            // Only auto show the google account setup once.
-            boolean shown = mSharedPreferences.getBoolean(KEY_G_ACCOUNT_SHOWN, false);
-            if (!shown) {
-                mSharedPreferences.edit().putBoolean(KEY_G_ACCOUNT_SHOWN, true).commit();
-                launchGoogleAccountSetup();
-            }
-        }
         updateNextPreviousState();
     }
 
