@@ -16,15 +16,12 @@
 
 package com.mokee.setupwizard.ui;
 
+import android.content.res.ThemeManager;
 import android.accounts.*;
 import com.mokee.setupwizard.MKSetupWizard;
 import com.mokee.setupwizard.R;
 import com.mokee.setupwizard.gcm.GCMUtil;
-import com.mokee.setupwizard.setup.AbstractSetupData;
-import com.mokee.setupwizard.setup.MKSetupWizardData;
-import com.mokee.setupwizard.setup.Page;
-import com.mokee.setupwizard.setup.PageList;
-import com.mokee.setupwizard.setup.SetupDataCallbacks;
+import com.mokee.setupwizard.setup.*;
 import com.mokee.setupwizard.util.MKAccountUtils;
 import com.mokee.setupwizard.util.EnableAccessibilityController;
 
@@ -282,6 +279,11 @@ public class SetupWizardActivity extends Activity implements SetupDataCallbacks 
             removeSetupPage(page, false);
             pagesRemoved = true;
         }
+        page = mPageList.findPage(R.string.setup_personalization);
+        if (page != null && PersonalizationPage.skipPage(this)) {
+            removeSetupPage(page, false);
+            pagesRemoved = true;
+        }
         if (pagesRemoved) {
             onPageTreeChanged();
         }
@@ -326,6 +328,7 @@ public class SetupWizardActivity extends Activity implements SetupDataCallbacks 
 
     private void finishSetup() {
         if (mSetupComplete) return;
+        handleDefaultThemeSetup();
         mSetupComplete = true;
         Settings.Global.putInt(getContentResolver(), Settings.Global.DEVICE_PROVISIONED, 1);
         Settings.Secure.putInt(getContentResolver(), Settings.Secure.USER_SETUP_COMPLETE, 1);
@@ -341,6 +344,19 @@ public class SetupWizardActivity extends Activity implements SetupDataCallbacks 
 
     private boolean accountExists(String accountType) {
         return AccountManager.get(this).getAccountsByType(accountType).length > 0;
+    }
+
+    private void handleDefaultThemeSetup() {
+        Page page = getPage(R.string.setup_personalization);
+        if (page == null) {
+            return;
+        }
+        Bundle privacyData = page.getData();
+        if (privacyData != null && privacyData.getBoolean("apply_default_theme")) {
+            Log.d(TAG, "Applying default theme");
+            ThemeManager tm = (ThemeManager) this.getSystemService(Context.THEME_SERVICE);
+            tm.applyDefaultTheme();
+        }
     }
 
     private class MKPagerAdapter extends FragmentStatePagerAdapter {
