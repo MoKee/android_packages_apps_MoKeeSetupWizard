@@ -14,8 +14,8 @@
      WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
      See the License for the specific language governing permissions and
      limitations under the License.
- -->
-
+-->
+<resources xmlns:xliff="urn:oasis:names:tc:xliff:document:1.2">
 <resources>
   <string name="next">Ďalšie</string>
   <string name="continue_label">Pokračovať</string>
@@ -27,8 +27,8 @@
   <string name="login">Prihlásiť sa</string>
   <string name="ok">OK</string>
   <string name="or">alebo</string>
-  <string name="existing">Prihlásiť sa k existujúcemu účtu</string>
-  <string name="new_account">Vytvoriť nový účet</string>
+  <string name="existing">Existujúci</string>
+  <string name="new_account">Nový</string>
   <string name="skip_anyway">Preskočiť</string>
   <string name="dont_skip">Nepreskakovať</string>
   <string name="setup_complete">Nastavenie je dokončené</string>

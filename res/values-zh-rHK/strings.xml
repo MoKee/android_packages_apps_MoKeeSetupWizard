@@ -15,8 +15,37 @@
      See the License for the specific language governing permissions and
      limitations under the License.
 -->
-<resources>
+<resources xmlns:xliff="urn:oasis:names:tc:xliff:document:1.2">
+  <string name="app_name">魔趣設置引導</string>
+  <string name="next">下一步</string>
+  <string name="continue_label">繼續</string>
+  <string name="prev">上一步</string>
+  <string name="skip">略過</string>
+  <string name="finish">完成</string>
+  <string name="cancel">取消</string>
+  <string name="create">建立</string>
+  <string name="login">登入</string>
+  <string name="ok">確定</string>
+  <string name="or">或</string>
+  <string name="skip_anyway">無論如何跳過</string>
+  <string name="dont_skip">不要略過</string>
+  <string name="setup_complete">設定已完成</string>
+  <string name="setup_complete_summary" product="tablet">恭喜！你的平板電腦已設置完畢。</string>
+  <string name="setup_complete_summary" product="default">恭喜！你的手機已設置完畢。</string>
+  <string name="setup_welcome">歡迎使用 MoKee OpenSource</string>
+  <string name="setup_welcome_summary" product="tablet">要開始設定你的平板電腦之前，請選擇你的語言然後繼續。</string>
+  <string name="setup_welcome_summary" product="default">要開始設定你的電話之前，請選擇你的語言然後繼續。</string>
+  <string name="setup_sim_missing">請插入 SIM 卡</string>
   <string name="setup_google_account">Google 帳戶</string>
+  <string name="setup_location">地理位置設定</string>
+  <string name="setup_datetime">日期與時間設定</string>
+  <string name="setup_current_date">目前日期</string>
+  <string name="setup_current_time">目前時間</string>
+  <string name="setup_msg_no_network">警告：你將無法設定你的帳戶</string>
+  <string name="setup_warning_skip_wifi" product="tablet">警告：你可能需支付額外的數據傳輸費用。\n\n平板電腦設定程序可能需要佔用大量網路流量。</string>
+  <string name="setup_warning_skip_wifi" product="default">警告：你可能需支付額外的數據傳輸費用。\n\n電話設定程序可能需要佔用大量網路流量。</string>
+  <string name="sim_missing_summary" product="tablet">你需要參考平板電腦附帶的 SIM 卡說明。</string>
+  <string name="sim_missing_summary" product="default">你需要參考電話附帶的 SIM 卡說明。</string>
   <string name="google_account_summary">你想建立一個 Google 帳戶？</string>
   <string name="btn_google_account">建立 Google 帳戶</string>
   <string name="location_gps">GPS 衛星</string>

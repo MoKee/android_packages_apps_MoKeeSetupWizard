@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
 <!--
-     Copyright (C) 2013 The MoKee OpenSource Project
+     Copyright (C) 2013-2014 The MoKee OpenSource Project
 
      Licensed under the Apache License, Version 2.0 (the "License");
      you may not use this file except in compliance with the License.
@@ -27,9 +27,9 @@
     <string name="create">Create</string>
     <string name="login">Login</string>
     <string name="ok">OK</string>
-    <string name="or">OR</string>
-    <string name="existing">Log in to existing account</string>
-    <string name="new_account">Create a new account</string>
+    <string name="or">or</string>
+    <string name="existing">Existing</string>
+    <string name="new_account">New</string>
     <string name="skip_anyway">Skip anyway</string>
     <string name="dont_skip">Don\'t skip</string>
 

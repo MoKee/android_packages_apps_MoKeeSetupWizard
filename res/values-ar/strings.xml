@@ -15,7 +15,7 @@
      See the License for the specific language governing permissions and
      limitations under the License.
 -->
-<resources>
+<resources xmlns:xliff="urn:oasis:names:tc:xliff:document:1.2">
   <string name="next">القادم</string>
   <string name="continue_label">متابعة</string>
   <string name="prev">سابق</string>
@@ -26,8 +26,8 @@
   <string name="login">تسجيل الدخول</string>
   <string name="ok">موافق</string>
   <string name="or">أو</string>
-  <string name="existing">تسجيل الدخول إلى حساب موجود</string>
-  <string name="new_account">إنشاء حساب جديد</string>
+  <string name="existing">القائمة</string>
+  <string name="new_account">جديد</string>
   <string name="skip_anyway">تخطي على أي حال</string>
   <string name="dont_skip">لا تتخطي</string>
   <string name="setup_complete">اكتمال الإعداد</string>

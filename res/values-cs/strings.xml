@@ -14,8 +14,8 @@
      WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
      See the License for the specific language governing permissions and
      limitations under the License.
- -->
-<resources>
+-->
+<resources xmlns:xliff="urn:oasis:names:tc:xliff:document:1.2">
   <string name="next">Další</string>
   <string name="continue_label">Pokračovat</string>
   <string name="prev">Předchozí</string>
@@ -26,11 +26,10 @@
   <string name="login">Přihlásit</string>
   <string name="ok">OK</string>
   <string name="or">nebo</string>
-  <string name="existing">Přihlásit se k existujícímu účtu</string>
-  <string name="new_account">Vytvořit nový účet</string>
+  <string name="existing">Existující</string>
+  <string name="new_account">Nový</string>
   <string name="skip_anyway">Přeskočit</string>
   <string name="dont_skip">Nepřeskakovat</string>
-
   <string name="setup_complete">Nastavení dokončeno</string>
   <string name="setup_complete_summary" product="tablet">Gratulujeme, Váš tablet je připraven.</string>
   <string name="setup_complete_summary" product="default">Gratulujeme, Váš telefon je připraven.</string>
