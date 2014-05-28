@@ -74,6 +74,7 @@ public class SetupWizardActivity extends Activity implements SetupDataCallbacks 
     private final Handler mHandler = new Handler();
 
     private SharedPreferences mSharedPreferences;
+    private boolean mSetupComplete = false;
 
     public void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
@@ -325,6 +326,8 @@ public class SetupWizardActivity extends Activity implements SetupDataCallbacks 
     }
 
     private void finishSetup() {
+        if (mSetupComplete) return;
+        mSetupComplete = true;
         Settings.Global.putInt(getContentResolver(), Settings.Global.DEVICE_PROVISIONED, 1);
         Settings.Secure.putInt(getContentResolver(), Settings.Secure.USER_SETUP_COMPLETE, 1);
         UserManager.get(this).setUserName(UserHandle.myUserId(), getString(com.android.internal.R.string.owner_name));
