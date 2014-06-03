@@ -44,10 +44,14 @@
   <string name="setup_msg_no_network">UYARI: Hesaplarınızı ayarlayamayacaksınız</string>
   <string name="setup_warning_skip_wifi" product="tablet">UYARI: Ekstra operatör veri ücreti alınabilir.\n\nTablet kurulumu önemli ölçüde ağ trafiği gerektirir.</string>
   <string name="setup_warning_skip_wifi" product="default">UYARI: Ekstra operatör veri ücreti alınabilir.\n\nTelefon kurulumu önemli ölçüde ağ trafiği gerektirir.</string>
+  <string name="setup_personalization">Kişiselleştir</string>
+  <string name="setup_finalizing">Kurulum tamamlanıyor\u2026</string>
   <string name="sim_missing_summary" product="tablet">Tabletinizle gelen SIM kart talimatlarına başvurmanız gerekmekte.</string>
   <string name="sim_missing_summary" product="default">Telefonunuzla gelen SIM kart talimatlarına başvurmanız gerekmekte.</string>
   <string name="google_account_summary">Google hesabınızı ayarlamak istiyor musunuz?</string>
   <string name="btn_google_account">Google hesabımı ayarla</string>
+  <string name="apply_default_theme_title">MoKee OpenSource teması kullan</string>
+  <string name="use_nav_keys">Ekran-üstü tuşları kullan</string>
   <string name="location_access_title">Konumuma erişim</string>
   <string name="location_access_summary">Konumunuza erişim izni isteyen uygulamalara izin ver</string>
   <string name="location_sources_heading">Konum kaynakları</string>

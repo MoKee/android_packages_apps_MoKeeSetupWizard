@@ -44,10 +44,14 @@
   <string name="setup_msg_no_network">AVISO: No podrás configurar tus cuentas</string>
   <string name="setup_warning_skip_wifi" product="tablet">AVISO: Es posible que se facturen cargos de datos adicionales.\n\nLa configuración del tablet puede requerir una gran cantidad de actividad de red.</string>
   <string name="setup_warning_skip_wifi" product="default">AVISO: Es posible que se facturen cargos de datos adicionales.\n\nLa configuración del teléfono puede requerir una gran cantidad de actividad de red.</string>
+  <string name="setup_personalization">Personalizar</string>
+  <string name="setup_finalizing">Finalizando configuración\u2026</string>
   <string name="sim_missing_summary" product="tablet">Consulta las instrucciones de la tarjeta SIM que se incluyen con tu tablet.</string>
   <string name="sim_missing_summary" product="default">Consulta las instrucciones de la tarjeta SIM que se incluyen con tu teléfono.</string>
   <string name="google_account_summary">¿Quieres configurar una cuenta de Google?</string>
   <string name="btn_google_account">Configurar cuenta de Google</string>
+  <string name="apply_default_theme_title">Usar tema MoKee OpenSource</string>
+  <string name="use_nav_keys">Usar teclas en pantalla</string>
   <string name="location_access_title">Acceso a tu ubicación</string>
   <string name="location_access_summary">Permitir que las aplicaciones que han pedido permiso usen la información sobre tu ubicación</string>
   <string name="location_sources_heading">Fuentes de ubicación</string>

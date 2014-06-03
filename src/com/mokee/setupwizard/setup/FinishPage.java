@@ -18,6 +18,7 @@ package com.mokee.setupwizard.setup;
 
 import com.mokee.setupwizard.R;
 import com.mokee.setupwizard.ui.SetupPageFragment;
+import com.mokee.setupwizard.ui.SetupWizardActivity;
 
 import android.app.Fragment;
 import android.content.Context;

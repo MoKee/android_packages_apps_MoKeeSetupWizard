@@ -16,10 +16,10 @@
 
 package com.mokee.setupwizard.ui;
 
+import android.accounts.*;
 import android.content.pm.ThemeUtils;
 import android.content.res.ThemeManager;
 import android.content.res.ThemeManager.ThemeChangeListener;
-import android.accounts.*;
 import com.mokee.setupwizard.MKSetupWizard;
 import com.mokee.setupwizard.R;
 import com.mokee.setupwizard.gcm.GCMUtil;
@@ -47,6 +47,7 @@ import android.os.UserManager;
 import android.provider.Settings;
 import android.support.v13.app.FragmentStatePagerAdapter;
 import android.support.v4.view.ViewPager;
+import android.util.Log;
 import android.view.MotionEvent;
 import android.view.View;
 import android.widget.Button;
@@ -350,8 +351,9 @@ public class SetupWizardActivity extends Activity implements SetupDataCallbacks,
 
     private void finishSetup() {
         if (mSetupComplete) return;
-        boolean applyingDefaultTheme = handleDefaultThemeSetup();
         mSetupComplete = true;
+        boolean applyingDefaultTheme = handleDefaultThemeSetup();
+
         Settings.Global.putInt(getContentResolver(), Settings.Global.DEVICE_PROVISIONED, 1);
         Settings.Secure.putInt(getContentResolver(), Settings.Secure.USER_SETUP_COMPLETE, 1);
         UserManager.get(this).setUserName(UserHandle.myUserId(), getString(com.android.internal.R.string.owner_name));

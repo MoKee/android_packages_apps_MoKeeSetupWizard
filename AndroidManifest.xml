@@ -42,6 +42,8 @@
     <uses-permission android:name="android.permission.CHANGE_COMPONENT_ENABLED_STATE" />
     <uses-permission android:name="android.permission.ACCESS_THEME_MANAGER"/>
 
+    <uses-sdk android:minSdkVersion="15" android:targetSdkVersion="17" />
+
     <application android:label="@string/app_name"
         android:icon="@drawable/icon"
         android:theme="@style/Theme.MoKeeSetupWizard"

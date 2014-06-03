@@ -44,10 +44,14 @@
   <string name="setup_msg_no_network">ΠΡΟΣΟΧΗ: Δεν θα είστε σε θέση να ρυθμίστετε τους λογαριασμούς σας</string>
   <string name="setup_warning_skip_wifi" product="tablet">ΠΡΟΣΟΧΗ: Ενδέχεται να υπάρξουν επιπλέον χρεώσεις δεδομένων από τον πάροχό σας.\n\nΗ ρύθμιση του tablet μπορεί να απαιτήσει μεγάλη δραστηριότητα δικτύου.</string>
   <string name="setup_warning_skip_wifi" product="default">ΠΡΟΣΟΧΗ: Ενδέχεται να υπάρξουν επιπλέον χρεώσεις δεδομένων από τον πάροχό σας.\n\nΗ ρύθμιση του τηλεφώνου μπορεί να απαιτήσει μεγάλη δραστηριότητα δικτύου.</string>
+  <string name="setup_personalization">Εξατομίκευση</string>
+  <string name="setup_finalizing">Οριστικοποίηση εγκατάστασης\u2026</string>
   <string name="sim_missing_summary" product="tablet">Θα πρέπει να ανατρέξετε στις οδηγίες της κάρτας SIM που συνοδεύει το tablet σας.</string>
   <string name="sim_missing_summary" product="default">Θα πρέπει να ανατρέξετε στις οδηγίες της κάρτας SIM που συνοδεύει το τηλέφωνό σας.</string>
   <string name="google_account_summary">Θέλετε να ρυθμίσετε έναν λογαριασμό Google;</string>
   <string name="btn_google_account">Ρύθμιση λογαριασμού Google</string>
+  <string name="apply_default_theme_title">Χρήση θέματος του MoKee OpenSource</string>
+  <string name="use_nav_keys">Χρήση πλήκτρων που εμφανίζονται στην οθόνη</string>
   <string name="location_access_title">Πρόσβαση στην τοποθεσία μου</string>
   <string name="location_access_summary">Να επιτρέπεται σε εφαρμογές που έχουν ζητήσει την άδειά σας να χρησιμοποιούν τις πληροφορίες της τοποθεσίας σας</string>
   <string name="location_sources_heading">Πηγές τοποθεσίας</string>

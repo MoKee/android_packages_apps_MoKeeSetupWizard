@@ -44,10 +44,14 @@
   <string name="setup_msg_no_network">PERINGATAN: Anda tidak akan dapat mengkonfigurasi akun anda</string>
   <string name="setup_warning_skip_wifi" product="tablet">PERINGATAN: Anda mungkin dikenakan tambahan biaya data oleh operator.\n\nSetup tablet memerlukan aktivitas jaringan yang signifikan.</string>
   <string name="setup_warning_skip_wifi" product="default">PERINGATAN: Anda mungkin dikenakan tambahan biaya data oleh operator.\n\nSetup telepon memerlukan aktivitas jaringan yang signifikan.</string>
+  <string name="setup_personalization">Personalisasi</string>
+  <string name="setup_finalizing">Menyelesaikan pengaturan\u2026</string>
   <string name="sim_missing_summary" product="tablet">Anda perlu merujuk ke petunjuk kartu SIM yang datang dengan tablet anda.</string>
   <string name="sim_missing_summary" product="default">Anda perlu merujuk ke petunjuk kartu SIM yang datang dengan telepon anda.</string>
   <string name="google_account_summary">Apakah anda ingin membuat akun Google?</string>
   <string name="btn_google_account">Setup akun Google</string>
+  <string name="apply_default_theme_title">Gunakan tema MoKee OpenSource</string>
+  <string name="use_nav_keys">Gunakan tombol layar</string>
   <string name="location_access_title">Akses ke lokasi saya</string>
   <string name="location_access_summary">Perbolehkan aplikasi yang telah meminta izin anda untuk menggunakan informasi lokasi anda</string>
   <string name="location_sources_heading">Sumber lokasi</string>

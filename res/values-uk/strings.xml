@@ -44,12 +44,13 @@
   <string name="setup_msg_no_network">УВАГА: Ви не зможете налаштувати свої обл. записи</string>
   <string name="setup_warning_skip_wifi" product="tablet">УВАГА: Ви можете понести додаткові витрати.\n\nНалаштування планшету може потребувати значну мережеву активність.</string>
   <string name="setup_warning_skip_wifi" product="default">УВАГА: Ви можете понести додаткові витрати.\n\nНалаштування телефону може потребувати значну мережеву активність.</string>
-  <string name="setup_privacy">Конфіденційність</string>
   <string name="setup_personalization">Персоналізація</string>
   <string name="sim_missing_summary" product="tablet">Зверніться до інструкції по встановленні SIM-карти для вашого планшета.</string>
   <string name="sim_missing_summary" product="default">Зверніться до інструкції по встановленні SIM-карти для вашого телефону.</string>
   <string name="google_account_summary">Бажаєте налаштувати обліковий запис Google?</string>
   <string name="btn_google_account">Налаштуйте обліковий запис Google</string>
+  <string name="apply_default_theme_title">Використовувати тему MoKee OpenSource</string>
+  <string name="use_nav_keys">Використовувати екрані кнопки</string>
   <string name="location_access_title">Доступ до мого місцезнаходження</string>
   <string name="location_access_summary">Надавати програмам дані місцезнаходження, якщо вони про це попросили</string>
   <string name="location_sources_heading">Джерела місцезнаходження</string>

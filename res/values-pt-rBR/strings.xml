@@ -44,10 +44,14 @@
   <string name="setup_msg_no_network">Aviso: Você não poderá configurar suas contas</string>
   <string name="setup_warning_skip_wifi" product="tablet">AVISO: Você pode ser cobrado pela sua operadora.\n\nConfiguração do tablet pode precisar de uma quantidade significativa de atividade de rede.</string>
   <string name="setup_warning_skip_wifi" product="default">AVISO: Você pode ser cobrado pela sua operadora.\n\nConfiguração do telefone pode precisar de uma quantidade significativa de atividade de rede.</string>
+  <string name="setup_personalization">Personalize</string>
+  <string name="setup_finalizing">Finalizando configuração\u2026</string>
   <string name="sim_missing_summary" product="tablet">Você precisa consultar as instruções do cartão SIM que veio com seu tablet.</string>
   <string name="sim_missing_summary" product="default">Você precisa consultar as instruções do cartão SIM que veio com seu telefone.</string>
   <string name="google_account_summary">Você quer configurar uma conta Google?</string>
   <string name="btn_google_account">Configurar conta Google</string>
+  <string name="apply_default_theme_title">Usar o tema do MoKee OpenSource</string>
+  <string name="use_nav_keys">Usar teclas na tela</string>
   <string name="location_access_title">Acesso à minha localização</string>
   <string name="location_access_summary">Permitir aplicativos que pediram sua permissão, usar suas informações de localização</string>
   <string name="location_sources_heading">Fontes de localização</string>

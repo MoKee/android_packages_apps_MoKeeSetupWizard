@@ -45,12 +45,13 @@
   <string name="setup_msg_no_network">คำเตือน:  คุณไม่สามารถตั้งค่าบัญชีของคุณได้</string>
   <string name="setup_warning_skip_wifi" product="tablet">คำเตือน: การกระทำนี้อาจมีค่าใช้จ่าย\n\n\nการตั้งค่าแท็บเล็ตต้องการทำกิจกรรมบนอินเตอร์เน็ต</string>
   <string name="setup_warning_skip_wifi" product="default">คำเตือน: การกระทำนี้อาจมีค่าใช้จ่าย\n\n\nการตั้งค่าโทรศัพท์มือถือต้องการทำกิจกรรมบนอินเตอร์เน็ต</string>
-  <string name="setup_privacy">การตั้งค่าความเป็นส่วนตัว</string>
   <string name="setup_personalization">ตั้งค่าส่วนบุคคล</string>
   <string name="sim_missing_summary" product="tablet">คุณจำเป็นต้องดูที่คำแนะนำซิมการ์ดที่มาพร้อมกับแท็บเล็ต</string>
   <string name="sim_missing_summary" product="default">คุณจำเป็นต้องดูที่คำแนะนำซิมการ์ดที่มาพร้อมกับมือถือ</string>
   <string name="google_account_summary">คุณต้องการตั้งค่า บัญชี Google ไหม?</string>
   <string name="btn_google_account">ตั้งค่าบัญชี Google</string>
+  <string name="apply_default_theme_title">ใช้ชุดรูปแบบของ MoKee OpenSource</string>
+  <string name="use_nav_keys">ใช้ปุ่มบนหน้าจอ</string>
   <string name="location_access_title">เข้าถึงตำแหน่งของฉัน</string>
   <string name="location_access_summary">อนุญาตให้แอปถามการอนุญาตของฉันเมื่อต้องการเข้าถึงที่อยู่ของฉัน</string>
   <string name="location_sources_heading">แหล่งข้อมูลตำแหน่ง</string>

@@ -29,8 +29,8 @@
   <string name="skip_anyway">無論如何跳過</string>
   <string name="dont_skip">不要略過</string>
   <string name="setup_complete">設定已完成</string>
-  <string name="setup_complete_summary" product="tablet">恭喜！你的平板電腦已設置完畢。</string>
-  <string name="setup_complete_summary" product="default">恭喜！你的手機已設置完畢。</string>
+  <string name="setup_complete_summary" product="tablet">恭喜！你的平板電腦已設定完畢。</string>
+  <string name="setup_complete_summary" product="default">恭喜！你的手機已設定完畢。</string>
   <string name="setup_welcome">歡迎使用 MoKee OpenSource</string>
   <string name="setup_welcome_summary" product="tablet">要開始設定你的平板電腦之前，請選擇你的語言然後繼續。</string>
   <string name="setup_welcome_summary" product="default">要開始設定你的電話之前，請選擇你的語言然後繼續。</string>
@@ -41,18 +41,22 @@
   <string name="setup_current_date">目前日期</string>
   <string name="setup_current_time">目前時間</string>
   <string name="setup_msg_no_network">警告：你將無法設定你的帳戶</string>
-  <string name="setup_warning_skip_wifi" product="tablet">警告：你可能需支付額外的數據傳輸費用。\n\n平板電腦設定程序可能需要佔用大量網路流量。</string>
-  <string name="setup_warning_skip_wifi" product="default">警告：你可能需支付額外的數據傳輸費用。\n\n電話設定程序可能需要佔用大量網路流量。</string>
+  <string name="setup_warning_skip_wifi" product="tablet">警告：你可能需支付額外的數據傳輸費用。\n\n平板電腦設定程式可能需要佔用大量網絡流量。</string>
+  <string name="setup_warning_skip_wifi" product="default">警告：你可能需支付額外的數據傳輸費用。\n\n電話設定程式可能需要佔用大量網絡流量。</string>
+  <string name="setup_personalization">個人化</string>
+  <string name="setup_finalizing">正在最終確定設定\u2026</string>
   <string name="sim_missing_summary" product="tablet">你需要參考平板電腦附帶的 SIM 卡說明。</string>
   <string name="sim_missing_summary" product="default">你需要參考電話附帶的 SIM 卡說明。</string>
   <string name="google_account_summary">你想建立一個 Google 帳戶？</string>
   <string name="btn_google_account">建立 Google 帳戶</string>
+  <string name="apply_default_theme_title">使用 MoKee OpenSource 的主題</string>
+  <string name="use_nav_keys">使用螢幕上的按鈕</string>
   <string name="location_access_title">存取我的位置</string>
   <string name="location_access_summary">允許獲得您許可的應用程式使用您的位置資訊</string>
   <string name="location_sources_heading">位置資訊來源</string>
   <string name="location_gps">GPS 衛星</string>
   <string name="location_street_level" product="tablet">允許應用程式使用平板電腦的 GPS 指出您的精確位置</string>
   <string name="location_street_level" product="default">允許應用程式使用電話的 GPS 指出您的精確位置</string>
-  <string name="location_network_based">Wi-Fi 與流動網路位置</string>
+  <string name="location_network_based">Wi-Fi 與流動網絡位置</string>
   <string name="location_neighborhood_level">允許應用程式使用 Google 的定位服務來加速估算你的位置。匿名位置數據將被收集並傳送至 Google。</string>
 </resources>

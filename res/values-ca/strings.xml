@@ -42,10 +42,14 @@
   <string name="setup_msg_no_network">ALERTA: No podràs configurar els teus comptes</string>
   <string name="setup_warning_skip_wifi" product="tablet">ALERTA: Podrien haver-hi càrrecs de dades adicionals per part de l\'operadora.\n\nLa configuració de la tauleta necessita una activitat de xarxa considerable.</string>
   <string name="setup_warning_skip_wifi" product="default">ALERTA: Podrien haver-hi càrrecs de dades adicionals per part de l\'operadora.\n\nLa configuració del telèfon necessita una activitat de xarxa considerable.</string>
+  <string name="setup_personalization">Personalitza</string>
+  <string name="setup_finalizing">Acabant la configuració\u2026</string>
   <string name="sim_missing_summary" product="tablet">Necessites consultar les instruccions de la targeta SIM que venien amb la teva tauleta.</string>
   <string name="sim_missing_summary" product="default">Necessites consultar les instruccions de la targeta SIM que venien amb el teu telèfon.</string>
   <string name="google_account_summary">Vols configurar un compte Google?</string>
   <string name="btn_google_account">Configura un compte Google</string>
+  <string name="apply_default_theme_title">Utilitza el tema de MoKee OpenSource</string>
+  <string name="use_nav_keys">Utilitza tecles en pantalla</string>
   <string name="location_access_title">Accedeix a la meva ubicació</string>
   <string name="location_access_summary">Permet apps que t\'han demanat permís per utilitzar la teva informació d\'ubicació</string>
   <string name="location_sources_heading">Origens d\'ubicacions</string>
