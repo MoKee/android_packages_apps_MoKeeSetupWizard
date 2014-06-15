@@ -34,7 +34,7 @@
   <string name="setup_complete_summary" product="default">پیرۆزه‌ ! مۆبایله‌که‌ت ئاماده‌یه‌ بۆ ده‌نگدانه‌وه‌.</string>
   <string name="setup_welcome">به‌خێربێیت بۆ سیسته‌می MoKee OpenSource</string>
   <string name="setup_welcome_summary" product="tablet">بۆ ده‌ستپێکردنی دامه‌زراندنی تابلێته‌که‌ت، زمانێک هه‌ڵبژێره‌ و به‌رده‌وامبه‌.</string>
-  <string name="setup_welcome_summary" product="default">بۆ ده‌ستپێکردنی دامه‌زر
+  <string name="setup_welcome_summary" product="default">بۆ ده‌ستپێکردنی دامه‌زراندنی مۆبایله‌که‌ت، زمانێک هه‌ڵبژێره‌ و به‌رده‌وامبه‌.</string>
   <string name="setup_sim_missing">سیمکاردێکی تێبکه‌</string>
   <string name="setup_google_account">ئه‌کاونتی گۆگڵ</string>
   <string name="setup_location">ڕێكخستنی شوێن</string>
