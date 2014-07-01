@@ -61,4 +61,6 @@
   <string name="location_street_level" product="default">Pozwól aplikacjom korzystać z GPS na twoim telefonie do ustalania twojej lokalizacji</string>
   <string name="location_network_based">Lokalizacja przez Wi-Fi \u0026 sieć komórkową</string>
   <string name="location_neighborhood_level">Pozwól aplikacjom na korzystanie z usługi lokalizacji Google w celu przyśpieszenia ustalania położenia. Anonimowe dane będą zbierane i wysyłane do Google.</string>
+  <string name="update_icon_pack_available">Dostępna jest aktualizacja zestawu ikon</string>
+  <string name="apply_icon_pack">Zastosuj</string>
 </resources>

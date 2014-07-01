@@ -61,4 +61,6 @@
   <string name="location_street_level" product="default">Tillat apper å bruke GPS på telefonen for å finne den eksakte posisjonen din</string>
   <string name="location_network_based">Wi-Fi- og mobilnettverksposisjon</string>
   <string name="location_neighborhood_level">Tillat at apper bruker posisjonstjenesten fra Google til å finne posisjonen din raskere. Anonym posisjonsdata blir samlet inn og sendt til Google.</string>
+  <string name="update_icon_pack_available">En oppdatert ikon pakke er tilgjengelig</string>
+  <string name="apply_icon_pack">Bruk</string>
 </resources>

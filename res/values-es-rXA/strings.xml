@@ -61,4 +61,6 @@
   <string name="location_street_level" product="default">Permitir que les aplicaciones usen el GPS del teléfonu pa determinar la to llocalización</string>
   <string name="location_network_based">Llocalización por rede móvil y Wi-Fi</string>
   <string name="location_neighborhood_level">Permitir que les aplicaciones usen el serviciu de llocalización de Google pa calcular la to llocalización más rápido. Van atropase datos de llocalización anónimos y van unviase a Google.</string>
+  <string name="update_icon_pack_available">Hai disponible un paquete d\'iconos anováu</string>
+  <string name="apply_icon_pack">Aplicar</string>
 </resources>

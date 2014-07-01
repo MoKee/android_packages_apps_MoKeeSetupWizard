@@ -61,4 +61,6 @@
   <string name="location_street_level" product="default">Tillad, at apps bruger GPS på din telefon til at udpege din placering</string>
   <string name="location_network_based">Placering af Wi-Fi- og mobilnet</string>
   <string name="location_neighborhood_level">Tillad, at apps bruger Googles placeringstjeneste til at beregne din placering hurtigere. Der indsamles anonyme placeringsdata, som sendes til Google.</string>
+  <string name="update_icon_pack_available">En opdateret ikon-pakke er tilgængelig</string>
+  <string name="apply_icon_pack">Anvend</string>
 </resources>
