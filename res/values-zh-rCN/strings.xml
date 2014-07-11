@@ -16,7 +16,6 @@
      limitations under the License.
 -->
 <resources xmlns:xliff="urn:oasis:names:tc:xliff:document:1.2">
-  <string name="app_name">魔趣设置向导</string>
   <string name="next">下一步</string>
   <string name="continue_label">继续</string>
   <string name="prev">上一步</string>
