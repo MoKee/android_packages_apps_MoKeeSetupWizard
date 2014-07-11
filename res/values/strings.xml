@@ -15,7 +15,7 @@
      limitations under the License.
 -->
 <resources xmlns:xliff="urn:oasis:names:tc:xliff:document:1.2">
-    <string name="app_name">MoKee SetupWizard</string>
+    <string name="application_name">MoKee SetupWizard</string>
     <string name="product_name" translatable="false">Mokee OpenSource</string>
 
     <string name="next">Next</string>
