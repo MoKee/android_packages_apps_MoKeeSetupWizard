@@ -54,7 +54,6 @@
   <string name="use_nav_keys">Utilitza tecles en pantalla</string>
   <string name="location_access_title">Accedeix a la meva ubicació</string>
   <string name="location_access_summary">Permet apps que t\'han demanat permís per utilitzar la teva informació d\'ubicació</string>
-  <string name="location_sources_heading">Origens d\'ubicacions</string>
   <string name="location_gps">Satèlits GPS</string>
   <string name="location_street_level" product="tablet">Permet a les apps utilitzar el GPS de la tauleta per fixar la teva ubicació</string>
   <string name="location_street_level" product="default">Permet a les apps utilitzar el GPS del telèfon per fixar la teva ubicació</string>
