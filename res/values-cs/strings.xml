@@ -24,7 +24,6 @@
   <string name="cancel">Zrušit</string>
   <string name="create">Vytvořit</string>
   <string name="login">Přihlásit</string>
-  <string name="ok">OK</string>
   <string name="existing">Existující</string>
   <string name="new_account">Nový</string>
   <string name="skip_anyway">Přeskočit</string>
@@ -50,7 +49,6 @@
   <string name="sim_missing_summary" product="default">Přečtěte si prosím instrukce ohledně SIM karty doručené s vaším telefonem.</string>
   <string name="google_account_summary">Chcete provést nastavení účtu Google?</string>
   <string name="btn_google_account">Nastavit účet Google</string>
-
   <string name="apply_default_theme_title">Použít motiv MoKee OpenSource</string>
   <string name="use_nav_keys">Použít tlačítka na obrazovce</string>
   <string name="location_access_title">Přístup k mé poloze</string>

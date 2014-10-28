@@ -23,8 +23,6 @@
   <string name="finish">Fine</string>
   <string name="cancel">Annulla</string>
   <string name="create">Crea</string>
-  <string name="login">Login</string>
-  <string name="ok">OK</string>
   <string name="existing">Esistente</string>
   <string name="new_account">Nuovo</string>
   <string name="skip_anyway">Salta comunque</string>

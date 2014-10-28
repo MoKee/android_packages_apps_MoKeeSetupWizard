@@ -23,8 +23,6 @@
   <string name="finish">Afslut</string>
   <string name="cancel">Annuller</string>
   <string name="create">Opret</string>
-  <string name="login">Login</string>
-  <string name="ok">OK</string>
   <string name="existing">Eksisterende</string>
   <string name="new_account">Ny</string>
   <string name="skip_anyway">Ignorér alligevel</string>
