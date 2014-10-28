@@ -16,6 +16,7 @@
      limitations under the License.
 -->
 <resources xmlns:xliff="urn:oasis:names:tc:xliff:document:1.2">
+  <string name="application_name">Помічник установки MoKee</string>
   <string name="next">Далі</string>
   <string name="continue_label">Продовжити</string>
   <string name="prev">Назад</string>
@@ -41,6 +42,11 @@
   <string name="setup_datetime">Налаштування дати &amp; часу</string>
   <string name="setup_current_date">Поточна дата</string>
   <string name="setup_current_time">Поточний час</string>
+  <string name="setup_inputmethod">Налаштування методу вводу</string>
+  <string name="setup_inputmethod_summary">Виберіть бажаний метод вводу</string>
+  <string name="setup_inputmethod_none">Немає встановлених методів вводу!</string>
+  <string name="setup_inputmethod_chinese">(Лише китайською)</string>
+  <string name="setup_inputmethod_multilingual">(Багатомовний без китайської)</string>
   <string name="setup_msg_no_network">УВАГА: Ви не зможете налаштувати свої обл. записи</string>
   <string name="setup_warning_skip_wifi" product="tablet">УВАГА: Ви можете понести додаткові витрати.\n\nНалаштування планшету може потребувати значну мережеву активність.</string>
   <string name="setup_warning_skip_wifi" product="default">УВАГА: Ви можете понести додаткові витрати.\n\nНалаштування телефону може потребувати значну мережеву активність.</string>
