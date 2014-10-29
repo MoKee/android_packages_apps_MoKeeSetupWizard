@@ -16,6 +16,7 @@
      limitations under the License.
 -->
 <resources xmlns:xliff="urn:oasis:names:tc:xliff:document:1.2">
+  <string name="application_name">Asistente de configuración Mokee</string>
   <string name="next">Siguiente</string>
   <string name="continue_label">Continuar</string>
   <string name="prev">Anterior</string>
@@ -41,6 +42,11 @@
   <string name="setup_datetime">Ajustes de fecha y hora</string>
   <string name="setup_current_date">Fecha actual</string>
   <string name="setup_current_time">Hora actual</string>
+  <string name="setup_inputmethod">Configuración de método de entrada</string>
+  <string name="setup_inputmethod_summary">Seleccione el método de entrada que usted prefiere</string>
+  <string name="setup_inputmethod_none">No IME instalado!</string>
+  <string name="setup_inputmethod_chinese">(Sólo en chino)</string>
+  <string name="setup_inputmethod_multilingual">(Multilingüe sin chino)</string>
   <string name="setup_msg_no_network">AVISO: No podrás configurar tus cuentas</string>
   <string name="setup_warning_skip_wifi" product="tablet">AVISO: Es posible que se facturen cargos de datos adicionales.\n\nLa configuración del tablet puede requerir una gran cantidad de actividad de red.</string>
   <string name="setup_warning_skip_wifi" product="default">AVISO: Es posible que se facturen cargos de datos adicionales.\n\nLa configuración del teléfono puede requerir una gran cantidad de actividad de red.</string>

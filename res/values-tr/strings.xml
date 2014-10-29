@@ -16,6 +16,7 @@
      limitations under the License.
 -->
 <resources xmlns:xliff="urn:oasis:names:tc:xliff:document:1.2">
+  <string name="application_name">MoKee Kurulum Sihirbazı</string>
   <string name="next">Sonraki</string>
   <string name="continue_label">Devam</string>
   <string name="prev">Geri</string>
@@ -41,6 +42,11 @@
   <string name="setup_datetime">Tarih ve saat ayarları</string>
   <string name="setup_current_date">Şimdiki tarih</string>
   <string name="setup_current_time">Şimdiki saat</string>
+  <string name="setup_inputmethod">Giriş yöntemi ayarları</string>
+  <string name="setup_inputmethod_summary">Tercih ettiğiniz giriş yöntemini seçin</string>
+  <string name="setup_inputmethod_none">Herhangi IME yüklü değil!</string>
+  <string name="setup_inputmethod_chinese">(Yalnızca Çince)</string>
+  <string name="setup_inputmethod_multilingual">(Çince dışında Çok Dilli)</string>
   <string name="setup_msg_no_network">UYARI: Hesaplarınızı ayarlayamayacaksınız</string>
   <string name="setup_warning_skip_wifi" product="tablet">UYARI: Ekstra operatör veri ücreti alınabilir.\n\nTablet kurulumu önemli ölçüde ağ trafiği gerektirir.</string>
   <string name="setup_warning_skip_wifi" product="default">UYARI: Ekstra operatör veri ücreti alınabilir.\n\nTelefon kurulumu önemli ölçüde ağ trafiği gerektirir.</string>

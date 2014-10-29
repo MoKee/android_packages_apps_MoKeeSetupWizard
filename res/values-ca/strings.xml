@@ -16,6 +16,7 @@
      limitations under the License.
 -->
 <resources xmlns:xliff="urn:oasis:names:tc:xliff:document:1.2">
+  <string name="application_name">Assistent de configuració Mokee</string>
   <string name="next">Següent</string>
   <string name="continue_label">Continua</string>
   <string name="prev">Anterior</string>
@@ -41,6 +42,11 @@
   <string name="setup_datetime">Configuració de data i hora</string>
   <string name="setup_current_date">Data actual</string>
   <string name="setup_current_time">Hora actual</string>
+  <string name="setup_inputmethod">Configuració del mètode d\'entrada</string>
+  <string name="setup_inputmethod_summary">Seleccionar el mètode d\'entrada que prefereixi</string>
+  <string name="setup_inputmethod_none">Cap IME instal·lat!</string>
+  <string name="setup_inputmethod_chinese">(Xinès només)</string>
+  <string name="setup_inputmethod_multilingual">(Multilingüe sense xinès)</string>
   <string name="setup_msg_no_network">ALERTA: No podràs configurar els teus comptes</string>
   <string name="setup_warning_skip_wifi" product="tablet">ALERTA: Podrien haver-hi càrrecs de dades adicionals per part de l\'operadora.\n\nLa configuració de la tauleta necessita una activitat de xarxa considerable.</string>
   <string name="setup_warning_skip_wifi" product="default">ALERTA: Podrien haver-hi càrrecs de dades adicionals per part de l\'operadora.\n\nLa configuració del telèfon necessita una activitat de xarxa considerable.</string>
