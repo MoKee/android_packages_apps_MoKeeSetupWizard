@@ -16,6 +16,7 @@
      limitations under the License.
 -->
 <resources xmlns:xliff="urn:oasis:names:tc:xliff:document:1.2">
+  <string name="application_name">MoKee мастер установки</string>
   <string name="next">Далее</string>
   <string name="continue_label">Продолжить</string>
   <string name="prev">Назад</string>
@@ -41,6 +42,11 @@
   <string name="setup_datetime">Дата и время</string>
   <string name="setup_current_date">Текущая дата</string>
   <string name="setup_current_time">Текущее время</string>
+  <string name="setup_inputmethod">Настройки метода ввода</string>
+  <string name="setup_inputmethod_summary">Выберите метод ввода, который вы предпочитаете</string>
+  <string name="setup_inputmethod_none">IME не установлен!</string>
+  <string name="setup_inputmethod_chinese">(Только для Китайцев)</string>
+  <string name="setup_inputmethod_multilingual">(Многоязычный без китайского)</string>
   <string name="setup_msg_no_network">ВНИМАНИЕ: настройка учётных записей будет невозможна</string>
   <string name="setup_warning_skip_wifi" product="tablet">ВНИМАНИЕ: возможны нежелательные расходы при использовании мобильного интернета.\n\nНастройка планшета может потребовать значительной сетевой активности.</string>
   <string name="setup_warning_skip_wifi" product="default">ВНИМАНИЕ: возможны нежелательные расходы при использовании мобильного интернета.\n\nНастройка телефона может потребовать значительной сетевой активности.</string>
