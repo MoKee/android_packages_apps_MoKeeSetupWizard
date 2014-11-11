@@ -38,10 +38,11 @@
   <string name="setup_welcome_summary" product="default">要開始設定你的電話之前，請選擇你的語言然後繼續。</string>
   <string name="setup_sim_missing">請插入 SIM 卡</string>
   <string name="setup_google_account">Google 帳戶</string>
-  <string name="setup_location">地理位置設定</string>
+  <string name="setup_location">位置設定</string>
   <string name="setup_datetime">日期與時間設定</string>
   <string name="setup_current_date">目前日期</string>
   <string name="setup_current_time">目前時間</string>
+  <string name="setup_inputmethod">輸入法設定</string>
   <string name="setup_msg_no_network">警告：你將無法設定你的帳戶</string>
   <string name="setup_warning_skip_wifi" product="tablet">警告：你可能需支付額外的數據傳輸費用。\n\n平板電腦設定程式可能需要佔用大量網絡流量。</string>
   <string name="setup_warning_skip_wifi" product="default">警告：你可能需支付額外的數據傳輸費用。\n\n電話設定程式可能需要佔用大量網絡流量。</string>
