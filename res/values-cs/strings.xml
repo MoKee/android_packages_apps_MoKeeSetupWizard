@@ -16,6 +16,7 @@
      limitations under the License.
 -->
 <resources xmlns:xliff="urn:oasis:names:tc:xliff:document:1.2">
+  <string name="application_name">MoKee průvodce nastavením</string>
   <string name="next">Další</string>
   <string name="continue_label">Pokračovat</string>
   <string name="prev">Předchozí</string>
@@ -24,6 +25,7 @@
   <string name="cancel">Zrušit</string>
   <string name="create">Vytvořit</string>
   <string name="login">Přihlásit</string>
+  <string name="ok">OK</string>
   <string name="existing">Existující</string>
   <string name="new_account">Nový</string>
   <string name="skip_anyway">Přeskočit</string>
@@ -40,6 +42,11 @@
   <string name="setup_datetime">Nastavení data a času</string>
   <string name="setup_current_date">Aktuální datum</string>
   <string name="setup_current_time">Aktuální čas</string>
+  <string name="setup_inputmethod">Nastavení metody zadávaní</string>
+  <string name="setup_inputmethod_summary">Zvolte upřednostňovanou metodu zadávání</string>
+  <string name="setup_inputmethod_none">Nenainstalována žádná IME!</string>
+  <string name="setup_inputmethod_chinese">(Pouze čínština)</string>
+  <string name="setup_inputmethod_multilingual">(Vícejazyčná bez čínštiny)</string>
   <string name="setup_msg_no_network">UPOZORNĚNÍ: Nebude možné nastavit účet</string>
   <string name="setup_warning_skip_wifi" product="tablet">UPOZORNĚNÍ: Toto nastavení může způsobit zvýšené poplatky za datové přenosy.\n\nNastavení tabletu může vyžadovat zvýšený datový přenos.</string>
   <string name="setup_warning_skip_wifi" product="default">UPOZORNĚNÍ: Toto nastavení může způsobit zvýšené poplatky za datové přenosy.\n\nNastavení telefonu může vyžadovat zvýšený datový přenos.</string>
