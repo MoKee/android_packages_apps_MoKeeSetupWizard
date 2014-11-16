@@ -16,6 +16,7 @@
      limitations under the License.
 -->
 <resources xmlns:xliff="urn:oasis:names:tc:xliff:document:1.2">
+  <string name="application_name">Assistant de configuration MoKee</string>
   <string name="next">Suivant</string>
   <string name="continue_label">Continuer</string>
   <string name="prev">Précédent</string>
@@ -24,6 +25,7 @@
   <string name="cancel">Annuler</string>
   <string name="create">Créer</string>
   <string name="login">S\'identifier</string>
+  <string name="ok">OK</string>
   <string name="existing">Existant</string>
   <string name="new_account">Nouveau</string>
   <string name="skip_anyway">Toujours ignorer</string>
@@ -40,6 +42,11 @@
   <string name="setup_datetime">Définir la date et l\'heure</string>
   <string name="setup_current_date">Date :</string>
   <string name="setup_current_time">Heure :</string>
+  <string name="setup_inputmethod">Paramètres de méthode d\'entrée</string>
+  <string name="setup_inputmethod_summary">Sélectionner la méthode de saisie que vous préférez</string>
+  <string name="setup_inputmethod_none">Aucun IME installé !</string>
+  <string name="setup_inputmethod_chinese">(Chinois seulement)</string>
+  <string name="setup_inputmethod_multilingual">(Multilingue sans chinois)</string>
   <string name="setup_msg_no_network">ATTENTION\u00A0: Vous ne serez pas en mesure de configurer votre compte</string>
   <string name="setup_warning_skip_wifi" product="tablet">ATTENTION: Vous pouvez encourir des frais de données supplémentaires.\n\n La configuration de votre tablette peut exiger une activité importante du réseau.</string>
   <string name="setup_warning_skip_wifi" product="default">ATTENTION: Vous pouvez encourir des frais de données supplémentaires.\n\n La configuration de votre téléphone peut exiger une activité importante du réseau.</string>
