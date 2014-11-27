@@ -16,31 +16,37 @@
      limitations under the License.
 -->
 <resources xmlns:xliff="urn:oasis:names:tc:xliff:document:1.2">
-  <string name="next">القادم</string>
+  <string name="application_name">معالج تثبيت موكي</string>
+  <string name="next">التالي</string>
   <string name="continue_label">متابعة</string>
   <string name="prev">سابق</string>
   <string name="skip">تخطي</string>
-  <string name="finish">انهاء</string>
+  <string name="finish">إنتهى</string>
   <string name="cancel">إلغاء</string>
   <string name="create">إنشاء</string>
   <string name="login">تسجيل الدخول</string>
-  <string name="ok">موافق</string>
-  <string name="existing">القائمة</string>
+  <string name="ok">تم</string>
+  <string name="existing">موجود</string>
   <string name="new_account">جديد</string>
   <string name="skip_anyway">تخطي على أي حال</string>
-  <string name="dont_skip">لا تتخطي</string>
+  <string name="dont_skip">عدم التخطي</string>
   <string name="setup_complete">اكتمال الإعداد</string>
-  <string name="setup_complete_summary" product="tablet">تهانينا! الكمبيوتر اللوحي الخاص بك على استعداد رر.</string>
-  <string name="setup_complete_summary" product="default">تهانينا! الهاتف الخاص بك على استعداد رر.</string>
-  <string name="setup_welcome">مرحبا بك في MoKee OpenSource</string>
-  <string name="setup_welcome_summary" product="tablet">للشروع في إعداد الكمبيوتر اللوحي الخاص بك، حدد اللغة الخاصة بك وأستمر.</string>
-  <string name="setup_welcome_summary" product="default">للشروع في إعداد الهاتف الخاص بك، حدد اللغة الخاصة بك وأستمر.</string>
+  <string name="setup_complete_summary" product="tablet">تهانينا! الجهاو اللوحي الخاص بك جاهز للعمل.</string>
+  <string name="setup_complete_summary" product="default">تهانينا! الهاتف الخاص بك جاهز للعمل.</string>
+  <string name="setup_welcome">مرحبا بك في مشروع موكي مفتوح المصدر</string>
+  <string name="setup_welcome_summary" product="tablet">للشروع في إعداد الجهاز اللوحي الخاص بك، حدد اللغة الخاصة بك واستمر.</string>
+  <string name="setup_welcome_summary" product="default">للشروع في إعداد هاتفك، حدد اللغة الخاصة بك واستمر.</string>
   <string name="setup_sim_missing">إدراج بطاقة SIM</string>
-  <string name="setup_google_account">حساب Google</string>
+  <string name="setup_google_account">حساب جوجل</string>
   <string name="setup_location">إعدادات الموقع</string>
-  <string name="setup_datetime">إعدادات التاريخ &amp;الوقت</string>
+  <string name="setup_datetime">إعدادات التاريخ &amp; الوقت</string>
   <string name="setup_current_date">التاريخ الحالي</string>
   <string name="setup_current_time">الوقت الحالي</string>
+  <string name="setup_inputmethod">إعدادات طريقة الإدخال</string>
+  <string name="setup_inputmethod_summary">اختر طريقة الإدخال التي تفضلها</string>
+  <string name="setup_inputmethod_none">لم يتم تثبيت أي IME!</string>
+  <string name="setup_inputmethod_chinese">(الصينية فقط)</string>
+  <string name="setup_inputmethod_multilingual">(لغات متعددة بدون الصينية)</string>
   <string name="setup_msg_no_network">تحذير: أنت لن تكون قادرة على إعداد الحسابات الخاصة بك</string>
   <string name="setup_warning_skip_wifi" product="tablet">تحذير: قد تحمل البيانات الناقل إضافي يمكن أن تتطلب الإعداد شحن.\n\nTablet نشاط شبكة كبيرة.</string>
   <string name="setup_warning_skip_wifi" product="default">تحذير: قد تحمل البيانات الناقل إضافي يمكن أن تتطلب الإعداد شحن.\n\nTablet نشاط شبكة كبيرة.</string>
