@@ -16,6 +16,7 @@
      limitations under the License.
 -->
 <resources xmlns:xliff="urn:oasis:names:tc:xliff:document:1.2">
+  <string name="application_name">Οδηγός εγκατάστασης MoKee</string>
   <string name="next">Επόμενο</string>
   <string name="continue_label">Συνέχεια</string>
   <string name="prev">Προηγούμενο</string>
@@ -41,6 +42,11 @@
   <string name="setup_datetime">Ρυθμίσεις ημερομηνίας &amp; ώρας</string>
   <string name="setup_current_date">Τρέχουσα ημερομηνία</string>
   <string name="setup_current_time">Τρέχουσα ώρα</string>
+  <string name="setup_inputmethod">Ρυθμίσεις μεθόδου εισαγωγής</string>
+  <string name="setup_inputmethod_summary">Επιλέξτε τη μέθοδο εισαγωγής που προτιμάτε</string>
+  <string name="setup_inputmethod_none">Δεν υπάρχει εγκατεστημένο IME!</string>
+  <string name="setup_inputmethod_chinese">(Κινέζικα μόνο)</string>
+  <string name="setup_inputmethod_multilingual">(Πολυγλωσσικό χωρίς κινέζικα)</string>
   <string name="setup_msg_no_network">ΠΡΟΣΟΧΗ: Δεν θα είστε σε θέση να ρυθμίστετε τους λογαριασμούς σας</string>
   <string name="setup_warning_skip_wifi" product="tablet">ΠΡΟΣΟΧΗ: Ενδέχεται να υπάρξουν επιπλέον χρεώσεις δεδομένων από τον πάροχό σας.\n\nΗ ρύθμιση του tablet μπορεί να απαιτήσει μεγάλη δραστηριότητα δικτύου.</string>
   <string name="setup_warning_skip_wifi" product="default">ΠΡΟΣΟΧΗ: Ενδέχεται να υπάρξουν επιπλέον χρεώσεις δεδομένων από τον πάροχό σας.\n\nΗ ρύθμιση του τηλεφώνου μπορεί να απαιτήσει μεγάλη δραστηριότητα δικτύου.</string>
