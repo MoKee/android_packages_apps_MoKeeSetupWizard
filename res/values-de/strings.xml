@@ -40,6 +40,8 @@
   <string name="setup_datetime">Datum &amp; Uhrzeit</string>
   <string name="setup_current_date">Aktuelles Datum</string>
   <string name="setup_current_time">Aktuelle Uhrzeit</string>
+  <string name="setup_inputmethod">Eingabemethoden Einstellungen</string>
+  <string name="setup_inputmethod_summary">Wählen sie die Eingabemethode, die Sie bevorzugen</string>
   <string name="setup_msg_no_network">WARNUNG: Sie werden nicht imstande sein, Ihr Konto erfolgreich einzurichten</string>
   <string name="setup_warning_skip_wifi" product="tablet">WARNUNG: Die Kontoeinrichtung kann beträchtliche Netzaktivität mit sich bringen, wodurch Kosten bei Ihrem Mobilnetzbetreiber entstehen können.</string>
   <string name="setup_warning_skip_wifi" product="default">WARNUNG: Die Kontoeinrichtung kann beträchtliche Netzaktivität mit sich bringen, wodurch Kosten bei Ihrem Mobilnetzbetreiber entstehen können.</string>
