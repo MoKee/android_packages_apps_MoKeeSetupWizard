@@ -16,6 +16,7 @@
      limitations under the License.
 -->
 <resources xmlns:xliff="urn:oasis:names:tc:xliff:document:1.2">
+  <string name="application_name">MoKee Telepítő Varázsló</string>
   <string name="next">Következő</string>
   <string name="continue_label">Folytatás</string>
   <string name="prev">Előző</string>
@@ -41,6 +42,11 @@
   <string name="setup_datetime">Dátum &amp; Idő beállítások</string>
   <string name="setup_current_date">Aktuális dátum</string>
   <string name="setup_current_time">Aktuális idő</string>
+  <string name="setup_inputmethod">Beviteli módszer beállításai</string>
+  <string name="setup_inputmethod_summary">Kérjük, válassz beviteli módszert</string>
+  <string name="setup_inputmethod_none">Nincs szövegbeviteli eszköz telepítve!</string>
+  <string name="setup_inputmethod_chinese">(Csak kínai)</string>
+  <string name="setup_inputmethod_multilingual">(Többnyelvű kínai nélkül)</string>
   <string name="setup_msg_no_network">FIGYELEM: Nem fogja tudni beállítani a fiókokat</string>
   <string name="setup_warning_skip_wifi" product="tablet">FIGYELEM: Lehet, hogy jelentős összeget számítanak fel érte!\n\nA táblagép beállítása nagyobb hálózati forgalmat igényel.</string>
   <string name="setup_warning_skip_wifi" product="default">FIGYELEM: Lehet, hogy jelentős összeget számítanak fel érte!\n\nA telefon beállítása nagyobb hálózati forgalmat igényel.</string>
