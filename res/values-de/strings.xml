@@ -16,6 +16,7 @@
      limitations under the License.
 -->
 <resources xmlns:xliff="urn:oasis:names:tc:xliff:document:1.2">
+  <string name="application_name">MoKee SetupWizard</string>
   <string name="next">Weiter</string>
   <string name="continue_label">Fortsetzen</string>
   <string name="prev">Zurück</string>
@@ -24,6 +25,7 @@
   <string name="cancel">Abbrechen</string>
   <string name="create">Erstellen</string>
   <string name="login">Anmelden</string>
+  <string name="ok">Okay</string>
   <string name="existing">Bestehendes</string>
   <string name="new_account">Neu</string>
   <string name="skip_anyway">Trotzdem überspringen</string>
@@ -42,6 +44,9 @@
   <string name="setup_current_time">Aktuelle Uhrzeit</string>
   <string name="setup_inputmethod">Eingabemethoden Einstellungen</string>
   <string name="setup_inputmethod_summary">Wählen sie die Eingabemethode, die Sie bevorzugen</string>
+  <string name="setup_inputmethod_none">Keine Eingabemethode installiert!</string>
+  <string name="setup_inputmethod_chinese">(Nur Chinesisch)</string>
+  <string name="setup_inputmethod_multilingual">(Mehrsprachig ohne Chinesisch)</string>
   <string name="setup_msg_no_network">WARNUNG: Sie werden nicht imstande sein, Ihr Konto erfolgreich einzurichten</string>
   <string name="setup_warning_skip_wifi" product="tablet">WARNUNG: Die Kontoeinrichtung kann beträchtliche Netzaktivität mit sich bringen, wodurch Kosten bei Ihrem Mobilnetzbetreiber entstehen können.</string>
   <string name="setup_warning_skip_wifi" product="default">WARNUNG: Die Kontoeinrichtung kann beträchtliche Netzaktivität mit sich bringen, wodurch Kosten bei Ihrem Mobilnetzbetreiber entstehen können.</string>
