@@ -16,6 +16,7 @@
      limitations under the License.
 -->
 <resources xmlns:xliff="urn:oasis:names:tc:xliff:document:1.2">
+  <string name="application_name">Konfigurator MoKee</string>
   <string name="next">Dalej</string>
   <string name="continue_label">Kontynuuj</string>
   <string name="prev">Wstecz</string>
@@ -24,6 +25,7 @@
   <string name="cancel">Anuluj</string>
   <string name="create">Utwórz</string>
   <string name="login">Zaloguj</string>
+  <string name="ok">OK</string>
   <string name="existing">Istniejące</string>
   <string name="new_account">Nowe</string>
   <string name="skip_anyway">Pomiń mimo to</string>
@@ -40,6 +42,12 @@
   <string name="setup_datetime">Ustawienia daty \u0026 czasu</string>
   <string name="setup_current_date">Aktualna data</string>
   <string name="setup_current_time">Aktualna godzina</string>
+  <string name="setup_inputmethod">Ustawienia metody wprowadzania tekstu
+</string>
+  <string name="setup_inputmethod_summary">Wybierz odpowiednią dla siebie motodę </string>
+  <string name="setup_inputmethod_none">Brak zainstalowanego IME!</string>
+  <string name="setup_inputmethod_chinese">(Tylko chiński)</string>
+  <string name="setup_inputmethod_multilingual">(Wielojęzyczne bez chińskiego)</string>
   <string name="setup_msg_no_network">OSTRZEŻENIE: Nie będziesz mógł skonfigurować swoich kont</string>
   <string name="setup_warning_skip_wifi" product="tablet">OSTRZEŻENIE: Operator może naliczyć dodatkowe opłaty za internet.\n\nKonfiguracja tabletu może wymagać przesłania dużych ilości danych.</string>
   <string name="setup_warning_skip_wifi" product="default">OSTRZEŻENIE: Operator może naliczyć dodatkowe opłaty za internet.\n\nKonfiguracja telefonu może wymagać przesłania dużych ilości danych.</string>
