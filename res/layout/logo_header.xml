@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
 <!--
-     Copyright (C) 2015 The CyanogenMod Project
+     Copyright (C) 2015 The MoKee OpenSource Project
 
      Licensed under the Apache License, Version 2.0 (the "License");
      you may not use this file except in compliance with the License.
@@ -24,22 +24,13 @@
         android:id="@+id/brand_logo"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:src="@drawable/brand"
-        android:paddingLeft="@dimen/header_logo_margin_left"
-        android:paddingBottom="@dimen/header_logo_margin_bottom"
-        android:layout_above="@+id/powered_by_logo"/>
-
-    <ImageView
-        android:id="@+id/powered_by_logo"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:src="@drawable/powered_by"
-        android:visibility="gone"
-        android:paddingLeft="@dimen/header_logo_margin_left"
-        android:paddingBottom="@dimen/header_logo_margin_bottom"
-        android:layout_above="@android:id/title"/>
+        android:layout_above="@+id/page_title"
+        android:layout_centerInParent="true"
+        android:layout_marginBottom="@dimen/header_logo_margin_bottom"
+        android:src="@drawable/brand" />
 
     <TextView
+        android:id="@+id/page_title"
         android:layout_width="match_parent"
         android:layout_height="@dimen/page_title_height"
         style="@style/PageTitle" />

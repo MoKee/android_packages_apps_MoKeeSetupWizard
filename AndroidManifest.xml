@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
 <!--
-     Copyright (C) 2013 The CyanogenMod Project
+     Copyright (C) 2015 The MoKee OpenSource Project
 
      Licensed under the Apache License, Version 2.0 (the "License");
      you may not use this file except in compliance with the License.
@@ -15,11 +15,9 @@
      limitations under the License.
 -->
 <manifest xmlns:android="http://schemas.android.com/apk/res/android"
-        package="com.cyanogenmod.setupwizard"
+        package="com.mokee.setupwizard"
         android:versionCode="3"
         android:sharedUserId="android.uid.system">
-
-    <original-package android:name="com.cyanogenmod.account" />
 
     <uses-permission android:name="android.permission.CHANGE_CONFIGURATION" />
     <uses-permission android:name="android.permission.STATUS_BAR" />
@@ -51,14 +49,14 @@
         android:protectionLevel="signatureOrSystem" />
 
     <permission
-        android:name="cyanogenmod.permission.FINISH_SETUP"
+        android:name="mokee.permission.FINISH_SETUP"
         android:protectionLevel="signatureOrSystem" />
 
     <permission android:name="org.whispersystems.whisperpush.permissions.REGISTER"
                 android:protectionLevel="signature" />
 
-    <protected-broadcast android:name="com.cyanogenmod.setupwizard.SETUP_FINISHED"
-        android:permission="cyanogenmod.permission.FINISH_SETUP"/>
+    <protected-broadcast android:name="com.mokee.setupwizard.SETUP_FINISHED"
+        android:permission="mokee.permission.FINISH_SETUP"/>
 
     <uses-sdk android:minSdkVersion="21" android:targetSdkVersion="21" />
 
@@ -67,7 +65,7 @@
         android:theme="@style/Theme.Setup"
         android:name=".SetupWizardApp">
 
-        <uses-library android:name="org.cyanogenmod.hardware" android:required="false" />
+        <uses-library android:name="org.mokee.hardware" android:required="false" />
 
         <meta-data android:name="com.google.android.gms.version"
             android:value="@integer/google_play_services_version" />
