@@ -29,10 +29,10 @@
         android:src="@drawable/brand"
         android:layout_centerInParent="true"
         android:layout_above="@+id/page_title"
-        android:paddingBottom="@dimen/header_logo_margin_bottom_land" />
+        android:paddingBottom="@dimen/header_logo_margin_bottom" />
 
     <TextView
-        android:id="@+id/page_title"
+        android:id="@+android:id/title"
         android:layout_width="match_parent"
         android:layout_height="@dimen/page_title_height"
         style="@style/PageTitle" />

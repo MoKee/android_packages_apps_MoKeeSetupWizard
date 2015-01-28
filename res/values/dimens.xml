@@ -19,8 +19,7 @@
     <dimen name="header_height">220dp</dimen>
     <dimen name="page_title_height">56dp</dimen>
     <dimen name="header_title_margin_left">26dp</dimen>
-    <dimen name="header_logo_margin_bottom">23dp</dimen>
-    <dimen name="header_logo_margin_bottom_land">53dp</dimen>
+    <dimen name="header_logo_margin_bottom">56dp</dimen>
     <dimen name="header_logo_margin_top">30dp</dimen>
     <dimen name="content_margin_top">26dp</dimen>
     <dimen name="content_margin_left">26dp</dimen>
