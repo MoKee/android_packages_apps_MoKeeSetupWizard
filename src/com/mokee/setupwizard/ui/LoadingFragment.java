@@ -14,7 +14,7 @@
  * limitations under the License.
  */
 
-package com.mokee.setupwizard.setup;
+package com.mokee.setupwizard.ui;
 
 import com.mokee.setupwizard.R;
 import com.mokee.setupwizard.ui.SetupPageFragment;

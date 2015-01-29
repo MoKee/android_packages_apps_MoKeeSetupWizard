@@ -25,6 +25,7 @@ import android.os.Bundle;
 
 import com.mokee.setupwizard.R;
 import com.mokee.setupwizard.SetupWizardApp;
+import com.mokee.setupwizard.ui.LoadingFragment;
 import com.mokee.setupwizard.util.SetupWizardUtils;
 
 public class WifiSetupPage extends SetupPage {
