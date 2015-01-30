@@ -16,7 +16,6 @@
 
 package com.mokee.setupwizard.setup;
 
-import com.mokee.setupwizard.util.SetupWizardUtils;
 import android.content.Context;
 import android.content.Intent;
 import android.content.IntentFilter;
@@ -29,7 +28,7 @@ import java.util.ArrayList;
 
 public class MKSetupWizardData extends AbstractSetupData {
 
-    private static final String TAG = CMSetupWizardData.class.getSimpleName();
+    private static final String TAG = MKSetupWizardData.class.getSimpleName();
 
     private final TelephonyManager mTelephonyManager;
 
