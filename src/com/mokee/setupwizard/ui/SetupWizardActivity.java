@@ -25,7 +25,6 @@ import android.content.res.Resources;
 import android.os.Bundle;
 import android.os.Handler;
 import android.provider.Settings;
-import android.util.Log;
 import android.view.MotionEvent;
 import android.view.View;
 import android.view.ViewAnimationUtils;
@@ -261,6 +260,7 @@ public class SetupWizardActivity extends Activity implements SetupDataCallbacks 
 
     private void finishSetup() {
         getApplication().sendBroadcast(new Intent(SetupWizardApp.ACTION_FINISHED));
+        mSetupData.finishPages();
         Settings.Global.putInt(getContentResolver(), Settings.Global.DEVICE_PROVISIONED, 1);
         Settings.Secure.putInt(getContentResolver(), Settings.Secure.USER_SETUP_COMPLETE, 1);
         ((SetupWizardApp)AppGlobals.getInitialApplication()).enableStatusBar();
