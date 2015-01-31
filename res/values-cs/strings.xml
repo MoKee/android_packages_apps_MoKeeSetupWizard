@@ -16,9 +16,43 @@
      limitations under the License.
 -->
 <resources xmlns:xliff="urn:oasis:names:tc:xliff:document:1.2">
+  <string name="app_name">Průvodce instalací</string>
   <string name="next">Další</string>
   <string name="continue_label">Pokračovat</string>
   <string name="skip">Přeskočit</string>
+  <string name="finish">Hotovo</string>
+  <string name="start">Začít</string>
   <string name="cancel">Zrušit</string>
+  <string name="create">Vytvořit</string>
+  <string name="login">Přihlásit se</string>
+  <string name="ok">OK</string>
+  <string name="existing">Existující</string>
+  <string name="new_account">Nový</string>
+  <string name="skip_anyway">Přeskočit</string>
+  <string name="dont_skip">Nepřeskakovat</string>
   <string name="setup_complete">Nastavení dokončeno</string>
+  <string name="setup_welcome">Vítejte</string>
+  <string name="setup_wifi">Vyberte Wifi</string>
+  <string name="setup_sim_missing">SIM karta chybí</string>
+  <string name="setup_gms_account">Google účet</string>
+  <string name="setup_choose_data_sim">Zvolte SIM pro data</string>
+  <string name="setup_location">Určení polohy</string>
+  <string name="setup_datetime">Datum &amp; čas</string>
+  <string name="setup_current_date">Aktuální datum</string>
+  <string name="setup_current_time">Aktuální čas</string>
+  <string name="sim_missing_summary">SIM karta nebyla rozpoznána v zařízení.  Chcete-li vložit SIM kartu, přečtěte si pokyny dodané se zařízením.</string>
+  <string name="choose_data_sim_summary">Kterou SIM chcete použít pro data? Za vybranou SIM můžou být účtovány poplatky, jakmile bude použita k nastavení zařízení.</string>
+  <string name="date_time_summary">Nastavte své časové pásmo, aktuální datum a čas, je-li je to potřeba</string>
+  <string name="location_services_summary">Určení polohy umožňuje Mapám a ostatním aplikacím sbírat a používat data jako je například přibližná poloha. Kupříkladu Mapy mohou použít přibližnou polohu k nalezení blízkých kaváren.</string>
+  <string name="location_access_summary"><b>Povolit aplikace, které požádaly o svolení</b>, aby mohly využívat informaci o poloze. To může zahrnovat vaši současnou i minulou polohu.</string>
+  <string name="location_gps"><b>Zlepšit přesnost polohy</b> tím, že dovolíte aplikacím používat GPS.</string>
+  <string name="location_network"><b>Používat Google určení polohy</b> na pomoc aplikacím určit vaší polohu. To znamená odesílání anonymních dat o poloze Google, i v případě, že žádná aplikace není spuštěna.</string>
+  <string name="setup_mobile_data">Zapnout mobilní data</string>
+  <string name="setup_mobile_data_no_service">Žádná síť</string>
+  <string name="setup_mobile_data_emergency_only">Pouze tísňová volání</string>
+  <string name="enable_mobile_data_summary">Chcete během instalace použít mobilní data? Zapnutí mobilních dat vás může něco stát.</string>
+  <string name="enable_mobile_off">Ne</string>
+  <string name="enable_mobile_on">Ano</string>
+  <string name="data_sim_name">SIM <xliff:g id="sub">%d</xliff:g> - <xliff:g id="name">%s</xliff:g></string>
+  <string name="emergency_call">Tísňové volání</string>
 </resources>
