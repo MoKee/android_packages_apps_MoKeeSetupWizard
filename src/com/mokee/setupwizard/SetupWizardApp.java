@@ -36,9 +36,12 @@ public class SetupWizardApp extends Application {
     public static final String EXTRA_ALLOW_SKIP = "allowSkip";
     public static final String EXTRA_AUTO_FINISH = "wifi_auto_finish_on_connect";
     public static final String EXTRA_USE_IMMERSIVE = "useImmersiveMode";
+    public static final String EXTRA_THEME = "theme";
+    public static final String EXTRA_MATERIAL_LIGHT = "material_light";
 
     public static final int REQUEST_CODE_SETUP_WIFI = 0;
     public static final int REQUEST_CODE_SETUP_GMS= 1;
+    public static final int REQUEST_CODE_RESTORE_GMS= 2;
 
     private StatusBarManager mStatusBarManager;
 
