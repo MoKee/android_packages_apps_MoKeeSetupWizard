@@ -127,6 +127,7 @@ public class OtherSettingsPage extends SetupPage {
             mBackupManager = IBackupManager.Stub.asInterface(
                     ServiceManager.getService(Context.BACKUP_SERVICE));
             getActivity().getWindow().setStatusBarColor(getResources().getColor(R.color.primary_dark));
+            getActivity().getWindow().setNavigationBarColor(getResources().getColor(R.color.primary_dark));
         }
 
         @Override

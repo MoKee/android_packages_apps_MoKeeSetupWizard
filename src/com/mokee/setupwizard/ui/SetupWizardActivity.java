@@ -87,7 +87,8 @@ public class SetupWizardActivity extends Activity implements SetupDataCallbacks 
             mSetupData.load(savedInstanceState.getBundle("data"));
         }
         if (EnableAccessibilityController.canEnableAccessibilityViaGesture(this)) {
-            mEnableAccessibilityController = new EnableAccessibilityController(this);
+            mEnableAccessibilityController =
+                    EnableAccessibilityController.getInstance(getApplicationContext());
             mRootView.setOnTouchListener(new View.OnTouchListener() {
                 @Override
                 public boolean onTouch(View v, MotionEvent event) {
@@ -118,9 +119,6 @@ public class SetupWizardActivity extends Activity implements SetupDataCallbacks 
     @Override
     protected void onDestroy() {
         super.onDestroy();
-        if (mEnableAccessibilityController != null) {
-            mEnableAccessibilityController.onDestroy();
-        }
         mSetupData.unregisterListener(this);
         unregisterReceiver(mSetupData);
     }
@@ -272,7 +270,10 @@ public class SetupWizardActivity extends Activity implements SetupDataCallbacks 
         Settings.Global.putInt(getContentResolver(), Settings.Global.DEVICE_PROVISIONED, 1);
         Settings.Secure.putInt(getContentResolver(), Settings.Secure.USER_SETUP_COMPLETE, 1);
         ((SetupWizardApp)AppGlobals.getInitialApplication()).enableStatusBar();
-        SetupWizardUtils.disableSetupWizards(this);
         finish();
+        if (mEnableAccessibilityController != null) {
+            mEnableAccessibilityController.onDestroy();
+        }
+        SetupWizardUtils.disableSetupWizards(this);
     }
 }
