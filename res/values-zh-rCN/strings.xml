@@ -30,6 +30,7 @@
   <string name="new_account">新的</string>
   <string name="skip_anyway">总是跳过</string>
   <string name="dont_skip">不要跳过</string>
+  <string name="loading">请稍等...</string>
   <string name="setup_complete">设置完成</string>
   <string name="setup_welcome">欢迎</string>
   <string name="setup_wifi">选择Wi-Fi</string>
@@ -51,8 +52,6 @@
   <string name="setup_mobile_data_no_service">无服务</string>
   <string name="setup_mobile_data_emergency_only">只能拨打紧急呼救电话</string>
   <string name="enable_mobile_data_summary">你想在安装过程中使用移动数据吗？您的数据运营商可能会收取费用</string>
-  <string name="enable_mobile_off">否</string>
-  <string name="enable_mobile_on">是的</string>
   <string name="data_sim_name">SIM <xliff:g id="sub">%d </xliff:g>-<xliff:g id="name">%s </xliff:g></string>
   <string name="emergency_call">紧急呼救</string>
 </resources>
