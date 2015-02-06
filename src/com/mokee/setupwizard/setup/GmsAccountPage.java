@@ -36,6 +36,7 @@ import android.provider.Settings;
 import com.mokee.setupwizard.R;
 import com.mokee.setupwizard.SetupWizardApp;
 import com.mokee.setupwizard.ui.LoadingFragment;
+import com.mokee.setupwizard.ui.SetupWizardActivity;
 import com.mokee.setupwizard.util.SetupWizardUtils;
 
 import java.io.IOException;
@@ -144,18 +145,25 @@ public class GmsAccountPage extends SetupPage {
     }
 
     private static void launchGmsRestorePage(final Activity activity) {
-        Intent intent = new Intent(ACTION_RESTORE);
-        intent.putExtra(SetupWizardApp.EXTRA_ALLOW_SKIP, true);
-        intent.putExtra(SetupWizardApp.EXTRA_USE_IMMERSIVE, true);
-        intent.putExtra(SetupWizardApp.EXTRA_FIRST_RUN, true);
-        intent.putExtra(SetupWizardApp.EXTRA_THEME, SetupWizardApp.EXTRA_MATERIAL_LIGHT);
-        ActivityOptions options =
-                ActivityOptions.makeCustomAnimation(activity,
-                        android.R.anim.fade_in,
-                        android.R.anim.fade_out);
-        activity.startActivityForResult(
-                intent,
-                SetupWizardApp.REQUEST_CODE_RESTORE_GMS, options.toBundle());
+        try {
+            Intent intent = new Intent(ACTION_RESTORE);
+            intent.putExtra(SetupWizardApp.EXTRA_ALLOW_SKIP, true);
+            intent.putExtra(SetupWizardApp.EXTRA_USE_IMMERSIVE, true);
+            intent.putExtra(SetupWizardApp.EXTRA_FIRST_RUN, true);
+            intent.putExtra(SetupWizardApp.EXTRA_THEME, SetupWizardApp.EXTRA_MATERIAL_LIGHT);
+            ActivityOptions options =
+                    ActivityOptions.makeCustomAnimation(activity,
+                            android.R.anim.fade_in,
+                            android.R.anim.fade_out);
+            activity.startActivityForResult(
+                    intent,
+                    SetupWizardApp.REQUEST_CODE_RESTORE_GMS, options.toBundle());
+        } catch (Exception e) {
+            e.printStackTrace();
+            // XXX: In open source, we don't know what gms version a user has.
+            // Bail if the restore activity is not found.
+            ((SetupWizardActivity)activity).onNextPage();
+        }
     }
 
     private void launchGmsAccountSetup(final Activity activity) {
