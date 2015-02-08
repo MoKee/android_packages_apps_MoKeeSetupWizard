@@ -16,8 +16,21 @@
      limitations under the License.
 -->
 <resources xmlns:xliff="urn:oasis:names:tc:xliff:document:1.2">
+  <string name="app_name">معالج الإعداد</string>
   <string name="next">القادم</string>
   <string name="skip">تخطي</string>
+  <string name="start">إبدء</string>
   <string name="ok">موافق</string>
+  <string name="loading">انتظر ساعة /u2026</string>
   <string name="setup_complete">اكتمال الإعداد</string>
+  <string name="setup_welcome">مرحبا</string>
+  <string name="setup_wifi">حدد الواي فأي</string>
+  <string name="setup_sim_missing">لا يوجد بطاقة SIM</string>
+  <string name="setup_choose_data_sim">اختر أية SIM للبيانات</string>
+  <string name="setup_location">خدمات الموقع</string>
+  <string name="setup_other">خدمات أخرى</string>
+  <string name="setup_datetime">التاريخ  &amp; الوقت</string>
+  <string name="setup_current_date">التاريخ الحالي</string>
+  <string name="setup_current_time">الوقت الحالي</string>
+  <string name="sim_missing_summary">لم توجد بطاقة SIM في الجهاز الخاص بك. لإدراج بطاقة SIM، إقرا الإرشادات المرفقة مع الجهاز الخاص بك.</string>
 </resources>
