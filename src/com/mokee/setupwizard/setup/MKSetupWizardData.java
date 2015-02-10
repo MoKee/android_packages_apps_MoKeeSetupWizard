@@ -45,7 +45,7 @@ public class MKSetupWizardData extends AbstractSetupData {
         if (SetupWizardUtils.hasTelephony(mContext)) {
             pages.add(new SimCardMissingPage(mContext, this).setHidden(isSimInserted()));
         }
-        if (SetupWizardUtils.isMultiSimDevice(mContext)) {
+        if (SetupWizardUtils.isMultiSimDevice(mContext) && SetupWizardUtils.isOwner()) {
             pages.add(new ChooseDataSimPage(mContext, this).setHidden(!allSimsInserted()));
         }
         if (SetupWizardUtils.hasTelephony(mContext)) {
@@ -55,8 +55,10 @@ public class MKSetupWizardData extends AbstractSetupData {
         if (SetupWizardUtils.hasGMS(mContext)) {
             pages.add(new GmsAccountPage(mContext, this));
         }
-        pages.add(new OtherSettingsPage(mContext, this));
-        pages.add(new DateTimePage(mContext, this));
+        if (SetupWizardUtils.isOwner()) {
+            pages.add(new OtherSettingsPage(mContext, this));
+            pages.add(new DateTimePage(mContext, this));
+        }
         pages.add(new FinishPage(mContext, this));
         return new PageList(pages.toArray(new SetupPage[pages.size()]));
     }
