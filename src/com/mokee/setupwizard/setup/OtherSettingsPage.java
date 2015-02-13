@@ -37,6 +37,7 @@ import android.widget.CheckBox;
 import android.widget.TextView;
 
 import com.mokee.setupwizard.R;
+import com.mokee.setupwizard.SetupWizardApp;
 import com.mokee.setupwizard.ui.SetupPageFragment;
 import com.mokee.setupwizard.ui.WebViewDialogFragment;
 import com.mokee.setupwizard.util.SetupWizardUtils;
@@ -170,7 +171,9 @@ public class OtherSettingsPage extends SetupPage {
             }
             mBackupRow = mRootView.findViewById(R.id.backup);
             mBackupRow.setOnClickListener(mBackupClickListener);
-            mBackupRow.setVisibility(hasGms ? View.VISIBLE : View.GONE);
+            boolean backupVisible = hasGms &&
+                    SetupWizardUtils.accountExists(getActivity(), SetupWizardApp.ACCOUNT_TYPE_GMS);
+            mBackupRow.setVisibility(backupVisible ? View.VISIBLE : View.GONE);
             mBackup = (CheckBox) mRootView.findViewById(R.id.backup_checkbox);
             mLocationRow = mRootView.findViewById(R.id.location);
             mLocationRow.setOnClickListener(mLocationClickListener);
