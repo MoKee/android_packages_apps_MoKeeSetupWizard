@@ -16,7 +16,7 @@
      limitations under the License.
 -->
 <resources xmlns:xliff="urn:oasis:names:tc:xliff:document:1.2">
-  <string name="app_name">设置向导</string>
+  <string name="app_name">安装向导</string>
   <string name="next">下一步</string>
   <string name="skip">跳过</string>
   <string name="start">开始</string>
@@ -28,20 +28,25 @@
   <string name="setup_sim_missing">无SIM卡</string>
   <string name="setup_choose_data_sim">选择一个SIM卡的数据</string>
   <string name="setup_location">定位服务</string>
-  <string name="setup_datetime">日期 &amp; 时间</string>
+  <string name="setup_other">其他服务</string>
+  <string name="setup_datetime">日期和时间</string>
   <string name="setup_current_date">当前日期</string>
   <string name="setup_current_time">当前时间</string>
   <string name="sim_missing_summary">您的设备里没有SIM卡，若想插入一张卡，请阅读您的设备的说明书进行操作。</string>
-  <string name="choose_data_sim_summary">您想使用哪张SIM卡进行数据连接？您选择的卡可能会由于进行设备设置而产生流量费用。</string>
-  <string name="date_time_summary">设置时区和调整日期和时间（如果您需要）</string>
-  <string name="location_services_summary">位置服务允许地图和其他应用程序来收集和使用数据，如你的大致位置。例如，一些应用可能会使用你的大致位置找到附近的公共场所。</string>
-  <string name="location_access_summary"><b>允许应用程序获得权限</b> 来使用你的位置信息，可能包括你当前的位置和过去的位置。</string>
-  <string name="location_gps"><b>提高定位精度</b> 允许应用程序在您的手机上使用 GPS</string>
-  <string name="location_network"><b>使用谷歌的位置服务</b>帮助应用程序确定您所在的位置，您的数据将会发送到谷歌，即使没有应用程序正在运行。</string>
+  <string name="choose_data_sim_summary">您想使用哪张 SIM 卡进行数据连接？您选择的卡可能会由于进行设备设置而产生流量费用。</string>
+  <string name="date_time_summary">如果需要，设置时区和调整日期和时间</string>
+  <string name="backup_data_title">备份我的数据</string>
+  <string name="backup_data_summary">将应用数据、Wi-Fi 密码和其他设置备份到 Google 服务器</string>
+  <string name="location_services_summary">位置服务允许地图和其他应用收集和使用数据（比如您的大致位置）。例如，地图应用可能会使用您的大致位置查找附近的咖啡馆。</string>
+  <string name="location_access_summary"><b>允许得到您授权的应用</b>使用您的位置信息，可能包括您当前的位置和过去的位置。</string>
+  <string name="location_gps">通过允许应用在您的手机上使用 GPS 来<b>提高定位精度</b>。</string>
+  <string name="location_network"><b>使用 Google 的位置服务</b>帮助应用确定您所在的位置。匿名数据将会发送到 Google，即使没有应用正在运行。</string>
   <string name="setup_mobile_data">打开数据连接</string>
   <string name="setup_mobile_data_no_service">无服务</string>
-  <string name="setup_mobile_data_emergency_only">只能拨打紧急呼救电话</string>
-  <string name="enable_mobile_data_summary">你想在安装过程中使用移动数据吗？您的数据运营商可能会收取费用</string>
-  <string name="data_sim_name">SIM <xliff:g id="sub">%d </xliff:g>-<xliff:g id="name">%s </xliff:g></string>
+  <string name="setup_mobile_data_emergency_only">只能拨打紧急电话</string>
+  <string name="enable_mobile_data_summary">您想在设置过程中使用移动数据吗？您的运营商可能会收取费用。</string>
+  <string name="no">取消</string>
+  <string name="yes">是的</string>
+  <string name="data_sim_name">SIM <xliff:g id="sub">%d</xliff:g> - <xliff:g id="name">%s</xliff:g></string>
   <string name="emergency_call">紧急呼救</string>
 </resources>

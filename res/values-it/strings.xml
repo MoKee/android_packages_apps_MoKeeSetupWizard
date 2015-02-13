@@ -28,12 +28,15 @@
   <string name="setup_sim_missing">SIM non inserita</string>
   <string name="setup_choose_data_sim">Scegli una SIM per la connessione dati</string>
   <string name="setup_location">Servizi di localizzazione</string>
+  <string name="setup_other">Altri servizi</string>
   <string name="setup_datetime">Data &amp; Ora</string>
   <string name="setup_current_date">Data corrente</string>
   <string name="setup_current_time">Ora corrente</string>
   <string name="sim_missing_summary">Non è stata rilevata nessuna SIM nel dispositivo.  Per inserire una SIM, leggere le istruzioni fornite con il dispositivo.</string>
   <string name="choose_data_sim_summary">Quale SIM vuoi utilizzare per la connessione dati? La SIM selezionata può incorrere in costi di rete durante la configurazione del dispositivo.</string>
   <string name="date_time_summary">Imposta il fuso orario e se necessario regola ora e data corrente</string>
+  <string name="backup_data_title">Esegui il backup dei miei dati</string>
+  <string name="backup_data_summary">Esegui il backup dei dati delle applicazioni, le passwords delle reti Wi-Fi e altre impostazioni sui server di Google</string>
   <string name="location_services_summary">I servizi di localizzazione permettono a Maps e ad altre applicazioni di raccogliere ed utilizzare dati come la tua posizione. Ad esempio, Maps potrebbe utilizzare la tua posizione per individuare particolari negozi nelle tue vicinanze.</string>
   <string name="location_access_summary"><b>Consenti alle applicazioni che hanno chiesto la tua autorizzazione</b> ad utilizzare informazioni sulla tua posizione. Ciò può includere la tua posizione attuale e quelle precedenti.</string>
   <string name="location_gps"><b>Migliora l\'accuratezza della localizzazione</b> permettendo alle applicazioni di utilizzare il GPS sul tuo telefono.</string>
@@ -42,6 +45,8 @@
   <string name="setup_mobile_data_no_service">Nessun servizio</string>
   <string name="setup_mobile_data_emergency_only">Solo chiamate d\'emergenza</string>
   <string name="enable_mobile_data_summary">Vuoi utilizzare la connessione dati durante la configurazione? Attivando la connessione dati potrebbero essere applicati dei costi per traffico dati.</string>
+  <string name="no">No</string>
+  <string name="yes">Si</string>
   <string name="data_sim_name">SIM <xliff:g id="sub">%d</xliff:g> - <xliff:g id="name">%s</xliff:g></string>
   <string name="emergency_call">Chiamata d\'emergenza</string>
 </resources>
