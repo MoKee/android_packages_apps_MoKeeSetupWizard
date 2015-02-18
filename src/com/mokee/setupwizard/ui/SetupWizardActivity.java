@@ -110,14 +110,14 @@ public class SetupWizardActivity extends Activity implements SetupDataCallbacks 
         try {
             if (Settings.Secure.getInt(getContentResolver(),
                     Settings.Secure.USER_SETUP_COMPLETE) == 1) {
-                finishSetup();
+                finishSetup(false);
             }
         } catch (Settings.SettingNotFoundException e) {
             // Continue with setup
         }
         mIsGuestUser =  SetupWizardUtils.isGuestUser(this);
         if (mIsGuestUser) {
-            finishSetup();
+            finishSetup(false);
         }
         registerReceiver(mSetupData, mSetupData.getIntentFilter());
     }
@@ -288,7 +288,7 @@ public class SetupWizardActivity extends Activity implements SetupDataCallbacks 
                 mHandler.post(new Runnable() {
                     @Override
                     public void run() {
-                        finishSetup();
+                        finishSetup(true);
                     }
                 });
             }
@@ -302,9 +302,9 @@ public class SetupWizardActivity extends Activity implements SetupDataCallbacks 
         anim.start();
     }
 
-    private void finishSetup() {
+    private void finishSetup(boolean broadcastFinish) {
         SetupWizardApp setupWizardApp = (SetupWizardApp)getApplication();
-        if (!mIsGuestUser) {
+        if (broadcastFinish && !mIsGuestUser) {
             setupWizardApp.sendBroadcastAsUser(new Intent(SetupWizardApp.ACTION_FINISHED),
                     UserHandle.getCallingUserHandle());
         }
