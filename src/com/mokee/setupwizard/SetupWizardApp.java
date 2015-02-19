@@ -19,6 +19,7 @@ package com.mokee.setupwizard;
 import android.app.Application;
 import android.app.StatusBarManager;
 import android.content.Context;
+import android.provider.Settings;
 
 public class SetupWizardApp extends Application {
 
@@ -39,15 +40,19 @@ public class SetupWizardApp extends Application {
     public static final String EXTRA_THEME = "theme";
     public static final String EXTRA_MATERIAL_LIGHT = "material_light";
 
+    private static final String KEY_DETECT_CAPTIVE_PORTAL = "captive_portal_detection_enabled";
+
     public static final int REQUEST_CODE_SETUP_WIFI = 0;
     public static final int REQUEST_CODE_SETUP_GMS= 1;
     public static final int REQUEST_CODE_RESTORE_GMS= 2;
+    public static final int REQUEST_CODE_SETUP_CAPTIVE_PORTAL= 3;
 
     private StatusBarManager mStatusBarManager;
 
     @Override
     public void onCreate() {
         super.onCreate();
+        disableCaptivePortalDetection();
         mStatusBarManager = (StatusBarManager)getSystemService(Context.STATUS_BAR_SERVICE);
     }
 
@@ -59,5 +64,13 @@ public class SetupWizardApp extends Application {
 
     public void enableStatusBar() {
         mStatusBarManager.disable(StatusBarManager.DISABLE_NONE);
+    }
+
+    public void disableCaptivePortalDetection() {
+        Settings.Global.putInt(getContentResolver(), KEY_DETECT_CAPTIVE_PORTAL, 0);
+    }
+
+    public void enableCaptivePortalDetection() {
+        Settings.Global.putInt(getContentResolver(), KEY_DETECT_CAPTIVE_PORTAL, 1);
     }
 }
