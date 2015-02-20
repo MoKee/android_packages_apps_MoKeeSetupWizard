@@ -16,5 +16,4 @@
 -->
 <resources>
      <color name="header_bg">@color/header_condensed_bg</color>
-     <color name="footer_bg">@color/footer_condensed_bg</color>
 </resources>
