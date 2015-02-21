@@ -54,4 +54,5 @@
   <string name="yes">是</string>
   <string name="data_sim_name">SIM <xliff:g id="sub">%d</xliff:g> - <xliff:g id="name">%s</xliff:g></string>
   <string name="emergency_call">紧急电话</string>
+  <string name="services_privacy_policy">隐私政策</string>
 </resources>
