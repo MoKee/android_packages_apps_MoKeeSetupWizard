@@ -23,6 +23,7 @@ import android.net.ConnectivityManager;
 import android.telephony.TelephonyManager;
 
 import com.android.internal.telephony.TelephonyIntents;
+import com.mokee.setupwizard.ui.SetupWizardActivity;
 import com.mokee.setupwizard.util.SetupWizardUtils;
 
 import java.util.ArrayList;
@@ -34,7 +35,7 @@ public class MKSetupWizardData extends AbstractSetupData {
     private boolean mTimeSet = false;
     private boolean mTimeZoneSet = false;
 
-    public MKSetupWizardData(Context context) {
+    public MKSetupWizardData(SetupWizardActivity context) {
         super(context);
     }
 

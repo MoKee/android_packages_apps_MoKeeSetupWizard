@@ -39,6 +39,7 @@ import android.widget.TextView;
 import com.mokee.setupwizard.R;
 import com.mokee.setupwizard.SetupWizardApp;
 import com.mokee.setupwizard.ui.SetupPageFragment;
+import com.mokee.setupwizard.ui.SetupWizardActivity;
 import com.mokee.setupwizard.ui.WebViewDialogFragment;
 import com.mokee.setupwizard.util.SetupWizardUtils;
 
@@ -52,7 +53,7 @@ public class OtherSettingsPage extends SetupPage {
     private static final String PRIVACY_POLICY_URI =
             "https://www.google.com/intl/en/policies/privacy/?fg=1";
 
-    public OtherSettingsPage(Context context, SetupDataCallbacks callbacks) {
+    public OtherSettingsPage(SetupWizardActivity context, SetupDataCallbacks callbacks) {
         super(context, callbacks);
     }
 

@@ -34,13 +34,14 @@ import android.widget.TextView;
 
 import com.mokee.setupwizard.R;
 import com.mokee.setupwizard.ui.SetupPageFragment;
+import com.mokee.setupwizard.ui.SetupWizardActivity;
 import com.mokee.setupwizard.util.SetupWizardUtils;
 
 public class MobileDataPage extends SetupPage {
 
     public static final String TAG = "MobileDataPage";
 
-    public MobileDataPage(Context context, SetupDataCallbacks callbacks) {
+    public MobileDataPage(SetupWizardActivity context, SetupDataCallbacks callbacks) {
         super(context, callbacks);
     }
 

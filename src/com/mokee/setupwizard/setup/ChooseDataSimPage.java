@@ -27,7 +27,6 @@ import android.telephony.SubInfoRecord;
 import android.telephony.SubscriptionManager;
 import android.telephony.TelephonyManager;
 import android.text.TextUtils;
-import android.util.Log;
 import android.util.SparseArray;
 import android.view.LayoutInflater;
 import android.view.View;
@@ -38,6 +37,7 @@ import android.widget.TextView;
 
 import com.mokee.setupwizard.R;
 import com.mokee.setupwizard.ui.SetupPageFragment;
+import com.mokee.setupwizard.ui.SetupWizardActivity;
 
 import java.util.List;
 
@@ -45,7 +45,7 @@ public class ChooseDataSimPage extends SetupPage {
 
     public static final String TAG = "ChooseDataSimPage";
 
-    public ChooseDataSimPage(Context context, SetupDataCallbacks callbacks) {
+    public ChooseDataSimPage(SetupWizardActivity context, SetupDataCallbacks callbacks) {
         super(context, callbacks);
     }
 

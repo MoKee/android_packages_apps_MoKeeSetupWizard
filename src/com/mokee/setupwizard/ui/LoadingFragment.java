@@ -17,7 +17,6 @@
 package com.mokee.setupwizard.ui;
 
 import com.mokee.setupwizard.R;
-import com.mokee.setupwizard.ui.SetupPageFragment;
 
 public class LoadingFragment extends SetupPageFragment {
     @Override
