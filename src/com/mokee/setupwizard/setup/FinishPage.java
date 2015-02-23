@@ -20,6 +20,7 @@ import java.util.List;
 
 import android.app.Fragment;
 import android.app.FragmentManager;
+import android.content.Context;
 import android.content.ContentResolver;
 import android.mokee.utils.MoKeeUtils;
 import android.os.Bundle;
@@ -29,7 +30,6 @@ import android.view.inputmethod.InputMethodManager;
 
 import com.mokee.setupwizard.R;
 import com.mokee.setupwizard.ui.SetupPageFragment;
-import com.mokee.setupwizard.ui.SetupWizardActivity;
 import com.mokee.setupwizard.util.InputMethodItem;
 
 public class FinishPage extends SetupPage {
@@ -38,7 +38,7 @@ public class FinishPage extends SetupPage {
 
     private FinishFragment mFinishFragment;
 
-    public FinishPage(SetupWizardActivity context, SetupDataCallbacks callbacks) {
+    public FinishPage(Context context, SetupDataCallbacks callbacks) {
         super(context, callbacks);
     }
 

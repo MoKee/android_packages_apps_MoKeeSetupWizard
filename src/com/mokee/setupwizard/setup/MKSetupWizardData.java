@@ -35,7 +35,7 @@ public class MKSetupWizardData extends AbstractSetupData {
     private boolean mTimeSet = false;
     private boolean mTimeZoneSet = false;
 
-    public MKSetupWizardData(SetupWizardActivity context) {
+    public MKSetupWizardData(Context context) {
         super(context);
     }
 
