@@ -68,6 +68,8 @@ public class SetupWizardActivity extends Activity implements SetupDataCallbacks 
         mSetupData = (MKSetupWizardData)getLastNonConfigurationInstance();
         if (mSetupData == null) {
             mSetupData = new MKSetupWizardData(this);
+        } else {
+            mSetupData.setContext(this);
         }
         mNextButton = (Button) findViewById(R.id.next_button);
         mPrevButton = (Button) findViewById(R.id.prev_button);
@@ -127,6 +129,7 @@ public class SetupWizardActivity extends Activity implements SetupDataCallbacks 
                 | View.SYSTEM_UI_FLAG_IMMERSIVE
                 | View.SYSTEM_UI_FLAG_HIDE_NAVIGATION);
         super.onResume();
+        mSetupData.onResume();
         onPageTreeChanged();
         enableButtonBar(true);
     }
@@ -134,6 +137,7 @@ public class SetupWizardActivity extends Activity implements SetupDataCallbacks 
     @Override
     protected void onDestroy() {
         super.onDestroy();
+        mSetupData.onDestroy();
         mSetupData.unregisterListener(this);
         unregisterReceiver(mSetupData);
     }
@@ -233,6 +237,11 @@ public class SetupWizardActivity extends Activity implements SetupDataCallbacks 
     @Override
     public Page getPage(int key) {
         return mSetupData.getPage(key);
+    }
+
+    @Override
+    public boolean isCurrentPage(Page page) {
+        return mSetupData.isCurrentPage(page);
     }
 
     @Override
