@@ -78,6 +78,9 @@ public class MKSetupWizardData extends AbstractSetupData {
                     (SimCardMissingPage) getPage(SimCardMissingPage.TAG);
             if (simCardMissingPage != null) {
                 simCardMissingPage.setHidden(isSimInserted());
+                if (isCurrentPage(simCardMissingPage)) {
+                    onNextPage();
+                }
             }
             showHideMobileDataPage();
         } else if (intent.getAction()
