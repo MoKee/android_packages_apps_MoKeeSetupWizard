@@ -81,7 +81,7 @@ public class MoKeeSettingsPage extends SetupPage {
 
     @Override
     public int getTitleResId() {
-        return R.string.setup_services;
+        return R.string.setup_personalization;
     }
 
     private static void writeDisableNavkeysOption(Context context, boolean enabled) {
