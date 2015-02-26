@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
 <!--
-     Copyright (C) 2015 The CyanogenMod Project
+     Copyright (C) 2015 The MoKee OpenSource Project
 
      Licensed under the Apache License, Version 2.0 (the "License");
      you may not use this file except in compliance with the License.
@@ -19,7 +19,6 @@
               android:layout_width="match_parent"
               android:layout_height="match_parent">
 
-
     <include layout="@layout/header_condensed" />
 
     <FrameLayout android:id="@+id/page"
@@ -37,55 +36,6 @@
                 android:layout_height="match_parent"
                 style="@style/PageContent">
 
-                <!-- The caption about privacy policy -->
-                <TextView
-                    android:id="@+id/privacy_policy"
-                    android:layout_width="match_parent"
-                    android:layout_height="wrap_content"
-                    android:textSize="15sp"
-                    android:layout_marginBottom="@dimen/summary_margin_bottom"
-                    android:paddingLeft="@dimen/content_margin_left"
-                    android:paddingRight="@dimen/content_margin_right"
-                    style="@style/PageSummaryText"
-                    android:text="@string/services_explanation"
-                    android:clickable="true"/>
-
-                <!-- Whether or not to enable metrics -->
-                <LinearLayout
-                    android:id="@+id/metrics"
-                    android:orientation="horizontal"
-                    android:layout_width="match_parent"
-                    android:layout_height="wrap_content"
-                    android:paddingLeft="@dimen/location_margin_left"
-                    android:paddingRight="@dimen/content_margin_right"
-                    android:background="?android:attr/selectableItemBackground"
-                    android:clickable="true">
-
-
-                    <CheckBox
-                        android:id="@+id/enable_metrics_checkbox"
-                        android:layout_width="wrap_content"
-                        android:layout_height="wrap_content"
-                        android:layout_gravity="top"
-                        android:layout_marginTop="5dp"
-                        android:duplicateParentState="true"
-                        android:clickable="false"/>
-
-                    <TextView
-                        android:id="@+id/enable_metrics_summary"
-                        android:layout_width="0px"
-                        android:layout_height="wrap_content"
-                        android:layout_weight="1"
-                        android:textSize="15sp"
-                        android:lineSpacingExtra="@dimen/setup_line_spacing"
-                        android:gravity="top"
-                        android:layout_marginLeft="@dimen/location_text_margin_left"
-                        android:layout_marginRight="@dimen/location_text_margin_right"
-                        android:paddingBottom="@dimen/content_margin_bottom"
-                        android:text="@string/services_metrics_label"/>
-
-                </LinearLayout>
-
                 <!-- Whether or not to enable default theme -->
                 <LinearLayout
                     android:id="@+id/theme"
@@ -96,7 +46,6 @@
                     android:paddingRight="@dimen/content_margin_right"
                     android:background="?android:attr/selectableItemBackground"
                     android:clickable="true">
-
 
                     <CheckBox
                         android:id="@+id/enable_theme_checkbox"
@@ -118,7 +67,7 @@
                         android:layout_marginLeft="@dimen/location_text_margin_left"
                         android:layout_marginRight="@dimen/location_text_margin_right"
                         android:paddingBottom="@dimen/content_margin_bottom"
-                        android:text="@string/services_metrics_label"/>
+                        android:text="@string/services_apply_theme_label"/>
 
                 </LinearLayout>
 
@@ -142,7 +91,6 @@
                         android:duplicateParentState="true"
                         android:clickable="false" />
 
-
                     <TextView
                         android:id="@+id/nav_keys_summary"
                         android:layout_width="0px"
@@ -158,40 +106,6 @@
 
                 </LinearLayout>
 
-                <!-- Checkbox for enabling secure SMS -->
-                <LinearLayout
-                    android:id="@+id/secure_sms"
-                    android:orientation="horizontal"
-                    android:layout_width="match_parent"
-                    android:layout_height="wrap_content"
-                    android:paddingLeft="@dimen/location_margin_left"
-                    android:paddingRight="@dimen/content_margin_right"
-                    android:background="?android:attr/selectableItemBackground"
-                    android:clickable="true">
-
-                    <CheckBox
-                        android:id="@+id/secure_sms_checkbox"
-                        android:layout_width="wrap_content"
-                        android:layout_height="wrap_content"
-                        android:layout_gravity="top"
-                        android:layout_marginTop="5dp"
-                        android:duplicateParentState="true"
-                        android:clickable="false" />
-
-                    <TextView
-                        android:id="@+id/secure_sms_summary"
-                        android:layout_width="0px"
-                        android:layout_height="wrap_content"
-                        android:layout_weight="1"
-                        android:textSize="15sp"
-                        android:lineSpacingExtra="@dimen/setup_line_spacing"
-                        android:gravity="top"
-                        android:layout_marginLeft="@dimen/location_text_margin_left"
-                        android:layout_marginRight="@dimen/location_text_margin_right"
-                        android:paddingBottom="@dimen/content_margin_bottom"
-                        android:text="@string/services_secure_sms_label"/>
-
-                </LinearLayout>
             </LinearLayout>
         </ScrollView>
     </FrameLayout>

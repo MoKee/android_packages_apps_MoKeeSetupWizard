@@ -58,6 +58,7 @@ public class MKSetupWizardData extends AbstractSetupData {
             pages.add(new GmsAccountPage(mContext, this).setHidden(true));
         }
         if (SetupWizardUtils.isOwner()) {
+            pages.add(new MoKeeSettingsPage(mContext, this));
             pages.add(new OtherSettingsPage(mContext, this));
             pages.add(new DateTimePage(mContext, this));
         }
