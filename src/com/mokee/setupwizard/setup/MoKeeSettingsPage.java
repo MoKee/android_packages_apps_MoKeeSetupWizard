@@ -23,6 +23,7 @@ import android.content.SharedPreferences;
 import android.content.pm.ThemeUtils;
 import android.content.res.ThemeConfig;
 import android.content.res.ThemeManager;
+import android.hardware.MkHardwareManager;
 import android.os.Bundle;
 import android.os.RemoteException;
 import android.preference.PreferenceManager;
@@ -47,8 +48,6 @@ import com.mokee.setupwizard.util.SetupWizardUtils;
 
 import com.google.android.gms.common.ConnectionResult;
 import com.google.android.gms.common.GooglePlayServicesUtil;
-
-import org.mokee.hardware.KeyDisabler;
 
 public class MoKeeSettingsPage extends SetupPage {
 
@@ -91,7 +90,9 @@ public class MoKeeSettingsPage extends SetupPage {
 
         Settings.Secure.putInt(context.getContentResolver(),
                 Settings.Secure.DEV_FORCE_SHOW_NAVBAR, enabled ? 1 : 0);
-        KeyDisabler.setActive(enabled);
+        final MkHardwareManager mkHardwareManager =
+                (MkHardwareManager) context.getSystemService(Context.MKHW_SERVICE);
+        mkHardwareManager.set(MkHardwareManager.FEATURE_KEY_DISABLE, enabled);
 
         /* Save/restore button timeouts to disable them in softkey mode */
         SharedPreferences.Editor editor = prefs.edit();
@@ -140,21 +141,16 @@ public class MoKeeSettingsPage extends SetupPage {
         }
     }
 
-    private static boolean hideKeyDisabler() {
-        try {
-            return !KeyDisabler.isSupported();
-        } catch (NoClassDefFoundError e) {
-            // Hardware abstraction framework not installed
-            return true;
-        }
+    private static boolean hideKeyDisabler(Context ctx) {
+        final MkHardwareManager mkHardwareManager =
+                (MkHardwareManager) ctx.getSystemService(Context.MKHW_SERVICE);
+        return !mkHardwareManager.isSupported(CmHardwareManager.FEATURE_KEY_DISABLE);
     }
 
-    private static boolean isKeyDisablerActive() {
-        try {
-            return KeyDisabler.isActive();
-        } catch (Exception e) {
-            return false;
-        }
+    private static boolean isKeyDisablerActive(Context ctx) {
+        final MkHardwareManager mkHardwareManager =
+                (CmHardwareManager) ctx.getSystemService(Context.MKHW_SERVICE);
+        return mkHardwareManager.get(MkHardwareManager.FEATURE_KEY_DISABLE);
     }
 
     protected static boolean hideThemeSwitch(Context context) {
@@ -223,11 +219,11 @@ public class MoKeeSettingsPage extends SetupPage {
                 needsNavBar = windowManager.needsNavigationBar();
             } catch (RemoteException e) {
             }
-            if (hideKeyDisabler() || needsNavBar) {
+            if (hideKeyDisabler(getActivity()) || needsNavBar) {
                 mNavKeysRow.setVisibility(View.GONE);
             } else {
                 boolean navKeysDisabled =
-                        isKeyDisablerActive();
+                        isKeyDisablerActive(getActivity());
                 mNavKeys.setChecked(navKeysDisabled);
             }
         }
