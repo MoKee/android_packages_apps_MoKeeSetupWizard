@@ -117,9 +117,14 @@ public class MoKeeSettingsPage extends SetupPage {
 
     @Override
     public void onFinishSetup() {
-        if (getData().containsKey(KEY_ENABLE_NAV_KEYS)) {
-            writeDisableNavkeysOption(mContext, getData().getBoolean(KEY_ENABLE_NAV_KEYS));
-        }
+        getCallbacks().addFinishRunnable(new Runnable() {
+            @Override
+            public void run() {
+                if (getData().containsKey(KEY_ENABLE_NAV_KEYS)) {
+                    writeDisableNavkeysOption(mContext, getData().getBoolean(KEY_ENABLE_NAV_KEYS));
+                }
+            }
+        });
         handleDefaultThemeSetup();
     }
 
