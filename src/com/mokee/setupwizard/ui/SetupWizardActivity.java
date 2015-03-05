@@ -72,20 +72,7 @@ public class SetupWizardActivity extends Activity implements SetupDataCallbacks 
 
     private final ArrayList<Runnable> mFinishRunnables = new ArrayList<Runnable>();
 
-    private ThemeManager.ThemeChangeListener mThemeChangeListener = new ThemeManager.ThemeChangeListener() {
-        @Override
-        public void onProgress(int progress) {
-            if (progress > 0) {
-                mFinishingProgressBar.setIndeterminate(false);
-                mFinishingProgressBar.setProgress(progress);
-            }
-        }
-
-        @Override
-        public void onFinish(boolean isSuccess) {
-            finishSetup();
-        }
-    };
+    private ThemeManager.ThemeChangeListener mThemeChangeListener;
 
     public void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
@@ -297,6 +284,20 @@ public class SetupWizardActivity extends Activity implements SetupDataCallbacks 
         mFinishingProgressBar.setIndeterminate(true);
         mFinishingProgressBar.startAnimation(fadeIn);
         final ThemeManager tm = (ThemeManager) getSystemService(Context.THEME_SERVICE);
+        mThemeChangeListener = new ThemeManager.ThemeChangeListener() {
+            @Override
+            public void onProgress(int progress) {
+                if (progress > 0) {
+                    mFinishingProgressBar.setIndeterminate(false);
+                    mFinishingProgressBar.setProgress(progress);
+                }
+            }
+
+            @Override
+            public void onFinish(boolean isSuccess) {
+                finishSetup();
+            }
+        };
         tm.addClient(mThemeChangeListener);
         mSetupData.finishPages();
     }
