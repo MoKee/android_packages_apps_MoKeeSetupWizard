@@ -49,7 +49,8 @@ import com.mokee.setupwizard.util.SetupWizardUtils;
 
 import java.util.ArrayList;
 
-public class SetupWizardActivity extends Activity implements SetupDataCallbacks {
+public class SetupWizardActivity extends Activity implements SetupDataCallbacks,
+        ThemeManager.ThemeChangeListener {
 
     private static final String TAG = SetupWizardActivity.class.getSimpleName();
 
@@ -71,8 +72,6 @@ public class SetupWizardActivity extends Activity implements SetupDataCallbacks 
     private volatile boolean mIsFinishing = false;
 
     private final ArrayList<Runnable> mFinishRunnables = new ArrayList<Runnable>();
-
-    private ThemeManager.ThemeChangeListener mThemeChangeListener;
 
     public void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
@@ -284,47 +283,40 @@ public class SetupWizardActivity extends Activity implements SetupDataCallbacks 
         mFinishingProgressBar.setIndeterminate(true);
         mFinishingProgressBar.startAnimation(fadeIn);
         final ThemeManager tm = (ThemeManager) getSystemService(Context.THEME_SERVICE);
-        mThemeChangeListener = new ThemeManager.ThemeChangeListener() {
-            @Override
-            public void onProgress(int progress) {
-                if (progress > 0) {
-                    mFinishingProgressBar.setIndeterminate(false);
-                    mFinishingProgressBar.setProgress(progress);
-                }
-            }
-
-            @Override
-            public void onFinish(boolean isSuccess) {
-                finishSetup();
-            }
-        };
-        tm.addClient(mThemeChangeListener);
+        tm.addClient(this);
         mSetupData.finishPages();
+        SetupStats.addEvent(SetupStats.Categories.APP_FINISHED, TAG,
+                SetupStats.Label.TOTAL_TIME, String.valueOf(
+                        System.nanoTime() - sLaunchTime));
+        setupWizardApp.sendStickyBroadcastAsUser(
+                new Intent(SetupWizardApp.ACTION_FINISHED),
+                UserHandle.getCallingUserHandle());
+    }
+
+    @Override
+    public void onFinish(boolean isSuccess) {
+        finishSetup();
+    }
+
+    @Override
+    public void onProgress(int progress) {
+        if (progress > 0) {
+            mFinishingProgressBar.setIndeterminate(false);
+            mFinishingProgressBar.setProgress(progress);
+        }
     }
 
     @Override
     public void finishSetup() {
         if (!mIsFinishing) {
             mIsFinishing = true;
-            mHandler.post(new Runnable() {
-                @Override
-                public void run() {
-                    final SetupWizardApp setupWizardApp = (SetupWizardApp)getApplication();
-                    setupWizardApp.sendStickyBroadcastAsUser(
-                            new Intent(SetupWizardApp.ACTION_FINISHED),
-                            UserHandle.getCallingUserHandle());
-                    setupRevealImage();
-                }
-            });
+            setupRevealImage();
         }
     }
 
     @Override
     public void finish() {
         super.finish();
-        for (Runnable runnable : mFinishRunnables) {
-            runnable.run();
-        }
         overridePendingTransition(android.R.anim.fade_in, android.R.anim.fade_out);
     }
 
@@ -334,39 +326,26 @@ public class SetupWizardActivity extends Activity implements SetupDataCallbacks 
         mFinishingProgressBar.startAnimation(fadeOut);
         mFinishingProgressBar.setVisibility(View.INVISIBLE);
 
-        final Thread t = new Thread() {
-            @Override
-            public void run() {
-                final Point p = new Point();
-                getWindowManager().getDefaultDisplay().getRealSize(p);
-                final WallpaperManager wallpaperManager =
-                        WallpaperManager.getInstance(SetupWizardActivity.this);
-                wallpaperManager.forgetLoadedWallpaper();
-                final Bitmap wallpaper = wallpaperManager.getBitmap();
-                Bitmap cropped = null;
-                if (wallpaper != null) {
-                    cropped = Bitmap.createBitmap(wallpaper, 0,
-                            0, Math.min(p.x, wallpaper.getWidth()),
-                            Math.min(p.y, wallpaper.getHeight()));
-                }
-                final Bitmap croppedWallpaper = cropped;
-                mHandler.post(new Runnable() {
-                    @Override
-                    public void run() {
-                        if (croppedWallpaper != null) {
-                            mReveal.setScaleType(ImageView.ScaleType.CENTER_CROP);
-                            mReveal.setImageBitmap(croppedWallpaper);
-                        } else {
-                            mReveal.setBackground(wallpaperManager
-                                    .getBuiltInDrawable(p.x, p.y, false, 0, 0));
-                        }
-                        animateOut();
-                    }
-                });
-
-            }
-        };
-        t.start();
+        final Point p = new Point();
+        getWindowManager().getDefaultDisplay().getRealSize(p);
+        final WallpaperManager wallpaperManager =
+                WallpaperManager.getInstance(SetupWizardActivity.this);
+        wallpaperManager.forgetLoadedWallpaper();
+        final Bitmap wallpaper = wallpaperManager.getBitmap();
+        Bitmap cropped = null;
+        if (wallpaper != null) {
+            cropped = Bitmap.createBitmap(wallpaper, 0,
+                    0, Math.min(p.x, wallpaper.getWidth()),
+                    Math.min(p.y, wallpaper.getHeight()));
+        }
+        if (cropped != null) {
+            mReveal.setScaleType(ImageView.ScaleType.CENTER_CROP);
+            mReveal.setImageBitmap(cropped);
+        } else {
+            mReveal.setBackground(wallpaperManager
+                    .getBuiltInDrawable(p.x, p.y, false, 0, 0));
+        }
+        animateOut();
     }
 
     private void animateOut() {
@@ -415,7 +394,8 @@ public class SetupWizardActivity extends Activity implements SetupDataCallbacks 
                 SetupWizardUtils.disableSetupWizard(SetupWizardActivity.this);
                 final ThemeManager tm =
                         (ThemeManager) SetupWizardActivity.this.getSystemService(THEME_SERVICE);
-                tm.removeClient(mThemeChangeListener);
+                tm.removeClient(SetupWizardActivity.this);
+                SetupWizardUtils.disableGMSSetupWizard(SetupWizardActivity.this);
                 Intent intent = new Intent(Intent.ACTION_MAIN);
                 intent.addCategory(Intent.CATEGORY_HOME);
                 startActivity(intent);
@@ -425,5 +405,9 @@ public class SetupWizardActivity extends Activity implements SetupDataCallbacks 
             }
         });
         finish();
+        for (Runnable runnable : mFinishRunnables) {
+            runnable.run();
+        }
+        SetupWizardUtils.disableSetupWizard(SetupWizardActivity.this);
     }
 }
