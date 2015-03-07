@@ -34,7 +34,7 @@
   <string name="setup_current_time">Şimdiki saat</string>
   <string name="date_time_summary">Zaman Diliminizi seçin ve gerekirse tarih ve saati ayarlayın</string>
   <string name="location_access_summary">Konum bilgilerinizi kullanmak için, <b>uygulama sizden izin talebinde bulundu</b>. Bu, geçerli konumu ve geçmiş konumları içerebilir.</string>
-  <string name="location_gps" product="default"><b> Uygulamalara telefonunuzda GPS\'i kullanmak için izin vererek </ b> konum doğruluğunu geliştirin.</string>
+  <string name="location_gps" product="default"><b> Uygulamalara telefonunuzda GPS\'i kullanmak için izin vererek </b> konum doğruluğunu geliştirin.</string>
   <string name="setup_mobile_data">Mobil interneti aç</string>
   <string name="setup_mobile_data_no_service">Hizmet yok</string>
   <string name="setup_mobile_data_emergency_only">Sadece acil çağrılar</string>
