@@ -32,15 +32,9 @@
   <string name="setup_datetime">日期與時間</string>
   <string name="setup_current_date">目前日期</string>
   <string name="setup_current_time">目前時間</string>
-  <string name="sim_missing_summary">您的手機中未發現一張 SIM 卡。若要插入一張 SIM 卡，請閱你的手機附贈的說明進行操作</string>
-  <string name="choose_data_sim_summary">您要使用哪一個SIM卡？已選取的SIM卡可能會收取網路費用以設定裝置。</string>
   <string name="date_time_summary">設置您的時區和調整當前日期和時間</string>
-  <string name="backup_data_title">備份我的資料</string>
-  <string name="backup_data_summary">將應用程式資料、Wi-Fi 密碼，以及其他設定備份到 Google 伺服器</string>
-  <string name="location_services_summary">位置服務允許Maps和其他應用程式來收集和使用資料，如你的大致位置。例如，Maps可能會使用你的大致位置找到附近的咖啡店。</string>
   <string name="location_access_summary"><b>允許擁有您權限的程式</b> 使用您的位置資訊。這可能包括您當前與過去的位置。</string>
-  <string name="location_gps"><b>提升定位的精確度</b> 通過允許應用程式使用您手機的GPS。</string>
-  <string name="location_network"><b>使用Google的位置服務</b> 以幫助應用程式確認您的所在位置。這意味著傳送匿名的使用者資料到Google，即使沒有應用程式正在運行。</string>
+  <string name="location_gps" product="default"><b>提升定位的精確度</b> 通過允許應用程式使用您手機的GPS。</string>
   <string name="setup_mobile_data">打開行動網路</string>
   <string name="setup_mobile_data_no_service">沒有服務</string>
   <string name="setup_mobile_data_emergency_only">只能撥打緊急電話</string>

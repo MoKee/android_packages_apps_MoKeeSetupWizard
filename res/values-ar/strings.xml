@@ -32,5 +32,4 @@
   <string name="setup_datetime">التاريخ  &amp; الوقت</string>
   <string name="setup_current_date">التاريخ الحالي</string>
   <string name="setup_current_time">الوقت الحالي</string>
-  <string name="sim_missing_summary">لم توجد بطاقة SIM في الجهاز الخاص بك. لإدراج بطاقة SIM، إقرا الإرشادات المرفقة مع الجهاز الخاص بك.</string>
 </resources>

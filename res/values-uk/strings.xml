@@ -32,15 +32,9 @@
   <string name="setup_datetime">Дата і час</string>
   <string name="setup_current_date">Поточна дата</string>
   <string name="setup_current_time">Поточний час</string>
-  <string name="sim_missing_summary">SIM-карту у пристрої не виявлено.  Щоб вставити SIM-карту, прочитайте інструкції, що надійшли із пристроєм.</string>
-  <string name="choose_data_sim_summary">Яку SIM-карту використовувати для передачи даних? Це може коштувати вам грошей, тому що  обрана SIM-карта буде використана для отримання налаштувань.</string>
   <string name="date_time_summary">Встановити часовий пояс і налаштувати поточноі дату та час</string>
-  <string name="backup_data_title">Резервне копіювання даних</string>
-  <string name="backup_data_summary">Резервне копіювання даних застосунків, Wi-Fi паролів та інших параметрів на сервери Google</string>
-  <string name="location_services_summary">Служби розташування дозволяють мапам та іншім програмам збирати та використовувати дані, таки як ваше приблизне місцезнаходження. Наприклад, мапи можуть використовувати ваше приблизне місцезнаходження для пошуку довколишніх кафе.</string>
   <string name="location_access_summary"><b>Дозволити програмам, котрі запитали вашого дозвілу</b> використовувати інформацію щодо вашого місцезнаходження. Це може бути як ваше поточне, так і минулі розташування.</string>
-  <string name="location_gps"><b>Покращити точність визначення місцезнаходження</b>, дозволяючи програмам використовувати GPS в телефоні.</string>
-  <string name="location_network"><b>Використовувати служби розташування Google</b>, щоб допомогти програмам визначити ваше місцезнаходження. Це означає, що вони будуть відсилати анонімні дані про місцезнаходження до Google, навіть якщо зараз жодна програма не працює.</string>
+  <string name="location_gps" product="default"><b>Покращити точність визначення місцезнаходження</b>, дозволяючи програмам використовувати GPS в телефоні.</string>
   <string name="setup_mobile_data">Увімкнути передачу даних</string>
   <string name="setup_mobile_data_no_service">Немає мережі</string>
   <string name="setup_mobile_data_emergency_only">Тільки екстрені виклики</string>
