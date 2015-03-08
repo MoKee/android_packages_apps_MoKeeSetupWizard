@@ -285,9 +285,6 @@ public class SetupWizardActivity extends Activity implements SetupDataCallbacks,
         final ThemeManager tm = (ThemeManager) getSystemService(Context.THEME_SERVICE);
         tm.addClient(this);
         mSetupData.finishPages();
-        SetupStats.addEvent(SetupStats.Categories.APP_FINISHED, TAG,
-                SetupStats.Label.TOTAL_TIME, String.valueOf(
-                        System.nanoTime() - sLaunchTime));
         setupWizardApp.sendStickyBroadcastAsUser(
                 new Intent(SetupWizardApp.ACTION_FINISHED),
                 UserHandle.getCallingUserHandle());
