@@ -144,12 +144,12 @@ public class MoKeeSettingsPage extends SetupPage {
     private static boolean hideKeyDisabler(Context ctx) {
         final MkHardwareManager mkHardwareManager =
                 (MkHardwareManager) ctx.getSystemService(Context.MKHW_SERVICE);
-        return !mkHardwareManager.isSupported(CmHardwareManager.FEATURE_KEY_DISABLE);
+        return !mkHardwareManager.isSupported(MkHardwareManager.FEATURE_KEY_DISABLE);
     }
 
     private static boolean isKeyDisablerActive(Context ctx) {
         final MkHardwareManager mkHardwareManager =
-                (CmHardwareManager) ctx.getSystemService(Context.MKHW_SERVICE);
+                (MkHardwareManager) ctx.getSystemService(Context.MKHW_SERVICE);
         return mkHardwareManager.get(MkHardwareManager.FEATURE_KEY_DISABLE);
     }
 

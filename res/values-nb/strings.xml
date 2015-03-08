@@ -55,4 +55,7 @@
   <string name="data_sim_name">SIM <xliff:g id="sub">%d </xliff:g> - <xliff:g id="name">%s </xliff:g></string>
   <string name="emergency_call">Nødsamtale</string>
   <string name="services_privacy_policy">Personvern</string>
+  <string name="services_apply_theme">Bruke <xliff:g id="name" example="Material">%s</xliff:g> temaet</string>
+  <string name="services_apply_theme_label"><xliff:g id="name" example="Apply the Material theme">%s</xliff:g> aktiverer unike ikoner, bakgrunner og skrifttyper.</string>
+  <string name="services_os_nav_keys_label"><b>Bruk navigasjonstaster på skjermen </b> istedenfor hardware knapper.</string>
 </resources>

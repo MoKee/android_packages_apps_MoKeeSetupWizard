@@ -127,10 +127,10 @@ public class GmsAccountPage extends SetupPage {
             if (!mBackupEnabled && SetupWizardUtils.isOwner() && resultCode == Activity.RESULT_OK) {
                 launchGmsRestorePage();
             } else {
-                handleResult(resultCode);
+                handleResult(requestCode, resultCode);
             }
         } else if (requestCode == SetupWizardApp.REQUEST_CODE_RESTORE_GMS) {
-            handleResult(resultCode);
+            handleResult(requestCode, resultCode);
             setHidden(true);
         }
         return true;
@@ -147,7 +147,7 @@ public class GmsAccountPage extends SetupPage {
         }
     }
 
-    private void handleResult(int resultCode) {
+    private void handleResult(int requestCode, int resultCode) {
         if (resultCode == Activity.RESULT_CANCELED) {
             getCallbacks().onPreviousPage();
         }  else {

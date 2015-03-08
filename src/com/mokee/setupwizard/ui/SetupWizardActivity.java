@@ -390,8 +390,6 @@ public class SetupWizardActivity extends Activity implements SetupDataCallbacks,
                 if (mEnableAccessibilityController != null) {
                     mEnableAccessibilityController.onDestroy();
                 }
-                SetupWizardUtils.disableGMSSetupWizard(SetupWizardActivity.this);
-                SetupWizardUtils.disableSetupWizard(SetupWizardActivity.this);
                 final ThemeManager tm =
                         (ThemeManager) SetupWizardActivity.this.getSystemService(THEME_SERVICE);
                 tm.removeClient(SetupWizardActivity.this);

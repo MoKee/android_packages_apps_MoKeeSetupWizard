@@ -19,28 +19,43 @@
   <string name="app_name">Installazione guidata</string>
   <string name="next">Avanti</string>
   <string name="skip">Salta</string>
-  <string name="start">Inizio</string>
+  <string name="start">Cominciamo</string>
   <string name="ok">OK</string>
-  <string name="loading">Solo un attimo...</string>
+  <string name="loading">Solo un secondo\u2026</string>
   <string name="setup_complete">Il setup è completo</string>
-  <string name="setup_welcome">Benvenuti</string>
+  <string name="setup_welcome">Benvenuto</string>
   <string name="setup_wifi">Seleziona Wi-Fi</string>
-  <string name="setup_sim_missing">SIM non inserita</string>
+  <string name="setup_sim_missing">Scheda SIM non inserita</string>
   <string name="setup_choose_data_sim">Scegli una SIM per la connessione dati</string>
   <string name="setup_location">Servizi di localizzazione</string>
   <string name="setup_other">Altri servizi</string>
   <string name="setup_datetime">Data &amp; Ora</string>
   <string name="setup_current_date">Data corrente</string>
   <string name="setup_current_time">Ora corrente</string>
+  <string name="sim_missing_summary" product="tablet">Non è stata riconosciuta alcuna scheda SIM nel tuo tablet. Per inserire una scheda SIM, leggi le istruzioni comprese col tuo dispositivo.</string>
+  <string name="sim_missing_summary" product="default">Non è stata rilevata alcuna scheda SIM nel tuo cellulare. Per inserire una scheda SIM, leggi le istruzioni comprese col tuo dispositivo.</string>
+  <string name="choose_data_sim_summary" product="tablet">Quale SIM vuoi utilizzare per la connessione dati? La SIM selezionata può incorrere in costi di rete durante la configurazione del dispositivo.</string>
+  <string name="choose_data_sim_summary" product="default">Quale SIM vuoi utilizzare per la connessione dati? La SIM selezionata può incorrere in costi di rete durante la configurazione del dispositivo.</string>
   <string name="date_time_summary">Imposta il fuso orario e se necessario regola ora e data corrente</string>
+  <string name="backup_data_summary"><b>Esegui il Back-up</b> dei dati delle app, password Wi-Fi e altre impostazioni sui server di Google</string>
+  <string name="other_services_summary">Questi servizi consentono a Google di lavorare per te, ed è possibile attivarli o disattivarli in qualsiasi momento. I dati saranno utilizzati in conformità con la <xliff:g id="name" example="Privacy Policy">%s</xliff:g> di Google.</string>
+  <string name="location_services_summary">I servizi di localizzazione permettono a Maps e ad altre applicazioni di raccogliere ed utilizzare dati come la tua posizione. Ad esempio, Maps potrebbe utilizzare la tua posizione per individuare negozi di caffè nelle tue vicinanze.</string>
   <string name="location_access_summary"><b>Consenti alle applicazioni che hanno chiesto la tua autorizzazione</b> ad utilizzare informazioni sulla tua posizione. Ciò può includere la tua posizione attuale e quelle precedenti.</string>
+  <string name="location_gps" product="tablet"><b>Migliora l\'accuratezza della localizzazione</b> consentendo alle app di usare il GPS sul tuo tablet.</string>
   <string name="location_gps" product="default"><b>Migliora l\'accuratezza della localizzazione</b> permettendo alle applicazioni di utilizzare il GPS sul tuo telefono.</string>
-  <string name="setup_mobile_data">Attiva la connessione dati</string>
+  <string name="location_network"><b>Usa il Wi-Fi</b> per aiutare le app a determinare la tua posizione.</string>
+  <string name="location_network_telephony"><b>Usa il Wi-Fi e le reti mobili</b> per aiutare le app a determinare la tua posizione.</string>
+  <string name="location_network_gms"><b>Usa il servizio di localizzazione di Google</b> per aiutare le app a determinare la tua posizione. Questo significa spedire dati anonimi sulla tua posizione a Google, anche quando nessuna app è in esecuzione.</string>
+  <string name="setup_mobile_data">Attiva i dati mobili</string>
   <string name="setup_mobile_data_no_service">Nessun servizio</string>
-  <string name="setup_mobile_data_emergency_only">Solo chiamate d\'emergenza</string>
-  <string name="enable_mobile_data_summary">Vuoi utilizzare la connessione dati durante la configurazione? Attivando la connessione dati potrebbero essere applicati dei costi per traffico dati.</string>
+  <string name="setup_mobile_data_emergency_only">Solo chiamate di emergenza</string>
+  <string name="enable_mobile_data_summary">Vuoi utilizzare la connessione dati durante la configurazione? Attivando la connessione dati potrebbero essere applicate tariffe dati.</string>
   <string name="no">No</string>
   <string name="yes">Si</string>
   <string name="data_sim_name">SIM <xliff:g id="sub">%d</xliff:g> - <xliff:g id="name">%s</xliff:g></string>
-  <string name="emergency_call">Chiamata d\'emergenza</string>
+  <string name="emergency_call">Chiamata di emergenza</string>
+  <string name="services_privacy_policy">Condizioni sulla Privacy</string>
+  <string name="services_apply_theme">Applica il tema<xliff:g id="name" example="Material">%s</xliff:g></string>
+  <string name="services_apply_theme_label"><xliff:g id="name" example="Apply the Material theme">%s</xliff:g> attiva icone, sfondi e caratteri unici.</string>
+  <string name="services_os_nav_keys_label"><b>Usa i pulsanti virtuali a schermo</b> invece di quelli fisici.</string>
 </resources>

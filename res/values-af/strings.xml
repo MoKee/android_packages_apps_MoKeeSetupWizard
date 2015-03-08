@@ -16,6 +16,43 @@
      limitations under the License.
 -->
 <resources xmlns:xliff="urn:oasis:names:tc:xliff:document:1.2">
+  <string name="app_name">Opstel Ghoeroe</string>
   <string name="next">Volgende</string>
   <string name="skip">Slaan oor</string>
+  <string name="start">Begin</string>
+  <string name="ok">OK</string>
+  <string name="loading">Net \'n sekonde\u2026</string>
+  <string name="setup_complete">Opstelling is voltooi</string>
+  <string name="setup_welcome">Welkom</string>
+  <string name="setup_wifi">Kies Wi\u2011Fi</string>
+  <string name="setup_sim_missing">SIM-kaart ontbreek</string>
+  <string name="setup_choose_data_sim">Kies \'n SIM vir data</string>
+  <string name="setup_location">Ligging dienste</string>
+  <string name="setup_other">Ander dienste</string>
+  <string name="setup_datetime">Datum &amp; tyd</string>
+  <string name="setup_current_date">Huidige datum</string>
+  <string name="setup_current_time">Huidige tyd</string>
+  <string name="sim_missing_summary" product="tablet">\'n SIM-kaart is nie bespeur in jou tablet. Om \'n SIM-kaart by te voeg, lees die instruksies wat saam gekom het met jou tablet.</string>
+  <string name="sim_missing_summary" product="default">\'n SIM-kaart is nie bespeur in jou foon. Om \'n SIM-kaart by te voeg, lees die instruksies wat saam gekom het met jou foon.</string>
+  <string name="choose_data_sim_summary" product="tablet">Watter SIM wil jy gebruik vir data? Die gekose SIM kan netwerk koste aangaan, dit sal gebruik word met die opstel van jou tablet.</string>
+  <string name="choose_data_sim_summary" product="default">Watter SIM wil jy gebruik vir data? Die gekose SIM kan netwerk koste aangaan, dit sal gebruik word met die opstel van jou foon.</string>
+  <string name="date_time_summary">Stel jou tydsone en pas huidige datum en tyd toe, indien nodig</string>
+  <string name="backup_data_summary"><b>Rugsteun</b> program data, Wi-Fi wagwoorde en ander instellings na Google-bedieners</string>
+  <string name="location_services_summary">Ligging dienste laat stelsel en ander 3rde party programme toe om data te gebruik soos jou benaderde ligging. Bv \'n program kan jou benaderde ligging gebruik om nabygeleë koffiewinkels op te spoor.</string>
+  <string name="location_access_summary"><b>Laat programme toe wat jou toestemming gevra het</b> om jou ligging inligting te gebruik. Dit kan jou huidige ligging en plekke asook liggings en plekke uit die verlede insluit.</string>
+  <string name="location_gps" product="tablet"><b>Verbeter ligging akkuraatheid</b> deur programme toe te laat om jou GPS te kan gebruik op jou tablet.</string>
+  <string name="location_gps" product="default"><b>Verbeter ligging akkuraatheid</b> deur programme toe te laat om jou GPS te kan gebruik op jou foon.</string>
+  <string name="location_network"><b>Gebruik Wi-Fi</b> om programme te help om jou ligging te bepaal.</string>
+  <string name="location_network_telephony"><b>Gebruik Wi-Fi en mobiele netwerke</b> om programme te help om jou ligging te bepaal.</string>
+  <string name="location_network_gms"><b>Gebruik Google se ligging diens</b> om programme te help om jou ligging te bepaal. Dit beteken dit stuur anonieme ligging data na Google, selfs wanneer daar geen programme aktief is nie.</string>
+  <string name="setup_mobile_data">Skakel mobiele data aan</string>
+  <string name="setup_mobile_data_no_service">Geen diens</string>
+  <string name="setup_mobile_data_emergency_only">Net Noodoproepe</string>
+  <string name="enable_mobile_data_summary">Wil jy mobiele data gebruik tydens die opstelling? Aan skakeling van mobiele data kan onderworpe aan data koste wees.</string>
+  <string name="no">Nee</string>
+  <string name="yes">Ja</string>
+  <string name="data_sim_name">SIM <xliff:g id="sub">%d</xliff:g> - <xliff:g id="name">%s</xliff:g></string>
+  <string name="emergency_call">Noodoproep</string>
+  <string name="services_privacy_policy">Privaatheid beleid</string>
+  <string name="services_os_nav_keys_label"><b>Gebruik skerm navigasie sleutels</b> in plaas van hardeware sleutels.</string>
 </resources>
