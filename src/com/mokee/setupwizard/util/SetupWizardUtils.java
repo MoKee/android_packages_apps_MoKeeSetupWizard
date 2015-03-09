@@ -154,7 +154,7 @@ public class SetupWizardUtils {
             disableComponentArray(context, packageInfo.services);
             disableComponentArray(context, packageInfo.receivers);
         } catch (PackageManager.NameNotFoundException e) {
-            Log.e(TAG, "Enable to disable GMS");
+            Log.e(TAG, "Unable to disable GMS");
         }
     }
 
