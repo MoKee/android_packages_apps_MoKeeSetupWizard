@@ -16,7 +16,7 @@
      limitations under the License.
 -->
 <resources xmlns:xliff="urn:oasis:names:tc:xliff:document:1.2">
-  <string name="app_name">设置向导</string>
+  <string name="app_name">安装向导</string>
   <string name="next">下一步</string>
   <string name="skip">跳过</string>
   <string name="start">开始</string>
@@ -54,6 +54,7 @@
   <string name="yes">是</string>
   <string name="data_sim_name">SIM <xliff:g id="sub">%d</xliff:g> - <xliff:g id="name">%s</xliff:g></string>
   <string name="emergency_call">紧急电话</string>
+  <string name="setup_personalization">个性化</string>
   <string name="services_privacy_policy">隐私政策</string>
   <string name="services_apply_theme">应用 <xliff:g id="name" example="Material">%s</xliff:g> 主题</string>
   <string name="services_apply_theme_label"><xliff:g id="name" example="Apply the Material theme">%s</xliff:g> 启用独特的图标、 壁纸和字体。</string>

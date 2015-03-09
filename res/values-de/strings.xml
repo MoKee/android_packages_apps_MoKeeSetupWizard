@@ -20,8 +20,8 @@
   <string name="next">Weiter</string>
   <string name="skip">Überspringen</string>
   <string name="start">Start</string>
-  <string name="ok">OK</string>
-  <string name="loading">Einen Moment\u2026</string>
+  <string name="ok">Ok</string>
+  <string name="loading">Einen Moment...</string>
   <string name="setup_complete">Einrichtung abgeschlossen</string>
   <string name="setup_welcome">Willkommen</string>
   <string name="setup_wifi">WLAN auswählen</string>
@@ -29,20 +29,20 @@
   <string name="setup_choose_data_sim">SIM-Karte für Daten wählen</string>
   <string name="setup_location">Standortdienste</string>
   <string name="setup_other">Andere Dienste</string>
-  <string name="setup_datetime">Datum &amp; Zeit</string>
+  <string name="setup_datetime">Datum und Uhrzeit</string>
   <string name="setup_current_date">Aktuelles Datum</string>
-  <string name="setup_current_time">Aktuelle Zeit</string>
+  <string name="setup_current_time">Aktuelle Uhrzeit</string>
   <string name="sim_missing_summary" product="tablet">Es wurde keine SIM-Karte in Ihrem Tablet erkannt. Um eine SIM-Karte einzulegen, lesen Sie sich die Bedienungsanleitung durch, die Ihrem Tablet beiliegt.</string>
   <string name="sim_missing_summary" product="default">Es wurde keine SIM-Karte in Ihrem Smartphone erkannt. Um eine SIM-Karte einzulegen, lesen Sie sich die Bedienungsanleitung durch, die Ihrem Smartphone beiliegt.</string>
   <string name="choose_data_sim_summary" product="tablet">Welche SIM-Karte soll für Daten verwendet werden? Da die ausgewählte SIM-Karte bei der Einrichtung des Tablets verwendet wird, können für Sie Kosten anfallen.</string>
   <string name="choose_data_sim_summary" product="default">Welche SIM-Karte soll für Daten verwendet werden? Da die ausgewählte SIM-Karte bei der Einrichtung des Smartphones verwendet wird, können für Sie Kosten anfallen.</string>
-  <string name="date_time_summary">Zeitzone setzen und ggf. die momentane Zeit und das Datum anpassen</string>
+  <string name="date_time_summary">Zeitzone setzen und ggf. die derzeitige Zeit und das Datum anpassen</string>
   <string name="backup_data_summary"><b>Sichert</b> App-Daten, WLAN-Passwörter und andere Einstellungen auf Google-Servern</string>
   <string name="other_services_summary">Diese Dienste werden von Google zur Verfügung gestellt und können jederzeit aktiviert oder deaktiviert werden. Die Daten werden in Übereinstimmung mit Googles <xliff:g id="name" example="Privacy Policy">%s</xliff:g> genutzt.</string>
   <string name="location_services_summary">Standortdienste erlauben es Systemapps oder Apps von Drittanbietern Daten, wie z. B. Ihren ungefähren Standort zu bestimmen und zu verwenden. Zum Beispiel könnte eine App Ihren ungefähren Standort verwenden, um Cafés in der Nähe zu finden.</string>
-  <string name="location_access_summary"><b>Erlaubt Apps, die nach Ihrer Berechtigung gefragt haben,</b> Standortinformationen zu verwenden. Diese können Ihren derzeitigen und vergangenen Standort beinhalten.</string>
+  <string name="location_access_summary"><b>Erlaube Apps, die nach Ihrer Berechtigung gefragt haben,</b> Standortinformationen zu verwenden. Das könnte Ihren derzeitigen und vergangenen Standort beinhalten.</string>
   <string name="location_gps" product="tablet"><b>Standortgenauigkeit erhöhen</b>, indem Apps erlaubt wird, GPS an Ihrem Tablet zu verwenden.</string>
-  <string name="location_gps" product="default"><b>Standortgenauigkeit erhöhen</b>, indem Apps erlaubt wird, GPS an Ihrem Telefon zu verwenden.</string>
+  <string name="location_gps" product="default"><b>Verbessere Standortdienste</b> indem Apps erlaubt wird, GPS am Gerät zu verwenden.</string>
   <string name="location_network"><b>WLAN nutzen</b>, um Apps zu helfen, Ihren Standort zu ermitteln.</string>
   <string name="location_network_telephony"><b>WLAN und mobiles Netzwerk aktivieren</b>, um Apps den Standortabruf zu ermöglichen.</string>
   <string name="location_network_gms"><b>Googles Standortdienst verwenden</b>, um Apps bei der Bestimmung Ihrer Position zu helfen. Das bedeutet, dass anonymisierte Standortdaten an Google gesendet werden, auch wenn keine App aktiv ist.</string>
@@ -54,6 +54,9 @@
   <string name="yes">Ja</string>
   <string name="data_sim_name">SIM <xliff:g id="sub">%d</xliff:g> – <xliff:g id="name">%s</xliff:g></string>
   <string name="emergency_call">Notruf</string>
+  <string name="setup_personalization">Personalisierung</string>
   <string name="services_privacy_policy">Datenschutzbestimmungen</string>
+  <string name="services_apply_theme"><xliff:g id="name" example="Material">%s</xliff:g> Design anwenden</string>
+  <string name="services_apply_theme_label"><xliff:g id="name" example="Apply the Material theme">%s </xliff:g> Aktivieren sie eindeutige Symbole , Hintergrundbilder und Schriftarten.</string>
   <string name="services_os_nav_keys_label"><b>Bildschirm-Navigationstasten</b> statt Hardwaretasten verwenden.</string>
 </resources>

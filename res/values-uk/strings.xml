@@ -20,40 +20,40 @@
   <string name="next">Далі</string>
   <string name="skip">Минути</string>
   <string name="start">Почати</string>
-  <string name="ok">Так</string>
-  <string name="loading">Хвилинку\u2026</string>
-  <string name="setup_complete">Усе налаштовано</string>
+  <string name="ok">ОК</string>
+  <string name="loading">Хвилинку...</string>
+  <string name="setup_complete">Налаштування завершено</string>
   <string name="setup_welcome">Ласкаво просимо</string>
   <string name="setup_wifi">Оберіть мережу Wi-Fi</string>
-  <string name="setup_sim_missing">SIM-карта відсутня</string>
-  <string name="setup_choose_data_sim">Оберіть SIM-карту для передачи даних</string>
+  <string name="setup_sim_missing">Відсутня SIM-карта</string>
+  <string name="setup_choose_data_sim">Оберіть SIM для передачи даних</string>
   <string name="setup_location">Служби позиціювання</string>
   <string name="setup_other">Інші служби</string>
-  <string name="setup_datetime">Дата та Час</string>
+  <string name="setup_datetime">Дата і час</string>
   <string name="setup_current_date">Поточна дата</string>
   <string name="setup_current_time">Поточний час</string>
   <string name="sim_missing_summary" product="tablet">У вашому планшеті не виявлено SIM-карти. Щоб дізнатися як вставити SIM-карту, ознайомтеся з інструкціями до вашого пристрію.</string>
   <string name="sim_missing_summary" product="default">У вашому телефоні не виявлено SIM-карти. Щоб дізнатися як вставити SIM-карту, ознайомтеся з інструкціями до вашого пристрію.</string>
   <string name="choose_data_sim_summary" product="tablet">Яку SIM-карту використовувати для передачи даних? Це може коштувати вам грошей, тому що,  обрана SIM-карта буде використана для отримання налаштувань планшету.</string>
   <string name="choose_data_sim_summary" product="default">Яку SIM-карту використовувати для передачи даних? Це може коштувати вам грошей, тому що,  обрана SIM-карта буде використана для отримання налаштувань вашого пристрою.</string>
-  <string name="date_time_summary">Встановити часовий пояс і настроїти поточноі дату та час, якщо це необхідно</string>
+  <string name="date_time_summary">Встановити часовий пояс і налаштувати поточноі дату та час</string>
   <string name="backup_data_summary"><b>Зберегти</b> дані додатків, Wi-Fi паролі та інші параметри на серверах Google</string>
   <string name="other_services_summary">Ці служби дозволяють Google розширити можливості пристрою. Вы маєте можливість вимкнути їх у будь-який час. Дані будуть використані відповідно до <xliff:g id="name" example="Privacy Policy">%s</xliff:g> Google.</string>
   <string name="location_services_summary">Служби місцезнаходження дозволяють системі і додаткам збирати та використовувати дані, щодо вашого приблизиного розташування. Наприклад, додаток зможе шукати кав`ярні чи зупинки, що розташовані поруч, грунтуючись на отриманих даних.</string>
-  <string name="location_access_summary"><b>Дозволити програмам, котрі запитали вашого дозволу</b> використовувати інформацію, щодо вашого місцезнаходження. Це може бути як ваше поточне, так і минулі розташування.</string>
+  <string name="location_access_summary"><b>Дозволити програмам, котрі запитали вашого дозвілу</b> використовувати інформацію щодо вашого місцезнаходження. Це може бути як ваше поточне, так і минулі розташування.</string>
   <string name="location_gps" product="tablet"><b>Покращити точність визначення місцезнаходження</b>, дозволяючи програмам використовувати GPS в планшеті.</string>
   <string name="location_gps" product="default"><b>Покращити точність визначення місцезнаходження</b>, дозволяючи програмам використовувати GPS в телефоні.</string>
   <string name="location_network"><b>Використовувати Wi-Fi</b> для визначення вашого місцезнаходження.</string>
   <string name="location_network_telephony"><b>Використовувати Wi-Fi та мобільні мережі</b> для визначення вашого місцезнаходження.</string>
   <string name="location_network_gms"><b>Використовувати служби місцезнаходження Google</b>, щоб допомогти додаткам визначити ваше розташування. Мається на увазі, що вони будуть відсилати анонімні дані, щодо вашого розташування, до Google навіть тоді, коли ніякі додатки не виконуються.</string>
-  <string name="setup_mobile_data">Увімкніть моб. дані</string>
+  <string name="setup_mobile_data">Увімкнути передачу даних</string>
   <string name="setup_mobile_data_no_service">Немає мережі</string>
   <string name="setup_mobile_data_emergency_only">Тільки екстрені виклики</string>
   <string name="enable_mobile_data_summary">Бажаєте використовувати мобільні дані під час налаштування? Увімкнення мобільних даних може коштувати вам грошенят.</string>
   <string name="no">Ні</string>
   <string name="yes">Так</string>
   <string name="data_sim_name">SIM <xliff:g id="sub">%d</xliff:g> - <xliff:g id="name">%s</xliff:g></string>
-  <string name="emergency_call">Екстрений виклик</string>
+  <string name="emergency_call">Надзвичайний виклик</string>
   <string name="services_privacy_policy">Політика Конфіденційності</string>
   <string name="services_os_nav_keys_label"><b>Використовувати навігаційні кнопки на екрані
 </b> замість апаратних.</string>
