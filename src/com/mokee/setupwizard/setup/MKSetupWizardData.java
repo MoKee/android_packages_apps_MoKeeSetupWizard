@@ -23,7 +23,6 @@ import android.net.ConnectivityManager;
 import android.telephony.TelephonyManager;
 
 import com.android.internal.telephony.TelephonyIntents;
-import com.mokee.setupwizard.ui.SetupWizardActivity;
 import com.mokee.setupwizard.util.SetupWizardUtils;
 
 import java.util.ArrayList;
@@ -47,7 +46,7 @@ public class MKSetupWizardData extends AbstractSetupData {
         if (SetupWizardUtils.hasTelephony(mContext)) {
             pages.add(new SimCardMissingPage(mContext, this).setHidden(isSimInserted()));
         }
-        if (SetupWizardUtils.isMultiSimDevice(mContext) && SetupWizardUtils.isOwner()) {
+        if (SetupWizardUtils.isMultiSimDevice(mContext)) {
             pages.add(new ChooseDataSimPage(mContext, this).setHidden(!allSimsInserted()));
         }
         if (SetupWizardUtils.hasTelephony(mContext)) {
@@ -57,11 +56,9 @@ public class MKSetupWizardData extends AbstractSetupData {
         if (SetupWizardUtils.hasGMS(mContext)) {
             pages.add(new GmsAccountPage(mContext, this).setHidden(true));
         }
-        if (SetupWizardUtils.isOwner()) {
-            pages.add(new MoKeeSettingsPage(mContext, this));
-            pages.add(new OtherSettingsPage(mContext, this));
-            pages.add(new DateTimePage(mContext, this));
-        }
+        pages.add(new MoKeeSettingsPage(mContext, this));
+        pages.add(new OtherSettingsPage(mContext, this));
+        pages.add(new DateTimePage(mContext, this));
         pages.add(new FinishPage(mContext, this));
         return new PageList(pages.toArray(new SetupPage[pages.size()]));
     }
