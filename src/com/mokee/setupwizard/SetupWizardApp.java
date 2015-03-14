@@ -19,6 +19,7 @@ package com.mokee.setupwizard;
 import android.app.Application;
 import android.app.StatusBarManager;
 import android.content.Context;
+import android.content.pm.PackageManager;
 import android.provider.Settings;
 
 import com.mokee.setupwizard.util.SetupWizardUtils;
@@ -45,6 +46,12 @@ public class SetupWizardApp extends Application {
 
     private static final String KEY_DETECT_CAPTIVE_PORTAL = "captive_portal_detection_enabled";
 
+    private static final String[] THEME_PACKAGES = {
+            "org.cyanogenmod.theme.chooser",
+            "com.cyngn.theme.chooser",
+            "com.cyngn.themestore"
+    };
+
     public static final int REQUEST_CODE_SETUP_WIFI = 0;
     public static final int REQUEST_CODE_SETUP_GMS= 1;
     public static final int REQUEST_CODE_RESTORE_GMS= 2;
@@ -59,11 +66,15 @@ public class SetupWizardApp extends Application {
         try {
             // Since this is a new component, we need to disable here if the user
             // has already been through setup on a previous version.
-            if (!SetupWizardUtils.isOwner()
+            final boolean isOwner = SetupWizardUtils.isOwner();
+            if (!isOwner
                     || Settings.Secure.getInt(getContentResolver(),
                     Settings.Secure.USER_SETUP_COMPLETE) == 1) {
                 SetupWizardUtils.disableGMSSetupWizard(this);
                 SetupWizardUtils.disableSetupWizard(this);
+                if (!isOwner) {
+                    disableThemeComponentsForSecondaryUser();
+                }
             }  else {
                 disableCaptivePortalDetection();
             }
@@ -71,7 +82,6 @@ public class SetupWizardApp extends Application {
             // Continue with setup
             disableCaptivePortalDetection();
         }
-
     }
 
     public void disableStatusBar() {
@@ -90,5 +100,18 @@ public class SetupWizardApp extends Application {
 
     public void enableCaptivePortalDetection() {
         Settings.Global.putInt(getContentResolver(), KEY_DETECT_CAPTIVE_PORTAL, 1);
+    }
+
+    private void disableThemeComponentsForSecondaryUser() {
+        PackageManager pm = getPackageManager();
+        for(String pkgName : THEME_PACKAGES) {
+            try {
+                pm.getApplicationInfo(pkgName, 0);
+                pm.setApplicationEnabledSetting(pkgName,
+                        PackageManager.COMPONENT_ENABLED_STATE_DISABLED_USER, 0);
+            } catch (PackageManager.NameNotFoundException e) {
+                // don't care
+            }
+        }
     }
 }
