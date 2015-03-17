@@ -90,9 +90,6 @@ public abstract class SetupPage implements Page {
     }
 
     @Override
-    public void onFragmentReady(){}
-
-    @Override
     public boolean onActivityResult(int requestCode, int resultCode, Intent data) {
         return false;
     }

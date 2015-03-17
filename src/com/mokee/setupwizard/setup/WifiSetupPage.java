@@ -132,8 +132,10 @@ public class WifiSetupPage extends SetupPage {
         return R.string.loading;
     }
 
+
     @Override
-    public void onFragmentReady() {
+    public void doLoadAction(FragmentManager fragmentManager, int action) {
+        super.doLoadAction(fragmentManager, action);
         launchWifiSetup();
     }
 
