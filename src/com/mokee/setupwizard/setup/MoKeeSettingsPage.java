@@ -184,7 +184,6 @@ public class MoKeeSettingsPage extends SetupPage {
 
         @Override
         protected void initializePage() {
-            final Bundle myPageBundle = mPage.getData();
 
             mDefaultThemeRow = mRootView.findViewById(R.id.theme);
             if (hideThemeSwitch(getActivity())) {
@@ -203,11 +202,6 @@ public class MoKeeSettingsPage extends SetupPage {
                 TextView theme = (TextView) mRootView.findViewById(R.id.enable_theme_summary);
                 theme.setText(themeSpan);
                 mDefaultTheme = (CheckBox) mRootView.findViewById(R.id.enable_theme_checkbox);
-                boolean themesChecked =
-                        !myPageBundle.containsKey(KEY_APPLY_DEFAULT_THEME) || myPageBundle
-                                .getBoolean(KEY_APPLY_DEFAULT_THEME);
-                mDefaultTheme.setChecked(themesChecked);
-                myPageBundle.putBoolean(KEY_APPLY_DEFAULT_THEME, themesChecked);
             }
 
             mNavKeysRow = mRootView.findViewById(R.id.nav_keys);
@@ -237,6 +231,16 @@ public class MoKeeSettingsPage extends SetupPage {
         public void onResume() {
             super.onResume();
             updateDisableNavkeysOption();
+            updateThemeOption();
+        }
+
+        private void updateThemeOption() {
+            final Bundle myPageBundle = mPage.getData();
+            boolean themesChecked =
+                    !myPageBundle.containsKey(KEY_APPLY_DEFAULT_THEME) || myPageBundle
+                            .getBoolean(KEY_APPLY_DEFAULT_THEME);
+            mDefaultTheme.setChecked(themesChecked);
+            myPageBundle.putBoolean(KEY_APPLY_DEFAULT_THEME, themesChecked);
         }
 
         private void updateDisableNavkeysOption() {
