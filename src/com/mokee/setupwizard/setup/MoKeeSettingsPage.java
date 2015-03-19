@@ -163,6 +163,9 @@ public class MoKeeSettingsPage extends SetupPage {
         private View mNavKeysRow;
         private CheckBox mDefaultTheme;
         private CheckBox mNavKeys;
+        private boolean mHideNavKeysRow = false;
+        private boolean mHideThemeRow = false;
+
 
         private View.OnClickListener mDefaultThemeClickListener = new View.OnClickListener() {
             @Override
@@ -186,7 +189,8 @@ public class MoKeeSettingsPage extends SetupPage {
         protected void initializePage() {
 
             mDefaultThemeRow = mRootView.findViewById(R.id.theme);
-            if (hideThemeSwitch(getActivity())) {
+            mHideThemeRow = hideThemeSwitch(getActivity());
+            if (mHideThemeRow) {
                 mDefaultThemeRow.setVisibility(View.GONE);
             } else {
                 mDefaultThemeRow.setOnClickListener(mDefaultThemeClickListener);
@@ -213,7 +217,8 @@ public class MoKeeSettingsPage extends SetupPage {
                 needsNavBar = windowManager.needsNavigationBar();
             } catch (RemoteException e) {
             }
-            if (hideKeyDisabler(getActivity()) || needsNavBar) {
+            mHideNavKeysRow = hideKeyDisabler(getActivity());
+            if (mHideNavKeysRow || needsNavBar) {
                 mNavKeysRow.setVisibility(View.GONE);
             } else {
                 boolean navKeysDisabled =
@@ -235,21 +240,25 @@ public class MoKeeSettingsPage extends SetupPage {
         }
 
         private void updateThemeOption() {
-            final Bundle myPageBundle = mPage.getData();
-            boolean themesChecked =
-                    !myPageBundle.containsKey(KEY_APPLY_DEFAULT_THEME) || myPageBundle
-                            .getBoolean(KEY_APPLY_DEFAULT_THEME);
-            mDefaultTheme.setChecked(themesChecked);
-            myPageBundle.putBoolean(KEY_APPLY_DEFAULT_THEME, themesChecked);
+            if (!mHideThemeRow) {
+                final Bundle myPageBundle = mPage.getData();
+                boolean themesChecked =
+                        !myPageBundle.containsKey(KEY_APPLY_DEFAULT_THEME) || myPageBundle
+                                .getBoolean(KEY_APPLY_DEFAULT_THEME);
+                mDefaultTheme.setChecked(themesChecked);
+                myPageBundle.putBoolean(KEY_APPLY_DEFAULT_THEME, themesChecked);
+            }
         }
 
         private void updateDisableNavkeysOption() {
-            boolean enabled = Settings.Secure.getInt(getActivity().getContentResolver(),
-                    Settings.Secure.DEV_FORCE_SHOW_NAVBAR, 0) != 0;
-            boolean checked = mPage.getData().containsKey(KEY_ENABLE_NAV_KEYS) ?
-                    mPage.getData().getBoolean(KEY_ENABLE_NAV_KEYS) :
-                    enabled;
-            mNavKeys.setChecked(checked);
+            if (!mHideNavKeysRow) {
+                boolean enabled = Settings.Secure.getInt(getActivity().getContentResolver(),
+                        Settings.Secure.DEV_FORCE_SHOW_NAVBAR, 0) != 0;
+                boolean checked = mPage.getData().containsKey(KEY_ENABLE_NAV_KEYS) ?
+                        mPage.getData().getBoolean(KEY_ENABLE_NAV_KEYS) :
+                        enabled;
+                mNavKeys.setChecked(checked);
+            }
         }
 
     }
