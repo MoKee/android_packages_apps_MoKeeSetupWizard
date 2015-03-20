@@ -90,22 +90,18 @@ public class FinishPage extends SetupPage {
     @Override
     public void onFinishSetup() {
         if (MoKeeUtils.isSupportLanguage(true)) {
-            InputMethodManager manager = (InputMethodManager) 
-                    mContext.getSystemService(Context.INPUT_METHOD_SERVICE);
+            InputMethodManager manager = (InputMethodManager)mContext.getSystemService(Context.INPUT_METHOD_SERVICE);
             List<InputMethodInfo> infoList = manager.getInputMethodList();
             ContentResolver mContentResolver = mContext.getContentResolver();
-            String mEnabledIM = Settings.Secure.getString(mContentResolver,
-                    Settings.Secure.ENABLED_INPUT_METHODS);
+            String mEnabledIM = Settings.Secure.getString(mContentResolver, Settings.Secure.ENABLED_INPUT_METHODS);
             int total = infoList == null ? 0 : infoList.size();
             for (int index = 0; index < total; index++) {
                 InputMethodItem mInputMethodItem = new InputMethodItem(mContext, infoList.get(index));
                 String mDefaultIM = mInputMethodItem.getImPackage();
-                if (mDefaultIM.contains("com.iflytek.inputmethod")) {
-                    Settings.Secure.putString(mContentResolver,
-                            Settings.Secure.DEFAULT_INPUT_METHOD, mDefaultIM);
+                if (mDefaultIM.contains("com.iflytek.inputmethod") || mDefaultIM.contains("com.google.android.apps.inputmethod.pinyin")) {
+                    Settings.Secure.putString(mContentResolver, Settings.Secure.DEFAULT_INPUT_METHOD, mDefaultIM);
                     if (!mEnabledIM.contains(mDefaultIM)) {
-                        Settings.Secure.putString(mContentResolver,
-                                Settings.Secure.ENABLED_INPUT_METHODS, mEnabledIM + ":" + mDefaultIM);
+                        Settings.Secure.putString(mContentResolver, Settings.Secure.ENABLED_INPUT_METHODS, mEnabledIM + ":" + mDefaultIM);
                     }
                     break;
                 }
