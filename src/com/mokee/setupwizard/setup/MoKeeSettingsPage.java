@@ -153,7 +153,7 @@ public class MoKeeSettingsPage extends SetupPage {
         return mkHardwareManager.get(MkHardwareManager.FEATURE_KEY_DISABLE);
     }
 
-    protected static boolean hideThemeSwitch(Context context) {
+    private static boolean hideThemeSwitch(Context context) {
         return ThemeUtils.getDefaultThemePackageName(context).equals(ThemeConfig.SYSTEM_DEFAULT);
     }
 
@@ -252,12 +252,14 @@ public class MoKeeSettingsPage extends SetupPage {
 
         private void updateDisableNavkeysOption() {
             if (!mHideNavKeysRow) {
+                final Bundle myPageBundle = mPage.getData();
                 boolean enabled = Settings.Secure.getInt(getActivity().getContentResolver(),
                         Settings.Secure.DEV_FORCE_SHOW_NAVBAR, 0) != 0;
-                boolean checked = mPage.getData().containsKey(KEY_ENABLE_NAV_KEYS) ?
-                        mPage.getData().getBoolean(KEY_ENABLE_NAV_KEYS) :
+                boolean checked = myPageBundle.containsKey(KEY_ENABLE_NAV_KEYS) ?
+                        myPageBundle.getBoolean(KEY_ENABLE_NAV_KEYS) :
                         enabled;
                 mNavKeys.setChecked(checked);
+                myPageBundle.putBoolean(KEY_ENABLE_NAV_KEYS, checked);
             }
         }
 
