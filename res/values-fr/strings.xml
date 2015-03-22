@@ -52,10 +52,7 @@
   <string name="enable_mobile_data_summary">Voulez-vous utiliser les données mobiles lors de l\'installation ? L\'activation des données mobiles peut-être être soumis à des frais de données.</string>
   <string name="no">Non</string>
   <string name="yes">Oui</string>
-  <string name="data_sim_name">SIM <xliff:g id="sub">%d</xliff:g> - <xliff:g id="name">%s</xliff:g></string>
   <string name="emergency_call">Appel d\'urgence</string>
   <string name="services_privacy_policy">Politique de confidentialité</string>
-  <string name="services_apply_theme">Appliquer le thème <xliff:g id="name" example="Material">%s</xliff:g></string>
-  <string name="services_apply_theme_label"><xliff:g id="name" example="Appliquer le thème Material">%s</xliff:g> active les icônes uniques, fonds d\'écran, et polices.</string>
   <string name="services_os_nav_keys_label"><b>Utilisation des touches de navigation de l\'écran</b> au lieu des touches physiques.</string>
 </resources>
