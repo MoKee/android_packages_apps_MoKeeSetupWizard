@@ -19,6 +19,8 @@
   <string name="app_name">Installationsguide</string>
   <string name="next">Næste</string>
   <string name="skip">Spring over</string>
+  <string name="start">Start</string>
+  <string name="ok">OK</string>
   <string name="loading">Lige et øjeblik\u2026</string>
   <string name="setup_complete">Installationen er fuldført</string>
   <string name="setup_welcome">Velkommen</string>
@@ -50,6 +52,7 @@
   <string name="enable_mobile_data_summary">Vil du bruge mobildata under installationen? Aktivering af mobildata kan medføre dataafgifter.</string>
   <string name="no">Nej</string>
   <string name="yes">Ja</string>
+  <string name="data_sim_name">SIM <xliff:g id="sub">%d</xliff:g> - <xliff:g id="name">%s</xliff:g></string>
   <string name="emergency_call">Nødopkald</string>
   <string name="services_privacy_policy">Privatlivspolitik</string>
   <string name="services_apply_theme">Anvend temaet <xliff:g id="name" example="Material">%s</xliff:g></string>

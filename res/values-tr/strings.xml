@@ -52,7 +52,7 @@
   <string name="enable_mobile_data_summary">Kurulum sırasında mobil veriyi kullanmak istiyor musunuz? Mobil veriyi açarak veri ücretlerine tabi olabilirsiniz.</string>
   <string name="no">Hayır</string>
   <string name="yes">Evet</string>
-  <string name="data_sim_name">SIM <xliff:g id="sub">%d </xliff:g> - <xliff:g id="adı">%s </xliff:g></string>
+  <string name="data_sim_name">SIM <xliff:g id="sub">%d</xliff:g> - <xliff:g id="name">%s</xliff:g></string>
   <string name="emergency_call">Acil durum çağrısı</string>
   <string name="setup_personalization">Kişileştirme</string>
   <string name="services_privacy_policy">Gizlilik Politikası</string>

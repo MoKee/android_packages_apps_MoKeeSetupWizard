@@ -16,11 +16,11 @@
      limitations under the License.
 -->
 <resources xmlns:xliff="urn:oasis:names:tc:xliff:document:1.2">
-  <string name="app_name">Почетна подешавања</string>
+  <string name="app_name">Чаробњак за подешавање</string>
   <string name="next">Следеће</string>
   <string name="skip">Прескочи</string>
   <string name="start">Почетак</string>
-  <string name="ok">ОК</string>
+  <string name="ok">OK</string>
   <string name="loading">Само секунд\u2026</string>
   <string name="setup_complete">Подешавање је завршено</string>
   <string name="setup_welcome">Добродошли</string>

@@ -20,6 +20,7 @@
   <string name="next">Dalej</string>
   <string name="skip">Pomiń</string>
   <string name="start">Rozpocznij</string>
+  <string name="ok">OK</string>
   <string name="loading">Chwileczkę\u2026</string>
   <string name="setup_complete">Konfiguracja zakończona</string>
   <string name="setup_welcome">Witaj</string>
@@ -51,6 +52,7 @@
   <string name="enable_mobile_data_summary">Czy chcesz użyć mobilnej transmisji danych podczas instalacji? Włącznie transmisji danych może wiązać się z dodatkowymi opłatami.</string>
   <string name="no">Nie</string>
   <string name="yes">Tak</string>
+  <string name="data_sim_name">SIM <xliff:g id="sub">%d</xliff:g> - <xliff:g id="name">%s</xliff:g></string>
   <string name="emergency_call">Połączenie alarmowe</string>
   <string name="services_privacy_policy">Polityka Prywatności</string>
   <string name="services_apply_theme">Zastosuj motyw <xliff:g id="name" example="Material">%s</xliff:g></string>
