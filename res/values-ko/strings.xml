@@ -52,7 +52,7 @@
   <string name="enable_mobile_data_summary">설정할 동안 데이터 통신을 사용하시겠습니까? 데이터 통신을 켜면 통신요금이 부과될 수 있습니다.</string>
   <string name="no">아니오</string>
   <string name="yes">예</string>
-  <string name="data_sim_name">SIM <xliff:g id="sub">%d</xliff:g> - <xliff:g id="name">%s</xliff:g></string>
+  <string name="data_sim_name">SIM카드 <xliff:g id="sub">%d</xliff:g> - <xliff:g id="name">%s</xliff:g></string>
   <string name="emergency_call">긴급 통화</string>
   <string name="services_privacy_policy">개인 정보 보호 정책</string>
   <string name="services_apply_theme"><xliff:g id="name" example="Material">%s</xliff:g> 테마 적용</string>

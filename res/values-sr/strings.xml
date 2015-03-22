@@ -16,11 +16,11 @@
      limitations under the License.
 -->
 <resources xmlns:xliff="urn:oasis:names:tc:xliff:document:1.2">
-  <string name="app_name">Чаробњак за подешавање</string>
+  <string name="app_name">Почетна подешавања</string>
   <string name="next">Следеће</string>
   <string name="skip">Прескочи</string>
   <string name="start">Почетак</string>
-  <string name="ok">OK</string>
+  <string name="ok">ОК</string>
   <string name="loading">Само секунд\u2026</string>
   <string name="setup_complete">Подешавање је завршено</string>
   <string name="setup_welcome">Добродошли</string>
@@ -54,6 +54,7 @@
   <string name="yes">Да</string>
   <string name="data_sim_name">SIM <xliff:g id="sub">%d</xliff:g> - <xliff:g id="name">%s</xliff:g></string>
   <string name="emergency_call">Хитан позив</string>
+  <string name="setup_personalization">Персонализација</string>
   <string name="services_privacy_policy">Политика приватности</string>
   <string name="services_apply_theme">Примени <xliff:g id="name" example="Material">%s</xliff:g> тему</string>
   <string name="services_apply_theme_label"><xliff:g id="name" example="Apply the Material theme">%s</xliff:g> омогућава јединствене иконе, тапете и фонтове.</string>
