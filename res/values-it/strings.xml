@@ -19,11 +19,11 @@
   <string name="app_name">Installazione guidata</string>
   <string name="next">Avanti</string>
   <string name="skip">Salta</string>
-  <string name="start">Cominciamo</string>
+  <string name="start">Inizio</string>
   <string name="ok">OK</string>
   <string name="loading">Solo un secondo\u2026</string>
   <string name="setup_complete">Il setup è completo</string>
-  <string name="setup_welcome">Benvenuto</string>
+  <string name="setup_welcome">Benvenuti</string>
   <string name="setup_wifi">Seleziona Wi-Fi</string>
   <string name="setup_sim_missing">Scheda SIM non inserita</string>
   <string name="setup_choose_data_sim">Scegli una SIM per la connessione dati</string>
@@ -54,6 +54,7 @@
   <string name="yes">Si</string>
   <string name="data_sim_name">SIM <xliff:g id="sub">%d</xliff:g> - <xliff:g id="name">%s</xliff:g></string>
   <string name="emergency_call">Chiamata di emergenza</string>
+  <string name="setup_personalization">Personalizzazione</string>
   <string name="services_privacy_policy">Condizioni sulla Privacy</string>
   <string name="services_apply_theme">Applica il tema<xliff:g id="name" example="Material">%s</xliff:g></string>
   <string name="services_apply_theme_label"><xliff:g id="name" example="Apply the Material theme">%s</xliff:g> attiva icone, sfondi e caratteri unici.</string>
