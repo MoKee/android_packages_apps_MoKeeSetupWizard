@@ -50,8 +50,8 @@
   <string name="setup_mobile_data_no_service">沒有服務</string>
   <string name="setup_mobile_data_emergency_only">僅可撥打緊急電話</string>
   <string name="enable_mobile_data_summary">您想在設定過程中使用行動網路嗎？使用行動網路可能會產生傳輸費用。</string>
-  <string name="no">否</string>
-  <string name="yes">是</string>
+  <string name="no">否 </string>
+  <string name="yes">是 </string>
   <string name="data_sim_name">SIM <xliff:g id="sub">%d</xliff:g> - <xliff:g id="name">%s</xliff:g></string>
   <string name="emergency_call">緊急電話</string>
   <string name="setup_personalization">個人化</string>
