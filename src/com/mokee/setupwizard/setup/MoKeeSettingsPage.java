@@ -136,6 +136,7 @@ public class MoKeeSettingsPage extends SetupPage {
             Log.i(TAG, "Applying default theme");
             final ThemeManager tm = (ThemeManager) mContext.getSystemService(Context.THEME_SERVICE);
             tm.applyDefaultTheme();
+
         } else {
             getCallbacks().finishSetup();
         }
