@@ -16,9 +16,6 @@
      limitations under the License.
 -->
 <resources xmlns:xliff="urn:oasis:names:tc:xliff:document:1.2">
-  <string name="app_name">Setup Wizard</string>
-  <string name="next">Next</string>
-  <string name="skip">Skip</string>
   <string name="start">start</string>
   <string name="ok">ok</string>
 </resources>

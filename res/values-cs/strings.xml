@@ -20,7 +20,6 @@
   <string name="next">Další</string>
   <string name="skip">Přeskočit</string>
   <string name="start">Začít</string>
-  <string name="ok">OK</string>
   <string name="loading">Jen chvilku...</string>
   <string name="setup_complete">Nastavení dokončeno</string>
   <string name="setup_welcome">Vítejte</string>
@@ -52,7 +51,6 @@
   <string name="enable_mobile_data_summary">Chcete během instalace použít mobilní data? Zapnutí mobilních dat vás může něco stát.</string>
   <string name="no">Ne</string>
   <string name="yes">Ano</string>
-  <string name="data_sim_name">SIM <xliff:g id="sub">%d</xliff:g> - <xliff:g id="name">%s</xliff:g></string>
   <string name="emergency_call">Tísňové volání</string>
   <string name="setup_personalization">Personalizace</string>
   <string name="services_privacy_policy">Zásady ochrany osobních údajů</string>
