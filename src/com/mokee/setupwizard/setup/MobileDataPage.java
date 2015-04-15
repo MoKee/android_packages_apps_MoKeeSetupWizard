@@ -20,6 +20,7 @@ import android.app.Fragment;
 import android.app.FragmentManager;
 import android.content.Context;
 import android.os.Bundle;
+import android.os.Handler;
 import android.telephony.PhoneStateListener;
 import android.telephony.ServiceState;
 import android.telephony.SignalStrength;
@@ -27,11 +28,15 @@ import android.telephony.SubscriptionManager;
 import android.telephony.TelephonyManager;
 import android.text.TextUtils;
 import android.view.View;
+import android.view.ViewGroup;
+import android.view.animation.AnimationUtils;
 import android.widget.ImageView;
+import android.widget.ProgressBar;
 import android.widget.Switch;
 import android.widget.TextView;
 
 import com.mokee.setupwizard.R;
+import com.mokee.setupwizard.SetupWizardApp;
 import com.mokee.setupwizard.ui.SetupPageFragment;
 import com.mokee.setupwizard.util.SetupWizardUtils;
 
@@ -68,6 +73,8 @@ public class MobileDataPage extends SetupPage {
 
     public static class MobileDataFragment extends SetupPageFragment {
 
+        private ViewGroup mPageView;
+        private ProgressBar mProgressBar;
         private View mEnableDataRow;
         private Switch mEnableMobileData;
         private ImageView mSignalView;
@@ -79,26 +86,36 @@ public class MobileDataPage extends SetupPage {
 
         private boolean mIsAttached = false;
 
+        private Context mContext;
+
+        private final Handler mHandler = new Handler();
+
+        private final Runnable mRadioReadyRunnable = new Runnable() {
+            @Override
+            public void run() {
+                hideWaitForRadio();
+            }
+        };
+
         private PhoneStateListener mPhoneStateListener =
                 new PhoneStateListener(SubscriptionManager.getDefaultDataSubId()) {
 
-            @Override
-            public void onSignalStrengthsChanged(SignalStrength signalStrength) {
-                if (mIsAttached) {
-                    mSignalStrength = signalStrength;
-                    updateSignalStrength();
-                }
-            }
+                    @Override
+                    public void onSignalStrengthsChanged(SignalStrength signalStrength) {
+                        mSignalStrength = signalStrength;
+                        updateSignalStrength();
+                    }
 
-            @Override
-            public void onServiceStateChanged(ServiceState state) {
-                if (mIsAttached) {
-                    mServiceState = state;
-                    updateSignalStrength();
-                }
-            }
+                    @Override
+                    public void onServiceStateChanged(ServiceState state) {
+                        if (SetupWizardUtils.isRadioReady(mContext, state)) {
+                            hideWaitForRadio();
+                        }
+                        mServiceState = state;
+                        updateSignalStrength();
+                    }
 
-        };
+                };
 
         private View.OnClickListener mEnableDataClickListener = new View.OnClickListener() {
             @Override
@@ -111,6 +128,8 @@ public class MobileDataPage extends SetupPage {
 
         @Override
         protected void initializePage() {
+            mPageView = (ViewGroup)mRootView.findViewById(R.id.page_view);
+            mProgressBar = (ProgressBar) mRootView.findViewById(R.id.progress);
             mEnableDataRow = mRootView.findViewById(R.id.data);
             mEnableDataRow.setOnClickListener(mEnableDataClickListener);
             mEnableMobileData = (Switch) mRootView.findViewById(R.id.data_switch);
@@ -129,12 +148,19 @@ public class MobileDataPage extends SetupPage {
         public void onResume() {
             super.onResume();
             mIsAttached = true;
+            mContext = getActivity().getApplicationContext();
             mPhone = (TelephonyManager)getActivity().getSystemService(Context.TELEPHONY_SERVICE);
             mPhone.listen(mPhoneStateListener,
                     PhoneStateListener.LISTEN_SERVICE_STATE
                             | PhoneStateListener.LISTEN_SIGNAL_STRENGTHS);
             updateDataConnectionStatus();
             updateSignalStrength();
+            if (SetupWizardUtils.isRadioReady(mContext, null)) {
+                hideWaitForRadio();
+            } else if (mTitleView != null) {
+                mTitleView.setText(R.string.loading);
+                mHandler.postDelayed(mRadioReadyRunnable, SetupWizardApp.RADIO_READY_TIMEOUT);
+            }
         }
 
         @Override
@@ -142,6 +168,19 @@ public class MobileDataPage extends SetupPage {
             super.onPause();
             mIsAttached = false;
             mPhone.listen(mPhoneStateListener, PhoneStateListener.LISTEN_NONE);
+        }
+
+        private void hideWaitForRadio() {
+            if (getUserVisibleHint() && mProgressBar.isShown()) {
+                mHandler.removeCallbacks(mRadioReadyRunnable);
+                if (mTitleView != null) {
+                    mTitleView.setText(mPage.getTitleResId());
+                }
+                mProgressBar.setVisibility(View.GONE);
+                mPageView.setVisibility(View.VISIBLE);
+                mPageView.startAnimation(
+                        AnimationUtils.loadAnimation(getActivity(), R.anim.translucent_enter));
+            }
         }
 
         private void updateCarrierText() {

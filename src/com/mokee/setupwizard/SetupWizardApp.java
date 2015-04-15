@@ -20,6 +20,7 @@ import android.app.Application;
 import android.app.StatusBarManager;
 import android.content.Context;
 import android.content.pm.PackageManager;
+import android.os.Handler;
 import android.provider.Settings;
 
 import com.mokee.setupwizard.util.SetupWizardUtils;
@@ -57,7 +58,20 @@ public class SetupWizardApp extends Application {
     public static final int REQUEST_CODE_RESTORE_GMS= 2;
     public static final int REQUEST_CODE_SETUP_CAPTIVE_PORTAL= 3;
 
+    public static final int RADIO_READY_TIMEOUT = 10 * 1000;
+
+    private boolean mIsRadioReady = false;
+
     private StatusBarManager mStatusBarManager;
+
+    private final Handler mHandler = new Handler();
+
+    private final Runnable mRadioTimeoutRunnable = new Runnable() {
+        @Override
+        public void run() {
+            mIsRadioReady = true;
+        }
+    };
 
     @Override
     public void onCreate() {
@@ -82,6 +96,18 @@ public class SetupWizardApp extends Application {
             // Continue with setup
             disableCaptivePortalDetection();
         }
+        mHandler.postDelayed(mRadioTimeoutRunnable, SetupWizardApp.RADIO_READY_TIMEOUT);
+    }
+
+    public boolean isRadioReady() {
+        return mIsRadioReady;
+    }
+
+    public void setRadioReady(boolean radioReady) {
+        if (!mIsRadioReady && radioReady) {
+            mHandler.removeCallbacks(mRadioTimeoutRunnable);
+        }
+        mIsRadioReady = radioReady;
     }
 
     public void disableStatusBar() {
