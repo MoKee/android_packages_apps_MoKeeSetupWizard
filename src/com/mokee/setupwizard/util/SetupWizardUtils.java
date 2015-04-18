@@ -32,7 +32,7 @@ import android.telephony.SubscriptionManager;
 import android.telephony.TelephonyManager;
 import android.util.Log;
 
-import com.cyanogenmod.setupwizard.SetupWizardApp;
+import com.mokee.setupwizard.SetupWizardApp;
 
 import com.google.android.gms.common.ConnectionResult;
 import com.google.android.gms.common.GooglePlayServicesUtil;
