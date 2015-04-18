@@ -38,8 +38,6 @@ import android.widget.ImageView;
 import android.widget.ProgressBar;
 import android.widget.TextView;
 
-import com.android.internal.telephony.SubscriptionController;
-
 import com.mokee.setupwizard.R;
 import com.mokee.setupwizard.SetupWizardApp;
 import com.mokee.setupwizard.ui.SetupPageFragment;
@@ -51,11 +49,8 @@ public class ChooseDataSimPage extends SetupPage {
 
     public static final String TAG = "ChooseDataSimPage";
 
-    private SubscriptionManager mSubscriptionManager;
-
     public ChooseDataSimPage(Context context, SetupDataCallbacks callbacks) {
         super(context, callbacks);
-        mSubscriptionManager = SubscriptionManager.from(context);
     }
 
     @Override
@@ -99,6 +94,7 @@ public class ChooseDataSimPage extends SetupPage {
         private boolean mIsAttached = false;
 
         private Context mContext;
+        private SubscriptionManager mSubscriptionManager;
 
         private final Handler mHandler = new Handler();
 
@@ -114,8 +110,7 @@ public class ChooseDataSimPage extends SetupPage {
             public void onClick(View view) {
                 SubscriptionInfo subInfoRecord = (SubscriptionInfo)view.getTag();
                 if (subInfoRecord != null) {
-                    SubscriptionController.getInstance()
-                            .setDefaultDataSubId(subInfoRecord.getSubscriptionId());
+                    mSubscriptionManager.setDefaultDataSubId(subInfoRecord.getSubscriptionId());
                     setDataSubChecked(subInfoRecord);
                 }
             }
@@ -125,8 +120,7 @@ public class ChooseDataSimPage extends SetupPage {
         protected void initializePage() {
             mPageView = (ViewGroup)mRootView.findViewById(R.id.page_view);
             mProgressBar = (ProgressBar) mRootView.findViewById(R.id.progress);
-            List<SubscriptionInfo> subInfoRecords =  SubscriptionController
-                    .getInstance().getActiveSubscriptionInfoList();
+            List<SubscriptionInfo> subInfoRecords = mSubscriptionManager.getActiveSubscriptionInfoList();
             int simCount = subInfoRecords.size();
             mSubInfoRecords = new SparseArray<SubscriptionInfo>(simCount);
             for (int i = 0; i < simCount; i++) {
@@ -162,10 +156,16 @@ public class ChooseDataSimPage extends SetupPage {
         }
 
         @Override
+        public void onCreate(Bundle savedInstanceState) {
+            super.onCreate(savedInstanceState);
+            mContext = getActivity().getApplicationContext();
+            mSubscriptionManager = SubscriptionManager.from(mContext);
+        }
+
+        @Override
         public void onResume() {
             super.onResume();
             mIsAttached = true;
-            mContext = getActivity().getApplicationContext();
             mPhone = (TelephonyManager)getActivity().getSystemService(Context.TELEPHONY_SERVICE);
             for (int i = 0; i < mPhoneStateListeners.size(); i++) {
                 mPhone.listen(mPhoneStateListeners.get(i),
@@ -244,9 +244,8 @@ public class ChooseDataSimPage extends SetupPage {
             if (mIsAttached) {
                 for (int i = 0; i < mSubInfoRecords.size(); i++) {
                     SubscriptionInfo subInfoRecord = mSubInfoRecords.get(i);
-                    mCheckBoxes.get(i).setChecked(SubscriptionManager.getDefaultDataSubId()
+                    mCheckBoxes.get(i).setChecked(mSubscriptionManager.getDefaultDataPhoneId()
                             == subInfoRecord.getSimSlotIndex());
-
                 }
             }
         }
