@@ -29,7 +29,7 @@ LOCAL_PROGUARD_FLAG_FILES := proguard.flags
 LOCAL_STATIC_JAVA_LIBRARIES := \
     android-support-v4 \
     android-support-v13 \
-    libGooglePlayServices \
+    play \
     libphonenumber
 
 # Include res dir from chips
