@@ -54,6 +54,7 @@
   <string name="yes">예</string>
   <string name="data_sim_name">SIM카드 <xliff:g id="sub">%d</xliff:g> - <xliff:g id="name">%s</xliff:g></string>
   <string name="emergency_call">긴급 통화</string>
+  <string name="setup_personalization">개인 설정</string>
   <string name="services_privacy_policy">개인 정보 보호 정책</string>
   <string name="services_apply_theme"><xliff:g id="name" example="Material">%s</xliff:g> 테마 적용</string>
   <string name="services_apply_theme_label"><xliff:g id="name" example="Apply the Material theme">%s</xliff:g>은 독특한 아이콘, 배경화면과 폰트를 활성화합니다.</string>
