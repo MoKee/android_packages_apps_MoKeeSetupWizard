@@ -98,7 +98,7 @@ public class FinishPage extends SetupPage {
             for (int index = 0; index < total; index++) {
                 InputMethodItem mInputMethodItem = new InputMethodItem(mContext, infoList.get(index));
                 String mDefaultIM = mInputMethodItem.getImPackage();
-                if (mDefaultIM.contains("com.iflytek.inputmethod") || mDefaultIM.contains("com.google.android.apps.inputmethod.pinyin")) {
+                if (mDefaultIM.contains("com.iflytek.inputmethod") || mDefaultIM.contains("com.google.android.apps.inputmethod.pinyin") || mDefaultIM.contains("com.baidu.input")) {
                     Settings.Secure.putString(mContentResolver, Settings.Secure.DEFAULT_INPUT_METHOD, mDefaultIM);
                     if (!mEnabledIM.contains(mDefaultIM)) {
                         Settings.Secure.putString(mContentResolver, Settings.Secure.ENABLED_INPUT_METHODS, mEnabledIM + ":" + mDefaultIM);
