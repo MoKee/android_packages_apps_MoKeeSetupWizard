@@ -19,9 +19,11 @@ package com.mokee.setupwizard.setup;
 import android.app.Activity;
 import android.app.ActivityOptions;
 import android.app.FragmentManager;
+import android.content.ComponentName;
 import android.content.Context;
 import android.content.Intent;
 import android.net.ConnectivityManager;
+import android.net.Uri;
 import android.os.Bundle;
 import android.os.Handler;
 import android.provider.Settings;
@@ -37,6 +39,7 @@ import java.io.IOException;
 import java.net.HttpURLConnection;
 import java.net.MalformedURLException;
 import java.net.URL;
+import java.util.Random;
 
 public class WifiSetupPage extends SetupPage {
 
@@ -44,9 +47,6 @@ public class WifiSetupPage extends SetupPage {
 
     private static final String DEFAULT_SERVER = "download.mokeedev.com";
     private static final int CAPTIVE_PORTAL_SOCKET_TIMEOUT_MS = 10000;
-
-    private static final String CAPTIVE_PORTAL_LOGIN_ACTION
-            = "android.net.action.captive_portal_login";
 
     private LoadingFragment mLoadingFragment;
 
@@ -56,6 +56,8 @@ public class WifiSetupPage extends SetupPage {
 
     private final Handler mHandler = new Handler();
 
+    private String mResponseToken;
+
     private Runnable mFinishCaptivePortalCheckRunnable = new Runnable() {
         @Override
         public void run() {
@@ -63,7 +65,12 @@ public class WifiSetupPage extends SetupPage {
                 try {
                     int netId = ConnectivityManager.from(mContext)
                             .getNetworkForType(ConnectivityManager.TYPE_WIFI).netId;
-                    Intent intent = new Intent(CAPTIVE_PORTAL_LOGIN_ACTION);
+                    mResponseToken = String.valueOf(new Random().nextLong());
+                    Intent intent = new Intent();
+                    intent.setData(Uri.fromParts("netid", Integer.toString(netId),
+                            mResponseToken));
+                    intent.setComponent(new ComponentName("com.android.captiveportallogin",
+                            "com.android.captiveportallogin.CaptivePortalLoginActivity"));
                     intent.putExtra(Intent.EXTRA_TEXT, String.valueOf(netId));
                     intent.putExtra("status_bar_color",
                             mContext.getResources().getColor(R.color.primary_dark));
@@ -150,10 +157,15 @@ public class WifiSetupPage extends SetupPage {
                 getCallbacks().onNextPage();
             }
         } else if (requestCode == SetupWizardApp.REQUEST_CODE_SETUP_CAPTIVE_PORTAL) {
-            if (resultCode == Activity.RESULT_CANCELED) {
+            String token = data.getStringExtra("response_token");
+            if (token != null && !token.equals(mResponseToken)) {
                 launchWifiSetup();
             } else {
-                getCallbacks().onNextPage();
+                if (resultCode == Activity.RESULT_CANCELED) {
+                    launchWifiSetup();
+                } else {
+                    getCallbacks().onNextPage();
+                }
             }
         }  else {
             return false;
