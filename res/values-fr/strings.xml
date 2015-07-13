@@ -49,7 +49,7 @@
   <string name="setup_mobile_data">Activer les données mobiles</string>
   <string name="setup_mobile_data_no_service">Aucun service</string>
   <string name="setup_mobile_data_emergency_only">Appels d\'urgence uniquement</string>
-  <string name="enable_mobile_data_summary">Voulez-vous utiliser les données mobiles lors de l\'installation ? L\'activation des données mobiles peut-être être soumis à des frais de données.</string>
+  <string name="enable_mobile_data_summary">Voulez-vous utiliser les données mobiles lors de l\'installation ? L\'activation des données mobiles peut-être être soumise à des frais de données.</string>
   <string name="no">Non</string>
   <string name="yes">Oui</string>
   <string name="data_sim_name">SIM <xliff:g id="sub">%d</xliff:g> - <xliff:g id="name">%s</xliff:g></string>
@@ -59,4 +59,11 @@
   <string name="services_apply_theme">Appliquer le thème <xliff:g id="name" example="Material">%s</xliff:g></string>
   <string name="services_apply_theme_label"><xliff:g id="name" example="Appliquer le thème Material">%s</xliff:g> active les icônes uniques, fonds d\'écran, et polices.</string>
   <string name="services_os_nav_keys_label"><b>Utilisation des touches de navigation de l\'écran</b> au lieu des touches physiques.</string>
+  <string name="settings_fingerprint_setup_title">Sélectionnez la méthode de secours pour déverrouiller l\'appareil</string>
+  <string name="settings_fingerprint_setup_details">Comment voulez-vous verrouiller votre écran ?</string>
+  <string name="fingerprint_setup_title">Paramétrage de l\'empreinte digitale</string>
+  <string name="fingerprint_setup_summary">Pour utiliser le lecteur d\'empreinte digitale pour déverrouiller l\'appareil ou valider des achats, vous avez besoin de :</string>
+  <string name="fingerprint_setup_backup_lock_method">Configurer une méthode de secours pour déverrouiller l\'appareil</string>
+  <string name="fingerprint_setup_add_fingerprint">Ajoutez votre empreinte digitale</string>
+  <string name="fingerprint_setup_screen_lock_setup">Configurer le verrouillage de l\'appareil</string>
 </resources>

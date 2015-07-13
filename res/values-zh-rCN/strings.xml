@@ -59,4 +59,6 @@
   <string name="services_apply_theme">应用 <xliff:g id="name" example="Material">%s</xliff:g> 主题</string>
   <string name="services_apply_theme_label"><xliff:g id="name" example="Apply the Material theme">%s</xliff:g> 启用独特的图标、 壁纸和字体。</string>
   <string name="services_os_nav_keys_label"><b>使用虚拟导航键</b>替代实体按键。</string>
+  <string name="fingerprint_setup_add_fingerprint">添加你的指纹</string>
+  <string name="fingerprint_setup_screen_lock_setup">设置屏幕锁定</string>
 </resources>
