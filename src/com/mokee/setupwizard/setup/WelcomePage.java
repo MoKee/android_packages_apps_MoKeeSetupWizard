@@ -25,6 +25,7 @@ import android.content.res.Configuration;
 import android.content.res.Resources;
 import android.os.Bundle;
 import android.os.Handler;
+import android.os.SystemProperties;
 import android.view.View;
 import android.widget.ArrayAdapter;
 import android.widget.NumberPicker;
@@ -101,6 +102,8 @@ public class WelcomePage extends SetupPage {
             public void run() {
                 if (mCurrentLocale != null) {
                     com.android.internal.app.LocalePicker.updateLocale(mCurrentLocale);
+                    SystemProperties.set("persist.sys.language", mCurrentLocale.getLanguage());
+                    SystemProperties.set("persist.sys.country", mCurrentLocale.getCountry());
                 }
             }
         };
