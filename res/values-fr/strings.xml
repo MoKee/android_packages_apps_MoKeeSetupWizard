@@ -62,8 +62,6 @@
   <string name="settings_fingerprint_setup_title">Sélectionnez la méthode de secours pour déverrouiller l\'appareil</string>
   <string name="settings_fingerprint_setup_details">Comment voulez-vous verrouiller votre écran ?</string>
   <string name="fingerprint_setup_title">Paramétrage de l\'empreinte digitale</string>
-  <string name="fingerprint_setup_summary">Pour utiliser le lecteur d\'empreinte digitale pour déverrouiller l\'appareil ou valider des achats, vous avez besoin de :</string>
-  <string name="fingerprint_setup_backup_lock_method">Configurer une méthode de secours pour déverrouiller l\'appareil</string>
   <string name="fingerprint_setup_add_fingerprint">Ajoutez votre empreinte digitale</string>
   <string name="fingerprint_setup_screen_lock_setup">Configurer le verrouillage de l\'appareil</string>
 </resources>
