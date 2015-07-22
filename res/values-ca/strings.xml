@@ -59,4 +59,11 @@
   <string name="services_apply_theme">Aplica el tema <xliff:g id="name" example="Material">%s </xliff:g></string>
   <string name="services_apply_theme_label"><xliff:g id="name" example="Apply the Material theme">%s </xliff:g> habilitant icones úniques, fons de pantalla i tipus de lletra.</string>
   <string name="services_os_nav_keys_label"><b>Utilitza les tecles de navegació en pantalla</b> enlloc de les tecles físiques.</string>
+  <string name="settings_fingerprint_setup_title">Tipus de bloqueig de pantalla</string>
+  <string name="settings_fingerprint_setup_details">Com li agradaria la seva pantalla?</string>
+  <string name="fingerprint_setup_title">Organització d\'empremta digital</string>
+  <string name="fingerprint_setup_summary">Utilitzar el seu sensor d\'empremta dactilar per desbloquejar la pantalla, vostè necessitarà:</string>
+  <string name="fingerprint_setup_backup_lock_method">Mètode de desbloqueig secundàri</string>
+  <string name="fingerprint_setup_add_fingerprint">Afegir l\'empremta digital</string>
+  <string name="fingerprint_setup_screen_lock_setup">configuració de bloqueig de la pantalla</string>
 </resources>
