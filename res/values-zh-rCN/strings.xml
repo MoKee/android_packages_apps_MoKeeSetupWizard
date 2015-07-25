@@ -59,6 +59,11 @@
   <string name="services_apply_theme">应用 <xliff:g id="name" example="Material">%s</xliff:g> 主题</string>
   <string name="services_apply_theme_label"><xliff:g id="name" example="Apply the Material theme">%s</xliff:g> 启用独特的图标、 壁纸和字体。</string>
   <string name="services_os_nav_keys_label"><b>使用虚拟导航键</b>替代实体按键。</string>
+  <string name="settings_fingerprint_setup_title">选择备份屏幕锁类型</string>
+  <string name="settings_fingerprint_setup_details">你想要如何锁定屏幕?</string>
+  <string name="fingerprint_setup_title">指纹设置</string>
+  <string name="fingerprint_setup_summary">若要使用您的指纹传感器解锁您的屏幕，您需要:</string>
+  <string name="fingerprint_setup_backup_lock_method">设置二次解锁方法</string>
   <string name="fingerprint_setup_add_fingerprint">添加你的指纹</string>
   <string name="fingerprint_setup_screen_lock_setup">设置屏幕锁定</string>
 </resources>
