@@ -59,4 +59,11 @@
   <string name="services_apply_theme"><xliff:g id="name" example="Material">%s</xliff:g> Design anwenden</string>
   <string name="services_apply_theme_label"><xliff:g id="name" example="Apply the Material theme">%s </xliff:g> Aktivieren sie eindeutige Symbole , Hintergrundbilder und Schriftarten.</string>
   <string name="services_os_nav_keys_label"><b>Bildschirm-Navigationstasten</b> statt Hardwaretasten verwenden.</string>
+  <string name="settings_fingerprint_setup_title">Wählen Sie einen Backup- Bildschirm Sperrentyp</string>
+  <string name="settings_fingerprint_setup_details">Wie möchten Sie Ihren Bildschirm sperren?</string>
+  <string name="fingerprint_setup_title">Fingerabdruck einrichten</string>
+  <string name="fingerprint_setup_summary">Um Ihren Fingerabdrucksensor zu verwenden, um Ihren Bildschirm zu entsperren, benötigen Sie:</string>
+  <string name="fingerprint_setup_backup_lock_method">Einrichtung einer sekundären Entsperrungs-Methode</string>
+  <string name="fingerprint_setup_add_fingerprint">Füge deinen Fingerabdruck hinzu</string>
+  <string name="fingerprint_setup_screen_lock_setup">Bildschirmsperre einrichten</string>
 </resources>
