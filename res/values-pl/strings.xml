@@ -20,6 +20,7 @@
   <string name="next">Dalej</string>
   <string name="skip">Pomiń</string>
   <string name="start">Rozpocznij</string>
+  <string name="ok">Ok</string>
   <string name="loading">Chwileczkę\u2026</string>
   <string name="setup_complete">Konfiguracja zakończona</string>
   <string name="setup_welcome">Witaj</string>
@@ -35,7 +36,7 @@
   <string name="sim_missing_summary" product="default">Karta SIM nie została wykryta w twoim telefonie. Aby włożyć kartę SIM, przeczytaj instrukcję dołączoną do telefonu.</string>
   <string name="choose_data_sim_summary" product="tablet">Której karty SIM chcesz użyć do transmisji danych? Wybrana karta SIM może spowodować dodatkowe koszty, ponieważ zostanie ona użyta do skonfigurowania tabletu.</string>
   <string name="choose_data_sim_summary" product="default">Której karty SIM chcesz użyć do transmisji danych? Wybrana karta SIM może spowodować dodatkowe koszty, ponieważ zostanie ona użyta do skonfigurowania telefonu.</string>
-  <string name="date_time_summary">Ustaw strefę czasową, bieżącą datę i czas jeśli jest potrzebna</string>
+  <string name="date_time_summary">Ustaw strefę czasową, bieżącą datę i czas jeśli jest potrzeba</string>
   <string name="backup_data_summary">Wykonaj <b>kopię zapasową</b> danych aplikacji, haseł WiFi i innych ustawień na serwerach Google</string>
   <string name="other_services_summary">Usługi te umożliwiają działanie aplikacjom Google, możesz jest włączyć lub wyłączyć kiedy chcesz. Dane będą wykorzystywane zgodnie z Google <xliff:g id="name" example="Privacy Policy">%s</xliff:g>.</string>
   <string name="location_services_summary">Usługi lokalizacji umożliwiają systemowi i innym aplikacjom na zbieranie danych o użytkowniku w celu szybszego ustalenia przybliżonej lokalizacji. Np. jakaś aplikacja może użyć twojej przybliżonej lokalizacji w celu zlokalizowania kawiarni, które znajdują się w pobliżu.</string>
@@ -51,9 +52,17 @@
   <string name="enable_mobile_data_summary">Czy chcesz użyć mobilnej transmisji danych podczas instalacji? Włącznie transmisji danych może wiązać się z dodatkowymi opłatami.</string>
   <string name="no">Nie</string>
   <string name="yes">Tak</string>
+  <string name="data_sim_name">SIM <xliff:g id="sub">%d</xliff:g> - <xliff:g id="name">%s</xliff:g></string>
   <string name="emergency_call">Połączenie alarmowe</string>
+  <string name="setup_personalization">Personalizacja</string>
   <string name="services_privacy_policy">Polityka Prywatności</string>
   <string name="services_apply_theme">Zastosuj motyw <xliff:g id="name" example="Material">%s</xliff:g></string>
   <string name="services_apply_theme_label"><xliff:g id="name" example="Apply the Material theme">%s</xliff:g> zawiera unikalne ikony, tapety oraz czcionki.</string>
   <string name="services_os_nav_keys_label"><b>Użyj ekranowych przycisków nawigacyjnych</b> zamiast klawiszy sprzętowych.</string>
+  <string name="settings_fingerprint_setup_details">Jak chcesz blokować ekran?</string>
+  <string name="fingerprint_setup_title">Konfiguracja linii papilarnych</string>
+  <string name="fingerprint_setup_summary">Aby użyć swojego sensoru odcisku palca do odblokowania ekranu, musisz:</string>
+  <string name="fingerprint_setup_backup_lock_method">Ustaw drugą metodę odblokowania</string>
+  <string name="fingerprint_setup_add_fingerprint">Dodaj swój odcisk palca</string>
+  <string name="fingerprint_setup_screen_lock_setup">Konfiguracja ekranu blokady</string>
 </resources>
