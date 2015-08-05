@@ -59,6 +59,7 @@
   <string name="services_apply_theme">Zastosuj motyw <xliff:g id="name" example="Material">%s</xliff:g></string>
   <string name="services_apply_theme_label"><xliff:g id="name" example="Apply the Material theme">%s</xliff:g> zawiera unikalne ikony, tapety oraz czcionki.</string>
   <string name="services_os_nav_keys_label"><b>Użyj ekranowych przycisków nawigacyjnych</b> zamiast klawiszy sprzętowych.</string>
+  <string name="settings_fingerprint_setup_title">Wybierz kopię typu blokady ekranu</string>
   <string name="settings_fingerprint_setup_details">Jak chcesz blokować ekran?</string>
   <string name="fingerprint_setup_title">Konfiguracja linii papilarnych</string>
   <string name="fingerprint_setup_summary">Aby użyć swojego sensoru odcisku palca do odblokowania ekranu, musisz:</string>
