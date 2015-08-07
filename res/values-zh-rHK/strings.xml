@@ -25,8 +25,8 @@
   <string name="setup_complete">設定已完成</string>
   <string name="setup_welcome">歡迎</string>
   <string name="setup_wifi">選取 Wi-Fi</string>
-  <string name="setup_sim_missing">沒有 SIM 卡</string>
-  <string name="setup_choose_data_sim">選取使用行動數據的 SIM 卡</string>
+  <string name="setup_sim_missing">沒有 SIM 咭</string>
+  <string name="setup_choose_data_sim">選取使用流動數據的 SIM 咭</string>
   <string name="setup_location">定位服務</string>
   <string name="setup_other">其他服務</string>
   <string name="setup_datetime">日期與時間</string>
@@ -52,10 +52,18 @@
   <string name="enable_mobile_data_summary">您想在設定過程中使用行動網路嗎？使用行動網路可能會產生傳輸費用。</string>
   <string name="no">不</string>
   <string name="yes">是</string>
+  <string name="data_sim_name">SIM <xliff:g id="sub">%d</xliff:g> - <xliff:g id="name">%s</xliff:g></string>
   <string name="emergency_call">緊急電話</string>
   <string name="setup_personalization">個人化</string>
   <string name="services_privacy_policy">隱私權政策</string>
   <string name="services_apply_theme">套用 <xliff:g id="name" example="Material">%s</xliff:g> 主題</string>
   <string name="services_apply_theme_label"><xliff:g id="name" example="Apply the Material theme">%s</xliff:g> 來使用獨特的圖示、 桌布和字體。</string>
   <string name="services_os_nav_keys_label"><b>使用虛擬按鍵</b>替代實體按鍵。</string>
+  <string name="settings_fingerprint_setup_title">選擇備份畫面鎖定類型</string>
+  <string name="settings_fingerprint_setup_details">你想如何鎖定畫面？</string>
+  <string name="fingerprint_setup_title">指紋設定</string>
+  <string name="fingerprint_setup_summary">若想使用你的指紋傳感器解鎖畫面，你需要：</string>
+  <string name="fingerprint_setup_backup_lock_method">設定輔助解鎖方法</string>
+  <string name="fingerprint_setup_add_fingerprint">新增你的指紋</string>
+  <string name="fingerprint_setup_screen_lock_setup">設定畫面鎖定</string>
 </resources>
