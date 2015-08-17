@@ -30,7 +30,8 @@ LOCAL_STATIC_JAVA_LIBRARIES := \
     android-support-v4 \
     android-support-v13 \
     play \
-    libphonenumber
+    libphonenumber \
+    org.mokee.platform.sdk
 
 # Include res dir from chips
 google_play_dir := ../../../external/google/google_play_services/libproject/google-play-services_lib/res

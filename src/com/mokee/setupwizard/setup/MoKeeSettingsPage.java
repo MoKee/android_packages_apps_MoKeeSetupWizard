@@ -23,7 +23,6 @@ import android.content.SharedPreferences;
 import android.content.pm.ThemeUtils;
 import android.content.res.ThemeConfig;
 import android.content.res.ThemeManager;
-import android.hardware.MkHardwareManager;
 import android.os.Bundle;
 import android.os.RemoteException;
 import android.preference.PreferenceManager;
@@ -48,6 +47,8 @@ import com.mokee.setupwizard.util.SetupWizardUtils;
 
 import com.google.android.gms.common.ConnectionResult;
 import com.google.android.gms.common.GooglePlayServicesUtil;
+
+import mokee.hardware.MKHardwareManager;
 
 public class MoKeeSettingsPage extends SetupPage {
 
@@ -90,9 +91,8 @@ public class MoKeeSettingsPage extends SetupPage {
 
         Settings.Secure.putInt(context.getContentResolver(),
                 Settings.Secure.DEV_FORCE_SHOW_NAVBAR, enabled ? 1 : 0);
-        final MkHardwareManager mkHardwareManager =
-                (MkHardwareManager) context.getSystemService(Context.MKHW_SERVICE);
-        mkHardwareManager.set(MkHardwareManager.FEATURE_KEY_DISABLE, enabled);
+        final MKHardwareManager hardware = MKHardwareManager.getInstance(context);
+        hardware.set(MKHardwareManager.FEATURE_KEY_DISABLE, enabled);
 
         /* Save/restore button timeouts to disable them in softkey mode */
         SharedPreferences.Editor editor = prefs.edit();
@@ -143,15 +143,13 @@ public class MoKeeSettingsPage extends SetupPage {
     }
 
     private static boolean hideKeyDisabler(Context ctx) {
-        final MkHardwareManager mkHardwareManager =
-                (MkHardwareManager) ctx.getSystemService(Context.MKHW_SERVICE);
-        return !mkHardwareManager.isSupported(MkHardwareManager.FEATURE_KEY_DISABLE);
+        final MKHardwareManager hardware = MKHardwareManager.getInstance(ctx);
+        return !hardware.isSupported(MKHardwareManager.FEATURE_KEY_DISABLE);
     }
 
     private static boolean isKeyDisablerActive(Context ctx) {
-        final MkHardwareManager mkHardwareManager =
-                (MkHardwareManager) ctx.getSystemService(Context.MKHW_SERVICE);
-        return mkHardwareManager.get(MkHardwareManager.FEATURE_KEY_DISABLE);
+        final MKHardwareManager hardware = MKHardwareManager.getInstance(ctx);
+        return hardware.get(MKHardwareManager.FEATURE_KEY_DISABLE);
     }
 
     private static boolean hideThemeSwitch(Context context) {
