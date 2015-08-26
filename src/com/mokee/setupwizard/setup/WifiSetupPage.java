@@ -157,6 +157,10 @@ public class WifiSetupPage extends SetupPage {
                 getCallbacks().onNextPage();
             }
         } else if (requestCode == SetupWizardApp.REQUEST_CODE_SETUP_CAPTIVE_PORTAL) {
+            if (data == null) {
+                launchWifiSetup();
+                return true;
+            }
             String token = data.getStringExtra("response_token");
             if (token != null && !token.equals(mResponseToken)) {
                 launchWifiSetup();
