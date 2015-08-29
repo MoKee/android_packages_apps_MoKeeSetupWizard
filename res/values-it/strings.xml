@@ -59,4 +59,11 @@
   <string name="services_apply_theme">Applica il tema<xliff:g id="name" example="Material">%s</xliff:g></string>
   <string name="services_apply_theme_label"><xliff:g id="name" example="Apply the Material theme">%s</xliff:g> attiva icone, sfondi e caratteri unici.</string>
   <string name="services_os_nav_keys_label"><b>Usa i pulsanti virtuali a schermo</b> invece di quelli fisici.</string>
+  <string name="settings_fingerprint_setup_title">Seleziona il backup del tipo di blocco schermo</string>
+  <string name="settings_fingerprint_setup_details">Come vuoi bloccare lo schermo?</string>
+  <string name="fingerprint_setup_title">Setup dell\'impronta digitale</string>
+  <string name="fingerprint_setup_summary">Per usaee il tuo sensore di impronta digitale per sbloccare il tuo schermo, avrai bisogno di:</string>
+  <string name="fingerprint_setup_backup_lock_method">Impostare un metodo di sblocco secondario</string>
+  <string name="fingerprint_setup_add_fingerprint">Aggiungi la tua impronta digitale</string>
+  <string name="fingerprint_setup_screen_lock_setup">Imposta blocco schermo</string>
 </resources>
