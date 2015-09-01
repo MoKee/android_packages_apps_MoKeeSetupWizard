@@ -29,6 +29,9 @@ public class FinishSetupReceiver extends BroadcastReceiver {
 
     @Override
     public void onReceive(Context context, Intent intent) {
+        if (SetupWizardUtils.frpEnabled(context)) {
+            return;
+        }
         Settings.Global.putInt(context.getContentResolver(), Settings.Global.DEVICE_PROVISIONED, 1);
         Settings.Secure.putInt(context.getContentResolver(),
                 Settings.Secure.USER_SETUP_COMPLETE, 1);
