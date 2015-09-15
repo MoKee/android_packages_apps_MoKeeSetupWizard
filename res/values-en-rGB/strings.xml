@@ -16,6 +16,54 @@
      limitations under the License.
 -->
 <resources xmlns:xliff="urn:oasis:names:tc:xliff:document:1.2">
+  <string name="app_name"></string>
+  <string name="next"></string>
+  <string name="skip"></string>
   <string name="start">start</string>
   <string name="ok">ok</string>
+  <string name="loading"></string>
+  <string name="setup_complete"></string>
+  <string name="setup_welcome"></string>
+  <string name="setup_wifi"></string>
+  <string name="setup_sim_missing"></string>
+  <string name="setup_choose_data_sim"></string>
+  <string name="setup_location"></string>
+  <string name="setup_other"></string>
+  <string name="setup_datetime"></string>
+  <string name="setup_current_date"></string>
+  <string name="setup_current_time"></string>
+  <string name="sim_missing_summary" product="tablet"></string>
+  <string name="sim_missing_summary" product="default"></string>
+  <string name="choose_data_sim_summary" product="tablet"></string>
+  <string name="choose_data_sim_summary" product="default"></string>
+  <string name="date_time_summary"></string>
+  <string name="backup_data_summary"></string>
+  <string name="other_services_summary"></string>
+  <string name="location_services_summary"></string>
+  <string name="location_access_summary"></string>
+  <string name="location_gps" product="tablet"></string>
+  <string name="location_gps" product="default"></string>
+  <string name="location_network"></string>
+  <string name="location_network_telephony"></string>
+  <string name="location_network_gms"></string>
+  <string name="setup_mobile_data"></string>
+  <string name="setup_mobile_data_no_service"></string>
+  <string name="setup_mobile_data_emergency_only"></string>
+  <string name="enable_mobile_data_summary"></string>
+  <string name="no"></string>
+  <string name="yes"></string>
+  <string name="data_sim_name"></string>
+  <string name="emergency_call"></string>
+  <string name="setup_personalization"></string>
+  <string name="services_privacy_policy"></string>
+  <string name="services_apply_theme"></string>
+  <string name="services_apply_theme_label"></string>
+  <string name="services_os_nav_keys_label"></string>
+  <string name="settings_fingerprint_setup_title"></string>
+  <string name="settings_fingerprint_setup_details"></string>
+  <string name="fingerprint_setup_title"></string>
+  <string name="fingerprint_setup_summary"></string>
+  <string name="fingerprint_setup_backup_lock_method"></string>
+  <string name="fingerprint_setup_add_fingerprint"></string>
+  <string name="fingerprint_setup_screen_lock_setup"></string>
 </resources>
