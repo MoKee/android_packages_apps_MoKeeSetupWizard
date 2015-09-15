@@ -52,6 +52,7 @@
   <string name="enable_mobile_data_summary">Бажаєте використовувати мобільні дані під час налаштування? Увімкнення мобільних даних може коштувати вам грошенят.</string>
   <string name="no">Ні</string>
   <string name="yes">Так</string>
+  <string name="data_sim_name"></string>
   <string name="emergency_call">Надзвичайний виклик</string>
   <string name="setup_personalization">Персоналізація</string>
   <string name="services_privacy_policy">Конфіденційність</string>
@@ -59,4 +60,11 @@
   <string name="services_apply_theme_label"><xliff:g id="name" example="Apply the Material theme">%s</xliff:g> та використовувати її іконки, шпалери та шрифти.</string>
   <string name="services_os_nav_keys_label"><b>Використовувати навігаційні кнопки на екрані
 </b> замість апаратних.</string>
+  <string name="settings_fingerprint_setup_title"></string>
+  <string name="settings_fingerprint_setup_details"></string>
+  <string name="fingerprint_setup_title"></string>
+  <string name="fingerprint_setup_summary"></string>
+  <string name="fingerprint_setup_backup_lock_method"></string>
+  <string name="fingerprint_setup_add_fingerprint"></string>
+  <string name="fingerprint_setup_screen_lock_setup"></string>
 </resources>

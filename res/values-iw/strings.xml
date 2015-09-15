@@ -59,4 +59,11 @@
   <string name="services_apply_theme">החל את ערכת־העיצוב <xliff:g id="name" example="Material">%s</xliff:g></string>
   <string name="services_apply_theme_label"><xliff:g id="name" example="Apply the Material theme">%s</xliff:g> אפשר סמלים ייחודיים, רקעים וגופנים.</string>
   <string name="services_os_nav_keys_label"><b>השתמש במקשי הניווט במסך</b> במקום במקשים הפיזיים.</string>
+  <string name="settings_fingerprint_setup_title"></string>
+  <string name="settings_fingerprint_setup_details"></string>
+  <string name="fingerprint_setup_title"></string>
+  <string name="fingerprint_setup_summary"></string>
+  <string name="fingerprint_setup_backup_lock_method"></string>
+  <string name="fingerprint_setup_add_fingerprint"></string>
+  <string name="fingerprint_setup_screen_lock_setup"></string>
 </resources>
