@@ -16,22 +16,22 @@
      limitations under the License.
 -->
 <resources xmlns:xliff="urn:oasis:names:tc:xliff:document:1.2">
-  <string name="app_name">Expert de instalare</string>
+  <string name="app_name"></string>
   <string name="next"></string>
-  <string name="skip">Omite</string>
-  <string name="start">Pornire</string>
+  <string name="skip"></string>
+  <string name="start"></string>
   <string name="ok"></string>
   <string name="loading"></string>
-  <string name="setup_complete">Configurarea este completă</string>
+  <string name="setup_complete"></string>
   <string name="setup_welcome"></string>
-  <string name="setup_wifi">Selectaţi Wi-Fi</string>
+  <string name="setup_wifi"></string>
   <string name="setup_sim_missing"></string>
   <string name="setup_choose_data_sim"></string>
   <string name="setup_location"></string>
-  <string name="setup_other">Alte servicii</string>
-  <string name="setup_datetime">Dată &amp; oră</string>
-  <string name="setup_current_date">Data curentă</string>
-  <string name="setup_current_time">Ora curentă</string>
+  <string name="setup_other"></string>
+  <string name="setup_datetime"></string>
+  <string name="setup_current_date"></string>
+  <string name="setup_current_time"></string>
   <string name="sim_missing_summary" product="tablet"></string>
   <string name="sim_missing_summary" product="default"></string>
   <string name="choose_data_sim_summary" product="tablet"></string>
@@ -48,14 +48,14 @@
   <string name="location_network_gms"></string>
   <string name="setup_mobile_data"></string>
   <string name="setup_mobile_data_no_service"></string>
-  <string name="setup_mobile_data_emergency_only">Numai apeluri de urgenţă</string>
+  <string name="setup_mobile_data_emergency_only"></string>
   <string name="enable_mobile_data_summary"></string>
-  <string name="no">Nu</string>
-  <string name="yes">Da</string>
+  <string name="no"></string>
+  <string name="yes"></string>
   <string name="data_sim_name"></string>
-  <string name="emergency_call">Apel de urgenţă</string>
+  <string name="emergency_call"></string>
   <string name="setup_personalization"></string>
-  <string name="services_privacy_policy">Politica de confidențialitate</string>
+  <string name="services_privacy_policy"></string>
   <string name="services_apply_theme"></string>
   <string name="services_apply_theme_label"></string>
   <string name="services_os_nav_keys_label"></string>
