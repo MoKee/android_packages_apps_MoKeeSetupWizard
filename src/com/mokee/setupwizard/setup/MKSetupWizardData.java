@@ -116,10 +116,14 @@ public class MKSetupWizardData extends AbstractSetupData {
     private void showHideSimMissingPage() {
         SimCardMissingPage simCardMissingPage =
                 (SimCardMissingPage) getPage(SimCardMissingPage.TAG);
-        if (simCardMissingPage != null && isSimInserted()) {
-            simCardMissingPage.setHidden(true);
-            if (isCurrentPage(simCardMissingPage)) {
-                onNextPage();
+        if (simCardMissingPage != null) {
+            if (isSimInserted()) {
+                simCardMissingPage.setHidden(true);
+                if (isCurrentPage(simCardMissingPage)) {
+                    onNextPage();
+                }
+            } else {
+                simCardMissingPage.setHidden(false);
             }
         }
     }
@@ -175,7 +179,8 @@ public class MKSetupWizardData extends AbstractSetupData {
                 continue;
             }
             if (state != TelephonyManager.SIM_STATE_ABSENT
-                    && state != TelephonyManager.SIM_STATE_UNKNOWN) {
+                    && state != TelephonyManager.SIM_STATE_UNKNOWN
+                    && state != TelephonyManager.SIM_STATE_NOT_READY) {
                  return true;
             }
         }
