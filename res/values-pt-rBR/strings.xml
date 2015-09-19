@@ -23,7 +23,7 @@
   <string name="ok">OK</string>
   <string name="loading">Só um segundo...</string>
   <string name="setup_complete">A instalação está completa</string>
-  <string name="setup_welcome">Bem vindo</string>
+  <string name="setup_welcome">Bem-vindo</string>
   <string name="setup_wifi">Selecionar rede Wi-Fi</string>
   <string name="setup_sim_missing">Falta o cartão SIM</string>
   <string name="setup_choose_data_sim">Escolha um cartão SIM para dados</string>
@@ -37,7 +37,7 @@
   <string name="choose_data_sim_summary" product="tablet">Qual SIM você gostaria usar para dados? Poderão haver cobranças no SIM escolhido, pois ele será usado para configurar o seu tablet.</string>
   <string name="choose_data_sim_summary" product="default">Qual SIM você gostaria usar para dados? Poderão haver cobranças no SIM escolhido, pois ele será usado para configurar o seu celular.</string>
   <string name="date_time_summary">Defina o fuso horário e ajuste a data e a hora atual, se necessário</string>
-  <string name="backup_data_summary">Efetuar uma <b>cópia de segurança</b> dos dados das aplicações, senhas de acesso de redes sem fios e outras configuraçõess para os servidores do Google</string>
+  <string name="backup_data_summary">Efetuar uma <b>cópia de segurança</b> dos dados das aplicações, senhas de acesso de redes sem fios e outras configurações para os servidores do Google</string>
   <string name="other_services_summary">Esses serviços colocam o Google para trabalhar para você, e você pode desligá-los a qualquer momento. Os dados serão usados de acordo com a <xliff:g id="name" example="Privacy Policy">%s</xliff:g> do Google.</string>
   <string name="location_services_summary">Serviços de localização permitem ao sistema e aplicativos de terceiros a obter e usar dados como a sua localização aproximada. Por exemplo, um aplicativo pode usar sua localização aproximada para localizar cafeterias perto de você.</string>
   <string name="location_access_summary"><b>Permitir aplicativos que pediram a sua permissão</b> para usar as suas informações de localização. Isso pode incluir a sua localização atual bem como localizações anteriores.</string>
