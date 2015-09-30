@@ -45,6 +45,8 @@ import com.mokee.setupwizard.ui.SetupPageFragment;
 import com.mokee.setupwizard.ui.WebViewDialogFragment;
 import com.mokee.setupwizard.util.SetupWizardUtils;
 
+import mokee.providers.MKSettings;
+
 import com.google.android.gms.common.ConnectionResult;
 import com.google.android.gms.common.GooglePlayServicesUtil;
 
@@ -98,18 +100,18 @@ public class MoKeeSettingsPage extends SetupPage {
         SharedPreferences.Editor editor = prefs.edit();
 
         if (enabled) {
-            int currentBrightness = Settings.Secure.getInt(context.getContentResolver(),
-                    Settings.Secure.BUTTON_BRIGHTNESS, defaultBrightness);
+            int currentBrightness = MKSettings.Secure.getInt(context.getContentResolver(),
+                    MKSettings.Secure.BUTTON_BRIGHTNESS, defaultBrightness);
             if (!prefs.contains("pre_navbar_button_backlight")) {
                 editor.putInt("pre_navbar_button_backlight", currentBrightness);
             }
-            Settings.Secure.putInt(context.getContentResolver(),
-                    Settings.Secure.BUTTON_BRIGHTNESS, 0);
+            MKSettings.Secure.putInt(context.getContentResolver(),
+                    MKSettings.Secure.BUTTON_BRIGHTNESS, 0);
         } else {
             int oldBright = prefs.getInt("pre_navbar_button_backlight", -1);
             if (oldBright != -1) {
-                Settings.Secure.putInt(context.getContentResolver(),
-                        Settings.Secure.BUTTON_BRIGHTNESS, oldBright);
+                MKSettings.Secure.putInt(context.getContentResolver(),
+                        MKSettings.Secure.BUTTON_BRIGHTNESS, oldBright);
                 editor.remove("pre_navbar_button_backlight");
             }
         }

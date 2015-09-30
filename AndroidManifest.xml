@@ -45,6 +45,8 @@
     <uses-permission android:name="mokee.permission.HARDWARE_ABSTRACTION_ACCESS" />
     <uses-permission android:name="android.permission.BACKUP" />
     <uses-permission android:name="mokee.permission.FINISH_SETUP" />
+    <uses-permission android:name="mokee.permission.WRITE_SETTINGS"/>
+    <uses-permission android:name="mokee.permission.WRITE_SECURE_SETTINGS"/>
 
     <permission
         android:name="cyanogenmod.permission.PROTECTED_APP"
