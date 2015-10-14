@@ -1,5 +1,5 @@
 /*
- * Copyright (C) 2015 The MoKee OpenSource Project
+ * Copyright (C) 2015-2016 The MoKee Open Source Project
  *
  * Licensed under the Apache License, Version 2.0 (the "License");
  * you may not use this file except in compliance with the License.
@@ -20,9 +20,9 @@ import android.app.Fragment;
 import android.app.FragmentManager;
 import android.content.Context;
 import android.content.SharedPreferences;
-import android.content.pm.ThemeUtils;
+/*import android.content.pm.ThemeUtils;
 import android.content.res.ThemeConfig;
-import android.content.res.ThemeManager;
+import android.content.res.ThemeManager;*/
 import android.os.Bundle;
 import android.os.RemoteException;
 import android.preference.PreferenceManager;
@@ -88,20 +88,20 @@ public class MoKeeSettingsPage extends SetupPage {
 
     private static void writeDisableNavkeysOption(Context context, boolean enabled) {
         final SharedPreferences prefs = PreferenceManager.getDefaultSharedPreferences(context);
-        final int defaultBrightness = context.getResources().getInteger(
-                com.android.internal.R.integer.config_buttonBrightnessSettingDefault);
+        /*final int defaultBrightness = context.getResources().getInteger(
+                com.android.internal.R.integer.config_buttonBrightnessSettingDefault);*/
 
-        Settings.Secure.putInt(context.getContentResolver(),
+        /*Settings.Secure.putInt(context.getContentResolver(),
                 Settings.Secure.DEV_FORCE_SHOW_NAVBAR, enabled ? 1 : 0);
         final MKHardwareManager hardware = MKHardwareManager.getInstance(context);
-        hardware.set(MKHardwareManager.FEATURE_KEY_DISABLE, enabled);
+        hardware.set(MKHardwareManager.FEATURE_KEY_DISABLE, enabled);*/
 
         /* Save/restore button timeouts to disable them in softkey mode */
         SharedPreferences.Editor editor = prefs.edit();
 
         if (enabled) {
             int currentBrightness = MKSettings.Secure.getInt(context.getContentResolver(),
-                    MKSettings.Secure.BUTTON_BRIGHTNESS, defaultBrightness);
+                    MKSettings.Secure.BUTTON_BRIGHTNESS, 100);
             if (!prefs.contains("pre_navbar_button_backlight")) {
                 editor.putInt("pre_navbar_button_backlight", currentBrightness);
             }
@@ -132,16 +132,16 @@ public class MoKeeSettingsPage extends SetupPage {
     }
 
     private void handleDefaultThemeSetup() {
-        Bundle privacyData = getData();
+        /*Bundle privacyData = getData();
         if (!ThemeUtils.getDefaultThemePackageName(mContext).equals(ThemeConfig.SYSTEM_DEFAULT) &&
                 privacyData != null && privacyData.getBoolean(KEY_APPLY_DEFAULT_THEME)) {
             Log.i(TAG, "Applying default theme");
             final ThemeManager tm = (ThemeManager) mContext.getSystemService(Context.THEME_SERVICE);
             tm.applyDefaultTheme();
 
-        } else {
+        } else { */
             getCallbacks().finishSetup();
-        }
+        //}
     }
 
     private static boolean hideKeyDisabler(Context ctx) {
@@ -154,9 +154,9 @@ public class MoKeeSettingsPage extends SetupPage {
         return hardware.get(MKHardwareManager.FEATURE_KEY_DISABLE);
     }
 
-    private static boolean hideThemeSwitch(Context context) {
+    /*private static boolean hideThemeSwitch(Context context) {
         return ThemeUtils.getDefaultThemePackageName(context).equals(ThemeConfig.SYSTEM_DEFAULT);
-    }
+    }*/
 
     public static class MoKeeSettingsFragment extends SetupPageFragment {
 
@@ -190,7 +190,7 @@ public class MoKeeSettingsPage extends SetupPage {
         protected void initializePage() {
 
             mDefaultThemeRow = mRootView.findViewById(R.id.theme);
-            mHideThemeRow = hideThemeSwitch(getActivity());
+            mHideThemeRow = true; // hideThemeSwitch(getActivity());
             if (mHideThemeRow) {
                 mDefaultThemeRow.setVisibility(View.GONE);
             } else {
@@ -213,11 +213,11 @@ public class MoKeeSettingsPage extends SetupPage {
             mNavKeysRow.setOnClickListener(mNavKeysClickListener);
             mNavKeys = (CheckBox) mRootView.findViewById(R.id.nav_keys_checkbox);
             boolean needsNavBar = true;
-            try {
+            /*try {
                 IWindowManager windowManager = WindowManagerGlobal.getWindowManagerService();
                 needsNavBar = windowManager.needsNavigationBar();
             } catch (RemoteException e) {
-            }
+            }*/
             mHideNavKeysRow = hideKeyDisabler(getActivity());
             if (mHideNavKeysRow || needsNavBar) {
                 mNavKeysRow.setVisibility(View.GONE);
@@ -236,7 +236,7 @@ public class MoKeeSettingsPage extends SetupPage {
         @Override
         public void onResume() {
             super.onResume();
-            updateDisableNavkeysOption();
+            /*updateDisableNavkeysOption();*/
             updateThemeOption();
         }
 
@@ -255,7 +255,7 @@ public class MoKeeSettingsPage extends SetupPage {
             }
         }
 
-        private void updateDisableNavkeysOption() {
+        /*private void updateDisableNavkeysOption() {
             if (!mHideNavKeysRow) {
                 final Bundle myPageBundle = mPage.getData();
                 boolean enabled = Settings.Secure.getInt(getActivity().getContentResolver(),
@@ -266,7 +266,7 @@ public class MoKeeSettingsPage extends SetupPage {
                 mNavKeys.setChecked(checked);
                 myPageBundle.putBoolean(KEY_ENABLE_NAV_KEYS, checked);
             }
-        }
+        }*/
 
     }
 }
