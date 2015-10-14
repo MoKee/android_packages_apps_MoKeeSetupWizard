@@ -36,6 +36,7 @@ public class SetupWizardApp extends Application {
     public static final String ACCOUNT_TYPE_GMS = "com.google";
 
     public static final String ACTION_SETUP_WIFI = "com.android.net.wifi.SETUP_WIFI_NETWORK";
+    public static final String ACTION_VIEW_LEGAL = "mokee.intent.action.LEGALESE";
 
     public static final String ACTION_SETUP_FINGERPRINT = "com.android.settings.SETUP_FINGERPRINT";
 

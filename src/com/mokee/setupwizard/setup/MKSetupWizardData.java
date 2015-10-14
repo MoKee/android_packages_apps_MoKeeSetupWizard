@@ -1,5 +1,5 @@
 /*
- * Copyright (C) 2015 The MoKee OpenSource Project
+ * Copyright (C) 2015-2016 The MoKee Open Source Project
  *
  * Licensed under the Apache License, Version 2.0 (the "License");
  * you may not use this file except in compliance with the License.
@@ -84,9 +84,7 @@ public class MKSetupWizardData extends AbstractSetupData {
             showHideSimMissingPage();
             showHideMobileDataPage();
         } else if (intent.getAction()
-                .equals(ConnectivityManager.CONNECTIVITY_ACTION) ||
-                intent.getAction()
-                        .equals(ConnectivityManager.CONNECTIVITY_ACTION_IMMEDIATE)) {
+                .equals(ConnectivityManager.CONNECTIVITY_ACTION)) {
             showHideMobileDataPage();
             showHideAccountPages();
         } else  if (intent.getAction()
@@ -157,7 +155,6 @@ public class MKSetupWizardData extends AbstractSetupData {
             filter.addAction(TelephonyIntents.ACTION_SIM_STATE_CHANGED);
             filter.addAction(TelephonyIntents.ACTION_ANY_DATA_CONNECTION_STATE_CHANGED);
         }
-        filter.addAction(ConnectivityManager.CONNECTIVITY_ACTION_IMMEDIATE);
         filter.addAction(ConnectivityManager.CONNECTIVITY_ACTION);
         filter.addAction(Intent.ACTION_TIMEZONE_CHANGED);
         filter.addAction(Intent.ACTION_TIME_CHANGED);

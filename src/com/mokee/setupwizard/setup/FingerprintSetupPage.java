@@ -1,5 +1,5 @@
 /*
- * Copyright (C) 2013 The MoKee OpenSource Project
+ * Copyright (C) 2013-2016 The MoKee Open Source Project
  *
  * Licensed under the Apache License, Version 2.0 (the "License");
  * you may not use this file except in compliance with the License.
@@ -103,7 +103,7 @@ public class FingerprintSetupPage extends SetupPage {
             intent.putExtra(SetupWizardApp.EXTRA_USE_IMMERSIVE, true);
             intent.putExtra(SetupWizardApp.EXTRA_THEME, SetupWizardApp.EXTRA_MATERIAL_LIGHT);
             intent.putExtra(SetupWizardApp.EXTRA_AUTO_FINISH, false);
-            intent.putExtra(LockPatternUtils.LOCKSCREEN_FINGERPRINT_FALLBACK, true);
+            /*intent.putExtra(LockPatternUtils.LOCKSCREEN_FINGERPRINT_FALLBACK, true);*/
             intent.putExtra(SetupWizardApp.EXTRA_TITLE,
                     getString(R.string.settings_fingerprint_setup_title));
             intent.putExtra(SetupWizardApp.EXTRA_DETAILS,

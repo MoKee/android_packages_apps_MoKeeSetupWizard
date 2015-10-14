@@ -1,5 +1,5 @@
 /*
- * Copyright (C) 2015 The MoKee OpenSource Project
+ * Copyright (C) 2015-2016 The MoKee Open Source Project
  *
  * Licensed under the Apache License, Version 2.0 (the "License");
  * you may not use this file except in compliance with the License.
@@ -45,7 +45,7 @@ public class WifiSetupPage extends SetupPage {
 
     public static final String TAG = "WifiSetupPage";
 
-    private static final String DEFAULT_SERVER = "download.mokeedev.com";
+    private static final String DEFAULT_SERVER = "g.cn";
     private static final int CAPTIVE_PORTAL_SOCKET_TIMEOUT_MS = 10000;
 
     private LoadingFragment mLoadingFragment;

@@ -1,5 +1,5 @@
 /*
- * Copyright (C) 2015 The MoKee Open Source Project
+ * Copyright (C) 2015-2016 The MoKee Open Source Project
  *
  * Licensed under the Apache License, Version 2.0 (the "License");
  * you may not use this file except in compliance with the License.
@@ -22,7 +22,9 @@ import android.app.backup.IBackupManager;
 import android.content.BroadcastReceiver;
 import android.content.ContentResolver;
 import android.content.Context;
+import android.content.Intent;
 import android.location.LocationManager;
+import android.net.Uri;
 import android.os.Bundle;
 import android.os.RemoteException;
 import android.os.ServiceManager;
@@ -31,6 +33,7 @@ import android.text.SpannableString;
 import android.text.Spanned;
 import android.text.method.LinkMovementMethod;
 import android.text.style.ClickableSpan;
+import android.util.Log;
 import android.view.View;
 import android.widget.CheckBox;
 import android.widget.TextView;
@@ -38,7 +41,6 @@ import android.widget.TextView;
 import com.mokee.setupwizard.R;
 import com.mokee.setupwizard.SetupWizardApp;
 import com.mokee.setupwizard.ui.SetupPageFragment;
-import com.mokee.setupwizard.ui.WebViewDialogFragment;
 import com.mokee.setupwizard.util.SetupWizardUtils;
 
 public class OtherSettingsPage extends SetupPage {
@@ -147,10 +149,13 @@ public class OtherSettingsPage extends SetupPage {
                 ClickableSpan clickableSpan = new ClickableSpan() {
                     @Override
                     public void onClick(View textView) {
-                        WebViewDialogFragment.newInstance()
-                                .setUri(PRIVACY_POLICY_URI)
-                                .show(getActivity().getFragmentManager(),
-                                        WebViewDialogFragment.TAG);
+                        final Intent intent = new Intent(SetupWizardApp.ACTION_VIEW_LEGAL);
+                        intent.setData(Uri.parse(PRIVACY_POLICY_URI));
+                        try {
+                            getActivity().startActivity(intent);
+                        } catch (Exception e) {
+                            Log.e(TAG, "Unable to start activity " + intent.toString());
+                        }
                     }
                 };
                 ss.setSpan(clickableSpan,
@@ -300,7 +305,6 @@ public class OtherSettingsPage extends SetupPage {
         }
 
         private void onToggleLocationAccess(boolean checked) {
-
             if (checked) {
                 setLocationMode(Settings.Secure.LOCATION_MODE_SENSORS_ONLY);
             } else {
@@ -309,10 +313,6 @@ public class OtherSettingsPage extends SetupPage {
         }
 
         private void onToggleBatterySaving(boolean checked) {
-            /* SetupStats.addEvent(SetupStats.Categories.SETTING_CHANGED,
-                    SetupStats.Action.ENABLE_BATTERY_SAVING_LOCATION,
-                    SetupStats.Label.CHECKED, String.valueOf(checked)); */
-
             if (checked) {
                 setLocationMode(Settings.Secure.LOCATION_MODE_BATTERY_SAVING);
             } else {
@@ -321,10 +321,6 @@ public class OtherSettingsPage extends SetupPage {
         }
 
         private void onToggleNetwork(boolean checked) {
-            SetupStats.addEvent(SetupStats.Categories.SETTING_CHANGED,
-                    SetupStats.Action.ENABLE_NETWORK_LOCATION,
-                    SetupStats.Label.CHECKED, String.valueOf(checked));
-
             if (checked) {
                 setLocationMode(Settings.Secure.LOCATION_MODE_HIGH_ACCURACY);
             } else {

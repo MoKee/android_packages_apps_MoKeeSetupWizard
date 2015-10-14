@@ -1,5 +1,5 @@
 /*
- * Copyright (C) 2015 The MoKee OpenSource Project
+ * Copyright (C) 2015-2016 The MoKee Open Source Project
  *
  * Licensed under the Apache License, Version 2.0 (the "License");
  * you may not use this file except in compliance with the License.
@@ -72,12 +72,12 @@ public class GmsAccountPage extends SetupPage {
                                 Settings.Secure.BACKUP_ENABLED, 0) == 1);
             }
         };
-        Cursor settingsCursor = res.query(Settings.Secure.CONTENT_URI, null,
-                "(" + Settings.System.NAME + "=? OR " + Settings.System.NAME + "=?)",
-                new String[]{Settings.Secure.BACKUP_AUTO_RESTORE, Settings.Secure.BACKUP_ENABLED},
-                null);
-        mContentQueryMap = new ContentQueryMap(settingsCursor, Settings.System.NAME, true, null);
-        mContentQueryMap.addObserver(mSettingsObserver);
+        //Cursor settingsCursor = res.query(Settings.Secure.CONTENT_URI, null,
+        //        "(" + Settings.System.NAME + "=? OR " + Settings.System.NAME + "=?)",
+        //        new String[]{Settings.Secure.BACKUP_AUTO_RESTORE, Settings.Secure.BACKUP_ENABLED},
+        //        null);
+        //mContentQueryMap = new ContentQueryMap(settingsCursor, Settings.System.NAME, true, null);
+        //mContentQueryMap.addObserver(mSettingsObserver);
     }
 
     @Override
