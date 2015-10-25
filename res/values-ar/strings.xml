@@ -17,19 +17,53 @@
 -->
 <resources xmlns:xliff="urn:oasis:names:tc:xliff:document:1.2">
   <string name="app_name">معالج الإعداد</string>
-  <string name="next">القادم</string>
+  <string name="next">التالي</string>
   <string name="skip">تخطي</string>
-  <string name="start">إبدء</string>
+  <string name="start">ابدأ</string>
   <string name="ok">موافق</string>
-  <string name="loading">انتظر ساعة /u2026</string>
-  <string name="setup_complete">اكتمال الإعداد</string>
+  <string name="loading">انتظر دقيقه /u2026</string>
+  <string name="setup_complete">اكتمل الإعداد</string>
   <string name="setup_welcome">مرحبا</string>
-  <string name="setup_wifi">حدد الواي فأي</string>
+  <string name="setup_wifi">اختر شبكة الواي فاي</string>
   <string name="setup_sim_missing">لا يوجد بطاقة SIM</string>
-  <string name="setup_choose_data_sim">اختر أية SIM للبيانات</string>
+  <string name="setup_choose_data_sim">اختر SIM للبيانات</string>
   <string name="setup_location">خدمات الموقع</string>
   <string name="setup_other">خدمات أخرى</string>
   <string name="setup_datetime">التاريخ  &amp; الوقت</string>
   <string name="setup_current_date">التاريخ الحالي</string>
   <string name="setup_current_time">الوقت الحالي</string>
+  <string name="sim_missing_summary" product="tablet">لم يتم اكتشاف بطاقة SIM في الجهاز الخاص بك. لإدراج بطاقة SIM، إقرا الإرشادات المرفقة مع الجهاز الخاص بك.</string>
+  <string name="sim_missing_summary" product="default">لم يتم اكتشاف بطاقة SIM في الجهاز الخاص بك. لإدراج بطاقة SIM، إقرا الإرشادات المرفقة مع الجهاز الخاص بك.</string>
+  <string name="choose_data_sim_summary" product="tablet">اي من بطاقات SIM تريد استخدامها للبيانات ، الـ SIM المحدده قد تخضع لرسوم الشبكه كما سيتم استخدامه لإعداد الجهاز اللوحي الخاص بك.</string>
+  <string name="choose_data_sim_summary" product="default">اي من بطاقات SIM تريد استخدامها للبيانات ، الـ SIM المحدده قد تخضع لرسوم الشبكه كما سيتم استخدامه لإعداد الجهاز اللوحي الخاص بك.</string>
+  <string name="date_time_summary">اضبط اعدادات المنطقه الزمنية الخاصه بك، واضبط التاريخ و الوقت إذا لزم الأمر</string>
+  <string name="backup_data_summary"><b>إجراء نسخ احتياطي</b> بيانات التطبيق وكلمات المرور والواي فاي وأي إعدادات ٱخرى لخوادم جوجل</string>
+  <string name="other_services_summary">وضعت هذه الخدمات من جوجل لتعمل بالنسبة لك، ويمكنك تشغيلها أو إيقاف تشغيلها في أي وقت. ستستخدم البيانات وفقا Google <xliff:g id="name" example="Privacy Policy">%s </xliff:g>.</string>
+  <string name="location_services_summary">يسمح تمكين خدمات الموقع و تطبيقات الطرف الثالث لجمع واستخدام بيانات مثل موقعك التقريبي. على سبيل المثال، قد تستخدم تطبيق خاص بك لتحديد موقع أقرب المقاهي لك.</string>
+  <string name="location_access_summary"><b>السماح للتطبيقات التي طلبت الإذن </b> لاستخدام معلومات الموقع الخاصة بك. وقد يشمل هذا الموقع الحالي والمواقع السابقة الخاصة بك.</string>
+  <string name="location_gps" product="tablet"><b>تحسين دقة الموقع</b> بالسماح لتطبيقات استخدام نظام تحديد المواقع على الكمبيوتر اللوحي الخاص بك.</string>
+  <string name="location_gps" product="default"><b>تحسين دقة الموقع</b> بالسماح لتطبيقات استخدام نظام تحديد المواقع على الكمبيوتر اللوحي الخاص بك.</string>
+  <string name="location_network"><b>الاستخدام اللاسلكي</b> لمساعدة التطبيقات بتحديد الموقع الخاص بك.</string>
+  <string name="location_network_telephony"><b>استخدام وأا فاي وشبكة الهاتف المحمول</b> لمساعدة التطبيقات في تحديد الموقع الخاص بك.</string>
+  <string name="location_network_gms"><b>استخدام خدمة قوقل ماب </b> لمساعدة التطبيقات في تحديد الموقع الخاص بك. وهذا يعني إرسال بيانات اي موقع إلى قوقل، حتى عندما لا تقوم بتشغيل أي تطبيقات.</string>
+  <string name="setup_mobile_data">قم بتشغيل بيانات الهاتف</string>
+  <string name="setup_mobile_data_no_service">لا يوجد خدمة متوفّرة</string>
+  <string name="setup_mobile_data_emergency_only">مكالمات الطّوارئ فقط</string>
+  <string name="enable_mobile_data_summary">هل تريد استخدام بيانات الجوال أثناء الإعداد؟ تشغيل البيانات قد تكون خاضعة لرسوم البيانات.</string>
+  <string name="no">لا</string>
+  <string name="yes">نعم</string>
+  <string name="data_sim_name">شريحه <xliff:g id="sub">%d </xliff:g>-<xliff:g id="name">%s </xliff:g></string>
+  <string name="emergency_call">مكالمة طوارئ</string>
+  <string name="setup_personalization">إضفاء الطابع الشخصي</string>
+  <string name="services_privacy_policy">سياسة الخصوصية</string>
+  <string name="services_apply_theme">تطبيق السمة او الثيم <xliff:g id="name" example="Material">%s </xliff:g></string>
+  <string name="services_apply_theme_label"><xliff:g id="name" example="Apply the Material theme">%s </xliff:g> تمكين الرموز الفريدة، والخلفيات، والخطوط.</string>
+  <string name="services_os_nav_keys_label"><b>استخدام مفاتيح التنقل على الشاشة</b> بدلاً من مفاتيح الجهاز.</string>
+  <string name="settings_fingerprint_setup_title">حدد نوع التامين الخاص بالشاشة</string>
+  <string name="settings_fingerprint_setup_details">كيف ترغب بقفل الشاشة؟?</string>
+  <string name="fingerprint_setup_title">خطوات اعداد البصمه</string>
+  <string name="fingerprint_setup_summary">لاستخدام جهاز استشعار بصمات الأصابع لفتح الشاشة الخاصة بك، سوف تحتاج إلى:</string>
+  <string name="fingerprint_setup_backup_lock_method">إعداد ثانوي لفتح القفل</string>
+  <string name="fingerprint_setup_add_fingerprint">إضافة بصمة الإصبع</string>
+  <string name="fingerprint_setup_screen_lock_setup">إعداد قفل الشاشة</string>
 </resources>
