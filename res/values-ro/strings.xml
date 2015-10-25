@@ -17,17 +17,53 @@
 -->
 <resources xmlns:xliff="urn:oasis:names:tc:xliff:document:1.2">
   <string name="app_name">Expert de instalare</string>
+  <string name="next">Mai departe</string>
   <string name="skip">Omite</string>
   <string name="start">Pornire</string>
+  <string name="ok">OK</string>
+  <string name="loading">Doar o secundă\u2026</string>
   <string name="setup_complete">Configurarea este completă</string>
+  <string name="setup_welcome">Bine aţi venit</string>
   <string name="setup_wifi">Selectaţi Wi-Fi</string>
+  <string name="setup_sim_missing">SIM lipsă</string>
+  <string name="setup_choose_data_sim">Alege un SIM pentru date</string>
+  <string name="setup_location">Servicii de Localizare</string>
   <string name="setup_other">Alte servicii</string>
   <string name="setup_datetime">Dată &amp; oră</string>
   <string name="setup_current_date">Data curentă</string>
   <string name="setup_current_time">Ora curentă</string>
+  <string name="sim_missing_summary" product="tablet">O cartelă SIM nu a fost detectată în aparatul dvs. Pentru a insera o cartelă SIM, citiţi instrucţiunile care au venit cu aparatul dvs.</string>
+  <string name="sim_missing_summary" product="default">O cartelă SIM nu a fost detectată în aparatul dvs. Pentru a insera o cartelă SIM, citiţi instrucţiunile care au venit cu aparatul dvs.</string>
+  <string name="choose_data_sim_summary" product="tablet">Ce cartelă SIM vreţi să utilizaţi pentru date? Cartela SIM selectată v-ar putea costa adiţional in timp ce e folosită pentru a configura aparatul dvs.</string>
+  <string name="choose_data_sim_summary" product="default">Ce cartelă SIM vreţi să utilizaţi pentru date? Cartela SIM selectată v-ar putea costa adiţional in timp ce e folosită pentru a configura aparatul dvs.</string>
+  <string name="date_time_summary">Setaţi fusul orar şi reglaţi data şi ora curentă, dacă este necesar</string>
+  <string name="backup_data_summary"><b>Copie de rezervă</b> aplicații, Wi-Fi parolele şi alte setări pe serverele Google</string>
+  <string name="other_services_summary">Aceste servicii pune Google să lucreze pentru tine, vă puteţi întoarce sau dezactiva în orice moment. Datele vor fi folosite în conformitate cu Google <xliff:g id="name" example="Privacy Policy">%s </xliff:g>.</string>
+  <string name="location_services_summary">Serviciul de localizare permite Hărţi şi altor aplicaţii pentru a aduna şi a folosi date precum locaţia aproximativă. De exemplu, Hărţi poate utiliza locaţia aproximativă pentru a localiza cafenele în vecinătate.</string>
+  <string name="location_access_summary"><b>Permite aplicațiilor care au cerut permisiunea</b> să utilizească informaţiile despre locaţia dvs. Aceasta poate include locaţia curentă şi locaţiile precedente.</string>
+  <string name="location_gps" product="tablet"><b>Îmbunătățeste precizia locației</b> permițând aplicațiilor să folosească GPS-ul pe telefon.</string>
+  <string name="location_gps" product="default"><b>Îmbunătățeste precizia locației</b> permițând aplicațiilor să folosească GPS-ul telefonului.</string>
+  <string name="location_network"><b>Utilizează Wi-Fi</b> pentru a ajuta aplicațiile să determine locaţia.</string>
+  <string name="location_network_telephony"><b>Utilizarea Wi-Fi şi reţelele de telefonie mobilă</b> pentru a ajuta aplicațiile să determine locația.</string>
+  <string name="location_network_gms"><b>Folosește serviciile de locație Google</b> pentru a ajuta aplicațiile să vă determine locaţia. Acest lucru înseamnă trimiterea datelor anonime de localizare la Google, chiar şi atunci când nu executați aplicații.</string>
+  <string name="setup_mobile_data">Porniți datele mobile</string>
+  <string name="setup_mobile_data_no_service">Lipsă semnal</string>
   <string name="setup_mobile_data_emergency_only">Numai apeluri de urgenţă</string>
+  <string name="enable_mobile_data_summary">Doriţi să utilizaţi datele mobile în timpul instalării? Activarea datelor mobile poate fi supusă tarifelor de date.</string>
   <string name="no">Nu</string>
   <string name="yes">Da</string>
+  <string name="data_sim_name">SIM <xliff:g id="sub">%d</xliff:g> - <xliff:g id="name">%s</xliff:g></string>
   <string name="emergency_call">Apel de urgenţă</string>
+  <string name="setup_personalization">Personalizare</string>
   <string name="services_privacy_policy">Politica de confidențialitate</string>
+  <string name="services_apply_theme">Aplica <xliff:g id="name" example="Material">%s </xliff:g> tema</string>
+  <string name="services_apply_theme_label"><xliff:g id="name" example="Apply the Material theme">%s </xliff:g> activarea iconițelor, imaginii de fundal, şi fonturi.</string>
+  <string name="services_os_nav_keys_label"><b>Utilizarea pe tastele de navigare ecran</b> în loc de tastele hardware.</string>
+  <string name="settings_fingerprint_setup_title">Selectaţi copie de rezervă ecran de blocare tip</string>
+  <string name="settings_fingerprint_setup_details">Cum doriţi pentru a bloca ecranul?</string>
+  <string name="fingerprint_setup_title">Configurare securitate amprentă</string>
+  <string name="fingerprint_setup_summary">Pentru a putea utiliza scanarea amprentei pentru a debloca ecranul, trebuie să:</string>
+  <string name="fingerprint_setup_backup_lock_method">Configurarea unei metode secundare de deblocare</string>
+  <string name="fingerprint_setup_add_fingerprint">Adaugă amprentă</string>
+  <string name="fingerprint_setup_screen_lock_setup">Configurare ecran de blocare</string>
 </resources>
