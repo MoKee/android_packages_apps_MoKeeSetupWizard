@@ -64,6 +64,6 @@
   <string name="fingerprint_setup_title">Fingerabdruck einrichten</string>
   <string name="fingerprint_setup_summary">Um Ihren Fingerabdrucksensor zu verwenden, um Ihren Bildschirm zu entsperren, benötigen Sie:</string>
   <string name="fingerprint_setup_backup_lock_method">Einrichtung einer sekundären Entsperrungs-Methode</string>
-  <string name="fingerprint_setup_add_fingerprint">Füge deinen Fingerabdruck hinzu</string>
+  <string name="fingerprint_setup_add_fingerprint">Füge Sie Ihren Fingerabdruck hinzu</string>
   <string name="fingerprint_setup_screen_lock_setup">Bildschirmsperre einrichten</string>
 </resources>
