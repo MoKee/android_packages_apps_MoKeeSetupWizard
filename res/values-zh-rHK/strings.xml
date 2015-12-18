@@ -41,6 +41,7 @@
   <string name="other_services_summary">啟用這些服務讓 Google 來為你工作，你可以在任何時候開啟或關閉。你的數據將依照 Google 的 <xliff:g id="name" example="Privacy Policy">%s</xliff:g> 來使用。</string>
   <string name="location_services_summary">位置服務允許系統和其他應用程式取得及使用你最近的位置。例如，應用程式可能使用你的位置來尋找附近的咖啡店。</string>
   <string name="location_access_summary"><b>允許你許可的應用程式</b>使用你的定位資訊。可能包括你目前和過去的位置。</string>
+  <string name="location_battery_saving"><b>減少電量的消耗</b>限制全球定位系統每小時更新速度。</string>
   <string name="location_gps" product="tablet">允許應用程式在你的平板電腦上使用 GPS 以<b>改善定位精準度</b></string>
   <string name="location_gps" product="default">允許應用程式在你的手機上使用 GPS 以<b>改善定位精準度</b></string>
   <string name="location_network"><b>使用 Wi-Fi</b> 來幫助應用程式確定你所在的位置。</string>
