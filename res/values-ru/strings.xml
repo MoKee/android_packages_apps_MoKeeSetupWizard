@@ -27,7 +27,7 @@
   <string name="setup_wifi">Выберите сеть Wi-Fi</string>
   <string name="setup_sim_missing">SIM-карта отсутствует</string>
   <string name="setup_choose_data_sim">Выберите SIM-карту для передачи данных</string>
-  <string name="setup_location">Службы определения местоположения</string>
+  <string name="setup_location">Службы местоположения</string>
   <string name="setup_other">Другие службы</string>
   <string name="setup_datetime">Дата и время</string>
   <string name="setup_current_date">Текущая дата</string>
