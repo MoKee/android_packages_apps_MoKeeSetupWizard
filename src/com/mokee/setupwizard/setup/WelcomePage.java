@@ -25,6 +25,7 @@ import android.content.res.Configuration;
 import android.content.res.Resources;
 import android.os.Bundle;
 import android.os.Handler;
+import android.telephony.TelephonyManager;
 import android.os.SystemProperties;
 import android.view.View;
 import android.widget.ArrayAdapter;
@@ -87,13 +88,19 @@ public class WelcomePage extends SetupPage {
         return R.string.emergency_call;
     }
 
+    public void simChanged() {
+        if (mWelcomeFragment != null) {
+            mWelcomeFragment.simChanged();
+        }
+    }
+
     public static class WelcomeFragment extends SetupPageFragment {
 
         private ArrayAdapter<com.android.internal.app.LocalePicker.LocaleInfo> mLocaleAdapter;
         private Locale mInitialLocale;
         private Locale mCurrentLocale;
         private int[] mAdapterIndices;
-
+        private boolean mUserPickedLocale;
         private LocalePicker mLanguagePicker;
 
         private final Handler mHandler = new Handler();
@@ -115,10 +122,26 @@ public class WelcomePage extends SetupPage {
             loadLanguages();
         }
 
+        private Locale getSimLocale() {
+            Activity activity = getActivity();
+            if (activity != null) {
+                TelephonyManager telephonyManager = (TelephonyManager) activity.
+                        getSystemService(Context.TELEPHONY_SERVICE);
+                String locale = telephonyManager.getLocaleFromDefaultSim();
+                if (locale != null) {
+                    return Locale.forLanguageTag(locale);
+                }
+            }
+            return null;
+        }
+
         private void loadLanguages() {
             mLocaleAdapter = com.android.internal.app.LocalePicker.constructAdapter(getActivity(), R.layout.locale_picker_item, R.id.locale);
-            mInitialLocale = Locale.getDefault();
-            mCurrentLocale = mInitialLocale;
+            mCurrentLocale = mInitialLocale = Locale.getDefault();
+            Locale simLocale = getSimLocale();
+            if (simLocale != null) {
+                mCurrentLocale = simLocale;
+            }
             mAdapterIndices = new int[mLocaleAdapter.getCount()];
             int currentLocaleIndex = 0;
             String [] labels = new String[mLocaleAdapter.getCount()];
@@ -143,6 +166,7 @@ public class WelcomePage extends SetupPage {
         }
 
         private void setLocaleFromPicker() {
+            mUserPickedLocale = true;
             int i = mAdapterIndices[mLanguagePicker.getValue()];
             final com.android.internal.app.LocalePicker.LocaleInfo localLocaleInfo = mLocaleAdapter.getItem(i);
             onLocaleChanged(localLocaleInfo.getLocale());
@@ -166,6 +190,15 @@ public class WelcomePage extends SetupPage {
             return R.layout.setup_welcome_page;
         }
 
+        public void simChanged() {
+            if (mUserPickedLocale || isDetached()) {
+                return;
+            }
+            Locale simLocale = getSimLocale();
+            if (simLocale != null && !simLocale.equals(mCurrentLocale)) {
+                onLocaleChanged(simLocale);
+            }
+        }
     }
 
 }
