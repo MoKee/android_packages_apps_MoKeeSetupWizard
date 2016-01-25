@@ -20,9 +20,9 @@ import android.app.Fragment;
 import android.app.FragmentManager;
 import android.content.Context;
 import android.content.SharedPreferences;
-/*import android.content.pm.ThemeUtils;
+import android.content.pm.ThemeUtils;
 import android.content.res.ThemeConfig;
-import android.content.res.ThemeManager;*/
+import android.content.res.ThemeManager;
 import android.os.Bundle;
 import android.os.RemoteException;
 import android.preference.PreferenceManager;
@@ -132,16 +132,16 @@ public class MoKeeSettingsPage extends SetupPage {
     }
 
     private void handleDefaultThemeSetup() {
-        /*Bundle privacyData = getData();
+        Bundle privacyData = getData();
         if (!ThemeUtils.getDefaultThemePackageName(mContext).equals(ThemeConfig.SYSTEM_DEFAULT) &&
                 privacyData != null && privacyData.getBoolean(KEY_APPLY_DEFAULT_THEME)) {
             Log.i(TAG, "Applying default theme");
             final ThemeManager tm = (ThemeManager) mContext.getSystemService(Context.THEME_SERVICE);
             tm.applyDefaultTheme();
 
-        } else { */
+        } else {
             getCallbacks().finishSetup();
-        //}
+        }
     }
 
     private static boolean hideKeyDisabler(Context ctx) {
@@ -154,9 +154,9 @@ public class MoKeeSettingsPage extends SetupPage {
         return hardware.get(MKHardwareManager.FEATURE_KEY_DISABLE);
     }
 
-    /*private static boolean hideThemeSwitch(Context context) {
+    private static boolean hideThemeSwitch(Context context) {
         return ThemeUtils.getDefaultThemePackageName(context).equals(ThemeConfig.SYSTEM_DEFAULT);
-    }*/
+    }
 
     public static class MoKeeSettingsFragment extends SetupPageFragment {
 
@@ -190,7 +190,7 @@ public class MoKeeSettingsPage extends SetupPage {
         protected void initializePage() {
 
             mDefaultThemeRow = mRootView.findViewById(R.id.theme);
-            mHideThemeRow = true; // hideThemeSwitch(getActivity());
+            mHideThemeRow = hideThemeSwitch(getActivity());
             if (mHideThemeRow) {
                 mDefaultThemeRow.setVisibility(View.GONE);
             } else {
