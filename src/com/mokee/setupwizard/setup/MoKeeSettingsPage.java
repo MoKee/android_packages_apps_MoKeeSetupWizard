@@ -133,8 +133,9 @@ public class MoKeeSettingsPage extends SetupPage {
 
     private void handleDefaultThemeSetup() {
         Bundle privacyData = getData();
-        if (!ThemeUtils.getDefaultThemePackageName(mContext).equals(ThemeConfig.SYSTEM_DEFAULT) &&
-                privacyData != null && privacyData.getBoolean(KEY_APPLY_DEFAULT_THEME)) {
+        if (!SetupWizardUtils.getDefaultThemePackageName(mContext).equals(
+                ThemeConfig.SYSTEM_DEFAULT) && privacyData != null &&
+                privacyData.getBoolean(KEY_APPLY_DEFAULT_THEME)) {
             Log.i(TAG, "Applying default theme");
             final ThemeManager tm = (ThemeManager) mContext.getSystemService(Context.THEME_SERVICE);
             tm.applyDefaultTheme();
@@ -155,7 +156,8 @@ public class MoKeeSettingsPage extends SetupPage {
     }
 
     private static boolean hideThemeSwitch(Context context) {
-        return ThemeUtils.getDefaultThemePackageName(context).equals(ThemeConfig.SYSTEM_DEFAULT);
+        return SetupWizardUtils.getDefaultThemePackageName(context)
+                               .equals(ThemeConfig.SYSTEM_DEFAULT);
     }
 
     public static class MoKeeSettingsFragment extends SetupPageFragment {

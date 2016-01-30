@@ -16,6 +16,7 @@
 
 package com.mokee.setupwizard.setup;
 
+import android.app.Activity;
 import android.app.ActivityOptions;
 import android.app.Fragment;
 import android.app.FragmentManager;
@@ -49,21 +50,23 @@ public class WelcomePage extends SetupPage {
 
     private static final String ACTION_EMERGENCY_DIAL = "com.android.phone.EmergencyDialer.DIAL";
 
+    private WelcomeFragment mWelcomeFragment;
+
     public WelcomePage(Context context, SetupDataCallbacks callbacks) {
         super(context, callbacks);
     }
 
     @Override
     public Fragment getFragment(FragmentManager fragmentManager, int action) {
-        Fragment fragment = fragmentManager.findFragmentByTag(getKey());
-        if (fragment == null) {
+        mWelcomeFragment = (WelcomeFragment)fragmentManager.findFragmentByTag(getKey());
+        if (mWelcomeFragment == null) {
             Bundle args = new Bundle();
             args.putString(Page.KEY_PAGE_ARGUMENT, getKey());
             args.putInt(Page.KEY_PAGE_ACTION, action);
-            fragment = new WelcomeFragment();
-            fragment.setArguments(args);
+            mWelcomeFragment = new WelcomeFragment();
+            mWelcomeFragment.setArguments(args);
         }
-        return fragment;
+        return mWelcomeFragment;
     }
 
     @Override
