@@ -25,7 +25,6 @@ import android.content.res.ThemeManager;
 import android.os.Bundle;
 import android.os.RemoteException;
 import android.preference.PreferenceManager;
-import android.provider.Settings;
 import android.text.Spannable;
 import android.text.SpannableString;
 import android.text.SpannableStringBuilder;
