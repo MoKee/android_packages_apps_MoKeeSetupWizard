@@ -16,7 +16,7 @@
      limitations under the License.
 -->
 <resources xmlns:xliff="urn:oasis:names:tc:xliff:document:1.2">
-  <string name="app_name">Assistent voor instellen</string>
+  <string name="app_name">Configuratie Assistent</string>
   <string name="next">Volgende</string>
   <string name="skip">Overslaan</string>
   <string name="start">Beginnen</string>
@@ -37,8 +37,8 @@
   <string name="choose_data_sim_summary" product="tablet">Welke simkaart wilt u gebruiken voor mobiel internet? Voor deze simkaart kunnen extra kosten in rekening gebracht worden, omdat deze gebruikt wordt om uw toestel in te stellen.</string>
   <string name="choose_data_sim_summary" product="default">Welke simkaart wilt u gebruiken voor mobiel internet? Voor deze simkaart kunnen extra kosten in rekening gebracht worden, omdat deze gebruikt wordt om uw toestel in te stellen.</string>
   <string name="date_time_summary">Selecteer uw tijdzone en pas indien nodig de huidige datum en tijd aan.</string>
-  <string name="backup_data_summary"><b>Back-up maken</b> van app-gegevens, Wi-Fi wachtwoorden en andere instellingen naar de servers van Google</string>
-  <string name="other_services_summary">Deze diensten laten Google het werk doen en kunnen op elk moment in- of uitgeschakeld worden. De gegevens worden gebruikt conform de <xliff:g id="name" example="Privacy Policy">%s</xliff:g> van Google.</string>
+  <string name="backup_data_summary"><b>Back-up maken</b> van app-gegevens, Wi-Fi wachtwoorden en andere instellingen op de servers van Google</string>
+  <string name="other_services_summary">Deze diensten laten Google het werk doen en kunnen op elk moment in- of uitgeschakeld worden. De gegevens worden gebruikt in overeenstemming de <xliff:g id="name" example="Privacy Policy">%s</xliff:g> van Google.</string>
   <string name="location_services_summary">Locatieservices stellen systeemapps en apps van derde partijen in staat gegevens zoals uw geschatte locatie te verzamelen en te gebruiken. Zo kan een app uw locatie gebruiken om winkels in de buurt te vinden.</string>
   <string name="location_access_summary"><b>Apps toestaan die uw toestemming hebben gevraagd</b> om informatie over uw locatie te gebruiken. Dit kan uw huidige locatie en voorgaande locaties omvatten.</string>
   <string name="location_gps" product="tablet"><b>Verbeter de nauwkeurigheid van uw locatie</b> door apps toe te staan GPS op uw tablet te gebruiken.</string>
