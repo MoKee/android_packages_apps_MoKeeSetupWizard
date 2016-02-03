@@ -150,9 +150,9 @@ public class MoKeeSettingsPage extends SetupPage {
         private View mNavKeysRow;
         private CheckBox mDefaultTheme;
         private CheckBox mNavKeys;
+
         private boolean mHideNavKeysRow = false;
         private boolean mHideThemeRow = false;
-
 
         private View.OnClickListener mDefaultThemeClickListener = new View.OnClickListener() {
             @Override
@@ -168,7 +168,7 @@ public class MoKeeSettingsPage extends SetupPage {
             public void onClick(View view) {
                 boolean checked = !mNavKeys.isChecked();
                 mNavKeys.setChecked(checked);
-                mPage.getData().putBoolean(KEY_ENABLE_NAV_KEYS, checked);
+                mPage.getData().putBoolean(DISABLE_NAV_KEYS, checked);
             }
         };
 
@@ -199,11 +199,11 @@ public class MoKeeSettingsPage extends SetupPage {
             mNavKeysRow.setOnClickListener(mNavKeysClickListener);
             mNavKeys = (CheckBox) mRootView.findViewById(R.id.nav_keys_checkbox);
             boolean needsNavBar = true;
-            /*try {
+            try {
                 IWindowManager windowManager = WindowManagerGlobal.getWindowManagerService();
                 needsNavBar = windowManager.needsNavigationBar();
             } catch (RemoteException e) {
-            }*/
+            }
             mHideNavKeysRow = hideKeyDisabler(getActivity());
             if (mHideNavKeysRow || needsNavBar) {
                 mNavKeysRow.setVisibility(View.GONE);
@@ -252,10 +252,6 @@ public class MoKeeSettingsPage extends SetupPage {
                 mNavKeys.setChecked(checked);
                 myPageBundle.putBoolean(DISABLE_NAV_KEYS, checked);
             }
-        }
-
-        private static boolean hideKillSwitch() {
-            return !SetupWizardUtils.hasKillSwitch();
         }
 
     }
