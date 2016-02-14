@@ -19,9 +19,9 @@
   <string name="app_name">Setup Wizard</string>
   <string name="next">Next</string>
   <string name="skip">Skip</string>
-  <string name="start">start</string>
-  <string name="ok">ok</string>
-  <string name="loading">Just a moment\u2026</string>
+  <string name="start">Start</string>
+  <string name="ok">OK</string>
+  <string name="loading">Just a sec\u2026</string>
   <string name="setup_complete">Setup is complete</string>
   <string name="setup_welcome">Welcome</string>
   <string name="setup_wifi">Select Wi-Fi</string>
@@ -29,11 +29,11 @@
   <string name="setup_choose_data_sim">Choose a SIM for data</string>
   <string name="setup_location">Location services</string>
   <string name="setup_other">Other services</string>
-  <string name="setup_datetime">Date &amp; Time</string>
+  <string name="setup_datetime">Date &amp; time</string>
   <string name="setup_current_date">Current date</string>
   <string name="setup_current_time">Current time</string>
   <string name="sim_missing_summary" product="tablet">A SIM card has not been detected in your tablet. To insert a SIM card, read the instructions that came with your device.</string>
-  <string name="sim_missing_summary" product="default">A SIM card has not been detected in your tablet. To insert a SIM card, read the instructions that came with your device.</string>
+  <string name="sim_missing_summary" product="default">A SIM card has not been detected in your phone. To insert a SIM card, read the instructions that came with your device.</string>
   <string name="choose_data_sim_summary" product="tablet">Which SIM do you want to use for data? The selected SIM may incur network charges as it will be used to set up your tablet.</string>
   <string name="choose_data_sim_summary" product="default">Which SIM do you want to use for data? The selected SIM may incur network charges as it will be used to set up your tablet.</string>
   <string name="date_time_summary">Set your time zone and adjust current date and time if needed</string>
@@ -53,8 +53,8 @@
   <string name="no">No</string>
   <string name="yes">Yes</string>
   <string name="data_sim_name">SIM <xliff:g id="sub">%d</xliff:g> - <xliff:g id="name">%s</xliff:g></string>
-  <string name="emergency_call">Emergency Call</string>
-  <string name="setup_personalization">Personalization</string>
+  <string name="emergency_call">Emergency call</string>
+  <string name="setup_personalization">Personalisation</string>
   <string name="services_privacy_policy">Privacy Policy</string>
   <string name="services_apply_theme">Apply the <xliff:g id="name" example="Material">%s</xliff:g> theme</string>
   <string name="services_apply_theme_label"><xliff:g id="name" example="Apply the Material theme">%s</xliff:g> enabling unique icons, wallpapers, and fonts.</string>
