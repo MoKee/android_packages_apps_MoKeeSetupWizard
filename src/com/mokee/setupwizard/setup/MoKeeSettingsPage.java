@@ -21,7 +21,6 @@ import android.app.FragmentManager;
 import android.content.Context;
 import android.content.SharedPreferences;
 import android.content.res.ThemeConfig;
-import android.content.res.ThemeManager;
 import android.os.Bundle;
 import android.os.RemoteException;
 import android.preference.PreferenceManager;
@@ -44,6 +43,7 @@ import com.mokee.setupwizard.util.SetupWizardUtils;
 
 import mokee.hardware.MKHardwareManager;
 import mokee.providers.MKSettings;
+import mokee.themes.ThemeManager;
 
 public class MoKeeSettingsPage extends SetupPage {
 
@@ -121,7 +121,7 @@ public class MoKeeSettingsPage extends SetupPage {
                 ThemeConfig.SYSTEM_DEFAULT) && privacyData != null &&
                 privacyData.getBoolean(KEY_APPLY_DEFAULT_THEME)) {
             Log.i(TAG, "Applying default theme");
-            final ThemeManager tm = (ThemeManager) mContext.getSystemService(Context.THEME_SERVICE);
+            final ThemeManager tm = ThemeManager.getInstance();
             tm.applyDefaultTheme();
 
         } else {
