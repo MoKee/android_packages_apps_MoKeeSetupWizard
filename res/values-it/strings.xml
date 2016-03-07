@@ -59,6 +59,7 @@
   <string name="services_apply_theme">Applica il tema<xliff:g id="name" example="Material">%s</xliff:g></string>
   <string name="services_apply_theme_label"><xliff:g id="name" example="Apply the Material theme">%s</xliff:g> attiva icone, sfondi e caratteri unici.</string>
   <string name="services_os_nav_keys_label"><b>Usa i pulsanti virtuali a schermo</b> invece di quelli fisici.</string>
+  <!-- Fingerprint setup -->
   <string name="settings_fingerprint_setup_title">Seleziona il backup del tipo di blocco schermo</string>
   <string name="settings_fingerprint_setup_details">Come vuoi bloccare lo schermo?</string>
   <string name="fingerprint_setup_title">Setup dell\'impronta digitale</string>

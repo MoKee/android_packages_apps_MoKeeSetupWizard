@@ -59,6 +59,7 @@
   <string name="services_apply_theme">Aplicar el tema <xliff:g id="name" example="Material">%s</xliff:g></string>
   <string name="services_apply_theme_label"><xliff:g id="name" example="Apply the Material theme">%s</xliff:g> habilitando iconos especiales, fondo de pantalla y fuentes.</string>
   <string name="services_os_nav_keys_label"><b>Usar las teclas de navegación en pantalla</b> en vez de las teclas físicas.</string>
+  <!-- Fingerprint setup -->
   <string name="settings_fingerprint_setup_title">Seleccione el tipo de bloqueo de la pantalla de copia de seguridad</string>
   <string name="settings_fingerprint_setup_details">¿Cómo quieres bloquear tu pantalla?</string>
   <string name="fingerprint_setup_title">Configuración de la huella dactilar</string>

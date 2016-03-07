@@ -59,6 +59,7 @@
   <string name="services_apply_theme"><xliff:g id="name" example="Material">%s</xliff:g> Design anwenden</string>
   <string name="services_apply_theme_label"><xliff:g id="name" example="Apply the Material theme">%s </xliff:g> Aktivieren sie eindeutige Symbole , Hintergrundbilder und Schriftarten.</string>
   <string name="services_os_nav_keys_label"><b>Bildschirm-Navigationstasten</b> statt Hardwaretasten verwenden.</string>
+  <!-- Fingerprint setup -->
   <string name="settings_fingerprint_setup_title">Wählen Sie einen Backup- Bildschirm Sperrtyp</string>
   <string name="settings_fingerprint_setup_details">Wie möchten Sie Ihren Bildschirm sperren?</string>
   <string name="fingerprint_setup_title">Fingerabdruck einrichten</string>

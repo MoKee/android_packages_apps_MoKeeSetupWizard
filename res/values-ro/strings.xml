@@ -59,6 +59,7 @@
   <string name="services_apply_theme">Aplica <xliff:g id="name" example="Material">%s </xliff:g> tema</string>
   <string name="services_apply_theme_label"><xliff:g id="name" example="Apply the Material theme">%s </xliff:g> activarea iconițelor, imaginii de fundal, şi fonturi.</string>
   <string name="services_os_nav_keys_label"><b>Utilizarea pe tastele de navigare ecran</b> în loc de tastele hardware.</string>
+  <!-- Fingerprint setup -->
   <string name="settings_fingerprint_setup_title">Selectaţi copie de rezervă ecran de blocare tip</string>
   <string name="settings_fingerprint_setup_details">Cum doriţi pentru a bloca ecranul?</string>
   <string name="fingerprint_setup_title">Configurare securitate amprentă</string>

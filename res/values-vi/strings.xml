@@ -59,6 +59,7 @@
   <string name="services_apply_theme">Áp dụng chủ đề <xliff:g id="name" example="Material">%s </xliff:g></string>
   <string name="services_apply_theme_label"><xliff:g id="name" example="Apply the Material theme">%s </xliff:g> cho phép phông chữ, hình nền và biểu tượng độc nhất.</string>
   <string name="services_os_nav_keys_label"><b>Sử dụng các phím điều hướng trên màn hình</b> thay vì các phím phần cứng.</string>
+  <!-- Fingerprint setup -->
   <string name="settings_fingerprint_setup_title">Chọn loại màn hình khóa dự phòng</string>
   <string name="settings_fingerprint_setup_details">Bạn muốn màn hình khóa như thế nào?</string>
   <string name="fingerprint_setup_title">Thiết lập vân tay</string>

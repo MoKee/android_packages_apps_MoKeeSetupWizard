@@ -59,6 +59,7 @@
   <string name="services_apply_theme">Примени <xliff:g id="name" example="Material">%s</xliff:g> тему</string>
   <string name="services_apply_theme_label"><xliff:g id="name" example="Apply the Material theme">%s</xliff:g> омогућава јединствене иконе, тапете и фонтове.</string>
   <string name="services_os_nav_keys_label"><b>Користите навигационе тастере на екрану</b> уместо хардверских тастера.</string>
+  <!-- Fingerprint setup -->
   <string name="settings_fingerprint_setup_title">Одабир сигурносног екрана бекапа</string>
   <string name="settings_fingerprint_setup_details">Како желите осигурати екран?</string>
   <string name="fingerprint_setup_title">Подешавање отиском прста</string>

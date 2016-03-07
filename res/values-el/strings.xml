@@ -59,4 +59,12 @@
   <string name="services_apply_theme">Εφαρμογή του θέματος <xliff:g id="name" example="Material">%s</xliff:g></string>
   <string name="services_apply_theme_label"><xliff:g id="name" example="Apply the Material theme">%s</xliff:g> ενεργοποιώντας μοναδικά εικονίδια, ταπετσαρίες και γραμματοσειρές.</string>
   <string name="services_os_nav_keys_label"><b>Κάντε χρήση των πλήκτρων πλοήγησης της οθόνης</b> αντί των φυσικών πλήκτρων.</string>
+  <!-- Fingerprint setup -->
+  <string name="settings_fingerprint_setup_title">Επιλέξτε εφεδρική οθόνη κλειδώματος</string>
+  <string name="settings_fingerprint_setup_details">Πώς θα θέλατε να κλειδώσετε την οθόνη σας;</string>
+  <string name="fingerprint_setup_title">Ρύθμιση δαχτυλικών αποτυπωμάτων</string>
+  <string name="fingerprint_setup_summary">Για να χρησιμοποιήσετε τον αισθητήρα δακτυλικών αποτυπωμάτων για να ξεκλειδώσετε την οθόνη σας, θα πρέπει να:</string>
+  <string name="fingerprint_setup_backup_lock_method">Ρυθμίστε δεύτερη μέθοδο ξεκλειδώματος</string>
+  <string name="fingerprint_setup_add_fingerprint">Προσθέστε το δακτυλικό σας αποτύπωμα</string>
+  <string name="fingerprint_setup_screen_lock_setup">Ρύθμιση κλειδώματος οθόνης</string>
 </resources>
