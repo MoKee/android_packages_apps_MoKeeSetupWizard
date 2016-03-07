@@ -36,4 +36,5 @@
   <string name="yes">Да</string>
   <string name="setup_personalization">Персаналізацыя</string>
   <string name="services_privacy_policy">Палітыка прыватнасці</string>
+  <!-- Fingerprint setup -->
 </resources>

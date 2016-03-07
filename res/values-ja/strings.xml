@@ -55,4 +55,5 @@
   <string name="services_apply_theme"><xliff:g id="name" example="Material">%s</xliff:g>テーマを適用</string>
   <string name="services_apply_theme_label"><xliff:g id="name" example="Apply the Material theme">%s</xliff:g>すると、テーマ固有のアイコン、壁紙、フォントが有効になります。</string>
   <string name="services_os_nav_keys_label">ハードウェアキーのかわりに<b>スクリーンナビゲーションキーを使用します</b>。</string>
+  <!-- Fingerprint setup -->
 </resources>

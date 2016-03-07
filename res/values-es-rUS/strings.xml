@@ -42,9 +42,12 @@
   <string name="location_services_summary">Los servicios de localización permiten al sistema y a otras aplicaciones recopilar y utilizar datos tales como tu ubicación aproximada. Por ejemplo, una aplicación puede utilizar tu ubicación aproximada para localizar cafeterías cercanas.</string>
   <string name="location_access_summary"><b>Permitir aplicaciones que han solicitado tu permiso</b> para usar tu información de ubicación. Esto puede incluir tu localización actual y ubicaciones recientes.</string>
   <string name="location_network"><b>Uso de Wi-Fi</b> para ayudar a las aplicaciones a determinar tu ubicación.</string>
+  <string name="location_network_telephony"><b>Uso de Wi-Fi y redes móviles</b> para ayudar a las aplicaciones a determinar tu ubicación.</string>
   <string name="location_network_gms"><b>Uso del servicio de localización de Google</b> para ayudar a las aplicaciones a determinar tu ubicación. Esto significa enviar información anónima de la localización a Google, incluso cuando no haya aplicaciones usando este servicio.</string>
+  <string name="setup_mobile_data">Activar datos móviles</string>
   <string name="setup_mobile_data_no_service">Sin servicio</string>
   <string name="setup_mobile_data_emergency_only">Solo llamadas de emergencia</string>
+  <string name="enable_mobile_data_summary">¿Quieres usar los datos móviles durante la instalación? Encender los datos móviles puede incurrir en cargos de red.</string>
   <string name="no">No</string>
   <string name="yes">Sí</string>
   <string name="data_sim_name">SIM <xliff:g id="sub">%d</xliff:g> - <xliff:g id="name">%s</xliff:g></string>
@@ -54,6 +57,7 @@
   <string name="services_apply_theme">Aplicar el tema <xliff:g id="name" example="Material">%s</xliff:g></string>
   <string name="services_apply_theme_label"><xliff:g id="name" example="Apply the Material theme">%s</xliff:g> habilitando iconos especiales, fondo de pantalla y fuentes.</string>
   <string name="services_os_nav_keys_label"><b>Usar las teclas de navegación en pantalla</b> en vez de las teclas físicas.</string>
+  <!-- Fingerprint setup -->
   <string name="settings_fingerprint_setup_title">Seleccione el tipo de bloqueo de la pantalla de copia de seguridad</string>
   <string name="settings_fingerprint_setup_details">¿Cómo quieres bloquear tu pantalla?</string>
   <string name="fingerprint_setup_title">Configuración de la huella dactilar</string>

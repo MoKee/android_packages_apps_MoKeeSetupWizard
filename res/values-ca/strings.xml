@@ -57,6 +57,7 @@
   <string name="services_apply_theme">Aplica el tema <xliff:g id="name" example="Material">%s </xliff:g></string>
   <string name="services_apply_theme_label"><xliff:g id="name" example="Apply the Material theme">%s </xliff:g> habilitant icones úniques, fons de pantalla i tipus de lletra.</string>
   <string name="services_os_nav_keys_label"><b>Utilitza les tecles de navegació en pantalla</b> enlloc de les tecles físiques.</string>
+  <!-- Fingerprint setup -->
   <string name="settings_fingerprint_setup_title">Tipus de bloqueig de pantalla</string>
   <string name="settings_fingerprint_setup_details">Com li agradaria la seva pantalla?</string>
   <string name="fingerprint_setup_title">Organització d\'empremta digital</string>

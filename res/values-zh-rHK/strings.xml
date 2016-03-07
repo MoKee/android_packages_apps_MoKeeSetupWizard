@@ -58,6 +58,7 @@
   <string name="services_apply_theme">套用 <xliff:g id="name" example="Material">%s</xliff:g> 主題</string>
   <string name="services_apply_theme_label"><xliff:g id="name" example="Apply the Material theme">%s</xliff:g> 啓用獨特的圖示、 牆紙和字型。</string>
   <string name="services_os_nav_keys_label"><b>使用虛擬按鍵</b>替代實體按鍵。</string>
+  <!-- Fingerprint setup -->
   <string name="settings_fingerprint_setup_title">選擇備份畫面鎖定類型</string>
   <string name="settings_fingerprint_setup_details">你想如何鎖定畫面？</string>
   <string name="fingerprint_setup_title">指紋設定</string>

@@ -57,6 +57,7 @@
   <string name="services_apply_theme">Použít motiv <xliff:g id="name" example="Material">%s</xliff:g></string>
   <string name="services_apply_theme_label"><xliff:g id="name" example="Apply the Material theme">%s</xliff:g> povolí unikátní ikony, tapety a písma.</string>
   <string name="services_os_nav_keys_label"><b>Použít navigační klávesy na obrazovce</b> namísto hw kláves.</string>
+  <!-- Fingerprint setup -->
   <string name="settings_fingerprint_setup_title">Vybrat záložní zámek obrazovky</string>
   <string name="settings_fingerprint_setup_details">Jak chcete zamknout obrazovku?</string>
   <string name="fingerprint_setup_title">Nastavení otisku prstu</string>
