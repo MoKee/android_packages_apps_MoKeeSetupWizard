@@ -41,6 +41,7 @@
   <string name="other_services_summary">Estos servicios hacen a Google trabajar para ti, y puedes activarlos o desactivarlos en cualquier momento. Los datos se utilizarán según la <xliff:g id="name" example="Privacy Policy">%s</xliff:g> de Google.</string>
   <string name="location_services_summary">Los servicios de localización permiten al sistema y a otras aplicaciones recopilar y utilizar datos tales como tu ubicación aproximada. Por ejemplo, una aplicación puede utilizar tu ubicación aproximada para localizar cafeterías cercanas.</string>
   <string name="location_access_summary"><b>Permitir aplicaciones que han solicitado tu permiso</b> para usar tu información de ubicación. Esto puede incluir tu localización actual y ubicaciones recientes.</string>
+  <string name="location_battery_saving"><b>Reducir consumo de batería</b> al restringir el número de actualizaciones GPS por hora.</string>
   <string name="location_network"><b>Uso de Wi-Fi</b> para ayudar a las aplicaciones a determinar tu ubicación.</string>
   <string name="location_network_telephony"><b>Uso de Wi-Fi y redes móviles</b> para ayudar a las aplicaciones a determinar tu ubicación.</string>
   <string name="location_network_gms"><b>Uso del servicio de localización de Google</b> para ayudar a las aplicaciones a determinar tu ubicación. Esto significa enviar información anónima de la localización a Google, incluso cuando no haya aplicaciones usando este servicio.</string>
@@ -65,4 +66,5 @@
   <string name="fingerprint_setup_backup_lock_method">Configuración de un metodo de desbloqueo  secundario</string>
   <string name="fingerprint_setup_add_fingerprint">Añade tu huella dactilar</string>
   <string name="fingerprint_setup_screen_lock_setup">Bloqueo de pantalla de configuración</string>
+  <string name="sim_locale_changed">%1$s SIM detectada</string>
 </resources>
