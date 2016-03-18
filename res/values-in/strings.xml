@@ -40,7 +40,7 @@
   <string name="backup_data_summary"><b>Cadangkan</b> data aplikasi, kata sandi Wi-Fi, dan setelan lainnya ke server Google</string>
   <string name="other_services_summary">Layanan ini menempatkan Google bekerja untuk anda, dan anda dapat mengaktifkan atau menonaktifkan setiap saat. Data akan digunakan sesuai dengan Google <xliff:g id="name" example="Privacy Policy">%s </xliff:g>.</string>
   <string name="location_services_summary">Layanan lokasi mengizinkan Maps dan aplikasi lain untuk mengumpulkan dan menggunakan data seperti perkiraan lokasi anda. Misalnya, Maps dapat menggunakan perkiraan lokasi anda untuk menemukan toko-toko kopi terdekat.</string>
-  <string name="location_access_summary"><b>Izinkan aplikasi yang telah meminta izin Anda</b> menggunakan informasi lokasi Anda. Ini mungkin termasuk lokasi Anda saat ini dan lokasi terakhir.</string>
+  <string name="location_access_summary"><b>Memungkinkan aplikasi yang telah meminta izin anda</b> menggunakan informasi lokasi anda. Ini mungkin termasuk lokasi anda saat ini dan lokasi terakhir.</string>
   <string name="location_battery_saving"><b>Mengurangi konsumsi baterai</b> dengan membatasi jumlah GPS update per jam.</string>
   <string name="location_network"><b>Gunakan Wi-Fi</b> untuk membantu aplikasi menentukan lokasi anda.</string>
   <string name="location_network_telephony"><b>Gunakan Wi-Fi dan jaringan selular</b> untuk membantu aplikasi menentukan lokasi anda.</string>
@@ -48,7 +48,7 @@
   <string name="setup_mobile_data">Aktifkan data selular</string>
   <string name="setup_mobile_data_no_service">Tidak ada layanan</string>
   <string name="setup_mobile_data_emergency_only">Panggilan darurat saja</string>
-  <string name="enable_mobile_data_summary">Apakah Anda ingin menggunakan mobile data selama setup? Menyalakan mobile data mungkin akan dikenakan biaya data.</string>
+  <string name="enable_mobile_data_summary">Apakah anda ingin menggunakan mobile data selama persiapan? Menghidupkan mobile data mungkin akan dikenakan biaya data.</string>
   <string name="no">Tidak</string>
   <string name="yes">Ya</string>
   <string name="data_sim_name">SIM <xliff:g id="sub">%d</xliff:g> - <xliff:g id="name">%s</xliff:g></string>

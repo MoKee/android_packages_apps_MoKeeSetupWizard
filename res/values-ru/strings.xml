@@ -41,6 +41,7 @@
   <string name="other_services_summary">Эти службы позволяют Google расширить возможности устройства. Вы можете выключить их в любое время. Данные будут использоваться в соответствии с <xliff:g id="name" example="Privacy Policy">%s</xliff:g> Google.</string>
   <string name="location_services_summary">Службы местоположения позволяют системе и установленным приложениям собирать и использовать такие данные, как ваше приблизительное местоположение. Например, приложение может искать кофейни поблизости, основываясь на данных о вашем местоположении.</string>
   <string name="location_access_summary"><b>Позволить приложениям, которые запросили ваше разрешение</b> использовать информацию о вашем местоположении. Это может включать ваше текущее местоположения и  историю о прошлых.</string>
+  <string name="location_battery_saving"><b>Снизить энергопотребление</b>, ограничив количество обновления GPS в час.</string>
   <string name="location_network"><b>Использовать Wi-Fi</b> для определения местоположения.</string>
   <string name="location_network_telephony"><b>Использовать Wi-Fi и мобильные сети</b> для определения местоположения.</string>
   <string name="location_network_gms"><b>Использовать службы местоположения Google</b>, чтобы помочь приложениям определять ваше местоположение. Это означает, что они будут отправлять анонимные данные о местоположении в Google даже тогда, когда никакие приложения не запущены.</string>
@@ -65,4 +66,5 @@
   <string name="fingerprint_setup_backup_lock_method">Установка дополнительного метода разблокировки</string>
   <string name="fingerprint_setup_add_fingerprint">Добавьте свой отпечаток пальца</string>
   <string name="fingerprint_setup_screen_lock_setup">Настройка экрана блокировки</string>
+  <string name="sim_locale_changed">%1$s SIM обнаружена</string>
 </resources>
