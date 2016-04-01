@@ -25,8 +25,8 @@
   <string name="setup_complete">ההגדרה הושלמה</string>
   <string name="setup_welcome">ברוך הבא</string>
   <string name="setup_wifi">בחר רשת Wi-Fi</string>
-  <string name="setup_sim_missing">חסר כרטיס SIM</string>
-  <string name="setup_choose_data_sim">בחר כרטיס SIM עבור נתונים</string>
+  <string name="setup_sim_missing">כרטיס SIM חסר</string>
+  <string name="setup_choose_data_sim">בחר כרטיס SIM עבור נתונים סוללרים</string>
   <string name="setup_location">שירותי מיקום</string>
   <string name="setup_other">שירותים אחרים</string>
   <string name="setup_datetime">תאריך ושעה</string>
@@ -41,6 +41,7 @@
   <string name="other_services_summary">שירותים אלו נותנים ל-Google לעבוד בשבילך, ואתה יכול לכבות/להדליק אותם בכל זמן. מידע ישומש בכפוף ל<xliff:g id="name" example="Privacy Policy">%s</xliff:g> של Google.</string>
   <string name="location_services_summary">שירותי מיקום מאפשרים ליישום המפות וליישומים אחרים להשתמש במיקומך. לדוגמא, יישום המפות עשוי להשתמש במידע זה על מנת להציג לך בתי קפה הנמצאים בקרבתך.</string>
   <string name="location_access_summary"><b>אפשר ליישומים שביקשו את אישורך</b> להשתמש במידע על מיקומך.</string>
+  <string name="location_battery_saving"><b>הפחת צריכת בטריה</b> ע\"י הפחתת מספר עדכוני הGPS לשעה</string>
   <string name="location_network"><b>השתמש ב-Wi-Fi</b> כדי לסייע לאפליקציות לקבוע את מיקומך.</string>
   <string name="location_network_telephony"><b>השתמש ב-Wi-Fi וברשתות סלולריות</b> כדי לסייע לאפליקציות לקבוע את מיקומך.</string>
   <string name="location_network_gms"><b>השתמש בשירותי המיקום של Google</b> כדי לשלוח נתוני מיקום אנונימיים ל-Google, גם כשיישומים לא פועלים.</string>
@@ -58,4 +59,12 @@
   <string name="services_apply_theme_label"><xliff:g id="name" example="Apply the Material theme">%s</xliff:g> אפשר סמלים ייחודיים, רקעים וגופנים.</string>
   <string name="services_os_nav_keys_label"><b>השתמש במקשי הניווט במסך</b> במקום במקשים הפיזיים.</string>
   <!-- Fingerprint setup -->
+  <string name="settings_fingerprint_setup_title">בחר סוג נעילת מסך כגיבוי לטביעת אצבע</string>
+  <string name="settings_fingerprint_setup_details">איך תרצה לנעול את המכשיר שלך?</string>
+  <string name="fingerprint_setup_title">הגדרת טביעת אצבע</string>
+  <string name="fingerprint_setup_summary">כדי להשתמש חיישן טביעות האצבע שלך כדי לפתוח את המכשיר, אתה צריך ל:</string>
+  <string name="fingerprint_setup_backup_lock_method">הגדר דרך נעילה משנית</string>
+  <string name="fingerprint_setup_add_fingerprint">הוסף אל טביעת האצבע שלך</string>
+  <string name="fingerprint_setup_screen_lock_setup">הגדר נעילת מסך</string>
+  <string name="sim_locale_changed">%1$s כרטיסי SIM אותרו</string>
 </resources>
