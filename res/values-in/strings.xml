@@ -63,7 +63,7 @@
   <string name="settings_fingerprint_setup_title">Pilih cadangan jenis kunci layar</string>
   <string name="settings_fingerprint_setup_details">Bagaimana anda ingin mengunci layar anda?</string>
   <string name="fingerprint_setup_title">Setup sidik jari</string>
-  <string name="fingerprint_setup_summary">Gunakan sensor sidik jari anda untuk membuka layaranda, anda akan perlu untuk:</string>
+  <string name="fingerprint_setup_summary">Gunakan sensor sidik jari anda untuk membuka layar anda, anda akan perlu untuk:</string>
   <string name="fingerprint_setup_backup_lock_method">Pilihan kedua untuk membuka</string>
   <string name="fingerprint_setup_add_fingerprint">Tambahkan sidik jari</string>
   <string name="fingerprint_setup_screen_lock_setup">Setup Kunci layar</string>

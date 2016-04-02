@@ -60,4 +60,11 @@
   <string name="services_apply_theme_label"><xliff:g id="name" example="Apply the Material theme">%s</xliff:g> אפשר סמלים ייחודיים, רקעים וגופנים.</string>
   <string name="services_os_nav_keys_label"><b>השתמש במקשי הניווט במסך</b> במקום במקשים הפיזיים.</string>
   <!-- Fingerprint setup -->
+  <string name="settings_fingerprint_setup_title">בחר סוג נעילת מסך כגיבוי לטביעת אצבע</string>
+  <string name="settings_fingerprint_setup_details">איך תרצה לנעול את המכשיר שלך?</string>
+  <string name="fingerprint_setup_title">הגדרת טביעת אצבע</string>
+  <string name="fingerprint_setup_summary">כדי להשתמש חיישן טביעות האצבע שלך כדי לפתוח את המכשיר, אתה צריך ל:</string>
+  <string name="fingerprint_setup_backup_lock_method">הגדר דרך נעילה משנית</string>
+  <string name="fingerprint_setup_add_fingerprint">הוסף אל טביעת האצבע שלך</string>
+  <string name="fingerprint_setup_screen_lock_setup">הגדר נעילת מסך</string>
 </resources>
