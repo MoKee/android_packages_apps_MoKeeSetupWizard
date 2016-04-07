@@ -41,7 +41,7 @@
   <string name="other_services_summary">இந்த சேவைக்கு Google பயன்படுத்தப்படும், மற்றும் நீங்கள் எந்த நேரத்திலும் அவற்றை திரும்ப முடியும். தரவை Google இன் ஏற்ப பயன்படுத்த வழங்கப்படும் <xliff:g id="name" example="Privacy Policy">%s</xliff:g>.</string>
   <string name="location_services_summary">இடம் சேவைகள் அமைப்பு மற்றும் மூன்றாம் தரப்பு பயன்பாடுகள் போன்ற உங்கள் தோராயமான இடம் போன்ற சேகரிக்க மற்றும் தரவு பயன்படுத்த அனுமதிக்கிறது. உதாரணமாக, ஒரு பயன்பாடு அருகில் காபி கடைகள் கண்டறிய உங்கள் தோராயமான இடத்தை பயன்படுத்தலாம்.</string>
   <string name="location_access_summary">தயவு செய்து உங்கள் <b>இடம் தகவலைப் பயன்படுத்த உங்கள் அனுமதி கேட்ட பயன்பாடுகள்</b> அனுமதி. உங்கள் தற்போதைய இடம் மற்றும் கடந்த இடங்கள் அடங்கும்.</string>
-  <string name="location_network">உங்கள் இடம் தீர்மானிக்க <B>WiFi ஐப் பயன்படுத்தலாம்</ b>.</string>
+  <string name="location_network">உங்கள் இடம் தீர்மானிக்க <b>WiFi ஐப் பயன்படுத்தலாம்</b>.</string>
   <string name="setup_mobile_data_no_service">சேவையில்லை</string>
   <string name="setup_mobile_data_emergency_only">அவசர அழைப்புகள் மட்டுமே</string>
   <string name="no">இல்லை</string>
