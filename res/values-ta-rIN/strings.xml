@@ -43,7 +43,7 @@
   <string name="location_access_summary">தயவு செய்து உங்கள் <b>இடம் தகவலைப் பயன்படுத்த உங்கள் அனுமதி கேட்ட பயன்பாடுகள்</b> அனுமதி. உங்கள் தற்போதைய இடம் மற்றும் கடந்த இடங்கள் அடங்கும்.</string>
   <string name="location_gps" product="tablet">உங்கள் டேப்லெட்டில் GPS பயன்படுத்த அனுமதிப்பதன் மூலம் <b>இடம் துல்லியம் மேம்படுத்த முடியும்</b>.</string>
   <string name="location_gps" product="default">உங்கள் தொலைபேசியில் GPS பயன்படுத்த அனுமதிப்பதன் மூலம் <b>இடம் துல்லியம் மேம்படுத்த முடியும்</b>.</string>
-  <string name="location_network">உங்கள் இடம் தீர்மானிக்க <b>WiFi ஐப் பயன்படுத்தலாம்</b>.</string>
+  <string name="location_network">உங்கள் இடம் தீர்மானிக்க <B>WiFi ஐப் பயன்படுத்தலாம்</ b>.</string>
   <string name="location_network_telephony">உங்கள் இடம் தீர்மானிக்க <b>WiFi &amp; மொபைல் நெட்வொர்க்குகள் ஐப் பயன்படுத்தலாம்</b>.</string>
   <string name="setup_mobile_data_no_service">சேவையில்லை</string>
   <string name="setup_mobile_data_emergency_only">அவசர அழைப்புகள் மட்டுமே</string>
