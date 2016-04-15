@@ -25,6 +25,8 @@ import android.provider.Settings;
 
 import com.mokee.setupwizard.util.SetupWizardUtils;
 
+import mokee.providers.MKSettings;
+
 public class SetupWizardApp extends Application {
 
     public static final String TAG = SetupWizardApp.class.getSimpleName();
@@ -100,6 +102,8 @@ public class SetupWizardApp extends Application {
                         Settings.Global.putInt(getContentResolver(), Settings.Global.DEVICE_PROVISIONED, 1);
                         Settings.Secure.putInt(getContentResolver(),
                                 Settings.Secure.USER_SETUP_COMPLETE, 1);
+                        MKSettings.Secure.putInt(getContentResolver(),
+                                MKSettings.Secure.MK_SETUP_WIZARD_COMPLETED, 1);
                         SetupWizardUtils.disableGMSSetupWizard(SetupWizardApp.this);
                         SetupWizardUtils.disableSetupWizard(SetupWizardApp.this);
                         if (!isOwner) {

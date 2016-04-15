@@ -50,6 +50,7 @@ import com.mokee.setupwizard.setup.SetupDataCallbacks;
 import com.mokee.setupwizard.util.EnableAccessibilityController;
 import com.mokee.setupwizard.util.SetupWizardUtils;
 
+import mokee.providers.MKSettings;
 import mokee.themes.ThemeManager;
 
 import java.util.ArrayList;
@@ -455,6 +456,8 @@ public class SetupWizardActivity extends Activity implements SetupDataCallbacks,
                 Settings.Global.putInt(getContentResolver(), Settings.Global.DEVICE_PROVISIONED, 1);
                 Settings.Secure.putInt(getContentResolver(),
                         Settings.Secure.USER_SETUP_COMPLETE, 1);
+                MKSettings.Secure.putInt(getContentResolver(),
+                        MKSettings.Secure.MK_SETUP_WIZARD_COMPLETED, 1);
                 if (mEnableAccessibilityController != null) {
                     mEnableAccessibilityController.onDestroy();
                 }
