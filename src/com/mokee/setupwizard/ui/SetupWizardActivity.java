@@ -42,6 +42,7 @@ import android.widget.Button;
 import android.widget.ImageView;
 import android.widget.ProgressBar;
 
+import com.android.setupwizardlib.util.SystemBarHelper;
 import com.mokee.setupwizard.R;
 import com.mokee.setupwizard.SetupWizardApp;
 import com.mokee.setupwizard.setup.MKSetupWizardData;
@@ -62,11 +63,6 @@ public class SetupWizardActivity extends Activity implements SetupDataCallbacks,
     private static final String TAG = SetupWizardActivity.class.getSimpleName();
     private static final String KEY_LAST_PAGE_TAG = "last_page_tag";
 
-    private static final int UI_FLAGS = View.SYSTEM_UI_FLAG_LAYOUT_STABLE
-            | View.SYSTEM_UI_FLAG_LAYOUT_FULLSCREEN
-            | View.SYSTEM_UI_FLAG_IMMERSIVE
-            | View.SYSTEM_UI_FLAG_HIDE_NAVIGATION
-            | View.SYSTEM_UI_FLAG_IMMERSIVE_STICKY;
 
     private View mRootView;
     private View mButtonBar;
@@ -91,21 +87,9 @@ public class SetupWizardActivity extends Activity implements SetupDataCallbacks,
         if (!isOwner) {
             finish();
         }
-        final View decorView = getWindow().getDecorView();
-        decorView.setSystemUiVisibility(UI_FLAGS);
-        decorView.setOnSystemUiVisibilityChangeListener(
-                new View.OnSystemUiVisibilityChangeListener() {
-
-                    @Override
-                    public void onSystemUiVisibilityChange(int visibility) {
-                        if ((visibility & View.SYSTEM_UI_FLAG_FULLSCREEN) == 0) {
-                            decorView.setSystemUiVisibility(UI_FLAGS);
-                        }
-                    }
-                });
+        SystemBarHelper.hideSystemBars(getWindow());
         setContentView(R.layout.setup_main);
         mRootView = findViewById(R.id.root);
-        mRootView.setSystemUiVisibility(UI_FLAGS);
         mReveal = (ImageView)mRootView.findViewById(R.id.reveal);
         mButtonBar = findViewById(R.id.button_bar);
         mFinishingProgressBar = (ProgressBar)findViewById(R.id.finishing_bar);
@@ -178,8 +162,6 @@ public class SetupWizardActivity extends Activity implements SetupDataCallbacks,
 
     @Override
     protected void onResume() {
-        final View decorView = getWindow().getDecorView();
-        decorView.setSystemUiVisibility(UI_FLAGS);
         super.onResume();
         if (isFinishing()) {
             return;

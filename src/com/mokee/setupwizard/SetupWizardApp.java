@@ -69,6 +69,7 @@ public class SetupWizardApp extends Application {
     public static final int REQUEST_CODE_SETUP_CAPTIVE_PORTAL= 3;
     public static final int REQUEST_CODE_SETUP_BLUETOOTH= 4;
     public static final int REQUEST_CODE_SETUP_FINGERPRINT = 5;
+    public static final int REQUEST_CODE_VENDOR_SETUP_GMS = 6;
 
     public static final int RADIO_READY_TIMEOUT = 10 * 1000;
 
@@ -134,9 +135,13 @@ public class SetupWizardApp extends Application {
     }
 
     public void disableStatusBar() {
-        mStatusBarManager.disable(StatusBarManager.DISABLE_EXPAND | StatusBarManager.DISABLE_NOTIFICATION_ALERTS
-                | StatusBarManager.DISABLE_NOTIFICATION_TICKER | StatusBarManager.DISABLE_RECENT | StatusBarManager.DISABLE_HOME
-                | StatusBarManager.DISABLE_SEARCH);
+        mStatusBarManager.disable(StatusBarManager.DISABLE_EXPAND |
+                StatusBarManager.DISABLE_NOTIFICATION_ALERTS |
+                StatusBarManager.DISABLE_NOTIFICATION_ICONS |
+                StatusBarManager.DISABLE_NOTIFICATION_TICKER |
+                StatusBarManager.DISABLE_RECENT |
+                StatusBarManager.DISABLE_HOME |
+                StatusBarManager.DISABLE_SEARCH);
     }
 
     public void enableStatusBar() {
