@@ -55,4 +55,5 @@
   <string name="services_apply_theme_label"><xliff:g id="name" example="Apply the Material theme">%s</xliff:g> aktiveer unieke ikone, agtergronde en lettertipe.</string>
   <string name="services_os_nav_keys_label"><b>Gebruik skerm navigasie sleutels</b> in plaas van hardeware sleutels.</string>
   <!-- Fingerprint setup -->
+  <!-- MOD stuff -->
 </resources>

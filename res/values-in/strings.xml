@@ -67,4 +67,5 @@
   <string name="fingerprint_setup_add_fingerprint">Tambahkan sidik jari</string>
   <string name="fingerprint_setup_screen_lock_setup">Setup Kunci layar</string>
   <string name="sim_locale_changed">%1$s SIM terdeteksi</string>
+  <!-- MOD stuff -->
 </resources>

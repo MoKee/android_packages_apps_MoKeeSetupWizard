@@ -62,4 +62,5 @@
   <string name="fingerprint_setup_backup_lock_method">Thiết lập một phương pháp mở khóa phụ</string>
   <string name="fingerprint_setup_add_fingerprint">Thêm dấu vân tay của bạn</string>
   <string name="fingerprint_setup_screen_lock_setup">Thiết lập màn hình khóa</string>
+  <!-- MOD stuff -->
 </resources>
