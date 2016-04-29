@@ -56,4 +56,5 @@
   <string name="services_apply_theme_label"><xliff:g id="name" example="Apply the Material theme">%s</xliff:g> aktiverer unike ikoner, bakgrunner og skrifttyper.</string>
   <string name="services_os_nav_keys_label"><b>Bruk navigasjonstaster på skjermen </b> istedenfor hardware knapper.</string>
   <!-- Fingerprint setup -->
+  <!-- MOD stuff -->
 </resources>

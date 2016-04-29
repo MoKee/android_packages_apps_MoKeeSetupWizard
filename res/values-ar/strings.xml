@@ -62,4 +62,5 @@
   <string name="fingerprint_setup_backup_lock_method">إعداد ثانوي لفتح القفل</string>
   <string name="fingerprint_setup_add_fingerprint">إضافة بصمة الإصبع</string>
   <string name="fingerprint_setup_screen_lock_setup">إعداد قفل الشاشة</string>
+  <!-- MOD stuff -->
 </resources>

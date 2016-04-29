@@ -65,4 +65,5 @@
   <string name="fingerprint_setup_backup_lock_method">설치 보조 잠금 해제 방법</string>
   <string name="fingerprint_setup_add_fingerprint">사용자의 지문을 추가합니다</string>
   <string name="fingerprint_setup_screen_lock_setup">화면 잠금 설정</string>
+  <!-- MOD stuff -->
 </resources>
