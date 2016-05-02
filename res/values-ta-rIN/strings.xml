@@ -50,5 +50,6 @@
   <string name="setup_personalization">தனிச்சார்பாக்கல்</string>
   <string name="services_privacy_policy">தனியுரிமை கொள்கை</string>
   <!-- Fingerprint setup -->
+  <string name="fingerprint_setup_add_fingerprint">கைறேகையை சேர்க்க</string>
   <!-- MOD stuff -->
 </resources>

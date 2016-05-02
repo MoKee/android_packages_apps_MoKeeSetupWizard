@@ -68,4 +68,6 @@
   <string name="fingerprint_setup_screen_lock_setup">Setup Kunci layar</string>
   <string name="sim_locale_changed">%1$s SIM terdeteksi</string>
   <!-- MOD stuff -->
+  <string name="mod_welcome">Selamat datang di aplikasi Era Post</string>
+  <string name="mod_description">Mods yang cerdas, menyadari, dan ringan pengalaman dibangun langsung ke OS. Ketika MOD berpikir ini dapat membantu, itu akan menawarkan untuk mengaktifkannya untuk Anda.</string>
 </resources>
