@@ -47,7 +47,6 @@ public class SetupWizardUtils {
     private static final String TAG = SetupWizardUtils.class.getSimpleName();
 
     public static final String GOOGLE_SETUPWIZARD_PACKAGE = "com.google.android.setupwizard";
-    private static final String MODMOD_PACKAGE = "com.cyanogen.ambient.core";
 
     private SetupWizardUtils(){}
 
@@ -157,26 +156,8 @@ public class SetupWizardUtils {
                 ConnectionResult.SERVICE_MISSING;
     }
 
-    /**
-     * The assumption here is that if ambient core is present, we have MODs.
-     * In the future we will link against the SDK and use the util there.
-     */
-    public static boolean canHasModMOD(Context context) {
-        return isPackageInstalled(context, MODMOD_PACKAGE);
-    }
-
     public static boolean accountExists(Context context, String accountType) {
         return AccountManager.get(context).getAccountsByType(accountType).length > 0;
-    }
-
-    public static boolean isPackageInstalled(Context context, String packageName) {
-        PackageManager pm = context.getPackageManager();
-        try {
-            pm.getPackageInfo(packageName, PackageManager.GET_ACTIVITIES);
-            return true;
-        } catch (PackageManager.NameNotFoundException e) {
-            return false;
-        }
     }
 
     public static void disableSetupWizard(Context context) {
