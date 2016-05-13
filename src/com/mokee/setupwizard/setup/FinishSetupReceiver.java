@@ -36,6 +36,8 @@ public class FinishSetupReceiver extends BroadcastReceiver {
                 StatusBarManager.DISABLE_NONE);
         Settings.Global.putInt(context.getContentResolver(),
                 SetupWizardApp.KEY_DETECT_CAPTIVE_PORTAL, 1);
+        mokee.providers.MKSettings.Secure.putInt(context.getContentResolver(),
+                mokee.providers.MKSettings.Secure.MK_SETUP_WIZARD_COMPLETED, 1);
         SetupWizardUtils.disableGMSSetupWizard(context);
         SetupWizardUtils.disableSetupWizard(context);
     }
