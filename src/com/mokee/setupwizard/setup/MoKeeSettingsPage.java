@@ -83,8 +83,8 @@ public class MoKeeSettingsPage extends SetupPage {
     private static void writeDisableNavkeysOption(Context context, boolean enabled) {
         final SharedPreferences prefs = PreferenceManager.getDefaultSharedPreferences(context);
 
-        MKSettings.Secure.putInt(context.getContentResolver(),
-                MKSettings.Secure.DEV_FORCE_SHOW_NAVBAR, enabled ? 1 : 0);
+        MKSettings.Global.putInt(context.getContentResolver(),
+                MKSettings.Global.DEV_FORCE_SHOW_NAVBAR, enabled ? 1 : 0);
         MKHardwareManager hardware = MKHardwareManager.getInstance(context);
         hardware.set(MKHardwareManager.FEATURE_KEY_DISABLE, enabled);
 
