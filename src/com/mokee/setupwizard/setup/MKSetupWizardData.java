@@ -106,7 +106,6 @@ public class MKSetupWizardData extends AbstractSetupData {
 
     private void showHideAccountPages() {
         boolean isConnected = SetupWizardUtils.isNetworkConnected(mContext);
-        }
     }
 
     private void showHideSimMissingPage() {
