@@ -36,5 +36,4 @@
 To insert SIM card, read the instructions that came with your device.</string>
   <string name="location_access_summary"><b>allow apps that have asked your permission</b> to use your location information. This may include your current location and past locations.</string>
   <!-- Fingerprint setup -->
-  <!-- MOD stuff -->
 </resources>

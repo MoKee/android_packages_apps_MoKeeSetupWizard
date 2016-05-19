@@ -65,5 +65,4 @@
   <string name="fingerprint_setup_backup_lock_method">Stel een secundaire ontgrendelen methode in</string>
   <string name="fingerprint_setup_add_fingerprint">Voeg uw vingerafdruk toe</string>
   <string name="fingerprint_setup_screen_lock_setup">Instellen van de scherm beveleging</string>
-  <!-- MOD stuff -->
 </resources>

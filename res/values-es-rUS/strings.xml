@@ -67,5 +67,4 @@
   <string name="fingerprint_setup_add_fingerprint">Añade tu huella dactilar</string>
   <string name="fingerprint_setup_screen_lock_setup">Configurar bloqueo de pantalla</string>
   <string name="sim_locale_changed">%1$s SIM detectada</string>
-  <!-- MOD stuff -->
 </resources>
