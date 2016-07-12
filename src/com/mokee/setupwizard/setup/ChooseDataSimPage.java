@@ -43,6 +43,7 @@ import android.widget.ImageView;
 import android.widget.ProgressBar;
 import android.widget.TextView;
 
+import com.android.internal.telephony.PhoneConstants;
 import com.android.internal.telephony.TelephonyIntents;
 
 import com.mokee.setupwizard.R;
@@ -106,12 +107,12 @@ public class ChooseDataSimPage extends SetupPage {
         private Context mContext;
         private SubscriptionManager mSubscriptionManager;
 
-        private int mCurrentDataPhoneId;
+        private int mCurrentDataSubId;
 
         // This is static because a user can click back mid operation.
         // We want to persist what the user was changing to because of the
         // async callback can sometimes take a long time.
-        private static int sChangingToDataPhoneId = -1;
+        private static int sChangingToDataSubId = -1;
 
         private boolean mDisabledForSwitch = false;
 
@@ -132,8 +133,7 @@ public class ChooseDataSimPage extends SetupPage {
             @Override
             public void onClick(View view) {
                 SubscriptionInfo subInfoRecord = (SubscriptionInfo)view.getTag();
-                if (subInfoRecord != null &&
-                        subInfoRecord.getSimSlotIndex() != mCurrentDataPhoneId) {
+                if (subInfoRecord != null) {
                     changeDataSub(subInfoRecord);
                 }
             }
@@ -187,9 +187,9 @@ public class ChooseDataSimPage extends SetupPage {
             super.onCreate(savedInstanceState);
             mContext = getActivity().getApplicationContext();
             mSubscriptionManager = SubscriptionManager.from(mContext);
-            mCurrentDataPhoneId = mSubscriptionManager.getDefaultDataPhoneId();
-            if (sChangingToDataPhoneId == -1) {
-                sChangingToDataPhoneId = mCurrentDataPhoneId;
+            mCurrentDataSubId = mSubscriptionManager.getDefaultDataSubId();
+            if (sChangingToDataSubId == -1) {
+                sChangingToDataSubId = mCurrentDataSubId;
             }
         }
 
@@ -229,9 +229,8 @@ public class ChooseDataSimPage extends SetupPage {
             getActivity().unregisterReceiver(mIntentReceiver);
         }
 
-        private void ddsHasChanged() {
-            mCurrentDataPhoneId = mSubscriptionManager.getDefaultDataPhoneId();
-            if (mCurrentDataPhoneId == sChangingToDataPhoneId) {
+        private void ddsHasChanged(int subId) {
+            if (subId == sChangingToDataSubId) {
                 hideProgress();
                 enableViews(true);
             }
@@ -256,16 +255,16 @@ public class ChooseDataSimPage extends SetupPage {
 
                 @Override
                 public void onDataConnectionStateChanged(int state) {
-                    final int dataPhoneId = mSubscriptionManager.getDefaultDataPhoneId();
+                    final int dataSubId = mSubscriptionManager.getDefaultDataSubId();
                     // In case the default sub changes from elsewhere. This shouldn't happen,
                     // but testcases can induce this.
-                    if (dataPhoneId != mCurrentDataPhoneId &&
-                            dataPhoneId != sChangingToDataPhoneId) {
-                        sChangingToDataPhoneId = dataPhoneId;
+                    if (dataSubId != mCurrentDataSubId &&
+                            dataSubId != sChangingToDataSubId) {
+                        sChangingToDataSubId = dataSubId;
                         updateCurrentDataSub();
                     }
-                    if (mCurrentDataPhoneId != dataPhoneId) {
-                        mCurrentDataPhoneId = dataPhoneId;
+                    if (mCurrentDataSubId != dataSubId) {
+                        mCurrentDataSubId = dataSubId;
                         updateCurrentDataSub();
                     }
                     checkSimChangingState();
@@ -330,9 +329,9 @@ public class ChooseDataSimPage extends SetupPage {
         }
 
         private void changeDataSub(SubscriptionInfo subInfoRecord) {
-            if (sChangingToDataPhoneId != subInfoRecord.getSimSlotIndex()) {
-                sChangingToDataPhoneId = subInfoRecord.getSimSlotIndex();
-                mSubscriptionManager.setDefaultDataSubId(subInfoRecord.getSubscriptionId());
+            if (sChangingToDataSubId != subInfoRecord.getSubscriptionId()) {
+                sChangingToDataSubId = subInfoRecord.getSubscriptionId();
+                mSubscriptionManager.setDefaultDataSubId(sChangingToDataSubId);
                 setDataSubChecked(subInfoRecord);
             }
             checkSimChangingState();
@@ -340,7 +339,7 @@ public class ChooseDataSimPage extends SetupPage {
 
         private void checkSimChangingState() {
             if (mIsAttached && mRadioReady) {
-                if (mCurrentDataPhoneId != sChangingToDataPhoneId) {
+                if (mCurrentDataSubId != sChangingToDataSubId) {
                     showProgress();
                     enableViews(false);
                 } else {
@@ -362,8 +361,8 @@ public class ChooseDataSimPage extends SetupPage {
             if (mIsAttached) {
                 for (int i = 0; i < mSubInfoRecords.size(); i++) {
                     SubscriptionInfo subInfoRecord = mSubInfoRecords.valueAt(i);
-                    mCheckBoxes.get(i).setChecked(mSubscriptionManager.getDefaultDataPhoneId()
-                            == subInfoRecord.getSimSlotIndex());
+                    mCheckBoxes.get(i).setChecked(mSubscriptionManager.getDefaultDataSubId()
+                            == subInfoRecord.getSubscriptionId());
                 }
             }
         }
@@ -478,7 +477,7 @@ public class ChooseDataSimPage extends SetupPage {
             public void onReceive(Context context, Intent intent) {
                 final Activity activity = getActivity();
                 if (activity != null) {
-                    ddsHasChanged();
+                    ddsHasChanged(intent.getIntExtra(PhoneConstants.SUBSCRIPTION_KEY, -1));
                 }
             }
         };
