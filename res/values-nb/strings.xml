@@ -56,4 +56,9 @@
   <string name="services_apply_theme_label"><xliff:g id="name" example="Apply the Material theme">%s</xliff:g> aktiverer unike ikoner, bakgrunner og skrifttyper.</string>
   <string name="services_os_nav_keys_label"><b>Bruk navigasjonstaster på skjermen </b> istedenfor hardware knapper.</string>
   <!-- Fingerprint setup -->
+
+  <!-- secure lock screen -->
+  <string name="lockscreen_setup_title">Beskytt telefonen</string>
+  <string name="lockscreen_setup_summary"><b>Beskytt denne enheten</b> og krev PIN-kode, mønster eller passord for å låse opp skjermen</string>
+  <string name="lockscreen_setup_screen_lock_setup">Konfigurer PIN-kode, mønster eller passord</string>
 </resources>

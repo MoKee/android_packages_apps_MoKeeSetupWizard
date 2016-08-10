@@ -62,4 +62,9 @@
   <string name="fingerprint_setup_backup_lock_method">Configurarea unei metode secundare de deblocare</string>
   <string name="fingerprint_setup_add_fingerprint">Adaugă amprentă</string>
   <string name="fingerprint_setup_screen_lock_setup">Configurare ecran de blocare</string>
+
+  <!-- secure lock screen -->
+  <string name="lockscreen_setup_title">Protejați telefonul</string>
+  <string name="lockscreen_setup_summary"><b>Protejați dispozitivul</b> cu PIN, model sau parolă necesară pt. a debloca ecranul</string>
+  <string name="lockscreen_setup_screen_lock_setup">Configurați codul PIN, modelul sau parola</string>
 </resources>

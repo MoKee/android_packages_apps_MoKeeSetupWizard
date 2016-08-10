@@ -65,4 +65,9 @@
   <string name="fingerprint_setup_backup_lock_method">Stel een secundaire ontgrendelen methode in</string>
   <string name="fingerprint_setup_add_fingerprint">Voeg uw vingerafdruk toe</string>
   <string name="fingerprint_setup_screen_lock_setup">Instellen van de scherm beveleging</string>
+
+  <!-- secure lock screen -->
+  <string name="lockscreen_setup_title">Bescherm je telefoon</string>
+  <string name="lockscreen_setup_summary"><b>Bescherm dit apparaat</b> en vraag om een pincode, patroon of wachtwoord om het scherm te ontgrendelen</string>
+  <string name="lockscreen_setup_screen_lock_setup">Pincode, patroon of wachtwoord instellen</string>
 </resources>

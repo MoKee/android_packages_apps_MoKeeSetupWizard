@@ -17,4 +17,9 @@
 -->
 <resources xmlns:xliff="urn:oasis:names:tc:xliff:document:1.2">
   <!-- Fingerprint setup -->
+
+  <!-- secure lock screen -->
+  <string name="lockscreen_setup_title">आपला फोन संरक्षित करा</string>
+  <string name="lockscreen_setup_summary"><b>हे डिव्हाइस संरक्षित करा</b> आणि स्क्रीन अनलॉक करण्यासाठी पिन, नमुना किंवा संकेतशब्द आवश्यक आहे</string>
+  <string name="lockscreen_setup_screen_lock_setup">पिन, नमुना किंवा संकेतशब्द सेट करा</string>
 </resources>

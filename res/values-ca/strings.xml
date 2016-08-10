@@ -65,4 +65,9 @@
   <string name="fingerprint_setup_backup_lock_method">Mètode de desbloqueig secundàri</string>
   <string name="fingerprint_setup_add_fingerprint">Afegir l\'empremta digital</string>
   <string name="fingerprint_setup_screen_lock_setup">configuració de bloqueig de la pantalla</string>
+
+  <!-- secure lock screen -->
+  <string name="lockscreen_setup_title">Protegeix el teu telèfon</string>
+  <string name="lockscreen_setup_summary"><b>Protegeix el dispositiu</b> i estableix un PIN, un patró o una contrasenya per desbloquejar la pantalla</string>
+  <string name="lockscreen_setup_screen_lock_setup">Configura el PIN, el patró o la contrasenya</string>
 </resources>
