@@ -24,9 +24,4 @@
   <string name="no">Nej</string>
   <string name="yes">Ja</string>
   <!-- Fingerprint setup -->
-
-  <!-- secure lock screen -->
-  <string name="lockscreen_setup_title">Skydda mobilen</string>
-  <string name="lockscreen_setup_summary"><b>Skydda den här enheten</b> och kräv pinkod, mönster eller lösenord för att låsa upp skärmen</string>
-  <string name="lockscreen_setup_screen_lock_setup">Konfigurera pinkod, mönster eller lösenord</string>
 </resources>

@@ -17,9 +17,4 @@
 -->
 <resources xmlns:xliff="urn:oasis:names:tc:xliff:document:1.2">
   <!-- Fingerprint setup -->
-
-  <!-- secure lock screen -->
-  <string name="lockscreen_setup_title">మీ ఫోన్‌ను రక్షించుకోండి</string>
-  <string name="lockscreen_setup_summary"><b>ఈ పరికరాన్ని రక్షించండి</b> మరియు స్క్రీన్‌ను అన్‌లాక్ చేయడానికి PIN, నమూనా లేదా పాస్‌వర్డ్ అవసరమయ్యేలా ఏర్పాటు చేయండి</string>
-  <string name="lockscreen_setup_screen_lock_setup">PIN, నమూనా లేదా పాస్‌వర్డ్‌ను సెటప్ చేయి</string>
 </resources>
