@@ -71,6 +71,6 @@
   <string name="settings_lockscreen_setup_title">Экран выбора типа блокировки</string>
   <string name="settings_lockscreen_setup_details">Как вы хотите блокировать экран? (Каким методом, способом)?</string>
   <string name="lockscreen_setup_title">Защитите свой телефон</string>
-  <string name="lockscreen_setup_summary">< б> Защищайте устройство </б> и требуют PIN-кода, графический ключ или пароль для разблокировки экрана</string>
+  <string name="lockscreen_setup_summary"><b>Защищайте устройство</b> и требуют PIN-кода, графический ключ или пароль для разблокировки экрана</string>
   <string name="lockscreen_setup_screen_lock_setup">Настройка PIN-код, графический ключ или пароль</string>
 </resources>
