@@ -53,4 +53,6 @@
   <string name="fingerprint_setup_backup_lock_method">Устаноўка дадатковага метаду разблакоўкі</string>
   <string name="fingerprint_setup_add_fingerprint">Дадайце свой адбітак пальца</string>
   <string name="fingerprint_setup_screen_lock_setup">Налада экрана блакавання</string>
+  <!-- secure lock screen -->
+  <string name="settings_lockscreen_setup_details">Як блакаваць экран?</string>
 </resources>

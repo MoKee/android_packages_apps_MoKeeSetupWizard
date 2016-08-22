@@ -17,9 +17,5 @@
 -->
 <resources xmlns:xliff="urn:oasis:names:tc:xliff:document:1.2">
   <!-- Fingerprint setup -->
-
   <!-- secure lock screen -->
-  <string name="lockscreen_setup_title">ปกป้องโทรศัพท์ของคุณ</string>
-  <string name="lockscreen_setup_summary"><b>ปกป้องอุปกรณ์นี้</b>และกำหนดให้มีการใช้ PIN, รูปแบบ หรือรหัสผ่านเพื่อปลดล็อกหน้าจอ</string>
-  <string name="lockscreen_setup_screen_lock_setup">ตั้งค่า PIN, รูปแบบ หรือรหัสผ่าน</string>
 </resources>

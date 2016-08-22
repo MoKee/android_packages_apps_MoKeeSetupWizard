@@ -17,7 +17,6 @@
 -->
 <resources xmlns:xliff="urn:oasis:names:tc:xliff:document:1.2">
   <!-- Fingerprint setup -->
-
   <!-- secure lock screen -->
   <string name="lockscreen_setup_title">Babestu telefonoa</string>
   <string name="lockscreen_setup_summary"><b>Babestu gailua</b> eta eskatu PIN kode, eredu edo pasahitz bat pantaila desblokeatzeko</string>

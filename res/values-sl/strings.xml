@@ -17,9 +17,5 @@
 -->
 <resources xmlns:xliff="urn:oasis:names:tc:xliff:document:1.2">
   <!-- Fingerprint setup -->
-
   <!-- secure lock screen -->
-  <string name="lockscreen_setup_title">Zaščitite telefon</string>
-  <string name="lockscreen_setup_summary"><b>Zaščiti napravo</b> in za odklenitev zaslona zahtevaj kodo PIN, vzorec ali geslo</string>
-  <string name="lockscreen_setup_screen_lock_setup">Nastavi kodo PIN, vzorec ali geslo</string>
 </resources>

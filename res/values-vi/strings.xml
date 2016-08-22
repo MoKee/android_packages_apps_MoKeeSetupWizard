@@ -41,10 +41,14 @@
   <string name="other_services_summary">Các dịch vụ này thiệt đặt Google làm việc cho bạn, và bạn có thể bật chúng lên, hoặc tắt bất cứ lúc nào. Dữ liệu sẽ được sử dụng theo quy định của Google <xliff:g id="name" example="Privacy Policy">%s </xliff:g>.</string>
   <string name="location_services_summary">Dịch vụ định vị cho phép ứng dụng hệ thống và bên thứ ba để thu thập và sử dụng dữ liệu chẳng hạn như vị trí gần đúng của bạn. Ví dụ, một ứng dụng có thể sử dụng vị trí gần đúng của bạn để xác định vị trí cửa hàng cà phê gần đó.</string>
   <string name="location_access_summary"><b>Cho phép ứng dụng yêu cầu sự cho phép của bạn</b> để sử dụng thông tin vị trí của bạn. Điều này có thể bao gồm vị trí hiện tại và vị trí quá khứ của bạn.</string>
+  <string name="location_battery_saving"><b>Giảm mức tiêu thụ pin</b> bằng cách hạn chế số lượng GPS Cập Nhật mỗi giờ.</string>
   <string name="location_network"><b>Sử dụng Wi-Fi</b> để giúp ứng dụng xác định vị trí của bạn.</string>
+  <string name="location_network_telephony"><b>Sử dụng Wi-Fi và mạng di động</b> để giúp ứng dụng xác định vị trí của bạn.</string>
   <string name="location_network_gms"><b>Sử dụng dịch vụ Google địa điểm</b> nhằm giúp ứng dụng xác định vị trí của bạn. Điều này có nghĩa là việc gửi dữ liệu vị trí vô danh cho Google, ngay cả khi không có ứng dụng đang chạy.</string>
+  <string name="setup_mobile_data">Bật dữ liệu di động</string>
   <string name="setup_mobile_data_no_service">Không có dịch vụ</string>
   <string name="setup_mobile_data_emergency_only">Chỉ cuộc gọi khẩn cấp</string>
+  <string name="enable_mobile_data_summary">Bạn có muốn sử dụng dữ liệu di động trong thời gian cài đặt? Bật dữ liệu di động có thể phải chịu phí dữ liệu.</string>
   <string name="no">Không</string>
   <string name="yes">Có</string>
   <string name="data_sim_name">SIM <xliff:g id="sub">%d </xliff:g> - <xliff:g id="name">%s </xliff:g></string>
@@ -62,9 +66,11 @@
   <string name="fingerprint_setup_backup_lock_method">Thiết lập một phương pháp mở khóa phụ</string>
   <string name="fingerprint_setup_add_fingerprint">Thêm dấu vân tay của bạn</string>
   <string name="fingerprint_setup_screen_lock_setup">Thiết lập màn hình khóa</string>
-
+  <string name="sim_locale_changed">%1$s SIM được phát hiện</string>
   <!-- secure lock screen -->
+  <string name="settings_lockscreen_setup_title">Chọn kiểu khóa màn hình</string>
+  <string name="settings_lockscreen_setup_details">Bạn muốn màn hình khóa như thế nào?</string>
   <string name="lockscreen_setup_title">Bảo vệ điện thoại của bạn</string>
-  <string name="lockscreen_setup_summary"><b>Bảo vệ thiết bị này</b> và yêu cầu mã PIN, hình hoặc mật khẩu để mở khóa màn hình</string>
+  <string name="lockscreen_setup_summary"><b>Bảo vệ thiết bị này</b> và yêu cầu một mã PIN, mô hình, hoặc mật khẩu để mở khóa màn hình</string>
   <string name="lockscreen_setup_screen_lock_setup">Thiết lập mã PIN, hình hoặc mật khẩu</string>
 </resources>

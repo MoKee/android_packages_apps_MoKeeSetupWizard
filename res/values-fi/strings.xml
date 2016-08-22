@@ -55,9 +55,5 @@
   <string name="services_apply_theme_label"><xliff:g id="name" example="Apply the Material theme">%s</xliff:g> käyttääksesi ainutlaatuisia kuvakkeita, taustakuvia ja fontteja.</string>
   <string name="services_os_nav_keys_label"><b>Käytä näytön navigointipalkkia</b> fyysisten näppäinten sijaan.</string>
   <!-- Fingerprint setup -->
-
   <!-- secure lock screen -->
-  <string name="lockscreen_setup_title">Suojaa puhelintasi</string>
-  <string name="lockscreen_setup_summary"><b>Suojaa laitetta</b> avaamalla näytön lukitus PIN-koodin, kuvion tai salasanan avulla</string>
-  <string name="lockscreen_setup_screen_lock_setup">Aseta PIN-koodi, kuvio tai salasana</string>
 </resources>

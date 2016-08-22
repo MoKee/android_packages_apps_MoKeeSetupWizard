@@ -27,4 +27,5 @@
   <string name="setup_choose_data_sim">Choose a SIM for data</string>
   <string name="setup_location">Location services</string>
   <!-- Fingerprint setup -->
+  <!-- secure lock screen -->
 </resources>
