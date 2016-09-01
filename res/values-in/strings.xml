@@ -40,7 +40,7 @@
   <string name="backup_data_summary"><b>Cadangkan</b> data aplikasi, kata sandi Wi-Fi, dan setelan lainnya ke server Google</string>
   <string name="other_services_summary">Layanan ini menempatkan Google bekerja untuk anda, dan anda dapat mengaktifkan atau menonaktifkan setiap saat. Data akan digunakan sesuai dengan <xliff:g id="name" example="Privacy Policy">%s </xliff:g> Google.</string>
   <string name="location_services_summary">Layanan lokasi mengizinkan sistem dan aplikasi pihak ketiga untuk mengumpulkan dan menggunakan data seperti perkiraan lokasi anda. Misalnya, sebuah aplikasi dapat menggunakan perkiraan lokasi anda untuk menemukan toko-toko kopi terdekat.</string>
-  <string name="location_access_summary"><b>Memungkinkan aplikasi yang telah meminta izin anda</b> untuk menggunakan informasi lokasi anda. Ini mungkin termasuk lokasi anda saat ini dan lokasi lalu.</string>
+  <string name="location_access_summary"><b>Memungkinkan aplikasi yang telah meminta izin anda</b> menggunakan informasi lokasi anda. Ini mungkin termasuk lokasi anda saat ini dan lokasi terakhir.</string>
   <string name="location_battery_saving"><b>Mengurangi konsumsi baterai</b> dengan membatasi jumlah pembaharuan GPS per jam.</string>
   <string name="location_network"><b>Gunakan Wi-Fi</b> untuk membantu aplikasi menentukan lokasi anda.</string>
   <string name="location_network_telephony"><b>Gunakan Wi-Fi dan jaringan selular</b> untuk membantu aplikasi menentukan lokasi anda.</string>

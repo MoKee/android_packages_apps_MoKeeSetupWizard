@@ -68,5 +68,9 @@
   <string name="fingerprint_setup_screen_lock_setup">Konfiguracja ekranu blokady</string>
   <string name="sim_locale_changed">%1$s SIM wykryta</string>
   <!-- secure lock screen -->
+  <string name="settings_lockscreen_setup_title">Wybierz typ blokady ekranu</string>
   <string name="settings_lockscreen_setup_details">Jak chcesz blokować ekran?</string>
+  <string name="lockscreen_setup_title">Zabezpiecz swój telefon</string>
+  <string name="lockscreen_setup_summary">Zabezpieczone urządzenie wymaga odblokowania ekranu za pomocą kodu PIN, wzoru lub hasła</string>
+  <string name="lockscreen_setup_screen_lock_setup">Ustaw kod PIN, wzór lub hasło</string>
 </resources>
