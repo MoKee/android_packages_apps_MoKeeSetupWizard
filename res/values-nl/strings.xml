@@ -41,6 +41,7 @@
   <string name="other_services_summary">Deze diensten laten Google het werk doen en kunnen op elk moment in- of uitgeschakeld worden. De gegevens worden gebruikt conform de <xliff:g id="name" example="Privacy Policy">%s</xliff:g> van Google.</string>
   <string name="location_services_summary">Locatieservices stellen systeemapps en apps van derde partijen in staat gegevens zoals uw geschatte locatie te verzamelen en te gebruiken. Zo kan een app uw locatie gebruiken om winkels in de buurt te vinden.</string>
   <string name="location_access_summary"><b>Apps toestaan die uw toestemming hebben gevraagd</b> om informatie over uw locatie te gebruiken. Dit kan uw huidige locatie en voorgaande locaties omvatten.</string>
+  <string name="location_battery_saving"><b>Het batterijverbruik verminderen</b> door beperking van het aantal GPS werkt per uur.</string>
   <string name="location_network"><b>Wifi gebruiken</b> om apps te helpen uw locatie te bepalen.</string>
   <string name="location_network_telephony"><b>Wifi en mobiele netwerken gebruiken</b> om apps te helpen uw locatie te bepalen.</string>
   <string name="location_network_gms"><b>Locatieservices van Google gebruiken</b> om apps te helpen uw locatie te bepalen. Dit betekent anonieme locatiegegevens verzenden naar Google, zelfs wanneer er geen apps worden uitgevoerd.</string>
@@ -65,6 +66,11 @@
   <string name="fingerprint_setup_backup_lock_method">Stel een secundaire ontgrendelen methode in</string>
   <string name="fingerprint_setup_add_fingerprint">Voeg uw vingerafdruk toe</string>
   <string name="fingerprint_setup_screen_lock_setup">Instellen van de scherm beveleging</string>
+  <string name="sim_locale_changed">%1$s SIM gedetecteerd</string>
   <!-- secure lock screen -->
+  <string name="settings_lockscreen_setup_title">Selecteer Schermtype vergrendelen</string>
   <string name="settings_lockscreen_setup_details">Hoe wilt u uw scherm vergrendelen?</string>
+  <string name="lockscreen_setup_title">Beveiligt de telefoon</string>
+  <string name="lockscreen_setup_summary"><b>Bescherm dit apparaat</b> en vereisen een pincode, patroon of wachtwoord om het scherm te ontgrendelen</string>
+  <string name="lockscreen_setup_screen_lock_setup">Instellen van de pincode, patroon of wachtwoord</string>
 </resources>
