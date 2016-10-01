@@ -41,10 +41,14 @@
   <string name="other_services_summary">Тези услуги на Google можете да ги изключите по всяко време. Данните ще бъдат използвани в съответствие с Google <xliff:g id="name" example="Privacy Policy">%s </xliff:g>.</string>
   <string name="location_services_summary">Услугите за местоположение позволяват системата и трета страна да събират и използват данни като приблизителната ви локация. Например дадена програма може да използва приблизителното ви местоположение да намери близки кафенета.</string>
   <string name="location_access_summary"><b>Разреши приложения, които са поискали разрешение</b> да използват информацията за вашето местоположение. Това може да включва текущото местоположение и последни места.</string>
+  <string name="location_battery_saving"><b>Намаляване разхода на батерия</b> чрез ограничаване броя на GPS актуализация на местополож. за час.</string>
   <string name="location_network"><b>Използвайте Wi-Fi</b> да помогнете приложението да определи вашето местоположение.</string>
+  <string name="location_network_telephony"><b>Използвайте Wi-Fi и моб. мрежи</b> да помогнете приложението да определи вашето местоположение.</string>
   <string name="location_network_gms"><b>Използвайте Google услуги за местоположение</b> за определяне вашето местоположение. Това означава изпращане на анонимни данни на Google, дори когато няма програми да се изпълняват.</string>
+  <string name="setup_mobile_data">Включване на мобилни данни</string>
   <string name="setup_mobile_data_no_service">Няма сигнал</string>
   <string name="setup_mobile_data_emergency_only">Само спешни повиквания</string>
+  <string name="enable_mobile_data_summary">Искате ли да използвате мобилни данни по време на инсталирането? Това може да се таксува допълнително.</string>
   <string name="no">Не</string>
   <string name="yes">Да</string>
   <string name="data_sim_name">SIM <xliff:g id="sub">%d </xliff:g> - <xliff:g id="name">%s </xliff:g></string>
@@ -52,6 +56,7 @@
   <string name="setup_personalization">Персонализиране</string>
   <string name="services_privacy_policy">Политика за поверителност</string>
   <string name="services_apply_theme">Прилагане на <xliff:g id="name" example="Material">%s </xliff:g> тема</string>
+  <string name="services_apply_theme_label"><xliff:g id="name" example="Apply the Material theme">%s </xliff:g> позволява персонални икони, тапети и шрифтове.</string>
   <string name="services_os_nav_keys_label"><b>Използване на клавишите за навигация на екрана</b> вместо хардуерни бутони.</string>
   <!-- Fingerprint setup -->
   <string name="settings_fingerprint_setup_title">Избор на вид заключване екран</string>
@@ -61,7 +66,9 @@
   <string name="fingerprint_setup_backup_lock_method">Настройка на вторичен метод</string>
   <string name="fingerprint_setup_add_fingerprint">Добавете вашите пръстови отпечатъци</string>
   <string name="fingerprint_setup_screen_lock_setup">Настройка на екрана за заключване</string>
+  <string name="sim_locale_changed">%1$s СИМ открити</string>
   <!-- secure lock screen -->
+  <string name="settings_lockscreen_setup_title">Избор на вид заключване екран</string>
   <string name="settings_lockscreen_setup_details">Как бихте искали да заключите вашия екран?</string>
   <string name="lockscreen_setup_title">Защитете телефона си</string>
   <string name="lockscreen_setup_summary"><b>Защитете у-вото</b> и изисквайте ПИН код, фигура или парола за отключване на екрана</string>
