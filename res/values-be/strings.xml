@@ -20,11 +20,11 @@
   <string name="next">Далей</string>
   <string name="skip">Прапусціць</string>
   <string name="start">Пачаць</string>
-  <string name="ok">ОК</string>
+  <string name="ok">Добра</string>
   <string name="loading">Секунду\u2026</string>
   <string name="setup_complete">Устаноўка скончана</string>
   <string name="setup_welcome">Вітаем</string>
-  <string name="setup_wifi">Выберыце Wi-Fi</string>
+  <string name="setup_wifi">Выберыце сетку Wi-Fi</string>
   <string name="setup_sim_missing">SIM-карта адсутнічае</string>
   <string name="setup_choose_data_sim">Выберыце SIM-карту для перадачы дадзеных</string>
   <string name="setup_location">Службы вызначэння месцазнаходжання</string>
@@ -38,13 +38,28 @@
   <string name="choose_data_sim_summary" product="default">Якую SIM вы хочаце выкарыстоўваць для перадачы дадзеных? Выбар SIM з памегабайтнай тарыфікацыяй можа пацягнуць выдаткі, так як яна будзе выкарыстоўвацца для наладкі вашага тэлефона.</string>
   <string name="date_time_summary">Усталюйце свой гадзінны пояс і наладзьце цяперашнюю дату і час, пры неабходнасці</string>
   <string name="backup_data_summary"><b>Захоўваць рэзервовыя копіі</b> дадзеных, прыкладанняў, пароляў, кропак доступу Wi-Fi і налад на серверах Google</string>
+  <string name="other_services_summary">Гэтыя паслугі ўстаноулены Google, каб працаваць для вас і вы маеце магчымасць уключыць ці адключыць іх у любы час. Інфармацыя будзе выкарыстоувацца ў адпаведнасці з Google\'s <xliff:g id="name" example="Privacy Policy">%s</xliff:g>.
+ 
+Context | Request Context.</string>
+  <string name="location_services_summary">Пошук местазнаходжання дазваляе сістэмным і іншым прыкладанням збіраць і выкарыстоўваць звесткі аб вашым прыблізным месцазнаходжанні. Напрыклад, прыкладанне можа выкарыстоўваць ваша прыблізнае месцазнаходжанне, каб знайсці бліжэйшыя кафэ.</string>
+  <string name="location_access_summary"><b>Дазволіць прыкладанням, якія запытваюць ваш дазвол </b> выкарыстоўваць інфармацыю аб месцазнаходжанні. Інфармацыя можа ўключаць у сябе звесткі аб вашым бягучым месцазнаходжанні і мінулых месцах.</string>
+  <string name="location_battery_saving"><b>Панізіць расходаванне элекраэнергіі</b> абмежаваўшы колькасць абнаўленняў GPS у гадзіну.</string>
+  <string name="location_network"><b>Выкарыстоўваць Wi-Fi</b> каб дапамагчы прыкладам знайсці вашае месцазнаходжанне.</string>
+  <string name="location_network_telephony"><b>Выкарыстоўваць Wi-Fi і мабільную сетку</b> каб дапамагчы прыкладам знайсці ваша месцазнаходжанне.</string>
+  <string name="location_network_gms"><b>Выкарыстоўваць пашуковы сервіс Google</b> каб дапамагчы прыкладам знайсці вашае месцазнаходжанне. Гэта азначае, што ананімная інфармацыя аб месцазнаходжанні будзе адпраўляцца на сервера Google, нават, калі ніводная прыклада не выкарыстоуваецца.</string>
+  <string name="setup_mobile_data">Уключыць перадачу дадзеных</string>
   <string name="setup_mobile_data_no_service">Няма сеткі</string>
   <string name="setup_mobile_data_emergency_only">Толькі экстраныя выклікі</string>
+  <string name="enable_mobile_data_summary">Вы жадаеце выкарыстоўваць мабільную перадачу дадзеных пад час настройкі? За гэта можа збірацца дадатковая плата.</string>
   <string name="no">Не</string>
   <string name="yes">Да</string>
+  <string name="data_sim_name">Сім <xliff:g id="sub">%d</xliff:g>-<xliff:g id="name">%s</xliff:g></string>
   <string name="emergency_call">Экстраны выклік</string>
   <string name="setup_personalization">Персаналізацыя</string>
   <string name="services_privacy_policy">Палітыка прыватнасці</string>
+  <string name="services_apply_theme">Выкарыстоўваць тэму <xliff:g id="name" example="Material">%s</xliff:g></string>
+  <string name="services_apply_theme_label"><xliff:g id="name" example="Apply the Material theme">%s</xliff:g> і таксама выкарыстоўваць стылі для вашых абразкоў, шпалеры і г.д.</string>
+  <string name="services_os_nav_keys_label"><b>Выкарыстоуваць кнопкі на дысплэі</b> замест аппаратных кнопак.</string>
   <!-- Fingerprint setup -->
   <string name="settings_fingerprint_setup_title">Выберыце тып блакавання пры рэзервовым капіяванні</string>
   <string name="settings_fingerprint_setup_details">Як блакаваць экран?</string>
@@ -53,6 +68,11 @@
   <string name="fingerprint_setup_backup_lock_method">Устаноўка дадатковага метаду разблакоўкі</string>
   <string name="fingerprint_setup_add_fingerprint">Дадайце свой адбітак пальца</string>
   <string name="fingerprint_setup_screen_lock_setup">Налада экрана блакавання</string>
+  <string name="sim_locale_changed">%1$s SIM знойдзена</string>
   <!-- secure lock screen -->
+  <string name="settings_lockscreen_setup_title">Экран выбара тыпа блакіроўкі</string>
   <string name="settings_lockscreen_setup_details">Як блакаваць экран?</string>
+  <string name="lockscreen_setup_title">Засцерагчыце ваш тэлэфон</string>
+  <string name="lockscreen_setup_summary"><b>Сцерагчы гэты тэлефон</b> і запытваць ПІН-код, графічны ключ, ці пароль для разблакіроўкі экрана</string>
+  <string name="lockscreen_setup_screen_lock_setup">Устанавіце ПІН-код, графічны ключ або пароль</string>
 </resources>
