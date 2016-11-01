@@ -129,7 +129,7 @@ public class MoKeeSettingsPage extends SetupPage {
         }
     }
 
-    private static boolean hideKeyDisabler(Context ctx) {
+    protected static boolean hideKeyDisabler(Context ctx) {
         final MKHardwareManager hardware = MKHardwareManager.getInstance(ctx);
         return !hardware.isSupported(MKHardwareManager.FEATURE_KEY_DISABLE);
     }

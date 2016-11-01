@@ -20,11 +20,15 @@ import android.content.Context;
 import android.content.Intent;
 import android.content.IntentFilter;
 import android.net.ConnectivityManager;
+import android.os.RemoteException;
 import android.os.SystemProperties;
 import android.telephony.SubscriptionManager;
 import android.telephony.TelephonyManager;
 
 import android.util.Log;
+import android.view.IWindowManager;
+import android.view.WindowManagerGlobal;
+
 import com.android.internal.telephony.TelephonyIntents;
 import com.mokee.setupwizard.util.SetupWizardUtils;
 
@@ -72,7 +76,16 @@ public class MKSetupWizardData extends AbstractSetupData {
         } else if (SetupWizardUtils.frpEnabled(mContext)) {
             pages.add(new ScreenLockSetupPage(mContext, this));
         }
-        pages.add(new MoKeeSettingsPage(mContext, this));
+
+        boolean needsNavBar = true;
+        try {
+            IWindowManager windowManager = WindowManagerGlobal.getWindowManagerService();
+            needsNavBar = windowManager.needsNavigationBar();
+        } catch (RemoteException e) {
+        }
+        boolean mHideNavKeysRow = MoKeeSettingsPage.hideKeyDisabler(mContext);
+
+        pages.add(new MoKeeSettingsPage(mContext, this).setHidden(mHideNavKeysRow || needsNavBar));
         pages.add(new OtherSettingsPage(mContext, this).setHidden(!hasGMS));
         pages.add(new DateTimePage(mContext, this));
         pages.add(new FinishPage(mContext, this));
@@ -90,11 +103,9 @@ public class MKSetupWizardData extends AbstractSetupData {
         } else if (intent.getAction()
                 .equals(ConnectivityManager.CONNECTIVITY_ACTION)) {
             showHideMobileDataPage();
-            showHideAccountPages();
         } else  if (intent.getAction()
                 .equals(TelephonyIntents.ACTION_ANY_DATA_CONNECTION_STATE_CHANGED)) {
             showHideMobileDataPage();
-            showHideAccountPages();
         } else if (intent.getAction().equals(Intent.ACTION_TIMEZONE_CHANGED) ||
                 intent.getAction().equals(TelephonyIntents.ACTION_NETWORK_SET_TIMEZONE)) {
             mTimeZoneSet = true;
@@ -104,10 +115,6 @@ public class MKSetupWizardData extends AbstractSetupData {
             mTimeSet = true;
             showHideDateTimePage();
         }
-    }
-
-    private void showHideAccountPages() {
-        boolean isConnected = SetupWizardUtils.isNetworkConnected(mContext);
     }
 
     private void showHideSimMissingPage() {
