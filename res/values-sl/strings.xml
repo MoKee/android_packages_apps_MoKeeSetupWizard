@@ -16,6 +16,20 @@
      limitations under the License.
 -->
 <resources xmlns:xliff="urn:oasis:names:tc:xliff:document:1.2">
+  <string name="app_name">Čarovnik za namestitev</string>
+  <string name="next">Naprej</string>
+  <string name="skip">Preskoči</string>
+  <string name="start">Začni</string>
+  <string name="ok">V redu</string>
+  <string name="loading">Samo sec\u2026</string>
+  <string name="setup_complete">Namestitev je končana</string>
+  <string name="setup_welcome">Dobrodošli</string>
+  <string name="setup_wifi">Izberite Wi-Fi</string>
+  <string name="setup_sim_missing">Manjka SIM kartica</string>
+  <string name="setup_other">Druge storitve</string>
+  <string name="setup_datetime">Datum &amp; Ura</string>
+  <string name="setup_current_date">Trenutni datum</string>
+  <string name="setup_current_time">Trenutni čas</string>
   <!-- Fingerprint setup -->
   <!-- secure lock screen -->
 </resources>

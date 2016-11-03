@@ -72,7 +72,7 @@ Context | Request Context.</string>
   <!-- secure lock screen -->
   <string name="settings_lockscreen_setup_title">Экран выбара тыпа блакіроўкі</string>
   <string name="settings_lockscreen_setup_details">Як блакаваць экран?</string>
-  <string name="lockscreen_setup_title">Засцерагчыце ваш тэлэфон</string>
+  <string name="lockscreen_setup_title">Засцеражыце ваш тэлефон</string>
   <string name="lockscreen_setup_summary"><b>Сцерагчы гэты тэлефон</b> і запытваць ПІН-код, графічны ключ, ці пароль для разблакіроўкі экрана</string>
   <string name="lockscreen_setup_screen_lock_setup">Устанавіце ПІН-код, графічны ключ або пароль</string>
 </resources>
