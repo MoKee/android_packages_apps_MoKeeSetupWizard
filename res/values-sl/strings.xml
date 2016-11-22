@@ -26,6 +26,8 @@
   <string name="setup_welcome">Dobrodošli</string>
   <string name="setup_wifi">Izberite Wi-Fi</string>
   <string name="setup_sim_missing">Manjka SIM kartica</string>
+  <string name="setup_choose_data_sim">Izberite SIM za podatke</string>
+  <string name="setup_location">Lokacijske storitve</string>
   <string name="setup_other">Druge storitve</string>
   <string name="setup_datetime">Datum &amp; Ura</string>
   <string name="setup_current_date">Trenutni datum</string>

@@ -68,6 +68,7 @@
   <string name="fingerprint_setup_screen_lock_setup">设置屏幕锁定</string>
   <string name="sim_locale_changed">检测到 SIM 卡 %1$s</string>
   <!-- secure lock screen -->
+  <string name="settings_lockscreen_setup_title">选择屏幕锁类型</string>
   <string name="settings_lockscreen_setup_details">你想要什么样的屏幕锁定方式?</string>
   <string name="lockscreen_setup_title">为您的手机启用保护功能</string>
   <string name="lockscreen_setup_summary"><b>为此设备启用保护功能</b>，并要求输入 PIN 码、图案或密码才能解锁屏幕</string>
