@@ -21,7 +21,7 @@
   <string name="skip">Preskoči</string>
   <string name="start">Začni</string>
   <string name="ok">V redu</string>
-  <string name="loading">Samo sec\u2026</string>
+  <string name="loading">Samo trenutek\u2026</string>
   <string name="setup_complete">Namestitev je končana</string>
   <string name="setup_welcome">Dobrodošli</string>
   <string name="setup_wifi">Izberite Wi-Fi</string>
@@ -32,6 +32,28 @@
   <string name="setup_datetime">Datum &amp; Ura</string>
   <string name="setup_current_date">Trenutni datum</string>
   <string name="setup_current_time">Trenutni čas</string>
+  <string name="sim_missing_summary" product="tablet">V vaši tablici ni zaznana kartica SIM. Kako vstaviti kartico SIM, si preberite navodila, ki ste jih dobili skupaj z napravo.</string>
+  <string name="sim_missing_summary" product="default">V vašem telefonu ni zaznana kartica SIM. Kako vstaviti kartico SIM, si preberite navodila, ki ste jih dobili skupaj z napravo.</string>
+  <string name="date_time_summary">Nastavite časovni pas in prilagodite trenutni datum in čas, če je potrebno</string>
+  <string name="setup_mobile_data_no_service">Brez signala</string>
+  <string name="setup_mobile_data_emergency_only">Samo klici v sili</string>
+  <string name="no">Ne</string>
+  <string name="yes">Da</string>
+  <string name="data_sim_name">SIM <xliff:g id="sub">%d</xliff:g> - <xliff:g id="name">%s</xliff:g></string>
+  <string name="emergency_call">Samo klici v sili</string>
+  <string name="setup_personalization">Prilagajanje</string>
+  <string name="services_privacy_policy">Pravilnik o zasebnosti</string>
   <!-- Fingerprint setup -->
+  <string name="fingerprint_setup_title">Namestitev prstnega odtisa</string>
+  <string name="fingerprint_setup_summary">Za odklepanje s prstnim odtisom, boste morali:</string>
+  <string name="fingerprint_setup_backup_lock_method">Nastavi varnostno metodo odklepanja</string>
+  <string name="fingerprint_setup_add_fingerprint">Dodajte vaš prstni odtis</string>
+  <string name="fingerprint_setup_screen_lock_setup">Namestitev zaklepanja zaslona</string>
+  <string name="sim_locale_changed">%1$s SIM zaznana</string>
   <!-- secure lock screen -->
+  <string name="settings_lockscreen_setup_title">Izberite način za zaklep zaslona</string>
+  <string name="settings_lockscreen_setup_details">Kako bi želeli, da se zaslon zaklene?</string>
+  <string name="lockscreen_setup_title">Zaščitite vašo zasebnost</string>
+  <string name="lockscreen_setup_summary"><b>Zaščitite to napravo</b> zahtevan je PIN, vzorec, ali geslo za odklepanje zaslona</string>
+  <string name="lockscreen_setup_screen_lock_setup">Nastavite PIN, vzorec ali geslo</string>
 </resources>
