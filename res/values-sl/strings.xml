@@ -41,10 +41,14 @@
   <string name="other_services_summary">Te storitv omogoča Googlu, da dela za vas. Lahko jo izklopite kadar koli. Podatki se uporabijo v skladu z Google <xliff:g id="name" example="Privacy Policy">%s </xliff:g>.</string>
   <string name="location_services_summary">Lokacijske storitve omogočajo sistemu in appl. tretjih strank, zbiranje in uporabo podatkov, kot so približna lokacija. Kot primer, lahko aplikacija uporabi vašo približno lokacijo za iskanje bližnjih kavarn.</string>
   <string name="location_access_summary"><b>Dovoli appl, ki so zahtevala dovolenje</b>da uporabijo vašo lokacijo. To lahko vpliva na vašo trenutno lokacijo, kot tudi na prejšnje.</string>
+  <string name="location_battery_saving"><b>Zmanjšaj porabo baterije</b> z omejevanjem števila GPS posodobtev na uro.</string>
   <string name="location_network"><b>Uporabi Wi-Fi</b> kot pomoč appl. določiti vašo lokacijo.</string>
+  <string name="location_network_telephony"><b>Uporabi Wi-Fi in mobilne podatke</b> kot pomoč appl. določiti vašo lokacijo.</string>
   <string name="location_network_gms"><b>Uporabi Googlove lokacijske storitve</b> kot pomoč appl. določiti vašo lokacijo. To pomeni pošiljanje anonimnih lokacijskih podatkov Googlu, tudi ko ni zagnana nobena appl.</string>
+  <string name="setup_mobile_data">Vklopi mobilne podatke</string>
   <string name="setup_mobile_data_no_service">Brez signala</string>
   <string name="setup_mobile_data_emergency_only">Samo klici v sili</string>
+  <string name="enable_mobile_data_summary">Ali želite uporabljati mobilne podatke med namestitvijo? Vklop mobilnih podatkov je lahko plačljiva storitev.</string>
   <string name="no">Ne</string>
   <string name="yes">Da</string>
   <string name="data_sim_name">SIM <xliff:g id="sub">%d</xliff:g> - <xliff:g id="name">%s</xliff:g></string>
@@ -52,6 +56,7 @@
   <string name="setup_personalization">Prilagajanje</string>
   <string name="services_privacy_policy">Pravilnik o zasebnosti</string>
   <string name="services_apply_theme">Uporabi <xliff:g id="name" example="Material">%s</xliff:g> temo</string>
+  <string name="services_apply_theme_label"><xliff:g id="name" example="Apply the Material theme">%s</xliff:g> omogoča edinstvene ikone, ozadja in pisave.</string>
   <string name="services_os_nav_keys_label"><b>Uporabi zaslonske tipke</b> namesto vgrajenih tipk.</string>
   <!-- Fingerprint setup -->
   <string name="settings_fingerprint_setup_title">Izberite varnostni način za zaklep zaslona</string>
