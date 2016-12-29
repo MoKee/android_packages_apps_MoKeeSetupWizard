@@ -34,8 +34,8 @@
   <string name="setup_current_time">当前时间</string>
   <string name="sim_missing_summary" product="tablet">在您的平板电脑上未检测到 SIM 卡。请按照您平板电脑附带说明书中的操作方法插入 SIM 卡。</string>
   <string name="sim_missing_summary" product="default">在您的手机上未检测到 SIM 卡。请按照您手机附带说明书中的操作方法插入 SIM 卡。</string>
-  <string name="choose_data_sim_summary" product="tablet">您想使用哪张 SIM 卡进行数据连接？您选择的 SIM 卡可能会因设置您的平板电脑而产生流量费用。</string>
-  <string name="choose_data_sim_summary" product="default">您想使用哪张 SIM 卡用于数据连接？选择的 SIM 卡可能会因设置您的手机而产生流量费用。</string>
+  <string name="choose_data_sim_summary" product="tablet">您想使用哪张 SIM 卡进行数据连接？您选择的 SIM 卡可能会在您设置平板电脑的时候产生流量费用。</string>
+  <string name="choose_data_sim_summary" product="default">您想使用哪张 SIM 卡用于数据连接？您选择的 SIM 卡可能会在您设置手机的时候产生流量费用。</string>
   <string name="date_time_summary">如果需要，设置时区和调整日期和时间</string>
   <string name="backup_data_summary"><b>备份</b>应用数据，无线网络密码，和其它设置到 Google 服务器</string>
   <string name="other_services_summary">这些服务让 Google 为你工作，您可以在任何时候打开或关闭它们。数据将会按照 Google 的 <xliff:g id="name" example="Privacy Policy">%s</xliff:g> 来被使用。</string>
@@ -60,11 +60,11 @@
   <string name="services_os_nav_keys_label"><b>使用虚拟导航键</b>替代实体按键。</string>
   <!-- Fingerprint setup -->
   <string name="settings_fingerprint_setup_title">选择备份屏幕锁类型</string>
-  <string name="settings_fingerprint_setup_details">你想要如何锁定屏幕?</string>
+  <string name="settings_fingerprint_setup_details">您想要如何锁定屏幕?</string>
   <string name="fingerprint_setup_title">指纹设置</string>
   <string name="fingerprint_setup_summary">若要使用您的指纹传感器解锁您的屏幕，您需要:</string>
   <string name="fingerprint_setup_backup_lock_method">设置二次解锁方法</string>
-  <string name="fingerprint_setup_add_fingerprint">添加你的指纹</string>
+  <string name="fingerprint_setup_add_fingerprint">添加您的指纹</string>
   <string name="fingerprint_setup_screen_lock_setup">设置屏幕锁定</string>
   <string name="sim_locale_changed">检测到 SIM 卡 %1$s</string>
   <!-- secure lock screen -->
