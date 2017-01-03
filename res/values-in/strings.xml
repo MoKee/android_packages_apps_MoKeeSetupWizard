@@ -20,28 +20,28 @@
   <string name="next">Berikutnya</string>
   <string name="skip">Lewati</string>
   <string name="start">Mulai</string>
-  <string name="ok">OKE</string>
-  <string name="loading">Tunggu sebentar \u2026</string>
-  <string name="setup_complete">Persiapan selesai</string>
+  <string name="ok">Oke</string>
+  <string name="loading">Tunggu\u2026</string>
+  <string name="setup_complete">Penyiapan selesai</string>
   <string name="setup_welcome">Selamat datang</string>
   <string name="setup_wifi">Pilih Wi-Fi</string>
   <string name="setup_sim_missing">Kartu SIM hilang</string>
-  <string name="setup_choose_data_sim">Pilih SIM untuk Data</string>
+  <string name="setup_choose_data_sim">Pilih SIM untuk data</string>
   <string name="setup_location">Layanan lokasi</string>
   <string name="setup_other">Layanan lainnya</string>
   <string name="setup_datetime">Tanggal &amp; waktu</string>
   <string name="setup_current_date">Tanggal sekarang</string>
   <string name="setup_current_time">Waktu saat ini</string>
   <string name="sim_missing_summary" product="tablet">Kartu SIM tidak terdeteksi pada tablet anda. Untuk menyisipkan kartu SIM, baca petunjuk penggunaan yang disertakan dengan perangkat anda.</string>
-  <string name="sim_missing_summary" product="default">Kartu SIM tidak terdeteksi pada Telepon anda. Untuk menyisipkan kartu SIM, baca petunjuk penggunaan yang disertakan dengan perangkat anda.</string>
-  <string name="choose_data_sim_summary" product="tablet">SIM Manakah yang ingin Anda gunakan untuk data? SIM yang dipilih dapat dikenakan biaya jaringan karena akan digunakan untuk menyiapkan table tAnda.</string>
-  <string name="choose_data_sim_summary" product="default">SIM Manakah yang ingin Anda gunakan untuk data? SIM yang dipilih dapat dikenakan biaya jaringan karena akan digunakan untuk menyiapkan telepon Anda.</string>
+  <string name="sim_missing_summary" product="default">Kartu SIM tidak terdeteksi pada telepon anda. Untuk menyisipkan kartu SIM, baca petunjuk penggunaan yang disertakan dengan perangkat anda.</string>
+  <string name="choose_data_sim_summary" product="tablet">SIM manakah yang ingin anda gunakan untuk data? SIM yang dipilih dapat dikenakan biaya jaringan karena akan digunakan untuk menyiapkan tablet anda.</string>
+  <string name="choose_data_sim_summary" product="default">SIM Manakah yang ingin anda gunakan untuk data? SIM yang dipilih dapat dikenakan biaya jaringan karena akan digunakan untuk menyiapkan telepon anda.</string>
   <string name="date_time_summary">Atur zona waktu dan sesuaikan tanggal dan waktu jika diperlukan</string>
   <string name="backup_data_summary"><b>Cadangkan</b> data aplikasi, kata sandi Wi-Fi, dan setelan lainnya ke server Google</string>
-  <string name="other_services_summary">Layanan ini menempatkan Google bekerja untuk anda, dan anda dapat mengaktifkan atau menonaktifkan setiap saat. Data akan digunakan sesuai dengan <xliff:g id="name" example="Privacy Policy">%s </xliff:g> Google.</string>
-  <string name="location_services_summary">Layanan lokasi mengizinkan sistem dan aplikasi pihak ketiga untuk mengumpulkan dan menggunakan data seperti perkiraan lokasi anda. Misalnya, sebuah aplikasi dapat menggunakan perkiraan lokasi anda untuk menemukan toko-toko kopi terdekat.</string>
+  <string name="other_services_summary">Layanan ini menempatkan Google bekerja untuk anda, dan anda dapat mengaktifkan atau menonaktifkan setiap saat. Data akan digunakan sesuai dengan Google <xliff:g id="name" example="Privacy Policy">%s </xliff:g>.</string>
+  <string name="location_services_summary">Layanan lokasi mengizinkan Maps dan aplikasi lain untuk mengumpulkan dan menggunakan data seperti perkiraan lokasi anda. Misalnya, Maps dapat menggunakan perkiraan lokasi anda untuk menemukan toko-toko kopi terdekat.</string>
   <string name="location_access_summary"><b>Memungkinkan aplikasi yang telah meminta izin anda</b> menggunakan informasi lokasi anda. Ini mungkin termasuk lokasi anda saat ini dan lokasi terakhir.</string>
-  <string name="location_battery_saving"><b>Mengurangi konsumsi baterai</b> dengan membatasi jumlah pembaharuan GPS per jam.</string>
+  <string name="location_battery_saving"><b>Mengurangi konsumsi baterai</b> dengan membatasi jumlah pembaruan GPS per jam.</string>
   <string name="location_network"><b>Gunakan Wi-Fi</b> untuk membantu aplikasi menentukan lokasi anda.</string>
   <string name="location_network_telephony"><b>Gunakan Wi-Fi dan jaringan selular</b> untuk membantu aplikasi menentukan lokasi anda.</string>
   <string name="location_network_gms"><b>Gunakan layanan lokasi Google</b> untuk membantu aplikasi menentukan lokasi anda. Ini berarti mengirimkan data lokasi anonim ke Google, bahkan ketika tidak ada aplikasi yang berjalan.</string>
@@ -54,18 +54,18 @@
   <string name="data_sim_name">SIM <xliff:g id="sub">%d</xliff:g> - <xliff:g id="name">%s</xliff:g></string>
   <string name="emergency_call">Panggilan darurat</string>
   <string name="setup_personalization">Personalisasi</string>
-  <string name="services_privacy_policy">Kebijakan privasi</string>
+  <string name="services_privacy_policy">Kebijakan Privasi</string>
   <string name="services_apply_theme">Terapkan tema <xliff:g id="name" example="Material">%s </xliff:g></string>
-  <string name="services_apply_theme_label"><xliff:g id="name" example="Apply the Material theme">%s </xliff:g> mengaktifkan gaya visual yang unik untuk ikon Anda, wallpaper dan banyak lagi.</string>
+  <string name="services_apply_theme_label"><xliff:g id="name" example="Apply the Material theme">%s </xliff:g> memungkinkan ikon unik, Wallpaper dan font.</string>
   <string name="services_os_nav_keys_label"><b>Gunakan tombol navigasi layar</b> bukan tombol perangkat keras.</string>
   <!-- Fingerprint setup -->
-  <string name="settings_fingerprint_setup_title">Pilih cadangan jenis kunci layar</string>
+  <string name="settings_fingerprint_setup_title">Pilih tipe kunci layar cadangan</string>
   <string name="settings_fingerprint_setup_details">Bagaimana anda ingin mengunci layar anda?</string>
-  <string name="fingerprint_setup_title">Persiapan sidik jari</string>
+  <string name="fingerprint_setup_title">Menyiapkan sidik jari</string>
   <string name="fingerprint_setup_summary">Untuk menggunakan sensor sidik jari anda untuk membuka layar anda, anda perlu untuk:</string>
-  <string name="fingerprint_setup_backup_lock_method">Persiapan Pilihan kedua untuk membuka kunci</string>
-  <string name="fingerprint_setup_add_fingerprint">Tambahkan sidik jari anda</string>
-  <string name="fingerprint_setup_screen_lock_setup">Persiapan Kunci layar</string>
+  <string name="fingerprint_setup_backup_lock_method">Pilihan kedua untuk membuka</string>
+  <string name="fingerprint_setup_add_fingerprint">Tambahkan sidik jari</string>
+  <string name="fingerprint_setup_screen_lock_setup">Menyiapkan kunci layar</string>
   <string name="sim_locale_changed">%1$s SIM terdeteksi</string>
   <!-- secure lock screen -->
   <string name="settings_lockscreen_setup_title">Pilih tipe kunci layar</string>
