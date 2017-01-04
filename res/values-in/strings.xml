@@ -48,7 +48,7 @@
   <string name="setup_mobile_data">Aktifkan data selular</string>
   <string name="setup_mobile_data_no_service">Tidak ada layanan</string>
   <string name="setup_mobile_data_emergency_only">Panggilan darurat saja</string>
-  <string name="enable_mobile_data_summary">Apakah anda ingin menggunakan mobile data selama persiapan? Menghidupkan mobile data mungkin akan dikenakan biaya data.</string>
+  <string name="enable_mobile_data_summary">Apakah anda ingin menggunakan data seluler selama penyiapan? Menghidupkan data seluler mungkin akan dikenakan biaya data.</string>
   <string name="no">Tidak</string>
   <string name="yes">Ya</string>
   <string name="data_sim_name">SIM <xliff:g id="sub">%d</xliff:g> - <xliff:g id="name">%s</xliff:g></string>
@@ -72,5 +72,5 @@
   <string name="settings_lockscreen_setup_details">Bagaimana anda ingin mengunci layar anda?</string>
   <string name="lockscreen_setup_title">Lindungi telepon anda</string>
   <string name="lockscreen_setup_summary"><b>Lindungi perangkat ini</b> akan memerlukan PIN, pola, atau kata sandi untuk membuka kunci layar</string>
-  <string name="lockscreen_setup_screen_lock_setup">Mengatur PIN, pola atau kata sandi</string>
+  <string name="lockscreen_setup_screen_lock_setup">Siapkan PIN, pola atau kata sandi</string>
 </resources>

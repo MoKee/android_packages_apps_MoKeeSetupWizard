@@ -19,6 +19,8 @@
   <string name="app_name">Installatiounsassistent</string>
   <string name="next">Weider</string>
   <string name="skip">Iwwersprangen</string>
+  <string name="start">Start</string>
+  <string name="ok">OK</string>
   <string name="loading">Ee Moment w.e.g.\u2026</string>
   <string name="setup_complete">Installatioun ofgeschloss</string>
   <string name="setup_welcome">Wëllkomm</string>
