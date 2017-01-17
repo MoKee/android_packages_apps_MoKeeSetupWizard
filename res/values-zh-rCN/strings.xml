@@ -39,7 +39,7 @@
   <string name="date_time_summary">在您需要的时候设置时区与调整日期和时间</string>
   <string name="backup_data_summary"><b>备份</b>应用数据，无线网络密码，和其它设置到 Google 服务器</string>
   <string name="other_services_summary">这些服务让 Google 为您工作，您可以在任何时候打开或关闭它们。数据将会按照 Google 的 <xliff:g id="name" example="Privacy Policy">%s</xliff:g> 被使用。</string>
-  <string name="location_services_summary">位置服务允许系统和第三方应用收集和使用数据（比如您的大致位置）。例如，某个应用可能会使用您的大致位置来查找附近的咖啡馆。</string>
+  <string name="location_services_summary">位置服务允许系统和第三方应用收集和使用相关信息（比如您的大致位置）。例如，某个应用可能会使用您的大致位置来查找附近的咖啡馆。</string>
   <string name="location_access_summary"><b>允许得到您授权的应用</b>使用您的位置信息，可能包括您当前的位置和过去的位置。</string>
   <string name="location_battery_saving"><b>减少电量消耗</b>限制 GPS 每小时更新速度。</string>
   <string name="location_network"><b>使用 Wi-Fi</b> 来帮助应用确定您的位置。</string>
@@ -56,14 +56,14 @@
   <string name="setup_personalization">个性化</string>
   <string name="services_privacy_policy">隐私政策</string>
   <string name="services_apply_theme">应用 <xliff:g id="name" example="Material">%s</xliff:g> 主题</string>
-  <string name="services_apply_theme_label"><xliff:g id="name" example="Apply the Material theme">%s</xliff:g> 启用独特的图标、 壁纸和字体。</string>
+  <string name="services_apply_theme_label"><xliff:g id="name" example="Apply the Material theme">%s</xliff:g> 启用个性化的图标、 壁纸和字体。</string>
   <string name="services_os_nav_keys_label"><b>使用虚拟导航键</b>替代实体按键。</string>
   <!-- Fingerprint setup -->
   <string name="settings_fingerprint_setup_title">选择备份屏幕锁类型</string>
   <string name="settings_fingerprint_setup_details">您想要如何锁定屏幕？</string>
   <string name="fingerprint_setup_title">指纹设置</string>
   <string name="fingerprint_setup_summary">如果要使用指纹传感器解锁屏幕，您需要：</string>
-  <string name="fingerprint_setup_backup_lock_method">设置二次解锁方法</string>
+  <string name="fingerprint_setup_backup_lock_method">设置备选解锁方式</string>
   <string name="fingerprint_setup_add_fingerprint">添加您的指纹</string>
   <string name="fingerprint_setup_screen_lock_setup">设置屏幕锁定</string>
   <string name="sim_locale_changed">检测到 SIM 卡 %1$s</string>
