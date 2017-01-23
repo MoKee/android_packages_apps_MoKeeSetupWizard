@@ -24,7 +24,7 @@
   <string name="loading">请稍等片刻\u2026</string>
   <string name="setup_complete">设置完成</string>
   <string name="setup_welcome">欢迎</string>
-  <string name="setup_wifi">选择 WiFi</string>
+  <string name="setup_wifi">选择 WLAN</string>
   <string name="setup_sim_missing">未找到 SIM 卡</string>
   <string name="setup_choose_data_sim">选择一张用于数据连接的 SIM 卡</string>
   <string name="setup_location">位置服务</string>
@@ -37,13 +37,13 @@
   <string name="choose_data_sim_summary" product="tablet">您想使用哪张 SIM 卡进行数据连接？您选择的 SIM 卡可能会在您设置平板电脑的时候产生流量费用。</string>
   <string name="choose_data_sim_summary" product="default">您想使用哪张 SIM 卡进行数据连接？您选择的 SIM 卡可能会在您设置手机的时候产生流量费用。</string>
   <string name="date_time_summary">在您需要的时候设置时区与调整日期和时间</string>
-  <string name="backup_data_summary"><b>备份</b>应用数据，无线网络密码，和其它设置到 Google 服务器</string>
+  <string name="backup_data_summary">备份应用数据、WLAN 密码和其它设置到 Google 服务器</string>
   <string name="other_services_summary">这些服务让 Google 为您工作，您可以在任何时候打开或关闭它们。数据将会按照 Google 的 <xliff:g id="name" example="Privacy Policy">%s</xliff:g> 被使用。</string>
   <string name="location_services_summary">位置服务允许系统和第三方应用收集和使用相关信息（比如您的大致位置）。例如，某个应用可能会使用您的大致位置来查找附近的咖啡馆。</string>
   <string name="location_access_summary"><b>允许得到您授权的应用</b>使用您的位置信息，可能包括您当前的位置和过去的位置。</string>
   <string name="location_battery_saving"><b>减少电量消耗</b>限制 GPS 每小时更新速度。</string>
-  <string name="location_network"><b>使用 Wi-Fi</b> 来帮助应用确定您的位置。</string>
-  <string name="location_network_telephony"><b>使用 Wi-Fi 和移动网络</b>来帮助应用确定您的位置。</string>
+  <string name="location_network">使用 WLAN 帮助应用确定您的位置。</string>
+  <string name="location_network_telephony">使用 WLAN 和移动网络帮助应用确定您的位置。</string>
   <string name="location_network_gms"><b>使用 Google 的位置服务</b>帮助应用确定您所在的位置。这意味着即使没有应用运行，也会发送匿名的位置数据给 Google。</string>
   <string name="setup_mobile_data">打开移动数据</string>
   <string name="setup_mobile_data_no_service">无服务</string>

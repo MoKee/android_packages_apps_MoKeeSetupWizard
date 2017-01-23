@@ -34,11 +34,11 @@
   <string name="setup_current_time">Şimdiki saat</string>
   <string name="sim_missing_summary" product="tablet">Tabletinizde bir SIM kart bulunamadı. SIM kart takmak için, cihazınız ile gelen talimatları okuyun.</string>
   <string name="sim_missing_summary" product="default">Telefonunuzda bir SIM kart bulunamadı. SIM kart takmak için, cihazınız ile gelen talimatları okuyun.</string>
-  <string name="choose_data_sim_summary" product="tablet">Hangi SIM\'i veri için kullanmak istiyorsunuz? Tabletinizin kurulumu için kullanılacağı için seçili SIM şebeke ücretlerine tabi olabilir.</string>
+  <string name="choose_data_sim_summary" product="tablet">Hangi SIM\'i veri için kullanmak istiyorsunuz? Seçilen SIM, tabletinizi ayarlamak için kullanılacağından şebeke ücretleri alınabilir.</string>
   <string name="choose_data_sim_summary" product="default">Hangi SIM\'i veri için kullanmak istiyorsunuz? Telefonunuzun kurulumu için kullanılacağı için seçili SIM şebeke ücretlerine tabi olabilir.</string>
   <string name="date_time_summary">Zaman diliminizi seçin ve gerekirse geçerli tarih ve saati ayarlayın</string>
   <string name="backup_data_summary"><b>Uyg. verilerini, Wi-Fi şifrelerini ve diğer ayarları Google sunucularına yedekle</b></string>
-  <string name="other_services_summary">Bu hizmetler ile Google sizin için çalışmaya başlar ve istediğiniz zaman açıp kapatabilirsiniz. Veriler Google\'ın <xliff:g id="name" example="Privacy Policy">%s</xliff:g>\'na uygun olarak kullanılacaktır.</string>
+  <string name="other_services_summary">Bu hizmetler ile Google\'ı sizin için çalıştırmaya başlar ve istediğiniz zaman açıp kapatabilirsiniz. Veriler Google\'ın <xliff:g id="name" example="Privacy Policy">%s</xliff:g>\'na uygun olarak kullanılacaktır.</string>
   <string name="location_services_summary">Konum servisleri sistem ve üçüncü taraf uygulamalara yaklaşık konumunuz gibi bilgileri toplama ve kullanma izni verir. Örneğin, bir uygulama yakındaki eğlence merkezlerini belirlemek için yaklaşık konumunuzu kullanabilir.</string>
   <string name="location_access_summary"><b>Konum bilginizi isteyen uygulamalara izin ver.</b> Bu geçerli konumunuzu ve geçmiş konumlarınızı içerebilir.</string>
   <string name="location_battery_saving">Saat başına GPS güncelleme sayısını sınırlandırarak <b> pil tüketimini azaltın </b>.</string>
@@ -51,7 +51,7 @@
   <string name="enable_mobile_data_summary">Kurulum sırasında mobil veriyi kullanmak istiyor musunuz? Mobil veriyi açarak veri ücretlerine tabi olabilirsiniz.</string>
   <string name="no">Hayır</string>
   <string name="yes">Evet</string>
-  <string name="data_sim_name">SIM <xliff:g id="sub">%d </xliff:g> - <xliff:g id="adı">%s </xliff:g></string>
+  <string name="data_sim_name">SIM <xliff:g id="sub">%d</xliff:g> - <xliff:g id="name">%s</xliff:g></string>
   <string name="emergency_call">Acil durum çağrısı</string>
   <string name="setup_personalization">Kişileştirme</string>
   <string name="services_privacy_policy">Gizlilik Politikası</string>
@@ -61,7 +61,7 @@
   <!-- Fingerprint setup -->
   <string name="settings_fingerprint_setup_title">Yedek ekran kilidi türü</string>
   <string name="settings_fingerprint_setup_details">Ekranı nasıl kilitlemek istersiniz?</string>
-  <string name="fingerprint_setup_title">Parmak izi ayarlandı</string>
+  <string name="fingerprint_setup_title">Parmak izi kurulumu</string>
   <string name="fingerprint_setup_summary">Ekranınızın kilidini açmak ve parmak izi sensörünü kullanmak için şunları yapmanız gerekir:</string>
   <string name="fingerprint_setup_backup_lock_method">Ikici ekran kilidini kurun</string>
   <string name="fingerprint_setup_add_fingerprint">Parmak izinizi ekleyin</string>
