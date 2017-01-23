@@ -37,8 +37,6 @@ import android.util.Log;
 
 import com.mokee.setupwizard.SetupWizardApp;
 
-import com.google.android.gms.common.ConnectionResult;
-import com.google.android.gms.common.GooglePlayServicesUtil;
 import mokee.providers.MKSettings;
 
 import static android.content.res.ThemeConfig.SYSTEM_DEFAULT;
@@ -163,11 +161,6 @@ public class SetupWizardUtils {
 
     public static boolean isOwner() {
         return UserHandle.getCallingUserHandle().isOwner();
-    }
-
-    public static boolean hasGMS(Context context) {
-        return GooglePlayServicesUtil.isGooglePlayServicesAvailable(context) !=
-                ConnectionResult.SERVICE_MISSING;
     }
 
     public static boolean accountExists(Context context, String accountType) {

@@ -32,6 +32,8 @@ import android.view.WindowManagerGlobal;
 import com.android.internal.telephony.TelephonyIntents;
 import com.mokee.setupwizard.util.SetupWizardUtils;
 
+import org.mokee.internal.util.PackageManagerUtils;
+
 import java.util.ArrayList;
 
 public class MKSetupWizardData extends AbstractSetupData {
@@ -69,7 +71,8 @@ public class MKSetupWizardData extends AbstractSetupData {
             pages.add(new MobileDataPage(mContext, this)
                     .setHidden(!isSimInserted() || mMobileDataEnabled));
         }
-        final boolean hasGMS = SetupWizardUtils.hasGMS(mContext);
+        final boolean hasGMS = PackageManagerUtils
+                .isAppInstalled(mContext, "com.google.android.gms");
         if (hasGMS) {
             pages.add(new GmsAccountPage(mContext, this));
         }
