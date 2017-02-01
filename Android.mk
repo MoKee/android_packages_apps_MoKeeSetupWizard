@@ -30,10 +30,10 @@ LOCAL_STATIC_JAVA_LIBRARIES := \
     android-support-v4 \
     android-support-v13 \
     libphonenumber \
+    org.mokee.platform.internal \
     org.mokee.platform.sdk
 
 LOCAL_JAVA_LIBRARIES := \
-    org.mokee.platform.internal \
     telephony-common
 
 LOCAL_RESOURCE_DIR := $(LOCAL_PATH)/res
