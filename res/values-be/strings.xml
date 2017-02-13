@@ -16,13 +16,13 @@
      limitations under the License.
 -->
 <resources xmlns:xliff="urn:oasis:names:tc:xliff:document:1.2">
-  <string name="app_name">Майстар устаноўкі</string>
+  <string name="app_name">Майстар усталёўкі</string>
   <string name="next">Далей</string>
   <string name="skip">Прапусціць</string>
   <string name="start">Пачаць</string>
   <string name="ok">Добра</string>
   <string name="loading">Секунду\u2026</string>
-  <string name="setup_complete">Устаноўка скончана</string>
+  <string name="setup_complete">Усталёўка завершана</string>
   <string name="setup_welcome">Вітаем</string>
   <string name="setup_wifi">Выберыце сетку Wi-Fi</string>
   <string name="setup_sim_missing">SIM-карта адсутнічае</string>
@@ -32,8 +32,8 @@
   <string name="setup_datetime">Дата і час</string>
   <string name="setup_current_date">Бягучая дата</string>
   <string name="setup_current_time">Бягучы час</string>
-  <string name="sim_missing_summary" product="tablet">Не выяўлена усталяванай SIM-карты ў планшэце. Каб даведацца, як ўставіць SIM-карту, прачытайце інструкцыю да вашага прылады.</string>
-  <string name="sim_missing_summary" product="default">Не выяўлена усталяванай SIM-карты ў тэлефоне. Каб даведацца, як ўставіць SIM-карту, прачытайце інструкцыю да вашага прылады.</string>
+  <string name="sim_missing_summary" product="tablet">Не выяўлена усталяванай SIM-карты ў планшэце. Каб даведацца, як уставіць SIM-карту, прачытайце інструкцыю для вашай прылады.</string>
+  <string name="sim_missing_summary" product="default">Не выяўлена усталяванай SIM-карты ў тэлефоне. Каб даведацца, як уставіць SIM-карту, прачытайце інструкцыю для вашай прылады.</string>
   <string name="choose_data_sim_summary" product="tablet">Якую SIM вы хочаце выкарыстоўваць для перадачы дадзеных? Выбар SIM з памегабайтнай тарыфікацыяй можа пацягнуць выдаткі, так як яна будзе выкарыстоўвацца для налады вашага прылады.</string>
   <string name="choose_data_sim_summary" product="default">Якую SIM вы хочаце выкарыстоўваць для перадачы дадзеных? Выбар SIM з памегабайтнай тарыфікацыяй можа пацягнуць выдаткі, так як яна будзе выкарыстоўвацца для наладкі вашага тэлефона.</string>
   <string name="date_time_summary">Усталюйце свой гадзінны пояс і наладзьце цяперашнюю дату і час, пры неабходнасці</string>
@@ -52,7 +52,7 @@ Context | Request Context.</string>
   <string name="setup_mobile_data_emergency_only">Толькі экстраныя выклікі</string>
   <string name="enable_mobile_data_summary">Вы жадаеце выкарыстоўваць мабільную перадачу дадзеных пад час настройкі? За гэта можа збірацца дадатковая плата.</string>
   <string name="no">Не</string>
-  <string name="yes">Да</string>
+  <string name="yes">Так</string>
   <string name="data_sim_name">Сім <xliff:g id="sub">%d</xliff:g>-<xliff:g id="name">%s</xliff:g></string>
   <string name="emergency_call">Экстраны выклік</string>
   <string name="setup_personalization">Персаналізацыя</string>
@@ -72,7 +72,7 @@ Context | Request Context.</string>
   <!-- secure lock screen -->
   <string name="settings_lockscreen_setup_title">Экран выбара тыпа блакіроўкі</string>
   <string name="settings_lockscreen_setup_details">Як вы жадаеце блакаваць экран?</string>
-  <string name="lockscreen_setup_title">Засцеражыце ваш тэлефон</string>
+  <string name="lockscreen_setup_title">Аберажыце ваш тэлефон</string>
   <string name="lockscreen_setup_summary"><b>Сцерагчы гэты тэлефон</b> і запытваць ПІН-код, графічны ключ, ці пароль для разблакіроўкі экрана</string>
-  <string name="lockscreen_setup_screen_lock_setup">Устанавіце ПІН-код, графічны ключ або пароль</string>
+  <string name="lockscreen_setup_screen_lock_setup">Усталюйце ПІН-код, графічны ключ або пароль</string>
 </resources>

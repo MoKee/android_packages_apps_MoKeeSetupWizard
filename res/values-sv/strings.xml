@@ -17,12 +17,33 @@
 -->
 <resources xmlns:xliff="urn:oasis:names:tc:xliff:document:1.2">
   <string name="next">Nästa</string>
+  <string name="skip">Hoppa över</string>
   <string name="ok">OK</string>
+  <string name="loading">Bara en sek\u2026</string>
   <string name="setup_welcome">Välkommen</string>
+  <string name="setup_wifi">Välj Wi-Fi</string>
+  <string name="setup_sim_missing">SIM-kort saknas</string>
+  <string name="setup_location">Platstjänster</string>
+  <string name="setup_other">Andra tjänster</string>
+  <string name="setup_current_date">Aktuellt datum</string>
   <string name="setup_current_time">Aktuell tid</string>
+  <string name="setup_mobile_data">Aktivera mobildata</string>
   <string name="setup_mobile_data_no_service">Ingen service</string>
+  <string name="setup_mobile_data_emergency_only">Nödsamtal endast</string>
   <string name="no">Nej</string>
   <string name="yes">Ja</string>
+  <string name="data_sim_name">SIM <xliff:g id="sub">%d</xliff:g> - <xliff:g id="name">%s</xliff:g></string>
+  <string name="emergency_call">Nödsamtal</string>
+  <string name="setup_personalization">Anpassning</string>
   <!-- Fingerprint setup -->
+  <string name="settings_fingerprint_setup_details">Hur skulle du vilja låsa din skärm?</string>
+  <string name="fingerprint_setup_title">Ställ in fingeravtryck</string>
+  <string name="fingerprint_setup_backup_lock_method">Ställ in en sekundär upplåsningsmetod</string>
+  <string name="fingerprint_setup_add_fingerprint">Lägg till ditt fingeravtryck</string>
+  <string name="fingerprint_setup_screen_lock_setup">Ställ in skärmlås</string>
   <!-- secure lock screen -->
+  <string name="settings_lockscreen_setup_title">Välj skärmlåstyp</string>
+  <string name="settings_lockscreen_setup_details">Hur skulle du vilja låsa din skärm?</string>
+  <string name="lockscreen_setup_title">Skydda din telefon</string>
+  <string name="lockscreen_setup_screen_lock_setup">Ställ in PIN, mönster eller lösenord</string>
 </resources>
