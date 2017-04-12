@@ -16,7 +16,61 @@
      limitations under the License.
 -->
 <resources xmlns:xliff="urn:oasis:names:tc:xliff:document:1.2">
+  <string name="app_name">Sprievodca nastavením</string>
+  <string name="next">Ďalší</string>
+  <string name="skip">Preskočiť</string>
+  <string name="start">Štart</string>
   <string name="ok">OK</string>
+  <string name="loading">Len chvíľku...</string>
+  <string name="setup_complete">Nastavenie je dokončené</string>
+  <string name="setup_welcome">Vitajte</string>
+  <string name="setup_wifi">Vybrať sieť Wi-Fi</string>
+  <string name="setup_sim_missing">SIM karta chýba</string>
+  <string name="setup_choose_data_sim">Zvoľte SIM kartu pre dáta</string>
+  <string name="setup_location">Určenie polohy</string>
+  <string name="setup_other">Ostatné služby</string>
+  <string name="setup_datetime">Dátum a čas</string>
+  <string name="setup_current_date">Aktuálny dátum</string>
+  <string name="setup_current_time">Aktuálny čas</string>
+  <string name="sim_missing_summary" product="tablet">Vo vašom tablete nebola nájdená SIM karta. Pre vloženie SIM karty si prečítajte návod dodaný s vašim zariadením.</string>
+  <string name="sim_missing_summary" product="default">Vo vašom telefóne nebola nájdená SIM karta. Pre vloženie SIM karty si prečítajte návod dodaný s vašim zariadením.</string>
+  <string name="choose_data_sim_summary" product="tablet">Ktorú SIM chcete použiť pre mobilné dáta? U vybranej SIM môžu byť účtované poplatky za dátové prenosy, ak bude použitá pri nastavovaní vášho tabletu.</string>
+  <string name="choose_data_sim_summary" product="default">Ktorú SIM chcete použiť pre mobilné dáta? U vybranej SIM môžu byť účtované poplatky za dátové prenosy, ak bude použitá pri nastavovaní vášho telefónu.</string>
+  <string name="date_time_summary">Nastavte vaše časové pásmo a upravte aktuálny dátum a čas, ak je to potrebné</string>
+  <string name="backup_data_summary"><b>Zálohovať</b> údaje aplikácií, heslá sietí Wi-Fi a ďalšie nastavenia na serveroch Google</string>
+  <string name="other_services_summary">Tieto služby sú určené pre vás, môžete ich hocikedy zapnúť alebo vypnúť. Údaje budú použité v súlade s Googovskou <xliff:g id="name" example="Privacy Policy">%s</xliff:g>.</string>
+  <string name="location_services_summary">Služby polohy umožňujú systému a ďalším aplikáciám zhromažďovanie a používanie údajov súvisiacich s vašou približnou polohou. Napríklad Mapy môžu použiť vašu približnú polohu pre nájdenie kaviarní vo vašej blízkosti.</string>
+  <string name="location_access_summary"><b>Povoľte aplikáciám, ktoré požiadali o vaše povolenie</b> používať informácie o vašej polohe. To môže zahŕňať vašu aktuálnu polohu a minulé polohy.</string>
+  <string name="location_battery_saving"><b>Zníženie spotreby batérie</b> obmedzením počtu aktualizácií GPS polohy za hodinu.</string>
+  <string name="location_network"><b>Použitie Wi-Fi</b> pomôže aplikáciám určiť vašu polohu.</string>
+  <string name="location_network_telephony"><b>Použitie Wi-Fi a mobilných sietí</b> pomôže aplikáciám určiť vašu polohu.</string>
+  <string name="location_network_gms"><b>Používanie služieb polohy od spoločnosti Google</b> pomôže aplikáciám určiť vašu polohu. To znamená anonymné zasielanie údajov o polohe do spoločnosti Google, aj keď nie sú spustené žiadne aplikácie.</string>
+  <string name="setup_mobile_data">Zapnúť mobilné dáta</string>
+  <string name="setup_mobile_data_no_service">Žiadna sieť</string>
+  <string name="setup_mobile_data_emergency_only">Len tiesňové hovory</string>
+  <string name="enable_mobile_data_summary">Chcete počas inštalácie používať mobilné dáta? Zapnutie mobilných dát vás môže niečo stáť.</string>
+  <string name="no">Nie</string>
+  <string name="yes">Áno</string>
+  <string name="data_sim_name">SIM <xliff:g id="sub">%d</xliff:g> - <xliff:g id="name">%s</xliff:g></string>
+  <string name="emergency_call">Tiesňové hovory</string>
+  <string name="setup_personalization">Prispôsobenie</string>
+  <string name="services_privacy_policy">Zásady ochrany osobných údajov</string>
+  <string name="services_apply_theme">Použiť tému <xliff:g id="name" example="Material">%s</xliff:g></string>
+  <string name="services_apply_theme_label"><xliff:g id="name" example="Apply the Material theme">%s</xliff:g> povolí unikátne ikony, tapety a písma.</string>
+  <string name="services_os_nav_keys_label"><b>Používajte navigačné tlačidlá na obrazovke</b> pre pohyb medzi obrazovkami namiesto hardvérových tlačidiel.</string>
   <!-- Fingerprint setup -->
+  <string name="settings_fingerprint_setup_title">Vybrať záložný zámok obrazovky</string>
+  <string name="settings_fingerprint_setup_details">Ako chcete zamknúť obrazovku?</string>
+  <string name="fingerprint_setup_title">Nastavenie odtlačku prsta</string>
+  <string name="fingerprint_setup_summary">Pre použitie snímača odtlačkov prstov na odomknutie obrazovky, budete musieť:</string>
+  <string name="fingerprint_setup_backup_lock_method">Nastaviť sekundárnu metódu odomknutia</string>
+  <string name="fingerprint_setup_add_fingerprint">Pridajte odtlačok prsta</string>
+  <string name="fingerprint_setup_screen_lock_setup">Nastavenie zámku obrazovky</string>
+  <string name="sim_locale_changed">%1$s SIM detekovaná</string>
   <!-- secure lock screen -->
+  <string name="settings_lockscreen_setup_title">Vybrať zámok obrazovky</string>
+  <string name="settings_lockscreen_setup_details">Ako chcete zamknúť obrazovku?</string>
+  <string name="lockscreen_setup_title">Chráňte svoj telefón</string>
+  <string name="lockscreen_setup_summary"><b>Chráňte toto zariadenie</b> a zadajte PIN, gesto alebo heslo pre odomknutie obrazovky</string>
+  <string name="lockscreen_setup_screen_lock_setup">Nastaviť PIN, vzor alebo heslo</string>
 </resources>
