@@ -20,6 +20,7 @@
   <string name="next">Seuraava</string>
   <string name="skip">Ohita</string>
   <string name="start">Aloita</string>
+  <string name="ok">OK</string>
   <string name="loading">Odota hetki\u2026</string>
   <string name="setup_complete">Asennus on valmis</string>
   <string name="setup_welcome">Tervetuloa</string>
@@ -40,6 +41,7 @@
   <string name="other_services_summary">Tämä ottaa Googlen palvelut käyttöön, ja voit ottaa ne käyttöön tai poistaa käytöstä milloin tahansa. Tietoja käytetään Googlen <xliff:g id="name" example="Privacy Policy">%s</xliff:g>n mukaisesti.</string>
   <string name="location_services_summary">Sijaintipalvelut sallii järjestelmän ja muiden sovellusten kerätä ja käyttää tietoja kuten likimääräinen sijaintisi. Esimerkiksi sovellus voi paikantaa sinut ja etsiä lähistöllä olevia kahviloita.</string>
   <string name="location_access_summary"><b>Salli sovellusten, jotka ovat kysyneet sinulta lupaa</b> käyttää sijaintitietojasi. Tämä saattaa sisältää nykyisen sijaintisi ja aiemmat sijaintisi.</string>
+  <string name="location_battery_saving"><b>Vähennä akun kulutusta</b> rajoittamalla GPS-paikannusten määrää per tunti.</string>
   <string name="location_network"><b>Käytä Wi-Fiä</b> auttaaksesi sovelluksia paikantamaan sijaintisi.</string>
   <string name="location_network_telephony"><b>Käytä Wi-Fi- ja mobiiliverkkoja</b> auttaaksesi sovelluksia määrittämään sijaintisi.</string>
   <string name="location_network_gms"><b>Käytä Googlen paikannusta</b> auttaaksesi sovellusten sijaintisi paikannusta. Tämä tarkoittaa nimettömien paikannustietojen lähettämistä Googlelle, jopa ilman sovellusten käynnissäolemista.</string>
@@ -49,11 +51,26 @@
   <string name="enable_mobile_data_summary">Haluatko käyttää mobiilidataa asennuksen aikana? Mobiilidatan kytkeminen päälle saattaa aiheuttaa tiedonsiirtokuluja.</string>
   <string name="no">Ei</string>
   <string name="yes">Kyllä</string>
+  <string name="data_sim_name">SIM <xliff:g id="sub">%d</xliff:g> - <xliff:g id="name">%s</xliff:g></string>
   <string name="emergency_call">Hätäpuhelu</string>
+  <string name="setup_personalization">Mukauttaminen</string>
   <string name="services_privacy_policy">Tietosuojakäytännön</string>
   <string name="services_apply_theme">Ota <xliff:g id="name" example="Material">%s</xliff:g>-teema käyttöön</string>
   <string name="services_apply_theme_label"><xliff:g id="name" example="Apply the Material theme">%s</xliff:g> käyttääksesi ainutlaatuisia kuvakkeita, taustakuvia ja fontteja.</string>
   <string name="services_os_nav_keys_label"><b>Käytä näytön navigointipalkkia</b> fyysisten näppäinten sijaan.</string>
   <!-- Fingerprint setup -->
+  <string name="settings_fingerprint_setup_title">Valitse toinen näytön lukitustapa</string>
+  <string name="settings_fingerprint_setup_details">Miten haluat lukita näyttösi?</string>
+  <string name="fingerprint_setup_title">Sormenjäljen määritys</string>
+  <string name="fingerprint_setup_summary">Käyttääksesi sormenjälkitunnistinta avataksesi näytön lukituksen, sinun tulee:</string>
+  <string name="fingerprint_setup_backup_lock_method">Määritä toissijainen näytön avaustapa</string>
+  <string name="fingerprint_setup_add_fingerprint">Lisää sormenjälkesi</string>
+  <string name="fingerprint_setup_screen_lock_setup">Aseta näytön lukitus</string>
+  <string name="sim_locale_changed">%1$s SIM tunnistettu</string>
   <!-- secure lock screen -->
+  <string name="settings_lockscreen_setup_title">Valitse näytön lukitustapa</string>
+  <string name="settings_lockscreen_setup_details">Miten haluat lukita näyttösi?</string>
+  <string name="lockscreen_setup_title">Suojaa puhelintasi</string>
+  <string name="lockscreen_setup_summary"><b>Suojaa laitetta</b> avaamalla näytön lukitus PIN-koodin, kuvion tai salasanan avulla</string>
+  <string name="lockscreen_setup_screen_lock_setup">Määritä PIN, kuvio tai salasana</string>
 </resources>
